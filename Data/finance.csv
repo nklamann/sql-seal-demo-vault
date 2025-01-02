@@ -1,0 +1,166 @@
+Date,Category,Description,Amount,PaymentMethod,Necessity
+2024-12-15,Groceries,Lidl Weekly Shopping,82.45,Debit,Essential
+2024-12-15,Entertainment,Netflix Subscription,14.99,Credit,Optional
+2024-12-15,Transport,Monthly Transit Pass,75.00,Credit,Essential
+2024-12-15,Dining,Morning Coffee,3.50,Cash,Optional
+2024-12-15,Dining,Lunch,12.50,Debit,Optional
+2024-12-15,Shopping,Office Supplies,15.99,Debit,Essential
+2024-12-15,Dining,Evening Snack,4.75,Cash,Optional
+2024-12-16,Groceries,Quick Grocery Run,24.50,Debit,Essential
+2024-12-16,Transport,Taxi to Work,15.75,Credit,Essential
+2024-12-16,Dining,Breakfast Sandwich,5.50,Cash,Optional
+2024-12-16,Shopping,Winter Jacket,159.99,Credit,Essential
+2024-12-16,Utilities,Electricity Bill,94.30,Direct Debit,Essential
+2024-12-16,Dining,Lunch with Colleagues,13.50,Debit,Optional
+2024-12-16,Entertainment,Mobile Game Purchase,4.99,Credit,Optional
+2024-12-16,Dining,After Work Drinks,22.50,Credit,Optional
+2024-12-17,Healthcare,Pharmacy,22.50,Debit,Essential
+2024-12-17,Groceries,Local Market,34.20,Cash,Essential
+2024-12-17,Dining,Morning Coffee,3.50,Cash,Optional
+2024-12-17,Transport,Bus Fare,2.50,Cash,Essential
+2024-12-17,Dining,Lunch Special,9.99,Debit,Optional
+2024-12-17,Entertainment,Cinema Ticket,15.00,Credit,Optional
+2024-12-17,Dining,Movie Snacks,8.50,Cash,Optional
+2024-12-17,Shopping,Phone Case,19.99,Credit,Optional
+2024-12-18,Dining,Coffee Shop,4.50,Cash,Optional
+2024-12-18,Transport,Taxi Ride,18.75,Credit,Optional
+2024-12-18,Shopping,Office Supplies,25.99,Debit,Essential
+2024-12-18,Dining,Lunch Meeting,28.50,Credit,Essential
+2024-12-18,Groceries,Evening Shop,45.75,Debit,Essential
+2024-12-18,Entertainment,Book Purchase,12.99,Credit,Optional
+2024-12-18,Dining,Takeaway Dinner,16.50,Credit,Optional
+2024-12-19,Utilities,Internet Bill,49.99,Direct Debit,Essential
+2024-12-19,Transport,Fuel,68.50,Debit,Essential
+2024-12-19,Dining,Breakfast,7.50,Cash,Optional
+2024-12-19,Shopping,Work Clothes,125.00,Credit,Essential
+2024-12-19,Dining,Lunch,11.50,Debit,Optional
+2024-12-19,Entertainment,Spotify Premium,9.99,Credit,Optional
+2024-12-19,Groceries,Quick Stop,18.50,Cash,Essential
+2024-12-19,Dining,Evening Coffee,4.25,Cash,Optional
+2024-12-20,Healthcare,Gym Membership,45.00,Direct Debit,Optional
+2024-12-20,Transport,Parking,8.50,Cash,Essential
+2024-12-20,Dining,Morning Smoothie,6.50,Debit,Optional
+2024-12-20,Shopping,Gift for Friend,35.00,Credit,Optional
+2024-12-20,Dining,Lunch Special,10.50,Cash,Optional
+2024-12-20,Groceries,After Work Shop,65.75,Debit,Essential
+2024-12-20,Entertainment,Concert Tickets,85.00,Credit,Optional
+2024-12-20,Dining,Restaurant Dinner,58.00,Credit,Optional
+2024-12-21,Transport,Weekend Bus Pass,12.00,Debit,Essential
+2024-12-21,Dining,Brunch,16.50,Credit,Optional
+2024-12-21,Shopping,Home Decor,89.99,Credit,Optional
+2024-12-21,Entertainment,Museum Entry,14.50,Credit,Optional
+2024-12-21,Dining,Cafe Stop,7.50,Cash,Optional
+2024-12-21,Groceries,Weekend Shopping,120.35,Debit,Essential
+2024-12-21,Dining,Evening Takeaway,22.50,Credit,Optional
+2024-12-22,Entertainment,Video Game,59.99,Credit,Optional
+2024-12-22,Utilities,Water Bill,35.50,Direct Debit,Essential
+2024-12-22,Transport,Train Ticket,22.50,Debit,Essential
+2024-12-22,Dining,Breakfast Cafe,11.25,Cash,Optional
+2024-12-22,Shopping,Sports Equipment,75.00,Credit,Optional
+2024-12-22,Groceries,Sunday Shop,45.50,Debit,Essential
+2024-12-22,Entertainment,Streaming Rental,5.99,Credit,Optional
+2024-12-22,Dining,Pizza Delivery,18.50,Credit,Optional
+2024-12-23,Transport,Car Insurance,185.00,Direct Debit,Essential
+2024-12-23,Dining,Morning Coffee,3.75,Cash,Optional
+2024-12-23,Groceries,Specialty Store,67.80,Credit,Essential
+2024-12-23,Healthcare,Dentist Visit,120.00,Credit,Essential
+2024-12-23,Dining,Lunch,12.50,Debit,Optional
+2024-12-23,Shopping,Christmas Shopping,185.00,Credit,Optional
+2024-12-23,Entertainment,App Purchase,2.99,Credit,Optional
+2024-12-23,Dining,Evening Meal,24.50,Credit,Optional
+2024-12-24,Shopping,Last Minute Gifts,95.00,Credit,Optional
+2024-12-24,Transport,Holiday Travel,45.00,Credit,Essential
+2024-12-24,Dining,Airport Coffee,5.50,Cash,Optional
+2024-12-24,Groceries,Christmas Eve Shop,75.50,Debit,Essential
+2024-12-24,Entertainment,Movie Rental,4.99,Credit,Optional
+2024-12-24,Dining,Family Dinner,95.00,Credit,Optional
+2024-12-25,Groceries,Holiday Food,156.75,Debit,Essential
+2024-12-25,Transport,Holiday Taxi,25.50,Credit,Optional
+2024-12-25,Entertainment,Digital Movie Purchase,14.99,Credit,Optional
+2024-12-25,Dining,Christmas Snacks,12.50,Cash,Optional
+2024-12-26,Shopping,Post-Holiday Sales,178.50,Credit,Optional
+2024-12-26,Transport,Bus Fare,2.50,Cash,Essential
+2024-12-26,Dining,Cafe Visit,8.75,Cash,Optional
+2024-12-26,Entertainment,Concert Tickets,85.00,Credit,Optional
+2024-12-26,Groceries,Basic Restock,45.50,Debit,Essential
+2024-12-26,Dining,Evening Meal,28.50,Credit,Optional
+2024-12-27,Utilities,Phone Bill,45.99,Direct Debit,Essential
+2024-12-27,Transport,Fuel,72.50,Debit,Essential
+2024-12-27,Dining,Morning Coffee,3.75,Cash,Optional
+2024-12-27,Groceries,Weekly Shopping,95.40,Debit,Essential
+2024-12-27,Shopping,Electronics,199.99,Credit,Optional
+2024-12-27,Entertainment,Gaming Purchase,19.99,Credit,Optional
+2024-12-27,Dining,Restaurant Dinner,45.50,Credit,Optional
+2024-12-28,Healthcare,Health Insurance,150.00,Direct Debit,Essential
+2024-12-28,Transport,Parking Fee,12.00,Cash,Essential
+2024-12-28,Dining,Breakfast Out,14.50,Debit,Optional
+2024-12-28,Shopping,Clothes Shopping,145.00,Credit,Optional
+2024-12-28,Groceries,Quick Stop,25.50,Cash,Essential
+2024-12-28,Entertainment,Theatre Tickets,65.00,Credit,Optional
+2024-12-28,Dining,Pizza Delivery,22.50,Credit,Optional
+2024-12-29,Entertainment,Gaming Subscription,12.99,Credit,Optional
+2024-12-29,Transport,Taxi Ride,16.50,Credit,Optional
+2024-12-29,Dining,Brunch,18.50,Debit,Optional
+2024-12-29,Groceries,Sunday Shop,82.50,Debit,Essential
+2024-12-29,Shopping,Home Supplies,45.00,Credit,Essential
+2024-12-29,Entertainment,Music Purchase,9.99,Credit,Optional
+2024-12-29,Dining,Evening Takeaway,25.50,Credit,Optional
+2024-12-30,Shopping,Electronics,299.99,Credit,Optional
+2024-12-30,Transport,Monthly Pass Renewal,75.00,Credit,Essential
+2024-12-30,Dining,Morning Coffee,4.25,Cash,Optional
+2024-12-30,Utilities,Gas Bill,115.00,Direct Debit,Essential
+2024-12-30,Groceries,Party Supplies,65.50,Debit,Optional
+2024-12-30,Entertainment,NYE Event Ticket,75.00,Credit,Optional
+2024-12-30,Dining,Lunch Meeting,32.50,Credit,Essential
+2024-12-31,Groceries,Year-End Shop,95.50,Debit,Essential
+2024-12-31,Transport,NYE Taxi,35.00,Credit,Optional
+2024-12-31,Dining,Morning Coffee,3.75,Cash,Optional
+2024-12-31,Shopping,NYE Outfit,125.00,Credit,Optional
+2024-12-31,Entertainment,Party Supplies,45.00,Credit,Optional
+2024-12-31,Dining,NYE Dinner,150.00,Credit,Optional
+2025-01-01,Healthcare,Vitamins,28.99,Debit,Essential
+2025-01-01,Transport,Holiday Taxi,22.50,Credit,Optional
+2025-01-01,Dining,Hangover Brunch,24.50,Credit,Optional
+2025-01-01,Entertainment,Movie Rental,5.99,Credit,Optional
+2025-01-01,Groceries,Basic Necessities,45.50,Debit,Essential
+2025-01-01,Shopping,New Year Sales,165.00,Credit,Optional
+2025-01-01,Dining,Evening Takeaway,28.50,Credit,Optional
+2025-01-02,Transport,Fuel,65.50,Debit,Essential
+2025-01-02,Dining,Morning Coffee,4.25,Cash,Optional
+2025-01-02,Groceries,Fresh Start Shopping,92.40,Debit,Essential
+2025-01-02,Shopping,Office Supplies,35.50,Credit,Essential
+2025-01-02,Entertainment,Streaming Service,12.99,Credit,Optional
+2025-01-02,Dining,Lunch Special,11.50,Debit,Optional
+2025-01-03,Utilities,Internet Bill,49.99,Direct Debit,Essential
+2025-01-03,Transport,Parking,9.50,Cash,Essential
+2025-01-03,Dining,Breakfast,8.50,Cash,Optional
+2025-01-03,Groceries,Quick Stop,28.50,Debit,Essential
+2025-01-03,Shopping,Home Decor,75.00,Credit,Optional
+2025-01-03,Entertainment,Book Purchase,16.99,Credit,Optional
+2025-01-03,Dining,Restaurant Dinner,42.50,Credit,Optional
+2025-01-04,Transport,Weekend Pass,15.00,Debit,Essential
+2025-01-04,Dining,Morning Coffee,4.50,Cash,Optional
+2025-01-04,Shopping,Clothes,135.00,Credit,Optional
+2025-01-04,Groceries,Weekend Shop,115.50,Debit,Essential
+2025-01-04,Entertainment,Cinema Tickets,28.00,Credit,Optional
+2025-01-04,Dining,Cinema Snacks,12.50,Cash,Optional
+2025-01-05,Healthcare,First Aid Supplies,25.50,Debit,Essential
+2025-01-05,Transport,Bus Fare,2.50,Cash,Essential
+2025-01-05,Dining,Sunday Brunch,22.50,Credit,Optional
+2025-01-05,Groceries,Weekly Shop,88.50,Debit,Essential
+2025-01-05,Shopping,Phone Accessories,45.00,Credit,Optional
+2025-01-05,Entertainment,Game DLC,14.99,Credit,Optional
+2025-01-05,Dining,Dinner with Friends,35.50,Credit,Optional
+2025-01-06,Transport,Fuel,68.50,Debit,Essential
+2025-01-06,Dining,Morning Coffee,3.75,Cash,Optional
+2025-01-06,Shopping,Work Supplies,42.50,Credit,Essential
+2025-01-06,Groceries,Quick Stop,32.50,Debit,Essential
+2025-01-06,Entertainment,Music Subscription,9.99,Credit,Optional
+2025-01-06,Dining,Lunch Special,12.50,Debit,Optional
+2025-01-07,Utilities,Phone Bill,45.99,Direct Debit,Essential
+2025-01-07,Transport,Taxi to Meeting,22.50,Credit,Essential
+2025-01-07,Dining,Breakfast Meeting,16.50,Credit,Essential
+2025-01-07,Groceries,Evening Shop,55.50,Debit,Essential
+2025-01-07,Shopping,Tech Gadget,165.00,Credit,Optional
+2025-01-07,Entertainment,Concert Tickets,95.00,Credit,Optional
+2025-01-07,Dining,Takeaway Dinner,18.50,Credit,Optional

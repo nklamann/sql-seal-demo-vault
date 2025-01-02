@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "birthday": "date",
+    "week": "number",
+    "year": "number",
+    "likes": "multitext",
+    "meditate": "checkbox",
+    "guests": "text"
+  }
+}
