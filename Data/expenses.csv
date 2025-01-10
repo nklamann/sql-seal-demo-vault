@@ -1,0 +1,42 @@
+date,category,amount,description,payment_method,location
+2024-01-02,Groceries,85.43,Weekly grocery shopping,Credit Card,Whole Foods
+2024-01-02,Coffee,4.75,Morning coffee,Cash,Local Cafe
+2024-01-02,Transport,2.50,Bus fare,Transit Card,City Bus
+2024-01-02,Lunch,12.99,Sandwich and soup,Credit Card,Deli Corner
+2024-01-02,Coffee,3.95,Afternoon coffee,Cash,Starbucks
+2024-01-02,Utilities,95.00,Electricity bill,Bank Transfer,Power Company
+2024-01-02,Entertainment,15.99,Netflix subscription,Credit Card,Online
+2024-01-02,Transport,15.00,Uber home,Credit Card,Uber
+2024-01-02,Dinner,28.50,Takeout sushi,Credit Card,Sushi Place
+2024-01-01,Groceries,32.50,Quick grocery run,Credit Card,Local Market
+2024-01-01,Coffee,4.75,Morning coffee,Cash,Local Cafe
+2024-01-01,Transport,2.50,Bus fare,Transit Card,City Bus
+2024-01-01,Books,24.99,New kindle book,Credit Card,Amazon
+2024-01-01,Lunch,14.50,Salad and drink,Credit Card,Healthy Bowl
+2024-01-01,Gym,50.00,Monthly membership,Bank Transfer,City Gym
+2024-01-01,Transport,2.50,Bus home,Transit Card,City Bus
+2024-01-01,Snacks,3.99,Afternoon snack,Cash,Corner Store
+2024-01-01,Dinner,22.50,Pizza delivery,Credit Card,Pizza Place
+2024-01-01,Entertainment,12.99,Spotify premium,Credit Card,Online
+2023-12-31,Groceries,122.45,New Year's Eve shopping,Credit Card,Trader Joe's
+2023-12-31,Coffee,4.75,Morning coffee,Cash,Local Cafe
+2023-12-31,Transport,25.00,Uber to party,Credit Card,Uber
+2023-12-31,Entertainment,45.00,New Year's Eve party ticket,Cash,City Venue
+2023-12-31,Dinner,65.00,New Year's Eve dinner,Credit Card,Nice Restaurant
+2023-12-31,Transport,22.00,Uber home,Credit Card,Uber
+2023-12-30,Groceries,45.99,Basic supplies,Credit Card,Local Market
+2023-12-30,Coffee,4.75,Morning coffee,Cash,Local Cafe
+2023-12-30,Transport,2.50,Bus fare,Transit Card,City Bus
+2023-12-30,Lunch,11.99,Burger and fries,Credit Card,Burger Shop
+2023-12-30,Shopping,89.99,New running shoes,Credit Card,Sports Store
+2023-12-30,Transport,2.50,Bus home,Transit Card,City Bus
+2023-12-30,Dinner,18.99,Chinese takeout,Credit Card,Dragon Wok
+2023-12-30,Entertainment,25.00,Movie tickets,Credit Card,Cinema
+2023-12-29,Groceries,67.89,Midweek grocery run,Credit Card,Whole Foods
+2023-12-29,Coffee,4.75,Morning coffee,Cash,Local Cafe
+2023-12-29,Transport,2.50,Bus fare,Transit Card,City Bus
+2023-12-29,Healthcare,25.00,Prescription refill,Credit Card,Pharmacy
+2023-12-29,Lunch,13.50,Poke bowl,Credit Card,Poke Place
+2023-12-29,Coffee,3.95,Afternoon coffee,Cash,Starbucks
+2023-12-29,Transport,2.50,Bus home,Transit Card,City Bus
+2023-12-29,Dinner,32.00,Restaurant with friends,Credit Card,Italian Place

@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3f18866ac372b42b",
+        "id": "670c0dd3f033f6aa",
         "type": "tabs",
         "children": [
           {
-            "id": "95b49a622812219d",
+            "id": "22b25587a4201116",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Welcome to SQLSeal.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Welcome to SQLSeal"
-            }
-          },
-          {
-            "id": "61af2ca42f1bedab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Basics"
+              "title": "New tab"
             }
           }
         ]
@@ -170,12 +152,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,41 +168,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "95b49a622812219d",
+  "active": "22b25587a4201116",
   "lastOpenFiles": [
-    "Basics.md",
-    "Welcome to SQLSeal.md",
-    "Movies/watchlist.csv",
-    "Data/transport.csv",
-    "Data/finance.csv",
-    "Dashboards/Finance.md",
-    "Dashboards/Friends.md",
+    "Showcase/01 Recursive CTE/Space Mission.md",
+    "Showcase/01 Recursive CTE/data.csv",
+    "Dashboards/Books.md",
+    "Books/Nineteen Eighty-Four.md",
+    "Books/Cat's Cradle.md",
+    "Books/Quiet.md",
     "Dashboards/To Sort Dashboard.md",
-    "New Years Party.md",
-    "Vacation plans todo.md",
-    "Dashboards/Commute.md",
-    "Daily/2024-12-19.md",
-    "Daily/2024-12-20.md",
-    "Daily/2024-01-02.md",
-    "Daily/2024-01-01.md",
-    "Experiments.md",
-    "Recipes",
-    "Friends/Martha.md",
-    "Friends/Jessica.md",
-    "Friends/Jack.md",
-    "Daily.md",
-    "data.md",
-    "Friends/_assets/jack.jpg",
-    "Friends/_assets/jessica.jpg",
-    "Friends/_assets/martha.jpg",
-    "Friends/_assets",
+    "Daily/Untitled.md",
+    "Data/books.csv",
+    "Notes/Vacation plans todo.md",
+    "Books",
+    "test.md",
+    "Notes/New Years Party.md",
+    "Notes",
+    "Basics.md",
     "Weekly/2024-W51.md",
     "Weekly/2024-W01.md",
-    "Weekly",
-    "Friends",
-    "Dashboards",
-    "Life/transport.csv.md",
-    "Movies",
-    "Data"
+    "Showcase/Readme.md",
+    "Movies/watchlist.csv",
+    "Movies/ratings.csv",
+    "Data/transport.csv",
+    "Data/finance.csv",
+    "Data/expenses.csv",
+    "Dashboards/Statistics.md",
+    "Dashboards/Friends.md",
+    "Dashboards/Finance.md",
+    "Dashboards/Commute.md",
+    "Daily/2024-12-23.md",
+    "Daily/2024-12-24.md",
+    "Daily/2024-12-25.md",
+    "Daily/2024-12-26.md",
+    "Daily/2024-12-19.md",
+    "Daily/2024-01-02.md",
+    "Daily/2024-01-01.md",
+    "Showcase/01 Recursive CTE",
+    "Friends/_assets/jack.jpg",
+    "Friends/_assets/jessica.jpg",
+    "Friends/_assets/martha.jpg"
   ]
 }

@@ -8,6 +8,7 @@
     "year": "number",
     "likes": "multitext",
     "meditate": "checkbox",
-    "guests": "text"
+    "guests": "text",
+    "owned": "checkbox"
   }
 }

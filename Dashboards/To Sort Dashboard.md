@@ -1,4 +1,7 @@
-This dashboard shows notes that you have "TODO". These can be notes that have TODO in their name or have todo tag assigned to them.
+
+> [!NOTE] Description
+> This dashboard shows notes that you have "TODO". These can be notes that have TODO in their name or have todo tag assigned to them.
+> It shows how you can filter your notes by name or a tag.
 
 
 ```sqlseal

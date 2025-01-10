@@ -10,7 +10,7 @@ The project consists of
 - Dashboards - aggregation of some of these data.
 
 
-I recommend to start with the [[Basics]] file first and then explore vault on your own.
+I recommend to start with the [[Basics]] file first and then explore the vault on your own.
 
 
 

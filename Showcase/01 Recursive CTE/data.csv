@@ -1,0 +1,15 @@
+id,parent_id,name,priority,estimated_hours
+1,,Launch Mars Colony Mission,1,2000
+2,1,Train Space Hamsters,2,240
+3,2,Design Hamster Space Suits,3,72
+4,2,Teach Hamsters to Drive Rovers,2,168
+5,1,Build Colony Infrastructure,1,720
+6,5,Install Hamster Wheels Power Grid,2,168
+7,5,Build Underground Cheese Storage,3,96
+8,1,Establish Communication Systems,1,360
+9,8,Train Hamsters in Morse Code,2,120
+10,8,Install Space-to-Earth WhatsApp,3,48
+11,1,Plan Entertainment Activities,3,168
+12,11,Set Up Zero-G Hamster Olympics,3,72
+13,11,Build Mini Hamster Cinema,3,48
+14,11,Create Hamster Dating App,3,48
