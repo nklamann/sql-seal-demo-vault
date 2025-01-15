@@ -1,0 +1,4 @@
+---
+categories:
+  - "[[Category 1]]"
+---
