@@ -9,6 +9,7 @@
     "likes": "multitext",
     "meditate": "checkbox",
     "guests": "text",
-    "owned": "checkbox"
+    "owned": "checkbox",
+    "categories": "multitext"
   }
 }

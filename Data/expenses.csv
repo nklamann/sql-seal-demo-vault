@@ -12,7 +12,7 @@ date,category,amount,description,payment_method,location
 2024-01-01,Coffee,4.75,Morning coffee,Cash,Local Cafe
 2024-01-01,Transport,2.50,Bus fare,Transit Card,City Bus
 2024-01-01,Books,24.99,New kindle book,Credit Card,Amazon
-2024-01-01,Lunch,14.50,Salad and drink,Credit Card,Healthy Bowl
+2024-01-01,Lunch,14.55,Salad and drink,Credit Card,Healthy Bowl
 2024-01-01,Gym,50.00,Monthly membership,Bank Transfer,City Gym
 2024-01-01,Transport,2.50,Bus home,Transit Card,City Bus
 2024-01-01,Snacks,3.99,Afternoon snack,Cash,Corner Store
@@ -40,3 +40,4 @@ date,category,amount,description,payment_method,location
 2023-12-29,Coffee,3.95,Afternoon coffee,Cash,Starbucks
 2023-12-29,Transport,2.50,Bus home,Transit Card,City Bus
 2023-12-29,Dinner,32.00,Restaurant with friends,Credit Card,Italian Place
+2024-01-02,Dinner,50,,,
