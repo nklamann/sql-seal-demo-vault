@@ -1,4 +1,5 @@
 [
   "calendar",
-  "sqlseal"
+  "sqlseal",
+  "sqlseal-charts"
 ]
