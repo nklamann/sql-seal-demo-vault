@@ -1,7 +1,7 @@
 This is an example vault showcasing functionality of [SQLSeal](https://github.com/h-sphere/sql-seal) Obsidian Plugin.
 
 # Use
-[Download](https://github.com/h-sphere/sql-seal/archive/refs/heads/main.zip) this project, unpack it and load it in Obsidian. It is already preinstalled with latest version of SQLSeal and contains useful examples and CSV files to get you started.
+[Download](https://github.com/h-sphere/sql-seal-demo-vault/archive/refs/heads/main.zip) this project, unpack it and load it in Obsidian. It is already preinstalled with latest version of SQLSeal and contains useful examples and CSV files to get you started.
 
 # Contributing
 You like the project? Great! Here are ways for you to contribute to it:
