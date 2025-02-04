@@ -5,9 +5,10 @@
 | Category      | Amount |
 | ------------- | ------ |
 | Rent          | 1500   |
-| Groceries     | 200    |
-| Entertainment | 150    |
+| Groceries     | 300    |
+| Entertainment | 350    |
 | Repairs       | 200    |
+| Utilities     | 300    |
 ```sqlseal
 TABLE finances = table(0)
 
