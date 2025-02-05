@@ -1,5 +1,7 @@
 ---
 geändert: "true"
+prefer-view: edit
+หมวดหมู่: note
 ---
 # Thai in the database
 
@@ -19,11 +21,12 @@ GROUP BY province_thai
 # German in the Properties
 
 > [!NOTE] Special characters transformations
-> If your column contains special character, it will get transformed to `_`. That's why `geändert` below is transformed to `ge_ndert`. This should be fixed in the later versions of the plugin to allow you for nicer character escaping.
+> If your column contains special character, it will get transformed to its romanised form. That's why `geändert` below is transformed to `geandert`.
 
 
 ```sqlseal
 HTML
-SELECT name, ge_ndert FROM files
-WHERE ge_ndert IS NOT NULL
+SELECT name, geandert, prefer_view FROM files
+WHERE geandert IS NOT NULL
 ```
+

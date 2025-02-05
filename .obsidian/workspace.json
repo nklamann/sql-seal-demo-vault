@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "65de295ce0899e8f",
+        "id": "7104c35b3dfa2792",
         "type": "tabs",
         "children": [
           {
-            "id": "506d099b7a920de1",
+            "id": "ea61e197f32a944c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Showcase/02 Languages/Languages.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Languages"
+            }
+          },
+          {
+            "id": "e94f2ee00c568143",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tags.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tags"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -36,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -156,7 +176,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,44 +189,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "506d099b7a920de1",
+  "active": "e94f2ee00c568143",
   "lastOpenFiles": [
-    "Showcase/03 JSON Operations/JSON Operations.md",
-    "Showcase/03 JSON Operations/collection/Note 3.md",
-    "Showcase/03 JSON Operations/collection/Note 1.md",
-    "Showcase/03 JSON Operations/collection/Category 2.md",
-    "Showcase/03 JSON Operations/collection/Category 3.md",
-    "Showcase/03 JSON Operations/collection/Category 1.md",
-    "Showcase/03 JSON Operations/collection/Note 2.md",
-    "README.md",
-    "Movies.md",
-    "Welcome to SQLSeal.md",
-    "Demo.md",
-    "Basics.md",
-    "JSON example.md",
-    "Showcase/03 JSON Operations/collection",
     "Showcase/02 Languages/Languages.md",
-    "Showcase/03 JSON Operations",
-    "Category 2.md",
-    "Showcase/Readme.md",
-    "Showcase/01 Recursive CTE/SQLite Examples.md",
-    "Showcase/01 Recursive CTE/Space Mission.md",
-    "Data/thailand_domestic_tourism_2019_2023.csv",
-    "Showcase/02 Languages",
-    "Daily/2024-01-02.md",
-    "Daily/2024-12-19.md",
-    "Data/expenses.csv",
-    "Notes/New Years Party.md",
-    "Notes/Vacation plans todo.md",
+    "Tags.md",
+    "Jailbird.md",
+    "Showcase/06 Goodreads books/Books.md",
     "Daily/2024-01-01.md",
-    "Daily/2024-12-26.md",
-    "Daily/2024-12-25.md",
-    "Daily/2024-12-24.md",
-    "Showcase/01 Recursive CTE/data.csv",
-    "Data/books.csv",
-    "Books",
-    "Notes",
+    "Daily/2024-01-02.md",
+    "Daily/2024-12-20.md",
+    "Daily/2024-12-21.md",
+    "Daily/2024-12-19.md",
+    "Charts/Mode of Commute (Stacked Bar).md",
+    "Charts/Pie Chart.md",
+    "Charts/Bar Chart.md",
+    "Data/transport.csv",
+    "Dashboards/Books.md",
+    "Showcase/06 Goodreads books/books.csv",
+    "Showcase/06 Goodreads books",
+    "Dashboards/Commute.md",
+    "Dashboards/Finance.md",
+    "Dashboards/Friends.md",
+    "Dashboards/Statistics.md",
+    "Dashboards/To Sort Dashboard.md",
+    "Daily/2024-12-22.md",
+    "Recently Modified.md",
+    "Books/Quiet.md",
+    "Books/Nineteen Eighty-Four.md",
+    "Books/Cat's Cradle.md",
+    "Data/thailand_domestic_tourism_2019_2023.csv",
+    "Data/finance.csv",
+    "Movies/ratings.csv",
     "Movies/watchlist.csv",
+    "Weekly/2024-W01.md",
+    "Weekly/2024-W51.md",
+    "Data/expenses.csv",
+    "Charts",
+    "Basics.md",
+    "highlight/sqlseal.json",
     "Friends/_assets/jack.jpg",
     "Friends/_assets/jessica.jpg",
     "Friends/_assets/martha.jpg"
