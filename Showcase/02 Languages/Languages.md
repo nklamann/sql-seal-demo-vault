@@ -12,7 +12,9 @@ prefer-view: edit
 ```sqlseal
 TABLE thailand_tourism = file(Data/thailand_domestic_tourism_2019_2023.csv)
 
-SELECT province_thai, AVG(value) as average_value  FROM thailand_tourism
+SELECT province_thai,
+	AVG(value) as average_value
+FROM thailand_tourism
 WHERE region_thai='ภาคกลาง'
 GROUP BY province_thai
 ```

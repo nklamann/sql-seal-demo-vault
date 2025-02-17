@@ -16,7 +16,10 @@ TABLE expenses = table(0)
 ```sqlseal
 TABLE expenses = table(0)
 
-markdown
+EXPLAIN
+REFRESH
+
+HTML
 SELECT date, ROUND(SUM(Amount), 2) as Spent
 FROM expenses
 GROUP BY date

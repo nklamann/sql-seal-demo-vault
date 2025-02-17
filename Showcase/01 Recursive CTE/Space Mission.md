@@ -1,14 +1,19 @@
 Space mission example
 
-> [!ERROR] Multiple SELECTS not supported
-> Due to an error multiple selects are not supported at the moment, even in the nested UNIONS where it should not be a problem. Due to that this example does not work YET.
+> [!NOTE] Recursive CTE
+> Here you can see advanced, recursive CTE that iterates over graph of dependencies.
 
 
 ```sqlseal
-
+-- the data from data.csv file will be available as a space_tasks table.
 TABLE space_tasks = file(./data.csv)
 
-HTML
+-- renderer definition
+HTML 
+
+/*
+this is main query, it uses CTE compute data. It uses Recursive CTE to traverse depenencies from the leaves (no parent) all the way up.
+*/
 WITH task_tree AS (
     SELECT 
         id, 
@@ -20,8 +25,6 @@ WITH task_tree AS (
         CAST(name as TEXT) as path
     FROM space_tasks 
     WHERE parent_id IS NULL
-
-
     UNION ALL
     
     SELECT 

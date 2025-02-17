@@ -2,7 +2,6 @@ SQLSeal will sanitise headers in your query. If your query has characters which 
 
 ```sqlseal
 TABLE file = file(file.csv)
-
 HTML
 SELECT * FROM file
 ```
