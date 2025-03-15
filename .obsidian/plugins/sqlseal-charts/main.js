@@ -70,9 +70,9 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/lodash/lodash.js
+// node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js
 var require_lodash = __commonJS({
-  "node_modules/lodash/lodash.js"(exports, module2) {
+  "node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"(exports, module2) {
     (function() {
       var undefined2;
       var VERSION = "4.17.21";
@@ -685,9 +685,9 @@ var require_lodash = __commonJS({
         });
         return result;
       }
-      function overArg(func, transform2) {
+      function overArg(func, transform3) {
         return function(arg) {
-          return func(transform2(arg));
+          return func(transform3(arg));
         };
       }
       function replaceHolders(array, placeholder) {
@@ -3080,7 +3080,7 @@ var require_lodash = __commonJS({
         function objectToString(value) {
           return nativeObjectToString.call(value);
         }
-        function overRest(func, start2, transform3) {
+        function overRest(func, start2, transform4) {
           start2 = nativeMax(start2 === undefined2 ? func.length - 1 : start2, 0);
           return function() {
             var args = arguments, index = -1, length = nativeMax(args.length - start2, 0), array = Array2(length);
@@ -3092,7 +3092,7 @@ var require_lodash = __commonJS({
             while (++index < start2) {
               otherArgs[index] = args[index];
             }
-            otherArgs[start2] = transform3(array);
+            otherArgs[start2] = transform4(array);
             return apply(func, this, otherArgs);
           };
         }
@@ -3529,7 +3529,7 @@ var require_lodash = __commonJS({
         function uniq2(array) {
           return array && array.length ? baseUniq(array) : [];
         }
-        function uniqBy2(array, iteratee2) {
+        function uniqBy3(array, iteratee2) {
           return array && array.length ? baseUniq(array, getIteratee(iteratee2, 2)) : [];
         }
         function uniqWith(array, comparator) {
@@ -4507,7 +4507,7 @@ var require_lodash = __commonJS({
         }
         var toPairs = createToPairs(keys2);
         var toPairsIn = createToPairs(keysIn);
-        function transform2(object, iteratee2, accumulator) {
+        function transform3(object, iteratee2, accumulator) {
           var isArr = isArray4(object), isArrLike = isArr || isBuffer(object) || isTypedArray2(object);
           iteratee2 = getIteratee(iteratee2, 4);
           if (accumulator == null) {
@@ -5183,13 +5183,13 @@ var require_lodash = __commonJS({
         lodash.toPairsIn = toPairsIn;
         lodash.toPath = toPath;
         lodash.toPlainObject = toPlainObject;
-        lodash.transform = transform2;
+        lodash.transform = transform3;
         lodash.unary = unary;
         lodash.union = union;
         lodash.unionBy = unionBy;
         lodash.unionWith = unionWith;
         lodash.uniq = uniq2;
-        lodash.uniqBy = uniqBy2;
+        lodash.uniqBy = uniqBy3;
         lodash.uniqWith = uniqWith;
         lodash.unset = unset;
         lodash.unzip = unzip;
@@ -5550,6 +5550,1429 @@ var require_lodash = __commonJS({
   }
 });
 
+// node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/dist/ecStat.js
+var require_ecStat = __commonJS({
+  "node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/dist/ecStat.js"(exports, module2) {
+    (function webpackUniversalModuleDefinition(root, factory) {
+      if (typeof exports === "object" && typeof module2 === "object")
+        module2.exports = factory();
+      else if (typeof define === "function" && define.amd)
+        define([], factory);
+      else if (typeof exports === "object")
+        exports["ecStat"] = factory();
+      else
+        root["ecStat"] = factory();
+    })(exports, function() {
+      return (
+        /******/
+        function(modules) {
+          var installedModules = {};
+          function __webpack_require__(moduleId) {
+            if (installedModules[moduleId])
+              return installedModules[moduleId].exports;
+            var module3 = installedModules[moduleId] = {
+              /******/
+              exports: {},
+              /******/
+              id: moduleId,
+              /******/
+              loaded: false
+              /******/
+            };
+            modules[moduleId].call(module3.exports, module3, module3.exports, __webpack_require__);
+            module3.loaded = true;
+            return module3.exports;
+          }
+          __webpack_require__.m = modules;
+          __webpack_require__.c = installedModules;
+          __webpack_require__.p = "";
+          return __webpack_require__(0);
+        }([
+          /* 0 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              return {
+                clustering: __webpack_require__(1),
+                regression: __webpack_require__(5),
+                statistics: __webpack_require__(6),
+                histogram: __webpack_require__(15),
+                transform: {
+                  regression: __webpack_require__(18),
+                  histogram: __webpack_require__(21),
+                  clustering: __webpack_require__(22)
+                }
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 1 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var dataProcess = __webpack_require__(2);
+              var dataPreprocess = dataProcess.dataPreprocess;
+              var normalizeDimensions2 = dataProcess.normalizeDimensions;
+              var arrayUtil = __webpack_require__(3);
+              var numberUtil = __webpack_require__(4);
+              var arraySize = arrayUtil.size;
+              var sumOfColumn = arrayUtil.sumOfColumn;
+              var arraySum = arrayUtil.sum;
+              var zeros = arrayUtil.zeros;
+              var numberUtil = __webpack_require__(4);
+              var isNumber2 = numberUtil.isNumber;
+              var mathPow4 = Math.pow;
+              var OutputType = {
+                /**
+                 * Data are all in one. Cluster info are added as an attribute of data.
+                 * ```ts
+                 * type OutputDataSingle = {
+                 *     // Each index of `data` is the index of the input data.
+                 *     data: OutputDataItem[];
+                 *     // The index of `centroids` is the cluster index.
+                 *     centroids: [ValueOnX, ValueOnY][];
+                 * };
+                 * type InputDataItem = (ValueOnX | ValueOnY | OtherValue)[];
+                 * type OutputDataItem = (...InputDataItem | ClusterIndex | SquareDistanceToCentroid)[];
+                 * ```
+                 */
+                SINGLE: "single",
+                /**
+                 * Data are separated by cluster. Suitable for retrieving data form each cluster.
+                 * ```ts
+                 * type OutputDataMultiple = {
+                 *     // Each index of `clusterAssment` is the index of the input data.
+                 *     clusterAssment: [ClusterIndex, SquareDistanceToCentroid][];
+                 *     // The index of `centroids` is the cluster index.
+                 *     centroids: [ValueOnX, ValueOnY][];
+                 *     // The index of `pointsInCluster` is the cluster index.
+                 *     pointsInCluster: DataItemListInOneCluster[];
+                 * }
+                 * type DataItemListInOneCluster = InputDataItem[];
+                 * type InputDataItem = (ValueOnX | ValueOnY | OtherValue)[];
+                 * type SquareDistanceToCentroid = number;
+                 * type ClusterIndex = number;
+                 * type ValueOnX = number;
+                 * type ValueOnY = number;
+                 * type OtherValue = unknown;
+                 * ```
+                 */
+                MULTIPLE: "multiple"
+              };
+              function kMeans(data2, k, dataMeta) {
+                var clusterAssigned = zeros(data2.length, 2);
+                var centroids = createRandCent(k, calcExtents(data2, dataMeta.dimensions));
+                var clusterChanged = true;
+                var minDist;
+                var minIndex;
+                var distIJ;
+                var ptsInClust;
+                while (clusterChanged) {
+                  clusterChanged = false;
+                  for (var i = 0; i < data2.length; i++) {
+                    minDist = Infinity;
+                    minIndex = -1;
+                    for (var j = 0; j < k; j++) {
+                      distIJ = distEuclid(data2[i], centroids[j], dataMeta);
+                      if (distIJ < minDist) {
+                        minDist = distIJ;
+                        minIndex = j;
+                      }
+                    }
+                    if (clusterAssigned[i][0] !== minIndex) {
+                      clusterChanged = true;
+                    }
+                    clusterAssigned[i][0] = minIndex;
+                    clusterAssigned[i][1] = minDist;
+                  }
+                  for (var i = 0; i < k; i++) {
+                    ptsInClust = [];
+                    for (var j = 0; j < clusterAssigned.length; j++) {
+                      if (clusterAssigned[j][0] === i) {
+                        ptsInClust.push(data2[j]);
+                      }
+                    }
+                    centroids[i] = meanInColumns(ptsInClust, dataMeta);
+                  }
+                }
+                var clusterWithKmeans = {
+                  centroids,
+                  clusterAssigned
+                };
+                return clusterWithKmeans;
+              }
+              function meanInColumns(dataList, dataMeta) {
+                var meanArray = [];
+                var sum2;
+                var mean2;
+                for (var j = 0; j < dataMeta.dimensions.length; j++) {
+                  var dimIdx = dataMeta.dimensions[j];
+                  sum2 = 0;
+                  for (var i = 0; i < dataList.length; i++) {
+                    sum2 += dataList[i][dimIdx];
+                  }
+                  mean2 = sum2 / dataList.length;
+                  meanArray.push(mean2);
+                }
+                return meanArray;
+              }
+              function hierarchicalKMeans(data2, clusterCountOrConfig, stepByStep) {
+                var config = (isNumber2(clusterCountOrConfig) ? { clusterCount: clusterCountOrConfig, stepByStep } : clusterCountOrConfig) || { clusterCount: 2 };
+                var k = config.clusterCount;
+                if (k < 2) {
+                  return;
+                }
+                var dataMeta = parseDataMeta(data2, config);
+                var isOutputTypeSingle = dataMeta.outputType === OutputType.SINGLE;
+                var dataSet = dataPreprocess(data2, { dimensions: dataMeta.dimensions });
+                var clusterAssment = zeros(dataSet.length, 2);
+                var outputSingleData;
+                var setClusterIndex;
+                var getClusterIndex;
+                function setDistance(dataIndex, dist4) {
+                  clusterAssment[dataIndex][1] = dist4;
+                }
+                function getDistance(dataIndex) {
+                  return clusterAssment[dataIndex][1];
+                }
+                ;
+                if (isOutputTypeSingle) {
+                  outputSingleData = [];
+                  var outputClusterIndexDimension = dataMeta.outputClusterIndexDimension;
+                  setClusterIndex = function(dataIndex, clusterIndex) {
+                    outputSingleData[dataIndex][outputClusterIndexDimension] = clusterIndex;
+                  };
+                  getClusterIndex = function(dataIndex) {
+                    return outputSingleData[dataIndex][outputClusterIndexDimension];
+                  };
+                  for (var i = 0; i < dataSet.length; i++) {
+                    outputSingleData.push(dataSet[i].slice());
+                    setDistance(i, 0);
+                    setClusterIndex(i, 0);
+                  }
+                } else {
+                  setClusterIndex = function(dataIndex, clusterIndex) {
+                    clusterAssment[dataIndex][0] = clusterIndex;
+                  };
+                  getClusterIndex = function(dataIndex) {
+                    return clusterAssment[dataIndex][0];
+                  };
+                }
+                var centroid0 = meanInColumns(dataSet, dataMeta);
+                var centList = [centroid0];
+                for (var i = 0; i < dataSet.length; i++) {
+                  var dist3 = distEuclid(dataSet[i], centroid0, dataMeta);
+                  setDistance(i, dist3);
+                }
+                var lowestSSE;
+                var ptsInClust;
+                var ptsNotClust;
+                var clusterInfo;
+                var sseSplit;
+                var sseNotSplit;
+                var index = 1;
+                var result = {
+                  data: outputSingleData,
+                  centroids: centList,
+                  isEnd: false
+                };
+                if (!isOutputTypeSingle) {
+                  result.clusterAssment = clusterAssment;
+                }
+                function oneStep() {
+                  if (index < k) {
+                    lowestSSE = Infinity;
+                    var centSplit;
+                    var newCentroid;
+                    var newClusterAss;
+                    for (var j = 0; j < centList.length; j++) {
+                      ptsInClust = [];
+                      ptsNotClust = [];
+                      for (var i2 = 0; i2 < dataSet.length; i2++) {
+                        if (getClusterIndex(i2) === j) {
+                          ptsInClust.push(dataSet[i2]);
+                        } else {
+                          ptsNotClust.push(getDistance(i2));
+                        }
+                      }
+                      clusterInfo = kMeans(ptsInClust, 2, dataMeta);
+                      sseSplit = sumOfColumn(clusterInfo.clusterAssigned, 1);
+                      sseNotSplit = arraySum(ptsNotClust);
+                      if (sseSplit + sseNotSplit < lowestSSE) {
+                        lowestSSE = sseNotSplit + sseSplit;
+                        centSplit = j;
+                        newCentroid = clusterInfo.centroids;
+                        newClusterAss = clusterInfo.clusterAssigned;
+                      }
+                    }
+                    for (var i2 = 0; i2 < newClusterAss.length; i2++) {
+                      if (newClusterAss[i2][0] === 0) {
+                        newClusterAss[i2][0] = centSplit;
+                      } else if (newClusterAss[i2][0] === 1) {
+                        newClusterAss[i2][0] = centList.length;
+                      }
+                    }
+                    centList[centSplit] = newCentroid[0];
+                    centList.push(newCentroid[1]);
+                    for (var i2 = 0, j = 0; i2 < dataSet.length && j < newClusterAss.length; i2++) {
+                      if (getClusterIndex(i2) === centSplit) {
+                        setClusterIndex(i2, newClusterAss[j][0]);
+                        setDistance(i2, newClusterAss[j++][1]);
+                      }
+                    }
+                    var pointInClust = [];
+                    if (!isOutputTypeSingle) {
+                      for (var i2 = 0; i2 < centList.length; i2++) {
+                        pointInClust[i2] = [];
+                        for (var j = 0; j < dataSet.length; j++) {
+                          if (getClusterIndex(j) === i2) {
+                            pointInClust[i2].push(dataSet[j]);
+                          }
+                        }
+                      }
+                      result.pointsInCluster = pointInClust;
+                    }
+                    index++;
+                  } else {
+                    result.isEnd = true;
+                  }
+                }
+                if (!config.stepByStep) {
+                  while (oneStep(), !result.isEnd) ;
+                } else {
+                  result.next = function() {
+                    oneStep();
+                    setCentroidToResultData(result, dataMeta);
+                    return result;
+                  };
+                }
+                setCentroidToResultData(result, dataMeta);
+                return result;
+              }
+              function setCentroidToResultData(result, dataMeta) {
+                var outputCentroidDimensions = dataMeta.outputCentroidDimensions;
+                if (dataMeta.outputType !== OutputType.SINGLE || outputCentroidDimensions == null) {
+                  return;
+                }
+                var outputSingleData = result.data;
+                var centroids = result.centroids;
+                for (var i = 0; i < outputSingleData.length; i++) {
+                  var line = outputSingleData[i];
+                  var clusterIndex = line[dataMeta.outputClusterIndexDimension];
+                  var centroid3 = centroids[clusterIndex];
+                  var dimLen = Math.min(centroid3.length, outputCentroidDimensions.length);
+                  for (var j = 0; j < dimLen; j++) {
+                    line[outputCentroidDimensions[j]] = centroid3[j];
+                  }
+                }
+              }
+              function createRandCent(k, extents) {
+                var centroids = zeros(k, extents.length);
+                for (var j = 0; j < extents.length; j++) {
+                  var extentItem = extents[j];
+                  for (var i = 0; i < k; i++) {
+                    centroids[i][j] = extentItem.min + extentItem.span * Math.random();
+                  }
+                }
+                return centroids;
+              }
+              function distEuclid(dataItem, centroid3, dataMeta) {
+                var powerSum = 0;
+                var dimensions = dataMeta.dimensions;
+                var extents = dataMeta.rawExtents;
+                for (var i = 0; i < dimensions.length; i++) {
+                  var span = extents[i].span;
+                  if (span) {
+                    var dimIdx = dimensions[i];
+                    var dist3 = (dataItem[dimIdx] - centroid3[i]) / span;
+                    powerSum += mathPow4(dist3, 2);
+                  }
+                }
+                return powerSum;
+              }
+              function parseDataMeta(dataSet, config) {
+                var size = arraySize(dataSet);
+                if (size.length < 1) {
+                  throw new Error("The input data of clustering should be two-dimension array.");
+                }
+                var colCount = size[1];
+                var defaultDimensions = [];
+                for (var i = 0; i < colCount; i++) {
+                  defaultDimensions.push(i);
+                }
+                var dimensions = normalizeDimensions2(config.dimensions, defaultDimensions);
+                var outputType = config.outputType || OutputType.MULTIPLE;
+                var outputClusterIndexDimension = config.outputClusterIndexDimension;
+                if (outputType === OutputType.SINGLE && !numberUtil.isNumber(outputClusterIndexDimension)) {
+                  throw new Error("outputClusterIndexDimension is required as a number.");
+                }
+                var extents = calcExtents(dataSet, dimensions);
+                return {
+                  dimensions,
+                  rawExtents: extents,
+                  outputType,
+                  outputClusterIndexDimension,
+                  outputCentroidDimensions: config.outputCentroidDimensions
+                };
+              }
+              function calcExtents(dataSet, dimensions) {
+                var extents = [];
+                var dimLen = dimensions.length;
+                for (var i = 0; i < dimLen; i++) {
+                  extents.push({ min: Infinity, max: -Infinity });
+                }
+                for (var i = 0; i < dataSet.length; i++) {
+                  var line = dataSet[i];
+                  for (var j = 0; j < dimLen; j++) {
+                    var extentItem = extents[j];
+                    var val = line[dimensions[j]];
+                    extentItem.min > val && (extentItem.min = val);
+                    extentItem.max < val && (extentItem.max = val);
+                  }
+                }
+                for (var i = 0; i < dimLen; i++) {
+                  extents[i].span = extents[i].max - extents[i].min;
+                }
+                return extents;
+              }
+              return {
+                OutputType,
+                hierarchicalKMeans
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 2 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var array = __webpack_require__(3);
+              var isArray4 = array.isArray;
+              var size = array.size;
+              var number = __webpack_require__(4);
+              var isNumber2 = number.isNumber;
+              function normalizeDimensions2(dimensions, defaultDimensions) {
+                return typeof dimensions === "number" ? [dimensions] : dimensions == null ? defaultDimensions : dimensions;
+              }
+              function dataPreprocess(data2, opt) {
+                opt = opt || {};
+                var dimensions = opt.dimensions;
+                var numberDimensionMap = {};
+                if (dimensions != null) {
+                  for (var i = 0; i < dimensions.length; i++) {
+                    numberDimensionMap[dimensions[i]] = true;
+                  }
+                }
+                var targetOneDim = opt.toOneDimensionArray ? dimensions ? dimensions[0] : 0 : null;
+                function shouldBeNumberDimension(dimIdx) {
+                  return !dimensions || numberDimensionMap.hasOwnProperty(dimIdx);
+                }
+                if (!isArray4(data2)) {
+                  throw new Error("Invalid data type, you should input an array");
+                }
+                var predata = [];
+                var arraySize = size(data2);
+                if (arraySize.length === 1) {
+                  for (var i = 0; i < arraySize[0]; i++) {
+                    var item = data2[i];
+                    if (isNumber2(item)) {
+                      predata.push(item);
+                    }
+                  }
+                } else if (arraySize.length === 2) {
+                  for (var i = 0; i < arraySize[0]; i++) {
+                    var isCorrect = true;
+                    var item = data2[i];
+                    for (var j = 0; j < arraySize[1]; j++) {
+                      if (shouldBeNumberDimension(j) && !isNumber2(item[j])) {
+                        isCorrect = false;
+                      }
+                    }
+                    if (isCorrect) {
+                      predata.push(
+                        targetOneDim != null ? item[targetOneDim] : item
+                      );
+                    }
+                  }
+                }
+                return predata;
+              }
+              function getPrecision2(val) {
+                var str = val.toString();
+                var dotIndex = str.indexOf(".");
+                return dotIndex < 0 ? 0 : str.length - 1 - dotIndex;
+              }
+              return {
+                normalizeDimensions: normalizeDimensions2,
+                dataPreprocess,
+                getPrecision: getPrecision2
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 3 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var objToString2 = Object.prototype.toString;
+              var arrayProto2 = Array.prototype;
+              var nativeMap2 = arrayProto2.map;
+              function size(data2) {
+                var s = [];
+                while (isArray4(data2)) {
+                  s.push(data2.length);
+                  data2 = data2[0];
+                }
+                return s;
+              }
+              function isArray4(value) {
+                return objToString2.call(value) === "[object Array]";
+              }
+              function zeros(m2, n) {
+                var zeroArray = [];
+                for (var i = 0; i < m2; i++) {
+                  zeroArray[i] = [];
+                  for (var j = 0; j < n; j++) {
+                    zeroArray[i][j] = 0;
+                  }
+                }
+                return zeroArray;
+              }
+              function sum2(vector) {
+                var sum3 = 0;
+                for (var i = 0; i < vector.length; i++) {
+                  sum3 += vector[i];
+                }
+                return sum3;
+              }
+              function sumOfColumn(dataList, n) {
+                var sum3 = 0;
+                for (var i = 0; i < dataList.length; i++) {
+                  sum3 += dataList[i][n];
+                }
+                return sum3;
+              }
+              function ascending(a, b) {
+                return a > b ? 1 : a < b ? -1 : a === b ? 0 : NaN;
+              }
+              function bisect2(array, value, start2, end2) {
+                if (start2 == null) {
+                  start2 = 0;
+                }
+                if (end2 == null) {
+                  end2 = array.length;
+                }
+                while (start2 < end2) {
+                  var mid = Math.floor((start2 + end2) / 2);
+                  var compare2 = ascending(array[mid], value);
+                  if (compare2 > 0) {
+                    end2 = mid;
+                  } else if (compare2 < 0) {
+                    start2 = mid + 1;
+                  } else {
+                    return mid + 1;
+                  }
+                }
+                return start2;
+              }
+              function map3(obj, cb, context) {
+                if (!(obj && cb)) {
+                  return;
+                }
+                if (obj.map && obj.map === nativeMap2) {
+                  return obj.map(cb, context);
+                } else {
+                  var result = [];
+                  for (var i = 0, len2 = obj.length; i < len2; i++) {
+                    result.push(cb.call(context, obj[i], i, obj));
+                  }
+                  return result;
+                }
+              }
+              return {
+                size,
+                isArray: isArray4,
+                zeros,
+                sum: sum2,
+                sumOfColumn,
+                ascending,
+                bisect: bisect2,
+                map: map3
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 4 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              function isNumber2(value) {
+                value = value === null ? NaN : +value;
+                return typeof value === "number" && !isNaN(value);
+              }
+              function isInteger(value) {
+                return isFinite(value) && value === Math.round(value);
+              }
+              function quantityExponent2(val) {
+                if (val === 0) {
+                  return 0;
+                }
+                var exp = Math.floor(Math.log(val) / Math.LN10);
+                if (val / Math.pow(10, exp) >= 10) {
+                  exp++;
+                }
+                return exp;
+              }
+              return {
+                isNumber: isNumber2,
+                isInteger,
+                quantityExponent: quantityExponent2
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 5 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var dataProcess = __webpack_require__(2);
+              var dataPreprocess = dataProcess.dataPreprocess;
+              var normalizeDimensions2 = dataProcess.normalizeDimensions;
+              var regreMethods = {
+                /**
+                 * Common linear regression algorithm
+                 */
+                linear: function(predata, opt) {
+                  var xDimIdx = opt.dimensions[0];
+                  var yDimIdx = opt.dimensions[1];
+                  var sumX = 0;
+                  var sumY = 0;
+                  var sumXY = 0;
+                  var sumXX = 0;
+                  var len2 = predata.length;
+                  for (var i = 0; i < len2; i++) {
+                    var rawItem = predata[i];
+                    sumX += rawItem[xDimIdx];
+                    sumY += rawItem[yDimIdx];
+                    sumXY += rawItem[xDimIdx] * rawItem[yDimIdx];
+                    sumXX += rawItem[xDimIdx] * rawItem[xDimIdx];
+                  }
+                  var gradient = (len2 * sumXY - sumX * sumY) / (len2 * sumXX - sumX * sumX);
+                  var intercept = sumY / len2 - gradient * sumX / len2;
+                  var result = [];
+                  for (var j = 0; j < predata.length; j++) {
+                    var rawItem = predata[j];
+                    var resultItem = rawItem.slice();
+                    resultItem[xDimIdx] = rawItem[xDimIdx];
+                    resultItem[yDimIdx] = gradient * rawItem[xDimIdx] + intercept;
+                    result.push(resultItem);
+                  }
+                  var expression = "y = " + Math.round(gradient * 100) / 100 + "x + " + Math.round(intercept * 100) / 100;
+                  return {
+                    points: result,
+                    parameter: {
+                      gradient,
+                      intercept
+                    },
+                    expression
+                  };
+                },
+                /**
+                 * If the raw data include [0,0] point, we should choose linearThroughOrigin
+                 *   instead of linear.
+                 */
+                linearThroughOrigin: function(predata, opt) {
+                  var xDimIdx = opt.dimensions[0];
+                  var yDimIdx = opt.dimensions[1];
+                  var sumXX = 0;
+                  var sumXY = 0;
+                  for (var i = 0; i < predata.length; i++) {
+                    var rawItem = predata[i];
+                    sumXX += rawItem[xDimIdx] * rawItem[xDimIdx];
+                    sumXY += rawItem[xDimIdx] * rawItem[yDimIdx];
+                  }
+                  var gradient = sumXY / sumXX;
+                  var result = [];
+                  for (var j = 0; j < predata.length; j++) {
+                    var rawItem = predata[j];
+                    var resultItem = rawItem.slice();
+                    resultItem[xDimIdx] = rawItem[xDimIdx];
+                    resultItem[yDimIdx] = rawItem[xDimIdx] * gradient;
+                    result.push(resultItem);
+                  }
+                  var expression = "y = " + Math.round(gradient * 100) / 100 + "x";
+                  return {
+                    points: result,
+                    parameter: {
+                      gradient
+                    },
+                    expression
+                  };
+                },
+                /**
+                 * Exponential regression
+                 */
+                exponential: function(predata, opt) {
+                  var xDimIdx = opt.dimensions[0];
+                  var yDimIdx = opt.dimensions[1];
+                  var sumX = 0;
+                  var sumY = 0;
+                  var sumXXY = 0;
+                  var sumYlny = 0;
+                  var sumXYlny = 0;
+                  var sumXY = 0;
+                  for (var i = 0; i < predata.length; i++) {
+                    var rawItem = predata[i];
+                    sumX += rawItem[xDimIdx];
+                    sumY += rawItem[yDimIdx];
+                    sumXY += rawItem[xDimIdx] * rawItem[yDimIdx];
+                    sumXXY += rawItem[xDimIdx] * rawItem[xDimIdx] * rawItem[yDimIdx];
+                    sumYlny += rawItem[yDimIdx] * Math.log(rawItem[yDimIdx]);
+                    sumXYlny += rawItem[xDimIdx] * rawItem[yDimIdx] * Math.log(rawItem[yDimIdx]);
+                  }
+                  var denominator = sumY * sumXXY - sumXY * sumXY;
+                  var coefficient = Math.pow(Math.E, (sumXXY * sumYlny - sumXY * sumXYlny) / denominator);
+                  var index = (sumY * sumXYlny - sumXY * sumYlny) / denominator;
+                  var result = [];
+                  for (var j = 0; j < predata.length; j++) {
+                    var rawItem = predata[j];
+                    var resultItem = rawItem.slice();
+                    resultItem[xDimIdx] = rawItem[xDimIdx];
+                    resultItem[yDimIdx] = coefficient * Math.pow(Math.E, index * rawItem[xDimIdx]);
+                    result.push(resultItem);
+                  }
+                  var expression = "y = " + Math.round(coefficient * 100) / 100 + "e^(" + Math.round(index * 100) / 100 + "x)";
+                  return {
+                    points: result,
+                    parameter: {
+                      coefficient,
+                      index
+                    },
+                    expression
+                  };
+                },
+                /**
+                 * Logarithmic regression
+                 */
+                logarithmic: function(predata, opt) {
+                  var xDimIdx = opt.dimensions[0];
+                  var yDimIdx = opt.dimensions[1];
+                  var sumlnx = 0;
+                  var sumYlnx = 0;
+                  var sumY = 0;
+                  var sumlnxlnx = 0;
+                  for (var i = 0; i < predata.length; i++) {
+                    var rawItem = predata[i];
+                    sumlnx += Math.log(rawItem[xDimIdx]);
+                    sumYlnx += rawItem[yDimIdx] * Math.log(rawItem[xDimIdx]);
+                    sumY += rawItem[yDimIdx];
+                    sumlnxlnx += Math.pow(Math.log(rawItem[xDimIdx]), 2);
+                  }
+                  var gradient = (i * sumYlnx - sumY * sumlnx) / (i * sumlnxlnx - sumlnx * sumlnx);
+                  var intercept = (sumY - gradient * sumlnx) / i;
+                  var result = [];
+                  for (var j = 0; j < predata.length; j++) {
+                    var rawItem = predata[j];
+                    var resultItem = rawItem.slice();
+                    resultItem[xDimIdx] = rawItem[xDimIdx];
+                    resultItem[yDimIdx] = gradient * Math.log(rawItem[xDimIdx]) + intercept;
+                    result.push(resultItem);
+                  }
+                  var expression = "y = " + Math.round(intercept * 100) / 100 + " + " + Math.round(gradient * 100) / 100 + "ln(x)";
+                  return {
+                    points: result,
+                    parameter: {
+                      gradient,
+                      intercept
+                    },
+                    expression
+                  };
+                },
+                /**
+                 * Polynomial regression
+                 */
+                polynomial: function(predata, opt) {
+                  var xDimIdx = opt.dimensions[0];
+                  var yDimIdx = opt.dimensions[1];
+                  var order = opt.order;
+                  if (order == null) {
+                    order = 2;
+                  }
+                  var coeMatrix = [];
+                  var lhs = [];
+                  var k = order + 1;
+                  for (var i = 0; i < k; i++) {
+                    var sumA = 0;
+                    for (var n = 0; n < predata.length; n++) {
+                      var rawItem = predata[n];
+                      sumA += rawItem[yDimIdx] * Math.pow(rawItem[xDimIdx], i);
+                    }
+                    lhs.push(sumA);
+                    var temp = [];
+                    for (var j = 0; j < k; j++) {
+                      var sumB = 0;
+                      for (var m2 = 0; m2 < predata.length; m2++) {
+                        sumB += Math.pow(predata[m2][xDimIdx], i + j);
+                      }
+                      temp.push(sumB);
+                    }
+                    coeMatrix.push(temp);
+                  }
+                  coeMatrix.push(lhs);
+                  var coeArray = gaussianElimination(coeMatrix, k);
+                  var result = [];
+                  for (var i = 0; i < predata.length; i++) {
+                    var value = 0;
+                    var rawItem = predata[i];
+                    for (var n = 0; n < coeArray.length; n++) {
+                      value += coeArray[n] * Math.pow(rawItem[xDimIdx], n);
+                    }
+                    var resultItem = rawItem.slice();
+                    resultItem[xDimIdx] = rawItem[xDimIdx];
+                    resultItem[yDimIdx] = value;
+                    result.push(resultItem);
+                  }
+                  var expression = "y = ";
+                  for (var i = coeArray.length - 1; i >= 0; i--) {
+                    if (i > 1) {
+                      expression += Math.round(coeArray[i] * Math.pow(10, i + 1)) / Math.pow(10, i + 1) + "x^" + i + " + ";
+                    } else if (i === 1) {
+                      expression += Math.round(coeArray[i] * 100) / 100 + "x + ";
+                    } else {
+                      expression += Math.round(coeArray[i] * 100) / 100;
+                    }
+                  }
+                  return {
+                    points: result,
+                    parameter: coeArray,
+                    expression
+                  };
+                }
+              };
+              function gaussianElimination(matrix, number) {
+                for (var i = 0; i < matrix.length - 1; i++) {
+                  var maxColumn = i;
+                  for (var j = i + 1; j < matrix.length - 1; j++) {
+                    if (Math.abs(matrix[i][j]) > Math.abs(matrix[i][maxColumn])) {
+                      maxColumn = j;
+                    }
+                  }
+                  for (var k = i; k < matrix.length; k++) {
+                    var temp = matrix[k][i];
+                    matrix[k][i] = matrix[k][maxColumn];
+                    matrix[k][maxColumn] = temp;
+                  }
+                  for (var n = i + 1; n < matrix.length - 1; n++) {
+                    for (var m2 = matrix.length - 1; m2 >= i; m2--) {
+                      matrix[m2][n] -= matrix[m2][i] / matrix[i][i] * matrix[i][n];
+                    }
+                  }
+                }
+                var data2 = new Array(number);
+                var len2 = matrix.length - 1;
+                for (var j = matrix.length - 2; j >= 0; j--) {
+                  var temp = 0;
+                  for (var i = j + 1; i < matrix.length - 1; i++) {
+                    temp += matrix[i][j] * data2[i];
+                  }
+                  data2[j] = (matrix[len2][j] - temp) / matrix[j][j];
+                }
+                return data2;
+              }
+              var regression = function(regreMethod, data2, optOrOrder) {
+                var opt = typeof optOrOrder === "number" ? { order: optOrOrder } : optOrOrder || {};
+                var dimensions = normalizeDimensions2(opt.dimensions, [0, 1]);
+                var predata = dataPreprocess(data2, { dimensions });
+                var result = regreMethods[regreMethod](predata, {
+                  order: opt.order,
+                  dimensions
+                });
+                var xDimIdx = dimensions[0];
+                result.points.sort(function(itemA, itemB) {
+                  return itemA[xDimIdx] - itemB[xDimIdx];
+                });
+                return result;
+              };
+              return regression;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 6 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var statistics = {};
+              statistics.max = __webpack_require__(7);
+              statistics.deviation = __webpack_require__(8);
+              statistics.mean = __webpack_require__(10);
+              statistics.median = __webpack_require__(12);
+              statistics.min = __webpack_require__(14);
+              statistics.quantile = __webpack_require__(13);
+              statistics.sampleVariance = __webpack_require__(9);
+              statistics.sum = __webpack_require__(11);
+              return statistics;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 7 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var number = __webpack_require__(4);
+              var isNumber2 = number.isNumber;
+              function max4(data2) {
+                var maxData = -Infinity;
+                for (var i = 0; i < data2.length; i++) {
+                  if (isNumber2(data2[i]) && data2[i] > maxData) {
+                    maxData = data2[i];
+                  }
+                }
+                return maxData;
+              }
+              return max4;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 8 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var variance = __webpack_require__(9);
+              return function(data2) {
+                var squaredDeviation = variance(data2);
+                return squaredDeviation ? Math.sqrt(squaredDeviation) : squaredDeviation;
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 9 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var number = __webpack_require__(4);
+              var isNumber2 = number.isNumber;
+              var mean2 = __webpack_require__(10);
+              function sampleVariance(data2) {
+                var len2 = data2.length;
+                if (!len2 || len2 < 2) {
+                  return 0;
+                }
+                if (data2.length >= 2) {
+                  var meanValue = mean2(data2);
+                  var sum2 = 0;
+                  var temple;
+                  for (var i = 0; i < data2.length; i++) {
+                    if (isNumber2(data2[i])) {
+                      temple = data2[i] - meanValue;
+                      sum2 += temple * temple;
+                    }
+                  }
+                  return sum2 / (data2.length - 1);
+                }
+              }
+              return sampleVariance;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 10 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var sum2 = __webpack_require__(11);
+              function mean2(data2) {
+                var len2 = data2.length;
+                if (!len2) {
+                  return 0;
+                }
+                return sum2(data2) / data2.length;
+              }
+              return mean2;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 11 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var number = __webpack_require__(4);
+              var isNumber2 = number.isNumber;
+              function sum2(data2) {
+                var len2 = data2.length;
+                if (!len2) {
+                  return 0;
+                }
+                var sumData = 0;
+                for (var i = 0; i < len2; i++) {
+                  if (isNumber2(data2[i])) {
+                    sumData += data2[i];
+                  }
+                }
+                return sumData;
+              }
+              return sum2;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 12 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var quantile2 = __webpack_require__(13);
+              function median(data2) {
+                return quantile2(data2, 0.5);
+              }
+              return median;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 13 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              return function(data2, p) {
+                var len2 = data2.length;
+                if (!len2) {
+                  return 0;
+                }
+                if (p <= 0 || len2 < 2) {
+                  return data2[0];
+                }
+                if (p >= 1) {
+                  return data2[len2 - 1];
+                }
+                var h = (len2 - 1) * p;
+                var i = Math.floor(h);
+                var a = data2[i];
+                var b = data2[i + 1];
+                return a + (b - a) * (h - i);
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 14 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var number = __webpack_require__(4);
+              var isNumber2 = number.isNumber;
+              function min4(data2) {
+                var minData = Infinity;
+                for (var i = 0; i < data2.length; i++) {
+                  if (isNumber2(data2[i]) && data2[i] < minData) {
+                    minData = data2[i];
+                  }
+                }
+                return minData;
+              }
+              return min4;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 15 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var max4 = __webpack_require__(7);
+              var min4 = __webpack_require__(14);
+              var quantile2 = __webpack_require__(13);
+              var deviation = __webpack_require__(8);
+              var dataProcess = __webpack_require__(2);
+              var dataPreprocess = dataProcess.dataPreprocess;
+              var normalizeDimensions2 = dataProcess.normalizeDimensions;
+              var array = __webpack_require__(3);
+              var ascending = array.ascending;
+              var map3 = array.map;
+              var range = __webpack_require__(16);
+              var bisect2 = array.bisect;
+              var tickStep = __webpack_require__(17);
+              function computeBins(data2, optOrMethod) {
+                var opt = typeof optOrMethod === "string" ? { method: optOrMethod } : optOrMethod || {};
+                var threshold = opt.method == null ? thresholdMethod.squareRoot : thresholdMethod[opt.method];
+                var dimensions = normalizeDimensions2(opt.dimensions);
+                var values = dataPreprocess(data2, {
+                  dimensions,
+                  toOneDimensionArray: true
+                });
+                var maxValue = max4(values);
+                var minValue = min4(values);
+                var binsNumber = threshold(values, minValue, maxValue);
+                var tickStepResult = tickStep(minValue, maxValue, binsNumber);
+                var step = tickStepResult.step;
+                var toFixedPrecision = tickStepResult.toFixedPrecision;
+                var rangeArray = range(
+                  // use function toFixed() to avoid data like '0.700000001'
+                  +(Math.ceil(minValue / step) * step).toFixed(toFixedPrecision),
+                  +(Math.floor(maxValue / step) * step).toFixed(toFixedPrecision),
+                  step,
+                  toFixedPrecision
+                );
+                var len2 = rangeArray.length;
+                var bins = new Array(len2 + 1);
+                for (var i = 0; i <= len2; i++) {
+                  bins[i] = {};
+                  bins[i].sample = [];
+                  bins[i].x0 = i > 0 ? rangeArray[i - 1] : rangeArray[i] - minValue === step ? minValue : rangeArray[i] - step;
+                  bins[i].x1 = i < len2 ? rangeArray[i] : maxValue - rangeArray[i - 1] === step ? maxValue : rangeArray[i - 1] + step;
+                }
+                for (var i = 0; i < values.length; i++) {
+                  if (minValue <= values[i] && values[i] <= maxValue) {
+                    bins[bisect2(rangeArray, values[i], 0, len2)].sample.push(values[i]);
+                  }
+                }
+                var data2 = map3(bins, function(bin) {
+                  return [
+                    +((bin.x0 + bin.x1) / 2).toFixed(toFixedPrecision),
+                    bin.sample.length,
+                    bin.x0,
+                    bin.x1,
+                    bin.x0 + " - " + bin.x1
+                  ];
+                });
+                var customData = map3(bins, function(bin) {
+                  return [bin.x0, bin.x1, bin.sample.length];
+                });
+                return {
+                  bins,
+                  data: data2,
+                  customData
+                };
+              }
+              var thresholdMethod = {
+                squareRoot: function(data2) {
+                  var bins = Math.ceil(Math.sqrt(data2.length));
+                  return bins > 50 ? 50 : bins;
+                },
+                scott: function(data2, min5, max5) {
+                  return Math.ceil((max5 - min5) / (3.5 * deviation(data2) * Math.pow(data2.length, -1 / 3)));
+                },
+                freedmanDiaconis: function(data2, min5, max5) {
+                  data2.sort(ascending);
+                  return Math.ceil(
+                    (max5 - min5) / (2 * (quantile2(data2, 0.75) - quantile2(data2, 0.25)) * Math.pow(data2.length, -1 / 3))
+                  );
+                },
+                sturges: function(data2) {
+                  return Math.ceil(Math.log(data2.length) / Math.LN2) + 1;
+                }
+              };
+              return computeBins;
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 16 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var dataProcess = __webpack_require__(2);
+              var getPrecision2 = dataProcess.getPrecision;
+              return function(start2, end2, step, precision) {
+                var len2 = arguments.length;
+                if (len2 < 2) {
+                  end2 = start2;
+                  start2 = 0;
+                  step = 1;
+                } else if (len2 < 3) {
+                  step = 1;
+                } else if (len2 < 4) {
+                  step = +step;
+                  precision = getPrecision2(step);
+                } else {
+                  precision = +precision;
+                }
+                var n = Math.ceil(((end2 - start2) / step).toFixed(precision));
+                var range = new Array(n + 1);
+                for (var i = 0; i < n + 1; i++) {
+                  range[i] = +(start2 + i * step).toFixed(precision);
+                }
+                return range;
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 17 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var numberUtil = __webpack_require__(4);
+              return function(start2, stop2, count2) {
+                var step0 = Math.abs(stop2 - start2) / count2;
+                var precision = numberUtil.quantityExponent(step0);
+                var step1 = Math.pow(10, precision);
+                var error2 = step0 / step1;
+                if (error2 >= Math.sqrt(50)) {
+                  step1 *= 10;
+                } else if (error2 >= Math.sqrt(10)) {
+                  step1 *= 5;
+                } else if (error2 >= Math.sqrt(2)) {
+                  step1 *= 2;
+                }
+                var toFixedPrecision = precision < 0 ? -precision : 0;
+                var resultStep = +(stop2 >= start2 ? step1 : -step1).toFixed(toFixedPrecision);
+                return {
+                  step: resultStep,
+                  toFixedPrecision
+                };
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 18 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var regression = __webpack_require__(5);
+              var transformHelper = __webpack_require__(19);
+              var FORMULA_DIMENSION = 2;
+              return {
+                type: "ecStat:regression",
+                /**
+                 * @param {Paramter<typeof regression>[0]} [params.config.method='linear'] 'linear' by default
+                 * @param {Paramter<typeof regression>[2]} [params.config.order=2] Only work when method is `polynomial`.
+                 * @param {DimensionLoose[]|DimensionLoose} [params.config.dimensions=[0, 1]] dimensions that used to calculate regression.
+                 *        By default [0, 1].
+                 * @param {'start' | 'end' | 'all'} params.config.formulaOn Include formula on the last (third) dimension of the:
+                 *        'start': first data item.
+                 *        'end': last data item (by default).
+                 *        'all': all data items.
+                 *        'none': no data item.
+                 */
+                transform: function transform3(params) {
+                  var upstream = params.upstream;
+                  var config = params.config || {};
+                  var method = config.method || "linear";
+                  var result = regression(method, upstream.cloneRawData(), {
+                    order: config.order,
+                    dimensions: transformHelper.normalizeExistingDimensions(params, config.dimensions)
+                  });
+                  var points4 = result.points;
+                  var formulaOn = config.formulaOn;
+                  if (formulaOn == null) {
+                    formulaOn = "end";
+                  }
+                  var dimensions;
+                  if (formulaOn !== "none") {
+                    for (var i = 0; i < points4.length; i++) {
+                      points4[i][FORMULA_DIMENSION] = formulaOn === "start" && i === 0 || formulaOn === "all" || formulaOn === "end" && i === points4.length - 1 ? result.expression : "";
+                    }
+                    dimensions = upstream.cloneAllDimensionInfo();
+                    dimensions[FORMULA_DIMENSION] = {};
+                  }
+                  return [{
+                    dimensions,
+                    data: points4
+                  }];
+                }
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 19 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var arrayUtil = __webpack_require__(3);
+              var numberUtil = __webpack_require__(4);
+              var objectUtil = __webpack_require__(20);
+              function normalizeExistingDimensions(transformParams, dimensionsConfig) {
+                if (dimensionsConfig == null) {
+                  return;
+                }
+                var upstream = transformParams.upstream;
+                if (arrayUtil.isArray(dimensionsConfig)) {
+                  var result = [];
+                  for (var i = 0; i < dimensionsConfig.length; i++) {
+                    var dimInfo = upstream.getDimensionInfo(dimensionsConfig[i]);
+                    validateDimensionExists(dimInfo, dimensionsConfig[i]);
+                    result[i] = dimInfo.index;
+                  }
+                  return result;
+                } else {
+                  var dimInfo = upstream.getDimensionInfo(dimensionsConfig);
+                  validateDimensionExists(dimInfo, dimensionsConfig);
+                  return dimInfo.index;
+                }
+                function validateDimensionExists(dimInfo2, dimConfig) {
+                  if (!dimInfo2) {
+                    throw new Error("Can not find dimension by " + dimConfig);
+                  }
+                }
+              }
+              function normalizeNewDimensions(dimensionsConfig) {
+                if (arrayUtil.isArray(dimensionsConfig)) {
+                  var names = [];
+                  var indices = [];
+                  for (var i = 0; i < dimensionsConfig.length; i++) {
+                    var item = parseDimensionNewItem(dimensionsConfig[i]);
+                    names.push(item.name);
+                    indices.push(item.index);
+                  }
+                  return { name: names, index: indices };
+                } else if (dimensionsConfig != null) {
+                  return parseDimensionNewItem(dimensionsConfig);
+                }
+                function parseDimensionNewItem(dimConfig) {
+                  if (numberUtil.isNumber(dimConfig)) {
+                    return { index: dimConfig };
+                  } else if (objectUtil.isObject(dimConfig) && numberUtil.isNumber(dimConfig.index)) {
+                    return dimConfig;
+                  }
+                  throw new Error("Illegle new dimensions config. Expect `{ name: string, index: number }`.");
+                }
+              }
+              return {
+                normalizeExistingDimensions,
+                normalizeNewDimensions
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 20 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              function extend3(target, source) {
+                if (Object.assign) {
+                  Object.assign(target, source);
+                } else {
+                  for (var key in source) {
+                    if (source.hasOwnProperty(key)) {
+                      target[key] = source[key];
+                    }
+                  }
+                }
+                return target;
+              }
+              function isObject5(value) {
+                const type = typeof value;
+                return type === "function" || !!value && type === "object";
+              }
+              return {
+                extend: extend3,
+                isObject: isObject5
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 21 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var histogram = __webpack_require__(15);
+              var transformHelper = __webpack_require__(19);
+              return {
+                type: "ecStat:histogram",
+                /**
+                 * @param {'squareRoot' | 'scott' | 'freedmanDiaconis' | 'sturges'} [params.config.method='squareRoot']
+                 * @param {DimnensionLoose[]} [params.config.dimensions=[0, 1]] dimensions that used to calculate histogram.
+                 *        By default [0].
+                 */
+                transform: function transform3(params) {
+                  var upstream = params.upstream;
+                  var config = params.config || {};
+                  var result = histogram(upstream.cloneRawData(), {
+                    method: config.method,
+                    dimensions: transformHelper.normalizeExistingDimensions(params, config.dimensions)
+                  });
+                  return [{
+                    dimensions: ["MeanOfV0V1", "VCount", "V0", "V1", "DisplayableName"],
+                    data: result.data
+                  }, {
+                    data: result.customData
+                  }];
+                }
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          },
+          /* 22 */
+          /***/
+          function(module3, exports2, __webpack_require__) {
+            var __WEBPACK_AMD_DEFINE_RESULT__;
+            !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require2) {
+              var clustering = __webpack_require__(1);
+              var numberUtil = __webpack_require__(4);
+              var transformHelper = __webpack_require__(19);
+              var isNumber2 = numberUtil.isNumber;
+              return {
+                type: "ecStat:clustering",
+                /**
+                 * @param {number} params.config.clusterCount Mandatory.
+                 *        The number of clusters in a dataset. It has to be greater than 1.
+                 * @param {(DimensionName | DimensionIndex)[]} [params.config.dimensions] Optional.
+                 *        Target dimensions to calculate the regression.
+                 *        By default: use all of the data.
+                 * @param {(DimensionIndex | {name?: DimensionName, index: DimensionIndex})} [params.config.outputClusterIndexDimension] Mandatory.
+                 * @param {(DimensionIndex | {name?: DimensionName, index: DimensionIndex})[]} [params.config.outputCentroidDimensions] Optional.
+                 *        If specified, the centroid will be set to those dimensions of the result data one by one.
+                 *        By default not set centroid to result.
+                 */
+                transform: function transform3(params) {
+                  var upstream = params.upstream;
+                  var config = params.config || {};
+                  var clusterCount = config.clusterCount;
+                  if (!isNumber2(clusterCount) || clusterCount <= 0) {
+                    throw new Error('config param "clusterCount" need to be specified as an interger greater than 1.');
+                  }
+                  if (clusterCount === 1) {
+                    return [{}, {
+                      data: []
+                    }];
+                  }
+                  var outputClusterIndexDimension = transformHelper.normalizeNewDimensions(
+                    config.outputClusterIndexDimension
+                  );
+                  var outputCentroidDimensions = transformHelper.normalizeNewDimensions(
+                    config.outputCentroidDimensions
+                  );
+                  if (outputClusterIndexDimension == null) {
+                    throw new Error("outputClusterIndexDimension is required as a number.");
+                  }
+                  var result = clustering.hierarchicalKMeans(upstream.cloneRawData(), {
+                    clusterCount,
+                    stepByStep: false,
+                    dimensions: transformHelper.normalizeExistingDimensions(params, config.dimensions),
+                    outputType: clustering.OutputType.SINGLE,
+                    outputClusterIndexDimension: outputClusterIndexDimension.index,
+                    outputCentroidDimensions: (outputCentroidDimensions || {}).index
+                  });
+                  var sourceDimAll = upstream.cloneAllDimensionInfo();
+                  var resultDimsDef = [];
+                  for (var i = 0; i < sourceDimAll.length; i++) {
+                    var sourceDimItem = sourceDimAll[i];
+                    resultDimsDef.push(sourceDimItem.name);
+                  }
+                  resultDimsDef[outputClusterIndexDimension.index] = outputClusterIndexDimension.name;
+                  if (outputCentroidDimensions) {
+                    for (var i = 0; i < outputCentroidDimensions.index.length; i++) {
+                      if (outputCentroidDimensions.name[i] != null) {
+                        resultDimsDef[outputCentroidDimensions.index[i]] = outputCentroidDimensions.name[i];
+                      }
+                    }
+                  }
+                  return [{
+                    dimensions: resultDimsDef,
+                    data: result.data
+                  }, {
+                    data: result.centroids
+                  }];
+                }
+              };
+            }.call(exports2, __webpack_require__, exports2, module3), __WEBPACK_AMD_DEFINE_RESULT__ !== void 0 && (module3.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+          }
+          /******/
+        ])
+      );
+    });
+  }
+});
+
+// node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/index.js
+var require_echarts_stat = __commonJS({
+  "node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/index.js"(exports, module2) {
+    module2.exports = require_ecStat();
+  }
+});
+
 // src/main.ts
 var main_exports = {};
 __export(main_exports, {
@@ -5558,7 +6981,7 @@ __export(main_exports, {
 module.exports = __toCommonJS(main_exports);
 var import_obsidian2 = require("obsidian");
 
-// node_modules/acorn/dist/acorn.mjs
+// node_modules/.pnpm/acorn@8.14.1/node_modules/acorn/dist/acorn.mjs
 var astralIdentifierCodes = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 7, 9, 32, 4, 318, 1, 80, 3, 71, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 3, 0, 158, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 68, 8, 2, 0, 3, 0, 2, 3, 2, 4, 2, 0, 15, 1, 83, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 7, 19, 58, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 343, 9, 54, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 10, 1, 2, 0, 49, 6, 4, 4, 14, 10, 5350, 0, 7, 14, 11465, 27, 2343, 9, 87, 9, 39, 4, 60, 6, 26, 9, 535, 9, 470, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4178, 9, 519, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 101, 0, 161, 6, 10, 9, 357, 0, 62, 13, 499, 13, 245, 1, 2, 9, 726, 6, 110, 6, 6, 9, 4759, 9, 787719, 239];
 var astralIdentifierStartCodes = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 4, 51, 13, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 39, 27, 10, 22, 251, 41, 7, 1, 17, 2, 60, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 20, 1, 64, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 31, 9, 2, 0, 3, 0, 2, 37, 2, 0, 26, 0, 2, 0, 45, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 200, 32, 32, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 16, 0, 2, 12, 2, 33, 125, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1071, 18, 5, 26, 3994, 6, 582, 6842, 29, 1763, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 433, 44, 212, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 42, 9, 8936, 3, 2, 6, 2, 1, 2, 290, 16, 0, 30, 2, 3, 0, 15, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 7, 5, 262, 61, 147, 44, 11, 6, 17, 0, 322, 29, 19, 43, 485, 27, 229, 29, 3, 0, 496, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4153, 7, 221, 3, 5761, 15, 7472, 16, 621, 2467, 541, 1507, 4938, 6, 4191];
 var nonASCIIidentifierChars = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0897-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0CF3\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECE\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u200C\u200D\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\u30FB\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F\uFF65";
@@ -5978,6 +7401,7 @@ var SCOPE_SIMPLE_CATCH = 32;
 var SCOPE_SUPER = 64;
 var SCOPE_DIRECT_SUPER = 128;
 var SCOPE_CLASS_STATIC_BLOCK = 256;
+var SCOPE_CLASS_FIELD_INIT = 512;
 var SCOPE_VAR = SCOPE_TOP | SCOPE_FUNCTION | SCOPE_CLASS_STATIC_BLOCK;
 function functionFlags(async, generator) {
   return SCOPE_FUNCTION | (async ? SCOPE_ASYNC : 0) | (generator ? SCOPE_GENERATOR : 0);
@@ -6046,19 +7470,20 @@ prototypeAccessors.inFunction.get = function() {
   return (this.currentVarScope().flags & SCOPE_FUNCTION) > 0;
 };
 prototypeAccessors.inGenerator.get = function() {
-  return (this.currentVarScope().flags & SCOPE_GENERATOR) > 0 && !this.currentVarScope().inClassFieldInit;
+  return (this.currentVarScope().flags & SCOPE_GENERATOR) > 0;
 };
 prototypeAccessors.inAsync.get = function() {
-  return (this.currentVarScope().flags & SCOPE_ASYNC) > 0 && !this.currentVarScope().inClassFieldInit;
+  return (this.currentVarScope().flags & SCOPE_ASYNC) > 0;
 };
 prototypeAccessors.canAwait.get = function() {
   for (var i = this.scopeStack.length - 1; i >= 0; i--) {
-    var scope = this.scopeStack[i];
-    if (scope.inClassFieldInit || scope.flags & SCOPE_CLASS_STATIC_BLOCK) {
+    var ref2 = this.scopeStack[i];
+    var flags = ref2.flags;
+    if (flags & (SCOPE_CLASS_STATIC_BLOCK | SCOPE_CLASS_FIELD_INIT)) {
       return false;
     }
-    if (scope.flags & SCOPE_FUNCTION) {
-      return (scope.flags & SCOPE_ASYNC) > 0;
+    if (flags & SCOPE_FUNCTION) {
+      return (flags & SCOPE_ASYNC) > 0;
     }
   }
   return this.inModule && this.options.ecmaVersion >= 13 || this.options.allowAwaitOutsideFunction;
@@ -6066,8 +7491,7 @@ prototypeAccessors.canAwait.get = function() {
 prototypeAccessors.allowSuper.get = function() {
   var ref2 = this.currentThisScope();
   var flags = ref2.flags;
-  var inClassFieldInit = ref2.inClassFieldInit;
-  return (flags & SCOPE_SUPER) > 0 || inClassFieldInit || this.options.allowSuperOutsideMethod;
+  return (flags & SCOPE_SUPER) > 0 || this.options.allowSuperOutsideMethod;
 };
 prototypeAccessors.allowDirectSuper.get = function() {
   return (this.currentThisScope().flags & SCOPE_DIRECT_SUPER) > 0;
@@ -6076,10 +7500,14 @@ prototypeAccessors.treatFunctionsAsVar.get = function() {
   return this.treatFunctionsAsVarInScope(this.currentScope());
 };
 prototypeAccessors.allowNewDotTarget.get = function() {
-  var ref2 = this.currentThisScope();
-  var flags = ref2.flags;
-  var inClassFieldInit = ref2.inClassFieldInit;
-  return (flags & (SCOPE_FUNCTION | SCOPE_CLASS_STATIC_BLOCK)) > 0 || inClassFieldInit;
+  for (var i = this.scopeStack.length - 1; i >= 0; i--) {
+    var ref2 = this.scopeStack[i];
+    var flags = ref2.flags;
+    if (flags & (SCOPE_CLASS_STATIC_BLOCK | SCOPE_CLASS_FIELD_INIT) || flags & SCOPE_FUNCTION && !(flags & SCOPE_ARROW)) {
+      return true;
+    }
+  }
+  return false;
 };
 prototypeAccessors.inClassStaticBlock.get = function() {
   return (this.currentVarScope().flags & SCOPE_CLASS_STATIC_BLOCK) > 0;
@@ -6922,11 +8350,9 @@ pp$8.parseClassField = function(field) {
     this.raise(field.key.start, "Classes can't have a static field named 'prototype'");
   }
   if (this.eat(types$1.eq)) {
-    var scope = this.currentThisScope();
-    var inClassFieldInit = scope.inClassFieldInit;
-    scope.inClassFieldInit = true;
+    this.enterScope(SCOPE_CLASS_FIELD_INIT | SCOPE_SUPER);
     field.value = this.parseMaybeAssign();
-    scope.inClassFieldInit = inClassFieldInit;
+    this.exitScope();
   } else {
     field.value = null;
   }
@@ -7049,6 +8475,9 @@ pp$8.parseExport = function(node, exports) {
     }
     node.specifiers = [];
     node.source = null;
+    if (this.options.ecmaVersion >= 16) {
+      node.attributes = [];
+    }
   } else {
     node.declaration = null;
     node.specifiers = this.parseExportSpecifiers(exports);
@@ -7070,6 +8499,9 @@ pp$8.parseExport = function(node, exports) {
         }
       }
       node.source = null;
+      if (this.options.ecmaVersion >= 16) {
+        node.attributes = [];
+      }
     }
     this.semicolon();
   }
@@ -8429,9 +9861,10 @@ pp$5.parseProperty = function(isPattern2, refDestructuringErrors) {
   return this.finishNode(prop, "Property");
 };
 pp$5.parseGetterSetter = function(prop) {
-  prop.kind = prop.key.name;
+  var kind = prop.key.name;
   this.parsePropertyName(prop);
   prop.value = this.parseMethod(false);
+  prop.kind = kind;
   var paramCount = prop.kind === "get" ? 0 : 1;
   if (prop.value.params.length !== paramCount) {
     var start2 = prop.value.start;
@@ -8457,9 +9890,9 @@ pp$5.parsePropertyValue = function(prop, isPattern2, isGenerator, isAsync, start
     if (isPattern2) {
       this.unexpected();
     }
-    prop.kind = "init";
     prop.method = true;
     prop.value = this.parseMethod(isGenerator, isAsync);
+    prop.kind = "init";
   } else if (!isPattern2 && !containsEsc && this.options.ecmaVersion >= 5 && !prop.computed && prop.key.type === "Identifier" && (prop.key.name === "get" || prop.key.name === "set") && (this.type !== types$1.comma && this.type !== types$1.braceR && this.type !== types$1.eq)) {
     if (isGenerator || isAsync) {
       this.unexpected();
@@ -8473,7 +9906,6 @@ pp$5.parsePropertyValue = function(prop, isPattern2, isGenerator, isAsync, start
     if (prop.key.name === "await" && !this.awaitIdentPos) {
       this.awaitIdentPos = startPos;
     }
-    prop.kind = "init";
     if (isPattern2) {
       prop.value = this.parseMaybeDefault(startPos, startLoc, this.copyNode(prop.key));
     } else if (this.type === types$1.eq && refDestructuringErrors) {
@@ -8484,6 +9916,7 @@ pp$5.parsePropertyValue = function(prop, isPattern2, isGenerator, isAsync, start
     } else {
       prop.value = this.copyNode(prop.key);
     }
+    prop.kind = "init";
     prop.shorthand = true;
   } else {
     this.unexpected();
@@ -8633,7 +10066,7 @@ pp$5.checkUnreserved = function(ref2) {
   if (this.inAsync && name === "await") {
     this.raiseRecoverable(start2, "Cannot use 'await' as identifier inside an async function");
   }
-  if (this.currentThisScope().inClassFieldInit && name === "arguments") {
+  if (!(this.currentThisScope().flags & SCOPE_VAR) && name === "arguments") {
     this.raiseRecoverable(start2, "Cannot use 'arguments' in class field initializer");
   }
   if (this.inClassStaticBlock && (name === "arguments" || name === "await")) {
@@ -8726,6 +10159,9 @@ var pp$4 = Parser.prototype;
 pp$4.raise = function(pos, message) {
   var loc = getLineInfo(this.input, pos);
   message += " (" + loc.line + ":" + loc.column + ")";
+  if (this.sourceFile) {
+    message += " in " + this.sourceFile;
+  }
   var err = new SyntaxError(message);
   err.pos = pos;
   err.loc = loc;
@@ -8744,7 +10180,6 @@ var Scope = function Scope2(flags) {
   this.var = [];
   this.lexical = [];
   this.functions = [];
-  this.inClassFieldInit = false;
 };
 pp$3.enterScope = function(flags) {
   this.scopeStack.push(new Scope(flags));
@@ -8806,7 +10241,7 @@ pp$3.currentScope = function() {
 pp$3.currentVarScope = function() {
   for (var i = this.scopeStack.length - 1; ; i--) {
     var scope = this.scopeStack[i];
-    if (scope.flags & SCOPE_VAR) {
+    if (scope.flags & (SCOPE_VAR | SCOPE_CLASS_FIELD_INIT | SCOPE_CLASS_STATIC_BLOCK)) {
       return scope;
     }
   }
@@ -8814,7 +10249,7 @@ pp$3.currentVarScope = function() {
 pp$3.currentThisScope = function() {
   for (var i = this.scopeStack.length - 1; ; i--) {
     var scope = this.scopeStack[i];
-    if (scope.flags & SCOPE_VAR && !(scope.flags & SCOPE_ARROW)) {
+    if (scope.flags & (SCOPE_VAR | SCOPE_CLASS_FIELD_INIT | SCOPE_CLASS_STATIC_BLOCK) && !(scope.flags & SCOPE_ARROW)) {
       return scope;
     }
   }
@@ -11062,7 +12497,7 @@ pp.readWord = function() {
   }
   return this.finishToken(type, word);
 };
-var version = "8.14.0";
+var version = "8.14.1";
 Parser.acorn = {
   Parser,
   version,
@@ -11157,12 +12592,10 @@ function parseCode(code, allowedFunctions = {}, allowedVariables = {}) {
   }
   function evaluateTemplateLiteral(node, context2) {
     let result = "";
-    const expressions = node.expressions;
-    const quasis = node.quasis;
-    for (let i = 0; i < quasis.length; i++) {
-      result += evaluateNode(quasis[i], context2);
-      if (i < expressions.length) {
-        const value = evaluateNode(expressions[i], context2);
+    for (let i = 0; i < node.quasis.length; i++) {
+      result += evaluateNode(node.quasis[i], context2);
+      if (i < node.expressions.length) {
+        const value = evaluateNode(node.expressions[i], context2);
         result += value != null ? String(value) : "";
       }
     }
@@ -11170,10 +12603,10 @@ function parseCode(code, allowedFunctions = {}, allowedVariables = {}) {
   }
   function evaluateIdentifier(node, context2) {
     const varName = node.name;
-    if (context2.scope.hasOwnProperty(varName)) {
+    if (Object.prototype.hasOwnProperty.call(context2.scope, varName)) {
       return context2.scope[varName];
     }
-    if (context2.allowedVariables.hasOwnProperty(varName)) {
+    if (Object.prototype.hasOwnProperty.call(context2.allowedVariables, varName)) {
       return context2.allowedVariables[varName];
     }
     throw new Error(`Variable "${varName}" is not allowed`);
@@ -11200,7 +12633,9 @@ function parseCode(code, allowedFunctions = {}, allowedVariables = {}) {
     for (const prop of node.properties) {
       const property = prop;
       const key = property.key.type === "Identifier" ? property.key.name : property.key.value;
-      result[key] = evaluateNode(property.value, context2);
+      if (typeof key === "string") {
+        result[key] = evaluateNode(property.value, context2);
+      }
     }
     return result;
   }
@@ -11209,6 +12644,9 @@ function parseCode(code, allowedFunctions = {}, allowedVariables = {}) {
       (element) => element ? evaluateNode(element, context2) : null
     );
   }
+  const isExpressionStatement = (x) => {
+    return !!x && x.type === "ExpressionStatement";
+  };
   function evaluateCall(node, context2) {
     let func;
     if (node.callee.type === "Identifier") {
@@ -11226,7 +12664,7 @@ function parseCode(code, allowedFunctions = {}, allowedVariables = {}) {
     return func(...args);
   }
   const expressionStatement = ast.body[0];
-  if (!expressionStatement || expressionStatement.type !== "ExpressionStatement") {
+  if (!isExpressionStatement(expressionStatement)) {
     throw new Error("Invalid input structure");
   }
   return evaluateNode(expressionStatement.expression, context);
@@ -11273,7 +12711,7 @@ function prepareDataVariables({ data: data2, columns }) {
   };
 }
 
-// node_modules/echarts/node_modules/tslib/tslib.es6.js
+// node_modules/.pnpm/tslib@2.3.0/node_modules/tslib/tslib.es6.js
 var extendStatics = function(d, b) {
   extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
     d2.__proto__ = b2;
@@ -11292,7 +12730,7 @@ function __extends(d, b) {
   d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-// node_modules/zrender/lib/core/env.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/env.js
 var Browser = /* @__PURE__ */ function() {
   function Browser2() {
     this.firefox = false;
@@ -11363,7 +12801,7 @@ function detect(ua, env2) {
 }
 var env_default = env;
 
-// node_modules/zrender/lib/core/platform.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/platform.js
 var DEFAULT_FONT_SIZE = 12;
 var DEFAULT_FONT_FAMILY = "sans-serif";
 var DEFAULT_FONT = DEFAULT_FONT_SIZE + "px " + DEFAULT_FONT_FAMILY;
@@ -11427,7 +12865,7 @@ var platformApi = {
   }
 };
 
-// node_modules/zrender/lib/core/util.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/util.js
 var BUILTIN_OBJECT = reduce([
   "Function",
   "RegExp",
@@ -11935,26 +13373,7 @@ function noop() {
 }
 var RADIAN_TO_DEGREE = 180 / Math.PI;
 
-// node_modules/zrender/node_modules/tslib/tslib.es6.js
-var extendStatics2 = function(d, b) {
-  extendStatics2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
-    d2.__proto__ = b2;
-  } || function(d2, b2) {
-    for (var p in b2) if (Object.prototype.hasOwnProperty.call(b2, p)) d2[p] = b2[p];
-  };
-  return extendStatics2(d, b);
-};
-function __extends2(d, b) {
-  if (typeof b !== "function" && b !== null)
-    throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  extendStatics2(d, b);
-  function __() {
-    this.constructor = d;
-  }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-// node_modules/zrender/lib/core/vector.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/vector.js
 function create(x, y) {
   if (x == null) {
     x = 0;
@@ -12045,7 +13464,7 @@ function max2(out2, v12, v22) {
   return out2;
 }
 
-// node_modules/zrender/lib/mixin/Draggable.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/mixin/Draggable.js
 var Param = /* @__PURE__ */ function() {
   function Param2(target, e2) {
     this.target = target;
@@ -12113,7 +13532,7 @@ var Draggable = function() {
 }();
 var Draggable_default = Draggable;
 
-// node_modules/zrender/lib/core/Eventful.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/Eventful.js
 var Eventful = function() {
   function Eventful2(eventProcessors) {
     if (eventProcessors) {
@@ -12266,7 +13685,7 @@ var Eventful = function() {
 }();
 var Eventful_default = Eventful;
 
-// node_modules/zrender/lib/core/fourPointsTransform.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/fourPointsTransform.js
 var LN2 = Math.log(2);
 function determinant(rows, rank, rowStart, rowMask, colMask, detCache) {
   var cacheKey = rowMask + "-" + colMask;
@@ -12324,7 +13743,7 @@ function buildTransformer(src, dest) {
   };
 }
 
-// node_modules/zrender/lib/core/dom.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/dom.js
 var EVENT_SAVED_PROP = "___zrEVENTSAVED";
 var _calcOut = [];
 function transformLocalCoord(out2, elFrom, elTarget, inX, inY) {
@@ -12410,7 +13829,7 @@ function encodeHTML(source) {
   });
 }
 
-// node_modules/zrender/lib/core/event.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/event.js
 var MOUSE_EVENT_REG = /^(?:mouse|pointer|contextmenu|drag|drop)|click/;
 var _calcOut2 = [];
 var firefoxNotSupportOffsetXY = env_default.browser.firefox && +env_default.browser.version.split(".")[0] < 39;
@@ -12501,7 +13920,7 @@ function isMiddleOrRightButtonOnMouseUpDown(e2) {
   return e2.which === 2 || e2.which === 3;
 }
 
-// node_modules/zrender/lib/core/GestureMgr.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/GestureMgr.js
 var GestureMgr = function() {
   function GestureMgr2() {
     this._track = [];
@@ -12580,7 +13999,7 @@ var recognizers = {
   }
 };
 
-// node_modules/zrender/lib/core/matrix.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/matrix.js
 function create2() {
   return [1, 0, 0, 1, 0, 0];
 }
@@ -12683,7 +14102,7 @@ function clone3(a) {
   return b;
 }
 
-// node_modules/zrender/lib/core/Point.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/Point.js
 var Point = function() {
   function Point2(x, y) {
     this.x = x || 0;
@@ -12814,7 +14233,7 @@ var Point = function() {
 }();
 var Point_default = Point;
 
-// node_modules/zrender/lib/core/BoundingRect.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/BoundingRect.js
 var mathMin = Math.min;
 var mathMax = Math.max;
 var lt = new Point_default();
@@ -13015,7 +14434,7 @@ var BoundingRect = function() {
 }();
 var BoundingRect_default = BoundingRect;
 
-// node_modules/zrender/lib/Handler.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/Handler.js
 var SILENT = "silent";
 function makeEventPacket(eveType, targetInfo, event) {
   return {
@@ -13040,7 +14459,7 @@ function stopEvent() {
   stop(this.event);
 }
 var EmptyProxy = function(_super) {
-  __extends2(EmptyProxy2, _super);
+  __extends(EmptyProxy2, _super);
   function EmptyProxy2() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.handler = null;
@@ -13071,7 +14490,7 @@ var handlerNames = [
 ];
 var tmpRect = new BoundingRect_default(0, 0, 0, 0);
 var Handler = function(_super) {
-  __extends2(Handler2, _super);
+  __extends(Handler2, _super);
   function Handler2(storage2, painter, proxy, painterRoot, pointerSize) {
     var _this = _super.call(this) || this;
     _this._hovered = new HoveredResult(0, 0);
@@ -13302,7 +14721,7 @@ function isOutsideBoundary(handlerInstance, x, y) {
 }
 var Handler_default = Handler;
 
-// node_modules/zrender/lib/core/timsort.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/timsort.js
 var DEFAULT_MIN_MERGE = 32;
 var DEFAULT_MIN_GALLOPING = 7;
 function minRunLength(n) {
@@ -13811,12 +15230,12 @@ function sort(array, compare2, lo, hi) {
   ts.forceMergeRuns();
 }
 
-// node_modules/zrender/lib/graphic/constants.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/constants.js
 var REDRAW_BIT = 1;
 var STYLE_CHANGED_BIT = 2;
 var SHAPE_CHANGED_BIT = 4;
 
-// node_modules/zrender/lib/Storage.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/Storage.js
 var invalidZErrorLogged = false;
 function logInvalidZError() {
   if (invalidZErrorLogged) {
@@ -13969,14 +15388,14 @@ var Storage = function() {
 }();
 var Storage_default = Storage;
 
-// node_modules/zrender/lib/animation/requestAnimationFrame.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/requestAnimationFrame.js
 var requestAnimationFrame2;
 requestAnimationFrame2 = env_default.hasGlobalWindow && (window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || window.msRequestAnimationFrame && window.msRequestAnimationFrame.bind(window) || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame) || function(func) {
   return setTimeout(func, 16);
 };
 var requestAnimationFrame_default = requestAnimationFrame2;
 
-// node_modules/zrender/lib/animation/easing.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/easing.js
 var easingFuncs = {
   linear: function(k) {
     return k;
@@ -14163,7 +15582,7 @@ var easingFuncs = {
 };
 var easing_default = easingFuncs;
 
-// node_modules/zrender/lib/core/curve.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/curve.js
 var mathPow = Math.pow;
 var mathSqrt = Math.sqrt;
 var EPSILON = 1e-8;
@@ -14492,7 +15911,7 @@ function quadraticLength(x0, y0, x1, y1, x2, y2, iteration) {
   return d;
 }
 
-// node_modules/zrender/lib/animation/cubicEasing.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/cubicEasing.js
 var regexp = /cubic-bezier\(([0-9,\.e ]+)\)/;
 function createCubicEasingFunc(cubicEasingStr) {
   var cubic = cubicEasingStr && regexp.exec(cubicEasingStr);
@@ -14512,7 +15931,7 @@ function createCubicEasingFunc(cubicEasingStr) {
   }
 }
 
-// node_modules/zrender/lib/animation/Clip.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/Clip.js
 var Clip = function() {
   function Clip2(opts) {
     this._inited = false;
@@ -14572,7 +15991,7 @@ var Clip = function() {
 }();
 var Clip_default = Clip;
 
-// node_modules/zrender/lib/core/LRU.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/LRU.js
 var Entry = /* @__PURE__ */ function() {
   function Entry2(val) {
     this.value = val;
@@ -14678,7 +16097,7 @@ var LRU = function() {
 }();
 var LRU_default = LRU;
 
-// node_modules/zrender/lib/tool/color.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/color.js
 var kCSSColorTable = {
   "transparent": [0, 0, 0, 0],
   "aliceblue": [240, 248, 255, 1],
@@ -15149,7 +16568,7 @@ function liftColor(color) {
   return color;
 }
 
-// node_modules/zrender/lib/svg/helper.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/helper.js
 var mathRound = Math.round;
 function normalizeColor(color) {
   var opacity;
@@ -15168,14 +16587,14 @@ function normalizeColor(color) {
   };
 }
 var EPSILON2 = 1e-4;
-function isAroundZero2(transform2) {
-  return transform2 < EPSILON2 && transform2 > -EPSILON2;
+function isAroundZero2(transform3) {
+  return transform3 < EPSILON2 && transform3 > -EPSILON2;
 }
-function round3(transform2) {
-  return mathRound(transform2 * 1e3) / 1e3;
+function round3(transform3) {
+  return mathRound(transform3 * 1e3) / 1e3;
 }
-function round4(transform2) {
-  return mathRound(transform2 * 1e4) / 1e4;
+function round4(transform3) {
+  return mathRound(transform3 * 1e4) / 1e4;
 }
 function getMatrixStr(m2) {
   return "matrix(" + round3(m2[0]) + "," + round3(m2[1]) + "," + round3(m2[2]) + "," + round3(m2[3]) + "," + round4(m2[4]) + "," + round4(m2[5]) + ")";
@@ -15235,14 +16654,14 @@ function getPathPrecision(el) {
   var size = Math.max(scale4[0], scale4[1]);
   return Math.max(Math.ceil(Math.log(size) / Math.log(10)), 1);
 }
-function getSRTTransformString(transform2) {
-  var x = transform2.x || 0;
-  var y = transform2.y || 0;
-  var rotation = (transform2.rotation || 0) * RADIAN_TO_DEGREE;
-  var scaleX = retrieve2(transform2.scaleX, 1);
-  var scaleY = retrieve2(transform2.scaleY, 1);
-  var skewX = transform2.skewX || 0;
-  var skewY = transform2.skewY || 0;
+function getSRTTransformString(transform3) {
+  var x = transform3.x || 0;
+  var y = transform3.y || 0;
+  var rotation = (transform3.rotation || 0) * RADIAN_TO_DEGREE;
+  var scaleX = retrieve2(transform3.scaleX, 1);
+  var scaleY = retrieve2(transform3.scaleY, 1);
+  var skewX = transform3.skewX || 0;
+  var skewY = transform3.skewY || 0;
   var res = [];
   if (x || y) {
     res.push("translate(" + x + "px," + y + "px)");
@@ -15277,7 +16696,7 @@ var encodeBase64 = function() {
   };
 }();
 
-// node_modules/zrender/lib/animation/Animator.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/Animator.js
 var arraySlice = Array.prototype.slice;
 function interpolateNumber(p0, p1, percent) {
   return (p1 - p0) * percent + p0;
@@ -15971,12 +17390,12 @@ var Animator = function() {
 }();
 var Animator_default = Animator;
 
-// node_modules/zrender/lib/animation/Animation.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/Animation.js
 function getTime() {
   return (/* @__PURE__ */ new Date()).getTime();
 }
 var Animation = function(_super) {
-  __extends2(Animation2, _super);
+  __extends(Animation2, _super);
   function Animation2(opts) {
     var _this = _super.call(this) || this;
     _this._running = false;
@@ -16112,7 +17531,7 @@ var Animation = function(_super) {
 }(Eventful_default);
 var Animation_default = Animation;
 
-// node_modules/zrender/lib/dom/HandlerProxy.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/dom/HandlerProxy.js
 var TOUCH_CLICK_DELAY = 300;
 var globalEventSupported = env_default.domSupported;
 var localNativeListenerNames = function() {
@@ -16373,7 +17792,7 @@ var DOMHandlerScope = /* @__PURE__ */ function() {
   return DOMHandlerScope2;
 }();
 var HandlerDomProxy = function(_super) {
-  __extends2(HandlerDomProxy2, _super);
+  __extends(HandlerDomProxy2, _super);
   function HandlerDomProxy2(dom, painterRoot) {
     var _this = _super.call(this) || this;
     _this.__pointerCapturing = false;
@@ -16407,7 +17826,7 @@ var HandlerDomProxy = function(_super) {
 }(Eventful_default);
 var HandlerProxy_default = HandlerDomProxy;
 
-// node_modules/zrender/lib/config.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/config.js
 var dpr = 1;
 if (env_default.hasGlobalWindow) {
   dpr = Math.max(window.devicePixelRatio || window.screen && window.screen.deviceXDPI / window.screen.logicalXDPI || 1, 1);
@@ -16418,7 +17837,7 @@ var DARK_LABEL_COLOR = "#333";
 var LIGHT_LABEL_COLOR = "#ccc";
 var LIGHTER_LABEL_COLOR = "#eee";
 
-// node_modules/zrender/lib/core/Transformable.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/Transformable.js
 var mIdentity = identity;
 var EPSILON3 = 5e-5;
 function isNotAroundZero2(val) {
@@ -16579,9 +17998,9 @@ var Transformable = function() {
   };
   Transformable2.prototype.transformCoordToGlobal = function(x, y) {
     var v22 = [x, y];
-    var transform2 = this.transform;
-    if (transform2) {
-      applyTransform(v22, v22, transform2);
+    var transform3 = this.transform;
+    if (transform3) {
+      applyTransform(v22, v22, transform3);
     }
     return v22;
   };
@@ -16650,7 +18069,7 @@ function copyTransform(target, source) {
 }
 var Transformable_default = Transformable;
 
-// node_modules/zrender/lib/contain/text.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/text.js
 var textWidthCache = {};
 function getWidth(text, font) {
   font = font || DEFAULT_FONT;
@@ -16812,7 +18231,7 @@ function calculateTextPosition(out2, opts, rect) {
   return out2;
 }
 
-// node_modules/zrender/lib/Element.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/Element.js
 var PRESERVED_NORMAL_STATE = "__zr_normal__";
 var PRIMARY_STATES_KEYS = TRANSFORMABLE_PROPS.concat(["ignore"]);
 var DEFAULT_ANIMATABLE_MAP = reduce(TRANSFORMABLE_PROPS, function(obj, key) {
@@ -17806,9 +19225,9 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
 }
 var Element_default = Element;
 
-// node_modules/zrender/lib/graphic/Group.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Group.js
 var Group = function(_super) {
-  __extends2(Group5, _super);
+  __extends(Group5, _super);
   function Group5(opts) {
     var _this = _super.call(this) || this;
     _this.isGroup = true;
@@ -17964,9 +19383,9 @@ var Group = function(_super) {
         continue;
       }
       var childRect = child.getBoundingRect();
-      var transform2 = child.getLocalTransform(tmpMat);
-      if (transform2) {
-        BoundingRect_default.applyTransform(tmpRect3, childRect, transform2);
+      var transform3 = child.getLocalTransform(tmpMat);
+      if (transform3) {
+        BoundingRect_default.applyTransform(tmpRect3, childRect, transform3);
         rect = rect || tmpRect3.clone();
         rect.union(tmpRect3);
       } else {
@@ -17981,7 +19400,7 @@ var Group = function(_super) {
 Group.prototype.type = "group";
 var Group_default = Group;
 
-// node_modules/zrender/lib/zrender.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/zrender.js
 var painterCtors = {};
 var instances = {};
 function delInstance(id) {
@@ -18268,7 +19687,7 @@ function registerSSRDataGetter(getter) {
   ssrDataGetter = getter;
 }
 
-// node_modules/echarts/lib/util/number.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/number.js
 var RADIAN_EPSILON = 1e-4;
 var ROUND_SUPPORTED_PRECISION_MAX = 20;
 function _trim(str) {
@@ -18558,7 +19977,7 @@ function getLeastCommonMultiple(a, b) {
   return a * b / getGreatestCommonDividor(a, b);
 }
 
-// node_modules/echarts/lib/util/log.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/log.js
 var ECHARTS_PREFIX = "[ECharts] ";
 var storedLogs = {};
 var hasConsole = typeof console !== "undefined" && console.warn && console.log;
@@ -18630,7 +20049,7 @@ function throwError(msg) {
   throw new Error(msg);
 }
 
-// node_modules/echarts/lib/util/model.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/model.js
 function interpolateNumber2(p0, p1, percent) {
   return (p1 - p0) * percent + p0;
 }
@@ -19075,7 +20494,7 @@ function interpolateRawValues(data2, precision, sourceValue, targetValue, percen
   }
 }
 
-// node_modules/echarts/lib/util/clazz.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/clazz.js
 var TYPE_DELIMITER = ".";
 var IS_CONTAINER = "___EC__COMPONENT__CONTAINER___";
 var IS_EXTENDED_CLASS = "___EC__EXTENDED_CLASS___";
@@ -19231,7 +20650,7 @@ function enableClassManagement(target) {
   }
 }
 
-// node_modules/echarts/lib/model/mixin/makeStyleMapper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/makeStyleMapper.js
 function makeStyleMapper(properties, ignoreParent) {
   for (var i = 0; i < properties.length; i++) {
     if (!properties[i][1]) {
@@ -19255,7 +20674,7 @@ function makeStyleMapper(properties, ignoreParent) {
   };
 }
 
-// node_modules/echarts/lib/model/mixin/areaStyle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/areaStyle.js
 var AREA_STYLE_KEY_MAP = [
   ["fill", "color"],
   ["shadowBlur"],
@@ -19279,7 +20698,7 @@ var AreaStyleMixin = (
   }()
 );
 
-// node_modules/zrender/lib/graphic/helper/image.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/image.js
 var globalImageCache = new LRU_default(50);
 function findExistImage(newImageOrSrc) {
   if (typeof newImageOrSrc === "string") {
@@ -19329,7 +20748,7 @@ function isImageReady(image) {
   return image && image.width && image.height;
 }
 
-// node_modules/zrender/lib/graphic/helper/parseText.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/parseText.js
 var STYLE_REG = /\{([a-zA-Z0-9_]+)\|([^}]*)\}/g;
 function truncateText2(out2, text, containerWidth, font, ellipsis, options) {
   if (!containerWidth) {
@@ -19791,7 +21210,7 @@ function wrapText(text, font, lineWidth, isBreakAll, lastAccumWidth) {
   };
 }
 
-// node_modules/zrender/lib/graphic/Displayable.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Displayable.js
 var STYLE_MAGIC_KEY = "__zr_style_" + Math.round(Math.random() * 10);
 var DEFAULT_COMMON_STYLE = {
   shadowBlur: 0,
@@ -19814,7 +21233,7 @@ DEFAULT_COMMON_STYLE[STYLE_MAGIC_KEY] = true;
 var PRIMARY_STATES_KEYS2 = ["z", "z2", "invisible"];
 var PRIMARY_STATES_KEYS_IN_HOVER_LAYER = ["invisible"];
 var Displayable = function(_super) {
-  __extends2(Displayable2, _super);
+  __extends(Displayable2, _super);
   function Displayable2(props) {
     return _super.call(this, props) || this;
   }
@@ -19877,15 +21296,15 @@ var Displayable = function(_super) {
   Displayable2.prototype.getPaintRect = function() {
     var rect = this._paintRect;
     if (!this._paintRect || this.__dirty) {
-      var transform2 = this.transform;
+      var transform3 = this.transform;
       var elRect = this.getBoundingRect();
       var style = this.style;
       var shadowSize = style.shadowBlur || 0;
       var shadowOffsetX = style.shadowOffsetX || 0;
       var shadowOffsetY = style.shadowOffsetY || 0;
       rect = this._paintRect || (this._paintRect = new BoundingRect_default(0, 0, 0, 0));
-      if (transform2) {
-        BoundingRect_default.applyTransform(rect, elRect, transform2);
+      if (transform3) {
+        BoundingRect_default.applyTransform(rect, elRect, transform3);
       } else {
         rect.copy(elRect);
       }
@@ -20098,7 +21517,7 @@ function isDisplayableCulled(el, width, height) {
 }
 var Displayable_default = Displayable;
 
-// node_modules/zrender/lib/core/bbox.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/bbox.js
 var mathMin2 = Math.min;
 var mathMax2 = Math.max;
 var mathSin = Math.sin;
@@ -20221,7 +21640,7 @@ function fromArc(x, y, rx, ry, startAngle, endAngle, anticlockwise, min4, max4) 
   }
 }
 
-// node_modules/zrender/lib/core/PathProxy.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/PathProxy.js
 var CMD = {
   M: 1,
   L: 2,
@@ -20908,7 +22327,7 @@ var PathProxy = function() {
 }();
 var PathProxy_default = PathProxy;
 
-// node_modules/zrender/lib/contain/line.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/line.js
 function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
   if (lineWidth === 0) {
     return false;
@@ -20930,7 +22349,7 @@ function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
   return _s <= _l / 2 * _l / 2;
 }
 
-// node_modules/zrender/lib/contain/cubic.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/cubic.js
 function containStroke2(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
   if (lineWidth === 0) {
     return false;
@@ -20943,7 +22362,7 @@ function containStroke2(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
   return d <= _l / 2;
 }
 
-// node_modules/zrender/lib/contain/quadratic.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/quadratic.js
 function containStroke3(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
   if (lineWidth === 0) {
     return false;
@@ -20956,7 +22375,7 @@ function containStroke3(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
   return d <= _l / 2;
 }
 
-// node_modules/zrender/lib/contain/util.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/util.js
 var PI23 = Math.PI * 2;
 function normalizeRadian(angle) {
   angle %= PI23;
@@ -20966,7 +22385,7 @@ function normalizeRadian(angle) {
   return angle;
 }
 
-// node_modules/zrender/lib/contain/arc.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/arc.js
 var PI24 = Math.PI * 2;
 function containStroke4(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidth, x, y) {
   if (lineWidth === 0) {
@@ -21000,7 +22419,7 @@ function containStroke4(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidt
   return angle >= startAngle && angle <= endAngle || angle + PI24 >= startAngle && angle + PI24 <= endAngle;
 }
 
-// node_modules/zrender/lib/contain/windingLine.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/windingLine.js
 function windingLine(x0, y0, x1, y1, x, y) {
   if (y > y0 && y > y1 || y < y0 && y < y1) {
     return 0;
@@ -21017,7 +22436,7 @@ function windingLine(x0, y0, x1, y1, x, y) {
   return x_ === x ? Infinity : x_ > x ? dir3 : 0;
 }
 
-// node_modules/zrender/lib/contain/path.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/path.js
 var CMD2 = PathProxy_default.CMD;
 var PI25 = Math.PI * 2;
 var EPSILON4 = 1e-4;
@@ -21297,7 +22716,7 @@ function containStroke5(pathProxy, lineWidth, x, y) {
   return containPath(pathProxy, lineWidth, true, x, y);
 }
 
-// node_modules/zrender/lib/graphic/Path.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Path.js
 var DEFAULT_PATH_STYLE = defaults({
   fill: "#000",
   stroke: null,
@@ -21332,7 +22751,7 @@ var pathCopyParams = TRANSFORMABLE_PROPS.concat([
   "parent"
 ]);
 var Path = function(_super) {
-  __extends2(Path2, _super);
+  __extends(Path2, _super);
   function Path2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -21645,7 +23064,7 @@ var Path = function(_super) {
   };
   Path2.extend = function(defaultProps) {
     var Sub = function(_super2) {
-      __extends2(Sub2, _super2);
+      __extends(Sub2, _super2);
       function Sub2(opts) {
         var _this = _super2.call(this, opts) || this;
         defaultProps.init && defaultProps.init.call(_this, opts);
@@ -21679,7 +23098,7 @@ var Path = function(_super) {
 }(Displayable_default);
 var Path_default = Path;
 
-// node_modules/zrender/lib/graphic/TSpan.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/TSpan.js
 var DEFAULT_TSPAN_STYLE = defaults({
   strokeFirst: true,
   font: DEFAULT_FONT,
@@ -21690,7 +23109,7 @@ var DEFAULT_TSPAN_STYLE = defaults({
   miterLimit: 2
 }, DEFAULT_PATH_STYLE);
 var TSpan = function(_super) {
-  __extends2(TSpan2, _super);
+  __extends(TSpan2, _super);
   function TSpan2() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -21738,7 +23157,7 @@ var TSpan = function(_super) {
 TSpan.prototype.type = "tspan";
 var TSpan_default = TSpan;
 
-// node_modules/zrender/lib/graphic/Image.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Image.js
 var DEFAULT_IMAGE_STYLE = defaults({
   x: 0,
   y: 0
@@ -21759,7 +23178,7 @@ function isImageLike(source) {
   return !!(source && typeof source !== "string" && source.width && source.height);
 }
 var ZRImage = function(_super) {
-  __extends2(ZRImage2, _super);
+  __extends(ZRImage2, _super);
   function ZRImage2() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -21805,7 +23224,7 @@ var ZRImage = function(_super) {
 ZRImage.prototype.type = "image";
 var Image_default = ZRImage;
 
-// node_modules/zrender/lib/graphic/helper/roundRect.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/roundRect.js
 function buildPath(ctx, shape) {
   var x = shape.x;
   var y = shape.y;
@@ -21877,7 +23296,7 @@ function buildPath(ctx, shape) {
   r1 !== 0 && ctx.arc(x + r1, y + r1, r1, Math.PI, Math.PI * 1.5);
 }
 
-// node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
 var round2 = Math.round;
 function subPixelOptimizeLine(outputShape, inputShape, style) {
   if (!inputShape) {
@@ -21933,7 +23352,7 @@ function subPixelOptimize(position2, lineWidth, positiveOrNegative) {
   return (doubledPosition + round2(lineWidth)) % 2 === 0 ? doubledPosition / 2 : (doubledPosition + (positiveOrNegative ? 1 : -1)) / 2;
 }
 
-// node_modules/zrender/lib/graphic/shape/Rect.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Rect.js
 var RectShape = /* @__PURE__ */ function() {
   function RectShape2() {
     this.x = 0;
@@ -21945,7 +23364,7 @@ var RectShape = /* @__PURE__ */ function() {
 }();
 var subPixelOptimizeOutputShape = {};
 var Rect = function(_super) {
-  __extends2(Rect4, _super);
+  __extends(Rect4, _super);
   function Rect4(opts) {
     return _super.call(this, opts) || this;
   }
@@ -21985,7 +23404,7 @@ var Rect = function(_super) {
 Rect.prototype.type = "rect";
 var Rect_default = Rect;
 
-// node_modules/zrender/lib/graphic/Text.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Text.js
 var DEFAULT_RICH_TEXT_COLOR = {
   fill: "#000"
 };
@@ -22013,7 +23432,7 @@ var DEFAULT_TEXT_ANIMATION_PROPS = {
   }, DEFAULT_COMMON_ANIMATION_PROPS.style)
 };
 var ZRText = function(_super) {
-  __extends2(ZRText2, _super);
+  __extends(ZRText2, _super);
   function ZRText2(opts) {
     var _this = _super.call(this) || this;
     _this.type = "text";
@@ -22093,10 +23512,10 @@ var ZRText = function(_super) {
       for (var i = 0; i < children.length; i++) {
         var child = children[i];
         var childRect = child.getBoundingRect();
-        var transform2 = child.getLocalTransform(tmpMat);
-        if (transform2) {
+        var transform3 = child.getLocalTransform(tmpMat);
+        if (transform3) {
           tmpRect3.copy(childRect);
-          tmpRect3.applyTransform(transform2);
+          tmpRect3.applyTransform(transform3);
           rect = rect || tmpRect3.clone();
           rect.union(tmpRect3);
         } else {
@@ -22477,7 +23896,7 @@ function needDrawBackground(style) {
 }
 var Text_default = ZRText;
 
-// node_modules/echarts/lib/util/innerStore.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/innerStore.js
 var getECData = makeInner();
 var setCommonECData = function(seriesIndex, dataType, dataIdx, el) {
   if (el) {
@@ -22498,7 +23917,7 @@ var setCommonECData = function(seriesIndex, dataType, dataIdx, el) {
   }
 };
 
-// node_modules/echarts/lib/util/states.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/states.js
 var _highlightNextDigit = 1;
 var _highlightKeyMap = {};
 var getSavedStates = makeInner();
@@ -23025,7 +24444,7 @@ function savePathStates(el) {
   store.selectStroke = selectState.style && selectState.style.stroke || null;
 }
 
-// node_modules/echarts/lib/util/graphic.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/graphic.js
 var graphic_exports = {};
 __export(graphic_exports, {
   Arc: () => Arc_default,
@@ -23078,7 +24497,7 @@ __export(graphic_exports, {
   updateProps: () => updateProps
 });
 
-// node_modules/zrender/lib/tool/transformPath.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/transformPath.js
 var CMD3 = PathProxy_default.CMD;
 var points = [[], [], []];
 var mathSqrt2 = Math.sqrt;
@@ -23159,7 +24578,7 @@ function transformPath(path, m2) {
   path.increaseVersion();
 }
 
-// node_modules/zrender/lib/tool/path.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/path.js
 var mathSqrt3 = Math.sqrt;
 var mathSin3 = Math.sin;
 var mathCos3 = Math.cos;
@@ -23419,7 +24838,7 @@ function createPathProxyFromString(data2) {
   return path;
 }
 var SVGPath = function(_super) {
-  __extends2(SVGPath2, _super);
+  __extends(SVGPath2, _super);
   function SVGPath2() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -23457,7 +24876,7 @@ function createFromString(str, opts) {
 function extendFromString(str, defaultOpts) {
   var innerOpts = createPathOptions(str, defaultOpts);
   var Sub = function(_super) {
-    __extends2(Sub2, _super);
+    __extends(Sub2, _super);
     function Sub2(opts) {
       var _this = _super.call(this, opts) || this;
       _this.applyTransform = innerOpts.applyTransform;
@@ -23512,7 +24931,7 @@ function clonePath(sourcePath, opts) {
   return path;
 }
 
-// node_modules/zrender/lib/graphic/shape/Circle.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Circle.js
 var CircleShape = /* @__PURE__ */ function() {
   function CircleShape2() {
     this.cx = 0;
@@ -23522,7 +24941,7 @@ var CircleShape = /* @__PURE__ */ function() {
   return CircleShape2;
 }();
 var Circle = function(_super) {
-  __extends2(Circle2, _super);
+  __extends(Circle2, _super);
   function Circle2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23538,7 +24957,7 @@ var Circle = function(_super) {
 Circle.prototype.type = "circle";
 var Circle_default = Circle;
 
-// node_modules/zrender/lib/graphic/shape/Ellipse.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Ellipse.js
 var EllipseShape = /* @__PURE__ */ function() {
   function EllipseShape2() {
     this.cx = 0;
@@ -23549,7 +24968,7 @@ var EllipseShape = /* @__PURE__ */ function() {
   return EllipseShape2;
 }();
 var Ellipse = function(_super) {
-  __extends2(Ellipse2, _super);
+  __extends(Ellipse2, _super);
   function Ellipse2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23576,7 +24995,7 @@ var Ellipse = function(_super) {
 Ellipse.prototype.type = "ellipse";
 var Ellipse_default = Ellipse;
 
-// node_modules/zrender/lib/graphic/helper/roundSector.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/roundSector.js
 var PI4 = Math.PI;
 var PI26 = PI4 * 2;
 var mathSin4 = Math.sin;
@@ -23792,7 +25211,7 @@ function buildPath2(ctx, shape) {
   ctx.closePath();
 }
 
-// node_modules/zrender/lib/graphic/shape/Sector.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Sector.js
 var SectorShape = /* @__PURE__ */ function() {
   function SectorShape2() {
     this.cx = 0;
@@ -23807,7 +25226,7 @@ var SectorShape = /* @__PURE__ */ function() {
   return SectorShape2;
 }();
 var Sector = function(_super) {
-  __extends2(Sector2, _super);
+  __extends(Sector2, _super);
   function Sector2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23825,7 +25244,7 @@ var Sector = function(_super) {
 Sector.prototype.type = "sector";
 var Sector_default = Sector;
 
-// node_modules/zrender/lib/graphic/shape/Ring.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Ring.js
 var RingShape = /* @__PURE__ */ function() {
   function RingShape2() {
     this.cx = 0;
@@ -23836,7 +25255,7 @@ var RingShape = /* @__PURE__ */ function() {
   return RingShape2;
 }();
 var Ring = function(_super) {
-  __extends2(Ring2, _super);
+  __extends(Ring2, _super);
   function Ring2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23857,7 +25276,7 @@ var Ring = function(_super) {
 Ring.prototype.type = "ring";
 var Ring_default = Ring;
 
-// node_modules/zrender/lib/graphic/helper/smoothBezier.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/smoothBezier.js
 function smoothBezier(points4, smooth, isLoop, constraint) {
   var cps = [];
   var v = [];
@@ -23919,7 +25338,7 @@ function smoothBezier(points4, smooth, isLoop, constraint) {
   return cps;
 }
 
-// node_modules/zrender/lib/graphic/helper/poly.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/poly.js
 function buildPath3(ctx, shape, closePath) {
   var smooth = shape.smooth;
   var points4 = shape.points;
@@ -23944,7 +25363,7 @@ function buildPath3(ctx, shape, closePath) {
   }
 }
 
-// node_modules/zrender/lib/graphic/shape/Polygon.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Polygon.js
 var PolygonShape = /* @__PURE__ */ function() {
   function PolygonShape2() {
     this.points = null;
@@ -23954,7 +25373,7 @@ var PolygonShape = /* @__PURE__ */ function() {
   return PolygonShape2;
 }();
 var Polygon = function(_super) {
-  __extends2(Polygon2, _super);
+  __extends(Polygon2, _super);
   function Polygon2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23969,7 +25388,7 @@ var Polygon = function(_super) {
 Polygon.prototype.type = "polygon";
 var Polygon_default = Polygon;
 
-// node_modules/zrender/lib/graphic/shape/Polyline.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Polyline.js
 var PolylineShape = /* @__PURE__ */ function() {
   function PolylineShape2() {
     this.points = null;
@@ -23980,7 +25399,7 @@ var PolylineShape = /* @__PURE__ */ function() {
   return PolylineShape2;
 }();
 var Polyline = function(_super) {
-  __extends2(Polyline3, _super);
+  __extends(Polyline3, _super);
   function Polyline3(opts) {
     return _super.call(this, opts) || this;
   }
@@ -24001,7 +25420,7 @@ var Polyline = function(_super) {
 Polyline.prototype.type = "polyline";
 var Polyline_default = Polyline;
 
-// node_modules/zrender/lib/graphic/shape/Line.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Line.js
 var subPixelOptimizeOutputShape2 = {};
 var LineShape = /* @__PURE__ */ function() {
   function LineShape2() {
@@ -24014,7 +25433,7 @@ var LineShape = /* @__PURE__ */ function() {
   return LineShape2;
 }();
 var Line = function(_super) {
-  __extends2(Line3, _super);
+  __extends(Line3, _super);
   function Line3(opts) {
     return _super.call(this, opts) || this;
   }
@@ -24067,7 +25486,7 @@ var Line = function(_super) {
 Line.prototype.type = "line";
 var Line_default = Line;
 
-// node_modules/zrender/lib/graphic/shape/BezierCurve.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/BezierCurve.js
 var out = [];
 var BezierCurveShape = /* @__PURE__ */ function() {
   function BezierCurveShape2() {
@@ -24097,7 +25516,7 @@ function someVectorAt(shape, t, isTangent) {
   }
 }
 var BezierCurve = function(_super) {
-  __extends2(BezierCurve2, _super);
+  __extends(BezierCurve2, _super);
   function BezierCurve2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -24160,7 +25579,7 @@ var BezierCurve = function(_super) {
 BezierCurve.prototype.type = "bezier-curve";
 var BezierCurve_default = BezierCurve;
 
-// node_modules/zrender/lib/graphic/shape/Arc.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Arc.js
 var ArcShape = /* @__PURE__ */ function() {
   function ArcShape2() {
     this.cx = 0;
@@ -24173,7 +25592,7 @@ var ArcShape = /* @__PURE__ */ function() {
   return ArcShape2;
 }();
 var Arc = function(_super) {
-  __extends2(Arc2, _super);
+  __extends(Arc2, _super);
   function Arc2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -24203,9 +25622,9 @@ var Arc = function(_super) {
 Arc.prototype.type = "arc";
 var Arc_default = Arc;
 
-// node_modules/zrender/lib/graphic/CompoundPath.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/CompoundPath.js
 var CompoundPath = function(_super) {
-  __extends2(CompoundPath2, _super);
+  __extends(CompoundPath2, _super);
   function CompoundPath2() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.type = "compound";
@@ -24252,7 +25671,7 @@ var CompoundPath = function(_super) {
 }(Path_default);
 var CompoundPath_default = CompoundPath;
 
-// node_modules/zrender/lib/graphic/Gradient.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Gradient.js
 var Gradient = function() {
   function Gradient2(colorStops) {
     this.colorStops = colorStops || [];
@@ -24267,9 +25686,9 @@ var Gradient = function() {
 }();
 var Gradient_default = Gradient;
 
-// node_modules/zrender/lib/graphic/LinearGradient.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/LinearGradient.js
 var LinearGradient = function(_super) {
-  __extends2(LinearGradient2, _super);
+  __extends(LinearGradient2, _super);
   function LinearGradient2(x, y, x2, y2, colorStops, globalCoord) {
     var _this = _super.call(this, colorStops) || this;
     _this.x = x == null ? 0 : x;
@@ -24284,9 +25703,9 @@ var LinearGradient = function(_super) {
 }(Gradient_default);
 var LinearGradient_default = LinearGradient;
 
-// node_modules/zrender/lib/graphic/RadialGradient.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/RadialGradient.js
 var RadialGradient = function(_super) {
-  __extends2(RadialGradient2, _super);
+  __extends(RadialGradient2, _super);
   function RadialGradient2(x, y, r, colorStops, globalCoord) {
     var _this = _super.call(this, colorStops) || this;
     _this.x = x == null ? 0.5 : x;
@@ -24300,13 +25719,13 @@ var RadialGradient = function(_super) {
 }(Gradient_default);
 var RadialGradient_default = RadialGradient;
 
-// node_modules/zrender/lib/core/OrientedBoundingRect.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/OrientedBoundingRect.js
 var extent = [0, 0];
 var extent2 = [0, 0];
 var minTv2 = new Point_default();
 var maxTv2 = new Point_default();
 var OrientedBoundingRect = function() {
-  function OrientedBoundingRect2(rect, transform2) {
+  function OrientedBoundingRect2(rect, transform3) {
     this._corners = [];
     this._axes = [];
     this._origin = [0, 0];
@@ -24317,10 +25736,10 @@ var OrientedBoundingRect = function() {
       this._axes[i] = new Point_default();
     }
     if (rect) {
-      this.fromBoundingRect(rect, transform2);
+      this.fromBoundingRect(rect, transform3);
     }
   }
-  OrientedBoundingRect2.prototype.fromBoundingRect = function(rect, transform2) {
+  OrientedBoundingRect2.prototype.fromBoundingRect = function(rect, transform3) {
     var corners = this._corners;
     var axes = this._axes;
     var x = rect.x;
@@ -24331,9 +25750,9 @@ var OrientedBoundingRect = function() {
     corners[1].set(x2, y);
     corners[2].set(x2, y2);
     corners[3].set(x, y2);
-    if (transform2) {
+    if (transform3) {
       for (var i = 0; i < 4; i++) {
-        corners[i].transform(transform2);
+        corners[i].transform(transform3);
       }
     }
     Point_default.sub(axes[0], corners[1], corners[0]);
@@ -24418,10 +25837,10 @@ var OrientedBoundingRect = function() {
 }();
 var OrientedBoundingRect_default = OrientedBoundingRect;
 
-// node_modules/zrender/lib/graphic/IncrementalDisplayable.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/IncrementalDisplayable.js
 var m = [];
 var IncrementalDisplayable = function(_super) {
-  __extends2(IncrementalDisplayable2, _super);
+  __extends(IncrementalDisplayable2, _super);
   function IncrementalDisplayable2() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.notClear = true;
@@ -24528,7 +25947,7 @@ var IncrementalDisplayable = function(_super) {
 }(Displayable_default);
 var IncrementalDisplayable_default = IncrementalDisplayable;
 
-// node_modules/echarts/lib/animation/basicTransition.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/basicTransition.js
 var transitionStore = makeInner();
 function getAnimationConfig(animationType, animatableModel, dataIndex, extraOpts, extraDelayParams) {
   var animationPayload;
@@ -24669,7 +26088,7 @@ function getOldStyle(el) {
   return transitionStore(el).oldStyle;
 }
 
-// node_modules/echarts/lib/util/graphic.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/graphic.js
 var mathMax5 = Math.max;
 var mathMin5 = Math.min;
 var _customShapeMap = {};
@@ -24766,20 +26185,20 @@ function getTransform(target, ancestor) {
   }
   return mat;
 }
-function applyTransform2(target, transform2, invert2) {
-  if (transform2 && !isArrayLike(transform2)) {
-    transform2 = Transformable_default.getLocalTransform(transform2);
+function applyTransform2(target, transform3, invert2) {
+  if (transform3 && !isArrayLike(transform3)) {
+    transform3 = Transformable_default.getLocalTransform(transform3);
   }
   if (invert2) {
-    transform2 = invert([], transform2);
+    transform3 = invert([], transform3);
   }
-  return applyTransform([], target, transform2);
+  return applyTransform([], target, transform3);
 }
-function transformDirection(direction, transform2, invert2) {
-  var hBase = transform2[4] === 0 || transform2[5] === 0 || transform2[0] === 0 ? 1 : Math.abs(2 * transform2[4] / transform2[0]);
-  var vBase = transform2[4] === 0 || transform2[5] === 0 || transform2[2] === 0 ? 1 : Math.abs(2 * transform2[4] / transform2[2]);
+function transformDirection(direction, transform3, invert2) {
+  var hBase = transform3[4] === 0 || transform3[5] === 0 || transform3[0] === 0 ? 1 : Math.abs(2 * transform3[4] / transform3[0]);
+  var vBase = transform3[4] === 0 || transform3[5] === 0 || transform3[2] === 0 ? 1 : Math.abs(2 * transform3[4] / transform3[2]);
   var vertex = [direction === "left" ? -hBase : direction === "right" ? hBase : 0, direction === "top" ? -vBase : direction === "bottom" ? vBase : 0];
-  vertex = applyTransform2(vertex, transform2, invert2);
+  vertex = applyTransform2(vertex, transform3, invert2);
   return Math.abs(vertex[0]) > Math.abs(vertex[1]) ? vertex[0] > 0 ? "right" : "left" : vertex[1] > 0 ? "bottom" : "top";
 }
 function isNotGroup(el) {
@@ -24969,7 +26388,7 @@ registerShape("line", Line_default);
 registerShape("bezierCurve", BezierCurve_default);
 registerShape("arc", Arc_default);
 
-// node_modules/echarts/lib/label/labelStyle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/labelStyle.js
 var EMPTY_OBJ = {};
 function setLabelText(label, labelTexts) {
   for (var i = 0; i < SPECIAL_STATES.length; i++) {
@@ -25331,7 +26750,7 @@ function animateLabelValue(textEl, dataIndex, data2, animatableModel, labelFetch
   }, animatableModel, dataIndex, null, during);
 }
 
-// node_modules/echarts/lib/model/mixin/textStyle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/textStyle.js
 var PATH_COLOR = ["textStyle", "color"];
 var textStyleParams = ["fontStyle", "fontWeight", "fontSize", "fontFamily", "padding", "lineHeight", "rich", "width", "height", "overflow"];
 var tmpText = new Text_default();
@@ -25369,7 +26788,7 @@ var TextStyleMixin = (
 );
 var textStyle_default = TextStyleMixin;
 
-// node_modules/echarts/lib/model/mixin/lineStyle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/lineStyle.js
 var LINE_STYLE_KEY_MAP = [
   ["lineWidth", "width"],
   ["stroke", "color"],
@@ -25399,7 +26818,7 @@ var LineStyleMixin = (
   }()
 );
 
-// node_modules/echarts/lib/model/mixin/itemStyle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/itemStyle.js
 var ITEM_STYLE_KEY_MAP = [
   ["fill", "color"],
   ["stroke", "borderColor"],
@@ -25430,7 +26849,7 @@ var ItemStyleMixin = (
   }()
 );
 
-// node_modules/echarts/lib/model/Model.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Model.js
 var Model = (
   /** @class */
   function() {
@@ -25529,7 +26948,7 @@ mixin(Model, AreaStyleMixin);
 mixin(Model, textStyle_default);
 var Model_default = Model;
 
-// node_modules/echarts/lib/util/component.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/component.js
 var base = Math.round(Math.random() * 10);
 function getUID(type) {
   return [type || "", base++].join("_");
@@ -25638,7 +27057,7 @@ function inheritDefaultOption(superOption, subOption) {
   return merge(merge({}, superOption, true), subOption, true);
 }
 
-// node_modules/echarts/lib/i18n/langEN.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/i18n/langEN.js
 var langEN_default = {
   time: {
     month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -25751,7 +27170,7 @@ var langEN_default = {
   }
 };
 
-// node_modules/echarts/lib/i18n/langZH.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/i18n/langZH.js
 var langZH_default = {
   time: {
     month: ["\u4E00\u6708", "\u4E8C\u6708", "\u4E09\u6708", "\u56DB\u6708", "\u4E94\u6708", "\u516D\u6708", "\u4E03\u6708", "\u516B\u6708", "\u4E5D\u6708", "\u5341\u6708", "\u5341\u4E00\u6708", "\u5341\u4E8C\u6708"],
@@ -25864,7 +27283,7 @@ var langZH_default = {
   }
 };
 
-// node_modules/echarts/lib/core/locale.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/locale.js
 var LOCALE_ZH = "ZH";
 var LOCALE_EN = "EN";
 var DEFAULT_LOCALE = LOCALE_EN;
@@ -25903,7 +27322,7 @@ function getDefaultLocaleModel() {
 registerLocale(LOCALE_EN, langEN_default);
 registerLocale(LOCALE_ZH, langZH_default);
 
-// node_modules/echarts/lib/util/time.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/time.js
 var ONE_SECOND = 1e3;
 var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
@@ -26122,7 +27541,7 @@ function millisecondsSetterName(isUTC) {
   return isUTC ? "setUTCMilliseconds" : "setMilliseconds";
 }
 
-// node_modules/echarts/lib/util/format.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/format.js
 function addCommas(x) {
   if (!isNumeric(x)) {
     return isString(x) ? x : "-";
@@ -26242,7 +27661,7 @@ function windowOpen(link, target) {
   }
 }
 
-// node_modules/echarts/lib/util/layout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/layout.js
 var each2 = each;
 var LOCATION_PARAMS = ["left", "right", "top", "bottom", "width", "height"];
 var HV_NAMES = [["width", "left", "right"], ["height", "top", "bottom"]];
@@ -26399,9 +27818,9 @@ function positionElement(el, positionInfo, containerRect, margin, opt, out2) {
   } else {
     rect = el.getBoundingRect();
     if (el.needLocalTransform()) {
-      var transform2 = el.getLocalTransform();
+      var transform3 = el.getLocalTransform();
       rect = rect.clone();
-      rect.applyTransform(transform2);
+      rect.applyTransform(transform3);
     }
   }
   var layoutRect = getLayoutRect(defaults({
@@ -26497,7 +27916,7 @@ function copyLayoutParams(target, source) {
   return target;
 }
 
-// node_modules/echarts/lib/model/Component.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Component.js
 var inner = makeInner();
 var ComponentModel = (
   /** @class */
@@ -26608,7 +28027,7 @@ function getDependencies(componentType) {
 }
 var Component_default = ComponentModel;
 
-// node_modules/echarts/lib/model/globalDefault.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/globalDefault.js
 var platform = "";
 if (typeof navigator !== "undefined") {
   platform = navigator.platform || "";
@@ -26696,7 +28115,7 @@ var globalDefault_default = {
   useUTC: false
 };
 
-// node_modules/echarts/lib/util/types.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/types.js
 var VISUAL_DIMENSIONS = createHashMap(["tooltip", "label", "itemName", "itemId", "itemGroupId", "itemChildGroupId", "seriesName"]);
 var SOURCE_FORMAT_ORIGINAL = "original";
 var SOURCE_FORMAT_ARRAY_ROWS = "arrayRows";
@@ -26707,7 +28126,7 @@ var SOURCE_FORMAT_UNKNOWN = "unknown";
 var SERIES_LAYOUT_BY_COLUMN = "column";
 var SERIES_LAYOUT_BY_ROW = "row";
 
-// node_modules/echarts/lib/data/helper/sourceHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/sourceHelper.js
 var BE_ORDINAL = {
   Must: 1,
   Might: 2,
@@ -26939,7 +28358,7 @@ function doGuessOrdinal(data2, sourceFormat, seriesLayoutBy, dimensionsDefine, s
   return BE_ORDINAL.Not;
 }
 
-// node_modules/echarts/lib/model/internalComponentCreator.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/internalComponentCreator.js
 var internalOptionCreatorMap = createHashMap();
 function registerInternalOptionCreator(mainType, creator) {
   assert(internalOptionCreatorMap.get(mainType) == null && creator);
@@ -26962,7 +28381,7 @@ function concatInternalOptions(ecModel, mainType, newCmptOptionList) {
   return newCmptOptionList.concat(internalOptions);
 }
 
-// node_modules/echarts/lib/model/mixin/palette.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/palette.js
 var innerColor = makeInner();
 var innerDecal = makeInner();
 var PaletteMixin = (
@@ -27019,7 +28438,7 @@ function clearPalette(that, inner23) {
   inner23(that).paletteNameMap = {};
 }
 
-// node_modules/echarts/lib/model/Global.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Global.js
 var reCreateSeriesIndices;
 var assertSeriesInitialized;
 var initBase;
@@ -27579,7 +28998,7 @@ function normalizeSetOptionInput(opts) {
 mixin(GlobalModel, PaletteMixin);
 var Global_default = GlobalModel;
 
-// node_modules/echarts/lib/core/ExtensionAPI.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/ExtensionAPI.js
 var availableMethods = [
   "getDom",
   "getZr",
@@ -27613,7 +29032,7 @@ var ExtensionAPI = (
 );
 var ExtensionAPI_default = ExtensionAPI;
 
-// node_modules/echarts/lib/core/CoordinateSystem.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/CoordinateSystem.js
 var coordinateSystemCreators = {};
 var CoordinateSystemManager = (
   /** @class */
@@ -27648,7 +29067,7 @@ var CoordinateSystemManager = (
 );
 var CoordinateSystem_default = CoordinateSystemManager;
 
-// node_modules/echarts/lib/model/OptionManager.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/OptionManager.js
 var QUERY_REG = /^(min|max)?(.+)$/;
 var OptionManager = (
   /** @class */
@@ -27834,7 +29253,7 @@ function indicesEquals(indices1, indices2) {
 }
 var OptionManager_default = OptionManager;
 
-// node_modules/echarts/lib/preprocessor/helper/compatStyle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/preprocessor/helper/compatStyle.js
 var each3 = each;
 var isObject2 = isObject;
 var POSSIBLE_STYLES = ["areaStyle", "lineStyle", "nodeStyle", "linkStyle", "chordStyle", "label", "labelLine"];
@@ -28098,7 +29517,7 @@ function globalCompatStyle(option, isTheme) {
   compatTextStyle(toObj(option.tooltip).axisPointer, "label");
 }
 
-// node_modules/echarts/lib/preprocessor/backwardCompat.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/preprocessor/backwardCompat.js
 function get(opt, path) {
   var pathArr = path.split(",");
   var obj = opt;
@@ -28305,7 +29724,7 @@ function globalBackwardCompat(option, isTheme) {
   });
 }
 
-// node_modules/echarts/lib/processor/dataStack.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/dataStack.js
 function dataStack(ecModel) {
   var stackInfoMap = createHashMap();
   ecModel.eachSeries(function(seriesModel) {
@@ -28375,7 +29794,7 @@ function calculateStack(stackInfoList) {
   });
 }
 
-// node_modules/echarts/lib/data/Source.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/Source.js
 var SourceImpl = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -28580,7 +29999,7 @@ function shouldRetrieveDataByName(source) {
   return sourceFormat === SOURCE_FORMAT_OBJECT_ROWS || sourceFormat === SOURCE_FORMAT_KEYED_COLUMNS;
 }
 
-// node_modules/echarts/lib/data/helper/dataProvider.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dataProvider.js
 var _a;
 var _b;
 var _c;
@@ -28829,7 +30248,7 @@ function retrieveRawValue(data2, dataIndex, dim) {
   }
 }
 
-// node_modules/echarts/lib/model/mixin/dataFormat.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/dataFormat.js
 var DIMENSION_LABEL_REG = /\{@(.+?)\}/g;
 var DataFormatMixin = (
   /** @class */
@@ -28941,7 +30360,7 @@ function normalizeTooltipFormatResult(result) {
   };
 }
 
-// node_modules/echarts/lib/core/task.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/task.js
 function createTask(define2) {
   return new Task(define2);
 }
@@ -29121,7 +30540,7 @@ var iterator = /* @__PURE__ */ function() {
   }
 }();
 
-// node_modules/echarts/lib/data/helper/dataValueHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dataValueHelper.js
 function parseDataValue(value, opt) {
   var dimType = opt && opt.type;
   if (dimType === "ordinal") {
@@ -29243,7 +30662,7 @@ function createFilterComparator(op, rval) {
   return op === "eq" || op === "ne" ? new FilterEqualityComparator(op === "eq", rval) : hasOwn2(ORDER_COMPARISON_OP_MAP, op) ? new FilterOrderComparator(op, rval) : null;
 }
 
-// node_modules/echarts/lib/data/helper/transform.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/transform.js
 var ExternalSource = (
   /** @class */
   function() {
@@ -29528,7 +30947,7 @@ function isSupportedSourceFormat(sourceFormat) {
   return sourceFormat === SOURCE_FORMAT_ARRAY_ROWS || sourceFormat === SOURCE_FORMAT_OBJECT_ROWS;
 }
 
-// node_modules/echarts/lib/data/DataStore.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/DataStore.js
 var UNDEFINED = "undefined";
 var CtorUint32Array = typeof Uint32Array === UNDEFINED ? Array : Uint32Array;
 var CtorUint16Array = typeof Uint16Array === UNDEFINED ? Array : Uint16Array;
@@ -30352,7 +31771,7 @@ var DataStore = (
 );
 var DataStore_default = DataStore;
 
-// node_modules/echarts/lib/data/helper/sourceManager.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/sourceManager.js
 var SourceManager = (
   /** @class */
   function() {
@@ -30580,7 +31999,7 @@ function doThrow(errMsg) {
   throw new Error(errMsg);
 }
 
-// node_modules/echarts/lib/component/tooltip/tooltipMarkup.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/tooltipMarkup.js
 var TOOLTIP_LINE_HEIGHT_CSS = "line-height:1";
 function getTooltipLineHeight(textStyle) {
   var lineHeight = textStyle.lineHeight;
@@ -30825,7 +32244,7 @@ var TooltipMarkupStyleCreator = (
   }()
 );
 
-// node_modules/echarts/lib/component/tooltip/seriesFormatTooltip.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/seriesFormatTooltip.js
 function defaultSeriesFormatTooltip(opt) {
   var series = opt.series;
   var dataIndex = opt.dataIndex;
@@ -30915,7 +32334,7 @@ function formatTooltipArrayValue(value, series, dataIndex, tooltipDims, colorStr
   };
 }
 
-// node_modules/echarts/lib/model/Series.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Series.js
 var inner2 = makeInner();
 function getSelectionKey(data2, dataIndex) {
   return data2.getName(dataIndex) || data2.getId(dataIndex);
@@ -31280,7 +32699,7 @@ function getCurrentTask(seriesModel) {
 }
 var Series_default = SeriesModel;
 
-// node_modules/echarts/lib/view/Component.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/view/Component.js
 var ComponentView = (
   /** @class */
   function() {
@@ -31315,7 +32734,7 @@ enableClassExtend(ComponentView);
 enableClassManagement(ComponentView);
 var Component_default2 = ComponentView;
 
-// node_modules/echarts/lib/chart/helper/createRenderPlanner.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createRenderPlanner.js
 function createRenderPlanner() {
   var inner23 = makeInner();
   return function(seriesModel) {
@@ -31329,7 +32748,7 @@ function createRenderPlanner() {
   };
 }
 
-// node_modules/echarts/lib/view/Chart.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/view/Chart.js
 var inner3 = makeInner();
 var renderPlanner = createRenderPlanner();
 var ChartView = (
@@ -31456,7 +32875,7 @@ var progressMethodMap = {
 };
 var Chart_default = ChartView;
 
-// node_modules/echarts/lib/util/throttle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/throttle.js
 var ORIGIN_METHOD = "\0__throttleOriginMethod";
 var RATE = "\0__throttleRate";
 var THROTTLE_TYPE = "\0__throttleType";
@@ -31537,7 +32956,7 @@ function clear(obj, fnAttr) {
   }
 }
 
-// node_modules/echarts/lib/visual/style.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/style.js
 var inner4 = makeInner();
 var defaultStyleMappers = {
   itemStyle: makeStyleMapper(ITEM_STYLE_KEY_MAP, true),
@@ -31687,7 +33106,7 @@ var dataColorPaletteTask = {
   }
 };
 
-// node_modules/echarts/lib/loading/default.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/loading/default.js
 var PI5 = Math.PI;
 function defaultLoading(api, opts) {
   opts = opts || {};
@@ -31789,7 +33208,7 @@ function defaultLoading(api, opts) {
   return group;
 }
 
-// node_modules/echarts/lib/core/Scheduler.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/Scheduler.js
 var Scheduler = (
   /** @class */
   function() {
@@ -32140,14 +33559,14 @@ function mockMethods(target, Clz) {
 }
 var Scheduler_default = Scheduler;
 
-// node_modules/echarts/lib/theme/light.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/theme/light.js
 var colorAll = ["#37A2DA", "#32C5E9", "#67E0E3", "#9FE6B8", "#FFDB5C", "#ff9f7f", "#fb7293", "#E062AE", "#E690D1", "#e7bcf3", "#9d96f5", "#8378EA", "#96BFFF"];
 var light_default = {
   color: colorAll,
   colorLayer: [["#37A2DA", "#ffd85c", "#fd7b5f"], ["#37A2DA", "#67E0E3", "#FFDB5C", "#ff9f7f", "#E062AE", "#9d96f5"], ["#37A2DA", "#32C5E9", "#9FE6B8", "#FFDB5C", "#ff9f7f", "#fb7293", "#e7bcf3", "#8378EA", "#96BFFF"], colorAll]
 };
 
-// node_modules/echarts/lib/theme/dark.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/theme/dark.js
 var contrastColor = "#B9B8CE";
 var backgroundColor = "#100C2A";
 var axisCommon = function() {
@@ -32331,7 +33750,7 @@ var theme = {
 theme.categoryAxis.splitLine.show = false;
 var dark_default = theme;
 
-// node_modules/echarts/lib/util/ECEventProcessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/ECEventProcessor.js
 var ECEventProcessor = (
   /** @class */
   function() {
@@ -32407,7 +33826,7 @@ var ECEventProcessor = (
   }()
 );
 
-// node_modules/echarts/lib/visual/symbol.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/symbol.js
 var SYMBOL_PROPS_WITH_CB = ["symbol", "symbolSize", "symbolRotate", "symbolOffset"];
 var SYMBOL_PROPS = SYMBOL_PROPS_WITH_CB.concat(["symbolKeepAspect"]);
 var seriesSymbolTask = {
@@ -32485,7 +33904,7 @@ var dataSymbolTask = {
   }
 };
 
-// node_modules/echarts/lib/visual/helper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/helper.js
 function getItemVisualFromData(data2, dataIndex, key) {
   switch (key) {
     case "color":
@@ -32542,7 +33961,7 @@ function setItemVisualFromData(data2, dataIndex, key, value) {
   }
 }
 
-// node_modules/echarts/lib/legacy/dataSelectAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/legacy/dataSelectAction.js
 function createLegacyDataSelectAction(seriesType2, ecRegisterAction) {
   function getSeriesIndices(ecModel, payload) {
     var seriesIndices = [];
@@ -32612,7 +34031,7 @@ function handleLegacySelectEvents(messageCenter, ecIns, api) {
   });
 }
 
-// node_modules/echarts/lib/util/event.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/event.js
 function findEventDispatcher(target, det, returnFirstMatch) {
   var found;
   while (target) {
@@ -32627,7 +34046,7 @@ function findEventDispatcher(target, det, returnFirstMatch) {
   return found;
 }
 
-// node_modules/zrender/lib/core/WeakMap.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/WeakMap.js
 var wmUniqueIndex = Math.round(Math.random() * 9);
 var supportDefineProperty = typeof Object.defineProperty === "function";
 var WeakMap = function() {
@@ -32670,7 +34089,7 @@ var WeakMap = function() {
 }();
 var WeakMap_default = WeakMap;
 
-// node_modules/echarts/lib/util/symbol.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/symbol.js
 var Triangle = Path_default.extend({
   type: "triangle",
   shape: {
@@ -32923,7 +34342,7 @@ function normalizeSymbolOffset(symbolOffset, symbolSize) {
   return [parsePercent2(symbolOffset[0], symbolSize[0]) || 0, parsePercent2(retrieve2(symbolOffset[1], symbolOffset[0]), symbolSize[1]) || 0];
 }
 
-// node_modules/zrender/lib/canvas/helper.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/helper.js
 function isSafeNum(num) {
   return isFinite(num);
 }
@@ -33000,7 +34419,7 @@ function getSize(root, whIdx, opts) {
   return (root[cwh] || parseInt10(stl[wh]) || parseInt10(root.style[wh])) - (parseInt10(stl[plt]) || 0) - (parseInt10(stl[prb]) || 0) | 0;
 }
 
-// node_modules/zrender/lib/canvas/dashStyle.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/dashStyle.js
 function normalizeLineDash(lineType, lineWidth) {
   if (!lineType || lineType === "solid" || !(lineWidth > 0)) {
     return null;
@@ -33023,7 +34442,7 @@ function getLineDash(el) {
   return [lineDash, lineDashOffset];
 }
 
-// node_modules/zrender/lib/canvas/graphic.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/graphic.js
 var pathProxyForDraw = new PathProxy_default(true);
 function styleHasStroke(style) {
   var stroke = style.stroke;
@@ -33530,7 +34949,7 @@ function brushIncremental(ctx, el, scope) {
   ctx.restore();
 }
 
-// node_modules/echarts/lib/util/decal.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/decal.js
 var decalMap = new WeakMap_default();
 var decalCache = new LRU_default(100);
 var decalKeys = ["symbol", "symbolSize", "symbolKeepAspect", "color", "backgroundColor", "dashArrayX", "dashArrayY", "maxTileWidth", "maxTileHeight"];
@@ -33813,7 +35232,7 @@ function getLineBlockLengthY(dash) {
   return blockLength;
 }
 
-// node_modules/echarts/lib/visual/decal.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/decal.js
 function decalVisual(ecModel, api) {
   ecModel.eachRawSeries(function(seriesModel) {
     if (ecModel.isSeriesFiltered(seriesModel)) {
@@ -33837,11 +35256,11 @@ function decalVisual(ecModel, api) {
   });
 }
 
-// node_modules/echarts/lib/core/lifecycle.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/lifecycle.js
 var lifecycle = new Eventful_default();
 var lifecycle_default = lifecycle;
 
-// node_modules/echarts/lib/core/impl.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/impl.js
 var implsStore = {};
 function registerImpl(name, impl) {
   if (true) {
@@ -33860,7 +35279,7 @@ function getImpl(name) {
   return implsStore[name];
 }
 
-// node_modules/echarts/lib/core/echarts.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/echarts.js
 var TEST_FRAME_REMAIN_TIME = 1;
 var PRIORITY_PROCESSOR_SERIES_FILTER = 800;
 var PRIORITY_PROCESSOR_DATASTACK = 900;
@@ -35614,7 +37033,7 @@ registerAction({
 registerTheme("light", light_default);
 registerTheme("dark", dark_default);
 
-// node_modules/echarts/lib/extension.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/extension.js
 var extensions = [];
 var extensionRegisters = {
   registerPreprocessor,
@@ -35674,7 +37093,7 @@ function use(ext) {
   ext.install(extensionRegisters);
 }
 
-// node_modules/echarts/lib/data/DataDiffer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/DataDiffer.js
 function dataIndexMapValueLength(valNumOrArrLengthMoreThan2) {
   return valNumOrArrLengthMoreThan2 == null ? 0 : valNumOrArrLengthMoreThan2.length || 1;
 }
@@ -35827,7 +37246,7 @@ var DataDiffer = (
 );
 var DataDiffer_default = DataDiffer;
 
-// node_modules/echarts/lib/data/helper/dimensionHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dimensionHelper.js
 var DimensionUserOuput = (
   /** @class */
   function() {
@@ -35926,7 +37345,7 @@ function mayLabelDimType(dimType) {
   return !(dimType === "ordinal" || dimType === "time");
 }
 
-// node_modules/echarts/lib/data/SeriesDimensionDefine.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/SeriesDimensionDefine.js
 var SeriesDimensionDefine = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -35941,7 +37360,7 @@ var SeriesDimensionDefine = (
 );
 var SeriesDimensionDefine_default = SeriesDimensionDefine;
 
-// node_modules/echarts/lib/data/helper/SeriesDataSchema.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/SeriesDataSchema.js
 var inner5 = makeInner();
 var dimTypeShort = {
   float: "f",
@@ -36077,7 +37496,7 @@ function shouldOmitUnusedDimensions(dimCount) {
   return dimCount > 30;
 }
 
-// node_modules/echarts/lib/data/SeriesData.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/SeriesData.js
 var isObject3 = isObject;
 var map2 = map;
 var CtorInt32Array2 = typeof Int32Array === "undefined" ? Array : Int32Array;
@@ -36741,7 +38160,7 @@ var SeriesData = (
 );
 var SeriesData_default = SeriesData;
 
-// node_modules/echarts/lib/data/helper/createDimensions.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/createDimensions.js
 function prepareSeriesDataSchema(source, opt) {
   if (!isSourceInstance(source)) {
     source = createSourceFromSeriesDataOption(source);
@@ -36943,7 +38362,7 @@ function genCoordDimName(name, map3, fromZero) {
   return name;
 }
 
-// node_modules/echarts/lib/model/referHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/referHelper.js
 var CoordSysInfo = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -37051,7 +38470,7 @@ function isCategory(axisModel) {
   return axisModel.get("type") === "category";
 }
 
-// node_modules/echarts/lib/data/helper/dataStackHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dataStackHelper.js
 function enableDataStack(seriesModel, dimensionsInput, opt) {
   opt = opt || {};
   var byIndex = opt.byIndex;
@@ -37153,7 +38572,7 @@ function getStackedDimension(data2, targetDim) {
   return isDimensionStacked(data2, targetDim) ? data2.getCalculationInfo("stackResultDimension") : targetDim;
 }
 
-// node_modules/echarts/lib/chart/helper/createSeriesData.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createSeriesData.js
 function getCoordSysDimDefs(seriesModel, coordSysInfo) {
   var coordSysName = seriesModel.get("coordinateSystem");
   var registeredCoordSys = CoordinateSystem_default.get(coordSysName);
@@ -37259,7 +38678,7 @@ function firstDataNotNull(arr) {
 }
 var createSeriesData_default = createSeriesData;
 
-// node_modules/echarts/lib/scale/Scale.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Scale.js
 var Scale = (
   /** @class */
   function() {
@@ -37305,7 +38724,7 @@ var Scale = (
 enableClassManagement(Scale);
 var Scale_default = Scale;
 
-// node_modules/echarts/lib/data/OrdinalMeta.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/OrdinalMeta.js
 var uidBase = 0;
 var OrdinalMeta = (
   /** @class */
@@ -37370,7 +38789,7 @@ function getName(obj) {
 }
 var OrdinalMeta_default = OrdinalMeta;
 
-// node_modules/echarts/lib/scale/helper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/helper.js
 function isValueNice(val) {
   var exp10 = Math.pow(10, quantityExponent(Math.abs(val)));
   var f = Math.abs(val / exp10);
@@ -37436,7 +38855,7 @@ function scale3(val, extent3) {
   return val * (extent3[1] - extent3[0]) + extent3[0];
 }
 
-// node_modules/echarts/lib/scale/Ordinal.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Ordinal.js
 var OrdinalScale = (
   /** @class */
   function(_super) {
@@ -37556,7 +38975,7 @@ var OrdinalScale = (
 Scale_default.registerClass(OrdinalScale);
 var Ordinal_default = OrdinalScale;
 
-// node_modules/echarts/lib/scale/Interval.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Interval.js
 var roundNumber = round;
 var IntervalScale = (
   /** @class */
@@ -37742,7 +39161,7 @@ var IntervalScale = (
 Scale_default.registerClass(IntervalScale);
 var Interval_default = IntervalScale;
 
-// node_modules/echarts/lib/util/vendor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/vendor.js
 var supportFloat32Array = typeof Float32Array !== "undefined";
 var Float32ArrayCtor = !supportFloat32Array ? Array : Float32Array;
 function createFloat32Array(arg) {
@@ -37752,7 +39171,7 @@ function createFloat32Array(arg) {
   return new Float32ArrayCtor(arg);
 }
 
-// node_modules/echarts/lib/layout/barGrid.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/layout/barGrid.js
 var STACK_PREFIX = "__ec_stack_";
 function getSeriesStackId(seriesModel) {
   return seriesModel.get("stack") || STACK_PREFIX + seriesModel.seriesIndex;
@@ -38137,7 +39556,7 @@ function getValueAxisStart(baseAxis, valueAxis2) {
   return valueAxis2.toGlobalCoord(valueAxis2.dataToCoord(valueAxis2.type === "log" ? startValue > 0 ? startValue : 1 : startValue));
 }
 
-// node_modules/echarts/lib/scale/Time.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Time.js
 var bisect = function(a, x, lo, hi) {
   while (lo < hi) {
     var mid = lo + hi >>> 1;
@@ -38508,7 +39927,7 @@ function getIntervalTicks(bottomUnitName, approxInterval, isUTC, extent3) {
 Scale_default.registerClass(TimeScale);
 var Time_default = TimeScale;
 
-// node_modules/echarts/lib/scale/Log.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Log.js
 var scaleProto = Scale_default.prototype;
 var intervalScaleProto = Interval_default.prototype;
 var roundingErrorFix = round;
@@ -38622,7 +40041,7 @@ function fixRoundingError(val, originalVal) {
 Scale_default.registerClass(LogScale);
 var Log_default = LogScale;
 
-// node_modules/echarts/lib/coord/scaleRawExtentInfo.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/scaleRawExtentInfo.js
 var ScaleRawExtentInfo = (
   /** @class */
   function() {
@@ -38760,7 +40179,7 @@ function parseAxisModelMinMax(scale4, minMax) {
   return minMax == null ? null : eqNaN(minMax) ? NaN : scale4.parse(minMax);
 }
 
-// node_modules/echarts/lib/coord/axisHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisHelper.js
 function getScaleExtent(scale4, model) {
   var scaleType = scale4.type;
   var rawExtentResult = ensureScaleRawExtentInfo(scale4, model, scale4.getExtent()).calculate();
@@ -38972,7 +40391,7 @@ function unionAxisExtentFromData(dataExtent, data2, axisDim) {
   }
 }
 
-// node_modules/echarts/lib/coord/axisModelCommonMixin.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisModelCommonMixin.js
 var AxisModelCommonMixin = (
   /** @class */
   function() {
@@ -38989,7 +40408,7 @@ var AxisModelCommonMixin = (
   }()
 );
 
-// node_modules/zrender/lib/contain/polygon.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/polygon.js
 var EPSILON5 = 1e-8;
 function isAroundEqual2(a, b) {
   return Math.abs(a - b) < EPSILON5;
@@ -39012,11 +40431,11 @@ function contain3(points4, x, y) {
   return w !== 0;
 }
 
-// node_modules/echarts/lib/coord/geo/Region.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/Region.js
 var TMP_TRANSFORM = [];
-function transformPoints(points4, transform2) {
+function transformPoints(points4, transform3) {
   for (var p = 0; p < points4.length; p++) {
-    applyTransform(points4[p], points4[p], transform2);
+    applyTransform(points4[p], points4[p], transform3);
   }
 }
 function updateBBoxFromPoints(points4, min4, max4, projection) {
@@ -39179,18 +40598,18 @@ var GeoJSONRegion = (
         height = width / aspect;
       }
       var target = new BoundingRect_default(x, y, width, height);
-      var transform2 = rect.calculateTransform(target);
+      var transform3 = rect.calculateTransform(target);
       var geometries = this.geometries;
       for (var i = 0; i < geometries.length; i++) {
         var geo = geometries[i];
         if (geo.type === "polygon") {
-          transformPoints(geo.exterior, transform2);
+          transformPoints(geo.exterior, transform3);
           each(geo.interiors, function(interior) {
-            transformPoints(interior, transform2);
+            transformPoints(interior, transform3);
           });
         } else {
           each(geo.points, function(points4) {
-            transformPoints(points4, transform2);
+            transformPoints(points4, transform3);
           });
         }
       }
@@ -39236,7 +40655,7 @@ var GeoSVGRegion = (
   }(Region)
 );
 
-// node_modules/echarts/lib/coord/geo/parseGeoJson.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/parseGeoJson.js
 function decode(json) {
   if (!json.UTF8Encoding) {
     return json;
@@ -39327,7 +40746,7 @@ function parseGeoJSON(geoJson, nameProperty) {
   });
 }
 
-// node_modules/echarts/lib/coord/axisTickLabelBuilder.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisTickLabelBuilder.js
 var inner6 = makeInner();
 function tickValuesToNumbers(axis, values) {
   var nums = map(values, function(val) {
@@ -39586,7 +41005,7 @@ function makeLabelsByCustomizedCategoryInterval(axis, categoryInterval, onlyTick
   return result;
 }
 
-// node_modules/echarts/lib/coord/Axis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/Axis.js
 var NORMALIZED_EXTENT = [0, 1];
 var Axis = (
   /** @class */
@@ -39759,7 +41178,7 @@ function fixOnBandTicksCoords(axis, ticksCoords, alignWithLabel, clamp2) {
 }
 var Axis_default = Axis;
 
-// node_modules/echarts/lib/label/labelGuideHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/labelGuideHelper.js
 var PI27 = Math.PI * 2;
 var CMD4 = PathProxy_default.CMD;
 var DEFAULT_SEARCH_SPACE = ["top", "right", "bottom", "left"];
@@ -40187,7 +41606,7 @@ function getLabelLineStatesModels(itemModel, labelLineName) {
   return statesModels;
 }
 
-// node_modules/echarts/lib/label/labelLayoutHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/labelLayoutHelper.js
 function prepareLayoutList(input) {
   var list = [];
   for (var i = 0; i < input.length; i++) {
@@ -40196,17 +41615,17 @@ function prepareLayoutList(input) {
       continue;
     }
     var label = rawItem.label;
-    var transform2 = label.getComputedTransform();
+    var transform3 = label.getComputedTransform();
     var localRect = label.getBoundingRect();
-    var isAxisAligned = !transform2 || transform2[1] < 1e-5 && transform2[2] < 1e-5;
+    var isAxisAligned = !transform3 || transform3[1] < 1e-5 && transform3[2] < 1e-5;
     var minMargin = label.style.margin || 0;
     var globalRect = localRect.clone();
-    globalRect.applyTransform(transform2);
+    globalRect.applyTransform(transform3);
     globalRect.x -= minMargin / 2;
     globalRect.y -= minMargin / 2;
     globalRect.width += minMargin;
     globalRect.height += minMargin;
-    var obb = isAxisAligned ? new OrientedBoundingRect_default(localRect, transform2) : null;
+    var obb = isAxisAligned ? new OrientedBoundingRect_default(localRect, transform3) : null;
     list.push({
       label,
       labelLine: rawItem.labelLine,
@@ -40217,7 +41636,7 @@ function prepareLayoutList(input) {
       defaultAttr: rawItem.defaultAttr,
       layoutOption: rawItem.computedLayoutOption,
       axisAligned: isAxisAligned,
-      transform: transform2
+      transform: transform3
     });
   }
   return list;
@@ -40366,7 +41785,7 @@ function hideOverlap(labelList) {
     var labelItem = labelList[i];
     var isAxisAligned = labelItem.axisAligned;
     var localRect = labelItem.localRect;
-    var transform2 = labelItem.transform;
+    var transform3 = labelItem.transform;
     var label = labelItem.label;
     var labelLine = labelItem.labelLine;
     globalRect.copy(labelItem.rect);
@@ -40389,7 +41808,7 @@ function hideOverlap(labelList) {
         existsTextCfg.obb = new OrientedBoundingRect_default(existsTextCfg.localRect, existsTextCfg.transform);
       }
       if (!obb) {
-        obb = new OrientedBoundingRect_default(localRect, transform2);
+        obb = new OrientedBoundingRect_default(localRect, transform3);
       }
       if (obb.intersect(existsTextCfg.obb)) {
         overlapped = true;
@@ -40407,7 +41826,7 @@ function hideOverlap(labelList) {
   }
 }
 
-// node_modules/echarts/lib/label/LabelManager.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/LabelManager.js
 function cloneArr(points4) {
   if (points4) {
     var newPoints = [];
@@ -40476,8 +41895,8 @@ var LabelManager = (
       var hostRect;
       if (host) {
         hostRect = host.getBoundingRect().plain();
-        var transform2 = host.getComputedTransform();
-        BoundingRect_default.applyTransform(hostRect, hostRect, transform2);
+        var transform3 = host.getComputedTransform();
+        BoundingRect_default.applyTransform(hostRect, hostRect, transform3);
       }
       var labelGuide = hostRect && host.getTextGuideLine();
       this._labelList.push({
@@ -40762,7 +42181,7 @@ var LabelManager = (
 );
 var LabelManager_default = LabelManager;
 
-// node_modules/echarts/lib/label/installLabelLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/installLabelLayout.js
 var getLabelManager = makeInner();
 function installLabelLayout(registers) {
   registers.registerUpdateLifecycle("series:beforeupdate", function(ecModel, api, params) {
@@ -40783,7 +42202,7 @@ function installLabelLayout(registers) {
   });
 }
 
-// node_modules/zrender/lib/svg/SVGPathRebuilder.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/SVGPathRebuilder.js
 var mathSin5 = Math.sin;
 var mathCos5 = Math.cos;
 var PI6 = Math.PI;
@@ -40883,7 +42302,7 @@ var SVGPathRebuilder = function() {
 }();
 var SVGPathRebuilder_default = SVGPathRebuilder;
 
-// node_modules/zrender/lib/svg/mapStyleToAttrs.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/mapStyleToAttrs.js
 var NONE = "none";
 var mathRound2 = Math.round;
 function pathHasFill(style) {
@@ -40954,7 +42373,7 @@ function mapStyleToAttrs(updateAttr2, style, el, forceUpdate) {
   }
 }
 
-// node_modules/zrender/lib/svg/core.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/core.js
 var SVGNS = "http://www.w3.org/2000/svg";
 var XLINKNS = "http://www.w3.org/1999/xlink";
 var XMLNS = "http://www.w3.org/2000/xmlns/";
@@ -41058,13 +42477,13 @@ function createSVGVNode(width, height, children, useViewBox) {
   }, children);
 }
 
-// node_modules/zrender/lib/svg/cssClassId.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/cssClassId.js
 var cssClassIdx = 0;
 function getClassId() {
   return cssClassIdx++;
 }
 
-// node_modules/zrender/lib/svg/cssAnimation.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/cssAnimation.js
 var EASING_MAP = {
   cubicIn: "0.32,0,0.67,0",
   cubicOut: "0.33,1,0.68,1",
@@ -41099,8 +42518,8 @@ function buildPathString(el, kfShape, path) {
   svgPathBuilder.generateStr();
   return svgPathBuilder.getStr();
 }
-function setTransformOrigin(target, transform2) {
-  var originX = transform2.originX, originY = transform2.originY;
+function setTransformOrigin(target, transform3) {
+  var originX = transform3.originX, originY = transform3.originY;
   if (originX || originY) {
     target[transformOriginKey] = originX + "px " + originY + "px";
   }
@@ -41235,15 +42654,15 @@ function createCSSAnimation(el, attrs, scope, onlyShape) {
       }
     }
     for (var percent in transformKfs) {
-      var transform2 = {};
-      copyTransform(transform2, el);
-      extend2(transform2, transformKfs[percent]);
-      var str = getSRTTransformString(transform2);
+      var transform3 = {};
+      copyTransform(transform3, el);
+      extend2(transform3, transformKfs[percent]);
+      var str = getSRTTransformString(transform3);
       var timingFunction = transformKfs[percent][animationTimingFunctionAttrName];
       finalKfs[percent] = str ? {
         transform: str
       } : {};
-      setTransformOrigin(finalKfs[percent], transform2);
+      setTransformOrigin(finalKfs[percent], transform3);
       if (timingFunction) {
         finalKfs[percent][animationTimingFunctionAttrName] = timingFunction;
       }
@@ -41329,7 +42748,7 @@ function createCSSAnimation(el, attrs, scope, onlyShape) {
   }
 }
 
-// node_modules/zrender/lib/svg/cssEmphasis.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/cssEmphasis.js
 function createCSSEmphasis(el, attrs, scope) {
   if (!el.ignore) {
     if (el.isSilent()) {
@@ -41380,7 +42799,7 @@ function setClassAttribute(style, attrs, scope, withHover) {
   attrs["class"] = attrs["class"] ? attrs["class"] + " " + className : className;
 }
 
-// node_modules/zrender/lib/svg/graphic.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/graphic.js
 var round5 = Math.round;
 function isImageLike2(val) {
   return val && isString(val.src);
@@ -41816,7 +43235,7 @@ function setClipPath(clipPath, attrs, scope) {
   attrs["clip-path"] = getIdURL(clipPathId);
 }
 
-// node_modules/zrender/lib/svg/domapi.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/domapi.js
 function createTextNode(text) {
   return document.createTextNode(text);
 }
@@ -41839,7 +43258,7 @@ function setTextContent(node, text) {
   node.textContent = text;
 }
 
-// node_modules/zrender/lib/svg/patch.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/patch.js
 var colonChar = 58;
 var xChar = 120;
 var emptyNode = createVNode("", "");
@@ -42065,7 +43484,7 @@ function patch(oldVnode, vnode) {
   return vnode;
 }
 
-// node_modules/zrender/lib/svg/Painter.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/Painter.js
 var svgId = 0;
 var SVGPainter = function() {
   function SVGPainter2(root, storage2, opts) {
@@ -42308,12 +43727,12 @@ function createBackgroundVNode(width, height, backgroundColor2, scope) {
 }
 var Painter_default = SVGPainter;
 
-// node_modules/echarts/lib/renderer/installSVGRenderer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/renderer/installSVGRenderer.js
 function install(registers) {
   registers.registerPainter("svg", Painter_default);
 }
 
-// node_modules/zrender/lib/canvas/Layer.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/Layer.js
 function createDom(id, painter, dpr2) {
   var newDom = platformApi.createCanvas();
   var width = painter.getWidth();
@@ -42332,7 +43751,7 @@ function createDom(id, painter, dpr2) {
   return newDom;
 }
 var Layer = function(_super) {
-  __extends2(Layer2, _super);
+  __extends(Layer2, _super);
   function Layer2(id, painter, dpr2) {
     var _this = _super.call(this) || this;
     _this.motionBlur = false;
@@ -42591,7 +44010,7 @@ var Layer = function(_super) {
 }(Eventful_default);
 var Layer_default = Layer;
 
-// node_modules/zrender/lib/canvas/Painter.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/Painter.js
 var HOVER_LAYER_ZLEVEL = 1e5;
 var CANVAS_ZLEVEL = 314159;
 var EL_AFTER_INCREMENTAL_INC = 0.01;
@@ -43199,12 +44618,12 @@ var CanvasPainter = function() {
 }();
 var Painter_default2 = CanvasPainter;
 
-// node_modules/echarts/lib/renderer/installCanvasRenderer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/renderer/installCanvasRenderer.js
 function install2(registers) {
   registers.registerPainter("canvas", Painter_default2);
 }
 
-// node_modules/echarts/lib/chart/line/LineSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/LineSeries.js
 var LineSeriesModel = (
   /** @class */
   function(_super) {
@@ -43312,7 +44731,7 @@ var LineSeriesModel = (
 );
 var LineSeries_default = LineSeriesModel;
 
-// node_modules/echarts/lib/chart/helper/labelHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/labelHelper.js
 function getDefaultLabel(data2, dataIndex) {
   var labelDims = data2.mapDimensionsAll("defaultedLabel");
   var len2 = labelDims.length;
@@ -43342,7 +44761,7 @@ function getDefaultInterpolatedLabel(data2, interpolatedValue) {
   return vals.join(" ");
 }
 
-// node_modules/echarts/lib/chart/helper/Symbol.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/Symbol.js
 var Symbol2 = (
   /** @class */
   function(_super) {
@@ -43580,7 +44999,7 @@ function driftSymbol(dx, dy) {
 }
 var Symbol_default = Symbol2;
 
-// node_modules/echarts/lib/chart/helper/SymbolDraw.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/SymbolDraw.js
 function symbolNeedsDraw(data2, point, idx, opt) {
   return point && !isNaN(point[0]) && !isNaN(point[1]) && !(opt.isIgnore && opt.isIgnore(idx)) && !(opt.clipShape && !opt.clipShape.contain(point[0], point[1])) && data2.getItemVisual(idx, "symbol") !== "none";
 }
@@ -43735,7 +45154,7 @@ var SymbolDraw = (
 );
 var SymbolDraw_default = SymbolDraw;
 
-// node_modules/echarts/lib/chart/line/helper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/helper.js
 function prepareDataCoordInfo(coordSys, data2, valueOrigin) {
   var baseAxis = coordSys.getBaseAxis();
   var valueAxis2 = coordSys.getOtherAxis(baseAxis);
@@ -43811,7 +45230,7 @@ function getStackedOnPoint(dataCoordInfo, coordSys, data2, idx) {
   return coordSys.dataToPoint(stackedData);
 }
 
-// node_modules/echarts/lib/chart/line/lineAnimationDiff.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/lineAnimationDiff.js
 function diffData(oldData, newData) {
   var diffResult = [];
   newData.diff(oldData).add(function(idx) {
@@ -43920,7 +45339,7 @@ function lineAnimationDiff(oldData, newData, oldStackedOnPoints, newStackedOnPoi
   };
 }
 
-// node_modules/echarts/lib/chart/line/poly.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/poly.js
 var mathMin6 = Math.min;
 var mathMax6 = Math.max;
 function isPointNull(x, y) {
@@ -44217,7 +45636,7 @@ var ECPolygon = (
   }(Path_default)
 );
 
-// node_modules/echarts/lib/chart/helper/createClipPathFromCoordSys.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createClipPathFromCoordSys.js
 function createGridClipPath(cartesian, hasAnimation, seriesModel, done, during) {
   var rect = cartesian.getArea();
   var x = rect.x;
@@ -44313,12 +45732,12 @@ function createClipPath(coordSys, hasAnimation, seriesModel, done, during) {
   return null;
 }
 
-// node_modules/echarts/lib/coord/CoordinateSystem.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/CoordinateSystem.js
 function isCoordinateSystemType(coordSys, type) {
   return coordSys.type === type;
 }
 
-// node_modules/echarts/lib/chart/line/LineView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/LineView.js
 function isPointsSame(points1, points22) {
   if (points1.length !== points22.length) {
     return;
@@ -45273,7 +46692,7 @@ var LineView = (
 );
 var LineView_default = LineView;
 
-// node_modules/echarts/lib/layout/points.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/layout/points.js
 function pointsLayout(seriesType2, forceStoreInTypedArray) {
   return {
     seriesType: seriesType2,
@@ -45330,7 +46749,7 @@ function pointsLayout(seriesType2, forceStoreInTypedArray) {
   };
 }
 
-// node_modules/echarts/lib/processor/dataSample.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/dataSample.js
 var samplers = {
   average: function(frame) {
     var sum2 = 0;
@@ -45411,7 +46830,7 @@ function dataSample(seriesType2) {
   };
 }
 
-// node_modules/echarts/lib/chart/line/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/install.js
 function install3(registers) {
   registers.registerChartView(LineView_default);
   registers.registerSeriesModel(LineSeries_default);
@@ -45430,7 +46849,7 @@ function install3(registers) {
   registers.registerProcessor(registers.PRIORITY.PROCESSOR.STATISTIC, dataSample("line"));
 }
 
-// node_modules/echarts/lib/chart/bar/BaseBarSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/BaseBarSeries.js
 var BaseBarSeriesModel = (
   /** @class */
   function(_super) {
@@ -45530,7 +46949,7 @@ var BaseBarSeriesModel = (
 Series_default.registerClass(BaseBarSeriesModel);
 var BaseBarSeries_default = BaseBarSeriesModel;
 
-// node_modules/echarts/lib/chart/bar/BarSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/BarSeries.js
 var BarSeriesModel = (
   /** @class */
   function(_super) {
@@ -45592,7 +47011,7 @@ var BarSeriesModel = (
 );
 var BarSeries_default = BarSeriesModel;
 
-// node_modules/echarts/lib/util/shape/sausage.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/shape/sausage.js
 var SausageShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -45656,7 +47075,7 @@ var SausagePath = (
 );
 var sausage_default = SausagePath;
 
-// node_modules/echarts/lib/label/sectorLabel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/sectorLabel.js
 function createSectorCalculateTextPosition(positionMapping, opts) {
   opts = opts || {};
   var isRoundCap = opts.isRoundCap;
@@ -45804,7 +47223,7 @@ function adjustAngleDistanceY(angle, distance2, isEnd) {
   return distance2 * Math.cos(angle) * (isEnd ? 1 : -1);
 }
 
-// node_modules/echarts/lib/chart/helper/sectorHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/sectorHelper.js
 function getSectorCornerRadius(model, shape, zeroIfNull) {
   var cornerRadius = model.get("borderRadius");
   if (cornerRadius == null) {
@@ -45823,7 +47242,7 @@ function getSectorCornerRadius(model, shape, zeroIfNull) {
   };
 }
 
-// node_modules/echarts/lib/chart/bar/BarView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/BarView.js
 var mathMax7 = Math.max;
 var mathMin7 = Math.min;
 function getClipArea(coord, data2) {
@@ -46599,7 +48018,7 @@ function createBackgroundEl(coord, isHorizontalOrRadial, layout5) {
 }
 var BarView_default = BarView;
 
-// node_modules/echarts/lib/chart/bar/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/install.js
 function install4(registers) {
   registers.registerChartView(BarView_default);
   registers.registerSeriesModel(BarSeries_default);
@@ -46623,7 +48042,7 @@ function install4(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/pie/pieLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/pieLayout.js
 var PI29 = Math.PI * 2;
 var RADIAN = Math.PI / 180;
 function getViewRect(seriesModel, api) {
@@ -46800,7 +48219,7 @@ function pieLayout(seriesType2, ecModel, api) {
 }
 var getSeriesLayoutData = makeInner();
 
-// node_modules/echarts/lib/processor/dataFilter.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/dataFilter.js
 function dataFilter(seriesType2) {
   return {
     seriesType: seriesType2,
@@ -46825,7 +48244,7 @@ function dataFilter(seriesType2) {
   };
 }
 
-// node_modules/echarts/lib/chart/pie/labelLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/labelLayout.js
 var RADIAN2 = Math.PI / 180;
 function adjustSingleSide(list, cx, cy, r, dir3, viewWidth, viewHeight, viewLeft, viewTop, farthestX) {
   if (list.length < 2) {
@@ -47209,7 +48628,7 @@ function pieLabelLayout(seriesModel) {
   }
 }
 
-// node_modules/echarts/lib/chart/pie/PieView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/PieView.js
 var PiePiece = (
   /** @class */
   function(_super) {
@@ -47425,7 +48844,7 @@ var PieView = (
 );
 var PieView_default = PieView;
 
-// node_modules/echarts/lib/chart/helper/createSeriesDataSimply.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createSeriesDataSimply.js
 function createSeriesDataSimply(seriesModel, opt, nameList) {
   opt = isArray2(opt) && {
     coordDimensions: opt
@@ -47439,7 +48858,7 @@ function createSeriesDataSimply(seriesModel, opt, nameList) {
   return list;
 }
 
-// node_modules/echarts/lib/visual/LegendVisualProvider.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/LegendVisualProvider.js
 var LegendVisualProvider = (
   /** @class */
   function() {
@@ -47468,7 +48887,7 @@ var LegendVisualProvider = (
 );
 var LegendVisualProvider_default = LegendVisualProvider;
 
-// node_modules/echarts/lib/chart/pie/PieSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/PieSeries.js
 var innerData = makeInner();
 var PieSeriesModel = (
   /** @class */
@@ -47619,7 +49038,7 @@ var PieSeriesModel = (
 );
 var PieSeries_default = PieSeriesModel;
 
-// node_modules/echarts/lib/processor/negativeDataFilter.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/negativeDataFilter.js
 function negativeDataFilter(seriesType2) {
   return {
     seriesType: seriesType2,
@@ -47637,7 +49056,7 @@ function negativeDataFilter(seriesType2) {
   };
 }
 
-// node_modules/echarts/lib/chart/pie/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/install.js
 function install5(registers) {
   registers.registerChartView(PieView_default);
   registers.registerSeriesModel(PieSeries_default);
@@ -47647,7 +49066,7 @@ function install5(registers) {
   registers.registerProcessor(negativeDataFilter("pie"));
 }
 
-// node_modules/echarts/lib/chart/scatter/ScatterSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/scatter/ScatterSeries.js
 var ScatterSeriesModel = (
   /** @class */
   function(_super) {
@@ -47721,7 +49140,7 @@ var ScatterSeriesModel = (
 );
 var ScatterSeries_default = ScatterSeriesModel;
 
-// node_modules/echarts/lib/chart/helper/LargeSymbolDraw.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LargeSymbolDraw.js
 var BOOST_SIZE_THRESHOLD = 4;
 var LargeSymbolPathShape = (
   /** @class */
@@ -47969,7 +49388,7 @@ var LargeSymbolDraw = (
 );
 var LargeSymbolDraw_default = LargeSymbolDraw;
 
-// node_modules/echarts/lib/chart/scatter/ScatterView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/scatter/ScatterView.js
 var ScatterView = (
   /** @class */
   function(_super) {
@@ -48057,7 +49476,7 @@ var ScatterView = (
 );
 var ScatterView_default = ScatterView;
 
-// node_modules/echarts/lib/coord/cartesian/GridModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/GridModel.js
 var GridModel = (
   /** @class */
   function(_super) {
@@ -48089,7 +49508,7 @@ var GridModel = (
 );
 var GridModel_default = GridModel;
 
-// node_modules/echarts/lib/coord/cartesian/AxisModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/AxisModel.js
 var CartesianAxisModel = (
   /** @class */
   function(_super) {
@@ -48106,7 +49525,7 @@ var CartesianAxisModel = (
 );
 mixin(CartesianAxisModel, AxisModelCommonMixin);
 
-// node_modules/echarts/lib/coord/axisDefault.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisDefault.js
 var defaultOption = {
   show: true,
   // zlevel: 0,
@@ -48268,7 +49687,7 @@ var axisDefault_default = {
   log: logAxis
 };
 
-// node_modules/echarts/lib/coord/axisCommonTypes.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisCommonTypes.js
 var AXIS_TYPES = {
   value: 1,
   category: 1,
@@ -48276,7 +49695,7 @@ var AXIS_TYPES = {
   log: 1
 };
 
-// node_modules/echarts/lib/coord/axisModelCreator.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisModelCreator.js
 function axisModelCreator(registers, axisName, BaseAxisModelClass, extraDefaultOption) {
   each(AXIS_TYPES, function(v, axisType) {
     var defaultOption3 = merge(merge({}, axisDefault_default[axisType], true), extraDefaultOption, true);
@@ -48331,7 +49750,7 @@ function getAxisType(option) {
   return option.type || (option.data ? "category" : "value");
 }
 
-// node_modules/echarts/lib/coord/cartesian/Cartesian.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Cartesian.js
 var Cartesian = (
   /** @class */
   function() {
@@ -48365,7 +49784,7 @@ var Cartesian = (
 );
 var Cartesian_default = Cartesian;
 
-// node_modules/echarts/lib/coord/cartesian/Cartesian2D.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Cartesian2D.js
 var cartesian2DDimensions = ["x", "y"];
 function canCalculateAffineTransform(scale4) {
   return scale4.type === "interval" || scale4.type === "time";
@@ -48475,7 +49894,7 @@ var Cartesian2D = (
 );
 var Cartesian2D_default = Cartesian2D;
 
-// node_modules/echarts/lib/coord/cartesian/Axis2D.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Axis2D.js
 var Axis2D = (
   /** @class */
   function(_super) {
@@ -48513,7 +49932,7 @@ var Axis2D = (
 );
 var Axis2D_default = Axis2D;
 
-// node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js
 function layout2(gridModel, axisModel, opt) {
   opt = opt || {};
   var grid = gridModel.coordinateSystem;
@@ -48580,7 +49999,7 @@ function findAxisModels(seriesModel) {
   return axisModelMap;
 }
 
-// node_modules/echarts/lib/coord/axisAlignTicks.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisAlignTicks.js
 var mathLog2 = Math.log;
 function alignScaleTicks(scale4, axisModel, alignToScale) {
   var intervalScaleProto2 = Interval_default.prototype;
@@ -48660,7 +50079,7 @@ function alignScaleTicks(scale4, axisModel, alignToScale) {
   }
 }
 
-// node_modules/echarts/lib/coord/cartesian/Grid.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Grid.js
 var Grid = (
   /** @class */
   function() {
@@ -49036,7 +50455,7 @@ function updateAxisTransform(axis, coordBase) {
 }
 var Grid_default = Grid;
 
-// node_modules/echarts/lib/component/axis/AxisBuilder.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/AxisBuilder.js
 var PI7 = Math.PI;
 var AxisBuilder = (
   /** @class */
@@ -49529,7 +50948,7 @@ function buildAxisLabel(group, transformGroup, axisModel, opt) {
 }
 var AxisBuilder_default = AxisBuilder;
 
-// node_modules/echarts/lib/component/axisPointer/modelHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/modelHelper.js
 function collect(ecModel, api) {
   var result = {
     /**
@@ -49728,7 +51147,7 @@ function makeKey(model) {
   return model.type + "||" + model.id;
 }
 
-// node_modules/echarts/lib/component/axis/AxisView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/AxisView.js
 var axisPointerClazz = {};
 var AxisView = (
   /** @class */
@@ -49786,7 +51205,7 @@ var AxisView = (
 );
 var AxisView_default = AxisView;
 
-// node_modules/echarts/lib/component/axis/axisSplitHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/axisSplitHelper.js
 var inner7 = makeInner();
 function rectCoordAxisBuildSplitArea(axisView, axisGroup, axisModel, gridModel) {
   var axis = axisModel.axis;
@@ -49863,7 +51282,7 @@ function rectCoordAxisHandleRemove(axisView) {
   inner7(axisView).splitAreaColors = null;
 }
 
-// node_modules/echarts/lib/component/axis/CartesianAxisView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/CartesianAxisView.js
 var axisBuilderAttrs = ["axisLine", "axisTickLabel", "axisName"];
 var selfBuilderAttrs = ["splitArea", "splitLine", "minorSplitLine"];
 var CartesianAxisView = (
@@ -50049,7 +51468,7 @@ var CartesianYAxisView = (
   }(CartesianAxisView)
 );
 
-// node_modules/echarts/lib/component/grid/installSimple.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/grid/installSimple.js
 var GridView = (
   /** @class */
   function(_super) {
@@ -50096,7 +51515,7 @@ function install6(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/scatter/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/scatter/install.js
 function install7(registers) {
   use(install6);
   registers.registerSeriesModel(ScatterSeries_default);
@@ -50104,7 +51523,7 @@ function install7(registers) {
   registers.registerLayout(pointsLayout("scatter"));
 }
 
-// node_modules/echarts/lib/chart/radar/radarLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/radarLayout.js
 function radarLayout(ecModel) {
   ecModel.eachSeriesByType("radar", function(seriesModel) {
     var data2 = seriesModel.getData();
@@ -50137,7 +51556,7 @@ function getValueMissingPoint(coordSys) {
   return [coordSys.cx, coordSys.cy];
 }
 
-// node_modules/echarts/lib/chart/radar/backwardCompat.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/backwardCompat.js
 function radarBackwardCompat(option) {
   var polarOptArr = option.polar;
   if (polarOptArr) {
@@ -50168,7 +51587,7 @@ function radarBackwardCompat(option) {
   });
 }
 
-// node_modules/echarts/lib/chart/radar/RadarView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/RadarView.js
 var RadarView = (
   /** @class */
   function(_super) {
@@ -50343,7 +51762,7 @@ var RadarView = (
 );
 var RadarView_default = RadarView;
 
-// node_modules/echarts/lib/chart/radar/RadarSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/RadarSeries.js
 var RadarSeriesModel = (
   /** @class */
   function(_super) {
@@ -50429,7 +51848,7 @@ var RadarSeriesModel = (
 );
 var RadarSeries_default = RadarSeriesModel;
 
-// node_modules/echarts/lib/coord/radar/RadarModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/radar/RadarModel.js
 var valueAxisDefault = axisDefault_default.value;
 function defaultsShow(opt, show) {
   return defaults({
@@ -50539,7 +51958,7 @@ var RadarModel = (
 );
 var RadarModel_default = RadarModel;
 
-// node_modules/echarts/lib/component/radar/RadarView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/radar/RadarView.js
 var axisBuilderAttrs2 = ["axisLine", "axisTickLabel", "axisName"];
 var RadarView2 = (
   /** @class */
@@ -50695,7 +52114,7 @@ var RadarView2 = (
 );
 var RadarView_default2 = RadarView2;
 
-// node_modules/echarts/lib/coord/radar/IndicatorAxis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/radar/IndicatorAxis.js
 var IndicatorAxis = (
   /** @class */
   function(_super) {
@@ -50712,7 +52131,7 @@ var IndicatorAxis = (
 );
 var IndicatorAxis_default = IndicatorAxis;
 
-// node_modules/echarts/lib/coord/radar/Radar.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/radar/Radar.js
 var Radar = (
   /** @class */
   function() {
@@ -50845,7 +52264,7 @@ var Radar = (
 );
 var Radar_default = Radar;
 
-// node_modules/echarts/lib/component/radar/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/radar/install.js
 function install8(registers) {
   registers.registerCoordinateSystem("radar", Radar_default);
   registers.registerComponentModel(RadarModel_default);
@@ -50862,7 +52281,7 @@ function install8(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/radar/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/install.js
 function install9(registers) {
   use(install8);
   registers.registerChartView(RadarView_default);
@@ -50872,7 +52291,7 @@ function install9(registers) {
   registers.registerPreprocessor(radarBackwardCompat);
 }
 
-// node_modules/echarts/lib/component/helper/interactionMutex.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/interactionMutex.js
 var ATTR = "\0_ec_interaction_mutex";
 function take(zr, resourceKey, userKey) {
   var store = getStore(zr);
@@ -50897,7 +52316,7 @@ registerAction({
   update: "update"
 }, noop);
 
-// node_modules/echarts/lib/component/helper/RoamController.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/RoamController.js
 var RoamController = (
   /** @class */
   function(_super) {
@@ -51062,7 +52481,7 @@ function isAvailableBehavior(behaviorToCheck, e2, settings) {
 }
 var RoamController_default = RoamController;
 
-// node_modules/echarts/lib/component/helper/roamHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/roamHelper.js
 function updateViewOnPan(controllerHost, dx, dy) {
   var target = controllerHost.target;
   target.x += dx;
@@ -51088,7 +52507,7 @@ function updateViewOnZoom(controllerHost, zoomDelta, zoomX, zoomY) {
   target.dirty();
 }
 
-// node_modules/echarts/lib/component/helper/cursorHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/cursorHelper.js
 var IRRELEVANT_EXCLUDES = {
   "axisPointer": 1,
   "tooltip": 1,
@@ -51100,7 +52519,7 @@ function onIrrelevantElement(e2, api, targetCoordSysModel) {
   return model && model !== targetCoordSysModel && !IRRELEVANT_EXCLUDES.hasOwnProperty(model.mainType) && coordSys && coordSys.model !== targetCoordSysModel;
 }
 
-// node_modules/zrender/lib/tool/parseXML.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/parseXML.js
 function parseXML(svg) {
   if (isString(svg)) {
     var parser = new DOMParser();
@@ -51116,7 +52535,7 @@ function parseXML(svg) {
   return svgNode;
 }
 
-// node_modules/zrender/lib/tool/parseSVG.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/parseSVG.js
 var nodeParsers;
 var INHERITABLE_STYLE_ATTRIBUTES_MAP = {
   "fill": "fill",
@@ -51634,12 +53053,12 @@ function splitNumberSequence(rawStr) {
 var transformRegex = /(translate|scale|rotate|skewX|skewY|matrix)\(([\-\s0-9\.eE,]*)\)/g;
 var DEGREE_TO_ANGLE = Math.PI / 180;
 function parseTransformAttribute(xmlNode, node) {
-  var transform2 = xmlNode.getAttribute("transform");
-  if (transform2) {
-    transform2 = transform2.replace(/,/g, " ");
+  var transform3 = xmlNode.getAttribute("transform");
+  if (transform3) {
+    transform3 = transform3.replace(/,/g, " ");
     var transformOps_1 = [];
     var mt = null;
-    transform2.replace(transformRegex, function(str, type2, value2) {
+    transform3.replace(transformRegex, function(str, type2, value2) {
       transformOps_1.push(type2, value2);
       return "";
     });
@@ -51733,7 +53152,7 @@ function parseSVG(xml, opt) {
   return parser.parse(xml, opt);
 }
 
-// node_modules/echarts/lib/coord/geo/GeoSVGResource.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/GeoSVGResource.js
 var REGION_AVAILABLE_SVG_TAG_MAP = createHashMap([
   "rect",
   "circle",
@@ -51898,7 +53317,7 @@ function createRegions(named) {
   };
 }
 
-// node_modules/echarts/lib/coord/geo/fix/nanhai.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/fix/nanhai.js
 var geoCoord = [126, 25];
 var nanhaiName = "\u5357\u6D77\u8BF8\u5C9B";
 var points2 = [[[0, 3.5], [7, 11.2], [15, 11.9], [30, 7], [42, 0.7], [52, 0.7], [56, 7.7], [59, 0.7], [64, 0.7], [64, 0], [5, 0], [0, 3.5]], [[13, 16.1], [19, 14.7], [16, 21.7], [11, 23.1], [13, 16.1]], [[12, 32.2], [14, 38.5], [15, 38.5], [13, 32.2], [12, 32.2]], [[16, 47.6], [12, 53.2], [13, 53.2], [18, 47.6], [16, 47.6]], [[6, 64.4], [8, 70], [9, 70], [8, 64.4], [6, 64.4]], [[23, 82.6], [29, 79.8], [30, 79.8], [25, 82.6], [23, 82.6]], [[37, 70.7], [43, 62.3], [44, 62.3], [39, 70.7], [37, 70.7]], [[48, 51.1], [51, 45.5], [53, 45.5], [50, 51.1], [48, 51.1]], [[51, 35], [51, 28.7], [53, 28.7], [53, 35], [51, 35]], [[52, 22.4], [55, 17.5], [56, 17.5], [53, 22.4], [52, 22.4]], [[58, 12.6], [62, 7], [63, 7], [60, 12.6], [58, 12.6]], [[0, 3.5], [0, 93.1], [64, 93.1], [64, 0], [63, 0], [63, 92.4], [1, 92.4], [1, 3.5], [0, 3.5]]];
@@ -51928,7 +53347,7 @@ function fixNanhai(mapType, regions) {
   }
 }
 
-// node_modules/echarts/lib/coord/geo/fix/textCoord.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/fix/textCoord.js
 var coordsOffsetMap = {
   "\u5357\u6D77\u8BF8\u5C9B": [32, 80],
   // 全国
@@ -51950,7 +53369,7 @@ function fixTextCoords(mapType, region) {
   }
 }
 
-// node_modules/echarts/lib/coord/geo/fix/diaoyuIsland.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/fix/diaoyuIsland.js
 var points3 = [[[123.45165252685547, 25.73527164402261], [123.49731445312499, 25.73527164402261], [123.49731445312499, 25.750734064600884], [123.45165252685547, 25.750734064600884], [123.45165252685547, 25.73527164402261]]];
 function fixDiaoyuIsland(mapType, region) {
   if (mapType === "china" && region.name === "\u53F0\u6E7E") {
@@ -51961,7 +53380,7 @@ function fixDiaoyuIsland(mapType, region) {
   }
 }
 
-// node_modules/echarts/lib/coord/geo/GeoJSONResource.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/GeoJSONResource.js
 var DEFAULT_NAME_PROPERTY = "name";
 var GeoJSONResource = (
   /** @class */
@@ -52046,7 +53465,7 @@ function parseInput(source) {
   return !isString(source) ? source : typeof JSON !== "undefined" && JSON.parse ? JSON.parse(source) : new Function("return (" + source + ");")();
 }
 
-// node_modules/echarts/lib/coord/geo/geoSourceManager.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/geoSourceManager.js
 var storage = createHashMap();
 var geoSourceManager_default = {
   /**
@@ -52117,7 +53536,7 @@ var geoSourceManager_default = {
   }
 };
 
-// node_modules/echarts/lib/component/helper/MapDraw.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/MapDraw.js
 var OPTION_STYLE_ENABLED_TAGS = ["rect", "circle", "line", "ellipse", "polygon", "polyline", "path"];
 var OPTION_STYLE_ENABLED_TAG_MAP = createHashMap(OPTION_STYLE_ENABLED_TAGS);
 var STATE_TRIGGER_TAG_MAP = createHashMap(OPTION_STYLE_ENABLED_TAGS.concat(["g"]));
@@ -52618,7 +54037,7 @@ function projectPolys(rings, createStream, isLine) {
 }
 var MapDraw_default = MapDraw;
 
-// node_modules/echarts/lib/chart/map/MapView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/MapView.js
 var MapView = (
   /** @class */
   function(_super) {
@@ -52731,7 +54150,7 @@ var MapView = (
 );
 var MapView_default = MapView;
 
-// node_modules/echarts/lib/chart/map/MapSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/MapSeries.js
 var MapSeries = (
   /** @class */
   function(_super) {
@@ -52915,7 +54334,7 @@ var MapSeries = (
 );
 var MapSeries_default = MapSeries;
 
-// node_modules/echarts/lib/chart/map/mapDataStatistic.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/mapDataStatistic.js
 function dataStatistics(datas, statisticType) {
   var dataNameMap = {};
   each(datas, function(data2) {
@@ -52974,7 +54393,7 @@ function mapDataStatistic(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/map/mapSymbolLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/mapSymbolLayout.js
 function mapSymbolLayout(ecModel) {
   var processedMapType = {};
   ecModel.eachSeriesByType("map", function(mapSeries) {
@@ -53014,7 +54433,7 @@ function mapSymbolLayout(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/coord/View.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/View.js
 var v2ApplyTransform = applyTransform;
 var View = (
   /** @class */
@@ -53143,9 +54562,9 @@ var View = (
       return rect;
     };
     View2.prototype.dataToPoint = function(data2, noRoam, out2) {
-      var transform2 = noRoam ? this._rawTransform : this.transform;
+      var transform3 = noRoam ? this._rawTransform : this.transform;
       out2 = out2 || [];
-      return transform2 ? v2ApplyTransform(out2, data2, transform2) : copy(out2, data2);
+      return transform3 ? v2ApplyTransform(out2, data2, transform3) : copy(out2, data2);
     };
     View2.prototype.pointToData = function(point) {
       var invTransform = this.invTransform;
@@ -53172,7 +54591,7 @@ function getCoordSys(finder) {
 }
 var View_default = View;
 
-// node_modules/echarts/lib/coord/geo/Geo.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/Geo.js
 var GEO_DEFAULT_PARAMS = {
   "geoJSON": {
     aspectScale: 0.75,
@@ -53313,7 +54732,7 @@ function getCoordSys2(finder) {
 }
 var Geo_default = Geo;
 
-// node_modules/echarts/lib/coord/geo/geoCreator.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/geoCreator.js
 function resizeGeo(geoModel, api) {
   var boundingCoords = geoModel.get("boundingCoords");
   if (boundingCoords != null) {
@@ -53488,7 +54907,7 @@ var GeoCreator = (
 var geoCreator = new GeoCreator();
 var geoCreator_default = geoCreator;
 
-// node_modules/echarts/lib/coord/geo/GeoModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/GeoModel.js
 var GeoModel = (
   /** @class */
   function(_super) {
@@ -53643,7 +55062,7 @@ var GeoModel = (
 );
 var GeoModel_default = GeoModel;
 
-// node_modules/echarts/lib/action/roamHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/action/roamHelper.js
 function getCenterCoord(view, point) {
   return view.pointToProjected ? view.pointToProjected(point) : view.pointToData(point);
 }
@@ -53679,7 +55098,7 @@ function updateCenterAndZoom(view, payload, zoomLimit, api) {
   };
 }
 
-// node_modules/echarts/lib/component/geo/GeoView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/geo/GeoView.js
 var GeoView = (
   /** @class */
   function(_super) {
@@ -53745,7 +55164,7 @@ var GeoView = (
 );
 var GeoView_default = GeoView;
 
-// node_modules/echarts/lib/component/geo/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/geo/install.js
 function registerMap2(mapName, geoJson, specialAreas) {
   geoSourceManager_default.registerMap(mapName, geoJson, specialAreas);
 }
@@ -53827,7 +55246,7 @@ function install10(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/map/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/install.js
 function install11(registers) {
   use(install10);
   registers.registerChartView(MapView_default);
@@ -53837,7 +55256,7 @@ function install11(registers) {
   createLegacyDataSelectAction("map", registers.registerAction);
 }
 
-// node_modules/echarts/lib/chart/tree/layoutHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/layoutHelper.js
 function init3(inRoot) {
   var root = inRoot;
   root.hierNode = {
@@ -53988,7 +55407,7 @@ function defaultSeparation(node1, node2) {
   return node1.parentNode === node2.parentNode ? 1 : 2;
 }
 
-// node_modules/echarts/lib/chart/tree/TreeView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/TreeView.js
 var TreeEdgeShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -54533,7 +55952,7 @@ function getEdgeShape(layoutOpt, orient, curvature, sourceLayout, targetLayout) 
 }
 var TreeView_default = TreeView;
 
-// node_modules/echarts/lib/data/helper/linkSeriesData.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/linkSeriesData.js
 var inner8 = makeInner();
 function linkSeriesData(opt) {
   var mainData = opt.mainData;
@@ -54616,7 +56035,7 @@ function linkSingle(data2, dataType, mainData, opt) {
 }
 var linkSeriesData_default = linkSeriesData;
 
-// node_modules/echarts/lib/data/Tree.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/Tree.js
 var TreeNode = (
   /** @class */
   function() {
@@ -54855,7 +56274,7 @@ function addChild(child, node) {
 }
 var Tree_default = Tree;
 
-// node_modules/echarts/lib/chart/helper/treeHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/treeHelper.js
 function retrieveTargetInfo(payload, validPayloadTypes, seriesModel) {
   if (payload && indexOf(validPayloadTypes, payload.type) >= 0) {
     var root = seriesModel.getData().tree.root;
@@ -54903,7 +56322,7 @@ function wrapTreePathInfo(node, seriesModel) {
   return treePathInfo;
 }
 
-// node_modules/echarts/lib/chart/tree/TreeSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/TreeSeries.js
 var TreeSeriesModel = (
   /** @class */
   function(_super) {
@@ -55033,7 +56452,7 @@ var TreeSeriesModel = (
 );
 var TreeSeries_default = TreeSeriesModel;
 
-// node_modules/echarts/lib/chart/tree/traversalHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/traversalHelper.js
 function eachAfter(root, callback, separation2) {
   var nodes = [root];
   var next = [];
@@ -55069,7 +56488,7 @@ function eachBefore(root, callback) {
   }
 }
 
-// node_modules/echarts/lib/chart/tree/treeLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/treeLayout.js
 function treeLayout(ecModel, api) {
   ecModel.eachSeriesByType("tree", function(seriesModel) {
     commonLayout(seriesModel, api);
@@ -55164,7 +56583,7 @@ function commonLayout(seriesModel, api) {
   }
 }
 
-// node_modules/echarts/lib/chart/tree/treeVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/treeVisual.js
 function treeVisual(ecModel) {
   ecModel.eachSeriesByType("tree", function(seriesModel) {
     var data2 = seriesModel.getData();
@@ -55178,7 +56597,7 @@ function treeVisual(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/tree/treeAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/treeAction.js
 function installTreeAction(registers) {
   registers.registerAction({
     type: "treeExpandAndCollapse",
@@ -55218,7 +56637,7 @@ function installTreeAction(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/tree/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/install.js
 function install12(registers) {
   registers.registerChartView(TreeView_default);
   registers.registerSeriesModel(TreeSeries_default);
@@ -55227,7 +56646,7 @@ function install12(registers) {
   installTreeAction(registers);
 }
 
-// node_modules/echarts/lib/chart/treemap/treemapAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/treemapAction.js
 var actionTypes = ["treemapZoomToNode", "treemapRender", "treemapMove"];
 function installTreemapAction(registers) {
   for (var i = 0; i < actionTypes.length; i++) {
@@ -55259,7 +56678,7 @@ function installTreemapAction(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/helper/enableAriaDecalForTree.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/enableAriaDecalForTree.js
 function enableAriaDecalForTree(seriesModel) {
   var data2 = seriesModel.getData();
   var tree = data2.tree;
@@ -55274,7 +56693,7 @@ function enableAriaDecalForTree(seriesModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/treemap/TreemapSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/TreemapSeries.js
 var TreemapSeriesModel = (
   /** @class */
   function(_super) {
@@ -55527,7 +56946,7 @@ function setDefault(levels, ecModel) {
 }
 var TreemapSeries_default = TreemapSeriesModel;
 
-// node_modules/echarts/lib/chart/treemap/Breadcrumb.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/Breadcrumb.js
 var TEXT_PADDING = 8;
 var ITEM_GAP = 8;
 var ARRAY_LENGTH = 5;
@@ -55658,7 +57077,7 @@ function packEventData(el, seriesModel, itemNode) {
 }
 var Breadcrumb_default = Breadcrumb;
 
-// node_modules/echarts/lib/util/animation.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/animation.js
 var AnimationWrap = (
   /** @class */
   function() {
@@ -55715,7 +57134,7 @@ function createWrap() {
   return new AnimationWrap();
 }
 
-// node_modules/echarts/lib/chart/treemap/TreemapView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/TreemapView.js
 var Group2 = Group_default;
 var Rect2 = Rect_default;
 var DRAG_THRESHOLD = 3;
@@ -56428,7 +57847,7 @@ function calculateZ2(depth, z2InLevel) {
 }
 var TreemapView_default = TreemapView;
 
-// node_modules/echarts/lib/visual/VisualMapping.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/VisualMapping.js
 var each4 = each;
 var isObject4 = isObject;
 var CATEGORY_DEFAULT_VISUAL_INDEX = -1;
@@ -56791,7 +58210,7 @@ function littleThan(close, a, b) {
 }
 var VisualMapping_default = VisualMapping;
 
-// node_modules/echarts/lib/chart/treemap/treemapVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/treemapVisual.js
 var ITEM_STYLE_NORMAL = "itemStyle";
 var inner10 = makeInner();
 var treemapVisual_default = {
@@ -56924,7 +58343,7 @@ function mapVisual(nodeModel, visuals, child, index, mapping, seriesModel) {
   return childVisuals;
 }
 
-// node_modules/echarts/lib/chart/treemap/treemapLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/treemapLayout.js
 var mathMax8 = Math.max;
 var mathMin8 = Math.min;
 var retrieveValue = retrieve;
@@ -57279,7 +58698,7 @@ function getUpperLabelHeight(model) {
   return model.get(PATH_UPPER_LABEL_SHOW) ? model.get(PATH_UPPER_LABEL_HEIGHT) : 0;
 }
 
-// node_modules/echarts/lib/chart/treemap/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/install.js
 function install13(registers) {
   registers.registerSeriesModel(TreemapSeries_default);
   registers.registerChartView(TreemapView_default);
@@ -57288,7 +58707,7 @@ function install13(registers) {
   installTreemapAction(registers);
 }
 
-// node_modules/echarts/lib/chart/graph/categoryFilter.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/categoryFilter.js
 function categoryFilter(ecModel) {
   var legendModels = ecModel.findComponents({
     mainType: "legend"
@@ -57319,7 +58738,7 @@ function categoryFilter(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/categoryVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/categoryVisual.js
 function categoryVisual(ecModel) {
   var paletteScope = {};
   ecModel.eachSeriesByType("graph", function(seriesModel) {
@@ -57364,7 +58783,7 @@ function categoryVisual(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/edgeVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/edgeVisual.js
 function normalize3(a) {
   if (!(a instanceof Array)) {
     a = [a, a];
@@ -57410,7 +58829,7 @@ function graphEdgeVisual(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/helper/multipleGraphEdgeHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/multipleGraphEdgeHelper.js
 var KEY_DELIMITER = "-->";
 var getAutoCurvenessParams = function(seriesModel) {
   return seriesModel.get("autoCurveness") || null;
@@ -57526,7 +58945,7 @@ function getCurvenessForEdge(edge, seriesModel, index, needReverse) {
   }
 }
 
-// node_modules/echarts/lib/chart/graph/simpleLayoutHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/simpleLayoutHelper.js
 function simpleLayout(seriesModel) {
   var coordSys = seriesModel.coordinateSystem;
   if (coordSys && coordSys.type !== "view") {
@@ -57552,7 +58971,7 @@ function simpleLayoutEdge(graph, seriesModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/simpleLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/simpleLayout.js
 function graphSimpleLayout(ecModel, api) {
   ecModel.eachSeriesByType("graph", function(seriesModel) {
     var layout5 = seriesModel.get("layout");
@@ -57586,7 +59005,7 @@ function graphSimpleLayout(ecModel, api) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/graphHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/graphHelper.js
 function getNodeGlobalScale(seriesModel) {
   var coordSys = seriesModel.coordinateSystem;
   if (coordSys.type !== "view") {
@@ -57606,7 +59025,7 @@ function getSymbolSize(node) {
   return +symbolSize;
 }
 
-// node_modules/echarts/lib/chart/graph/circularLayoutHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/circularLayoutHelper.js
 var PI8 = Math.PI;
 var _symbolRadiansHalf = [];
 function circularLayout(seriesModel, basedOn, draggingNode, pointer) {
@@ -57724,7 +59143,7 @@ function rotateNodeLabel(node, circularRotateLabel, cx, cy) {
   }
 }
 
-// node_modules/echarts/lib/chart/graph/circularLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/circularLayout.js
 function graphCircularLayout(ecModel) {
   ecModel.eachSeriesByType("graph", function(seriesModel) {
     if (seriesModel.get("layout") === "circular") {
@@ -57733,7 +59152,7 @@ function graphCircularLayout(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/forceHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/forceHelper.js
 var scaleAndAdd2 = scaleAndAdd;
 function forceLayout(inNodes, inEdges, opts) {
   var nodes = inNodes;
@@ -57843,7 +59262,7 @@ function forceLayout(inNodes, inEdges, opts) {
   };
 }
 
-// node_modules/echarts/lib/chart/graph/forceLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/forceLayout.js
 function graphForceLayout(ecModel) {
   ecModel.eachSeriesByType("graph", function(graphSeries) {
     var coordSys = graphSeries.coordinateSystem;
@@ -57949,7 +59368,7 @@ function graphForceLayout(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/createView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/createView.js
 function getViewRect3(seriesModel, api, aspect) {
   var option = extend2(seriesModel.getBoxLayoutParams(), {
     aspect
@@ -58002,7 +59421,7 @@ function createViewCoordSys(ecModel, api) {
   return viewList;
 }
 
-// node_modules/echarts/lib/chart/helper/LinePath.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LinePath.js
 var straightLineProto = Line_default.prototype;
 var bezierCurveProto = BezierCurve_default.prototype;
 var StraightLineShape = (
@@ -58073,7 +59492,7 @@ var ECLinePath = (
 );
 var LinePath_default = ECLinePath;
 
-// node_modules/echarts/lib/chart/helper/Line.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/Line.js
 var SYMBOL_CATEGORIES = ["fromSymbol", "toSymbol"];
 function makeSymbolTypeKey(symbolCategory) {
   return "_" + symbolCategory + "Type";
@@ -58423,7 +59842,7 @@ var Line2 = (
 );
 var Line_default2 = Line2;
 
-// node_modules/echarts/lib/chart/helper/LineDraw.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LineDraw.js
 var LineDraw = (
   /** @class */
   function() {
@@ -58545,7 +59964,7 @@ function lineNeedsDraw(pts) {
 }
 var LineDraw_default = LineDraw;
 
-// node_modules/echarts/lib/chart/graph/adjustEdge.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/adjustEdge.js
 var v1 = [];
 var v2 = [];
 var v3 = [];
@@ -58661,7 +60080,7 @@ function adjustEdge(graph, scale4) {
   });
 }
 
-// node_modules/echarts/lib/chart/graph/GraphView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/GraphView.js
 function isViewCoordSys(coordSys) {
   return coordSys.type === "view";
 }
@@ -58868,7 +60287,7 @@ var GraphView = (
 );
 var GraphView_default = GraphView;
 
-// node_modules/echarts/lib/data/Graph.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/Graph.js
 function generateNodeKey(id) {
   return "_EC_" + id;
 }
@@ -59232,7 +60651,7 @@ mixin(GraphNode, createGraphDataProxyMixin("hostGraph", "data"));
 mixin(GraphEdge, createGraphDataProxyMixin("hostGraph", "edgeData"));
 var Graph_default = Graph;
 
-// node_modules/echarts/lib/chart/helper/createGraphFromNodeEdge.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createGraphFromNodeEdge.js
 function createGraphFromNodeEdge(nodes, edges, seriesModel, directed, beforeLink) {
   var graph = new Graph_default(directed);
   for (var i = 0; i < nodes.length; i++) {
@@ -59293,7 +60712,7 @@ function createGraphFromNodeEdge(nodes, edges, seriesModel, directed, beforeLink
   return graph;
 }
 
-// node_modules/echarts/lib/chart/graph/GraphSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/GraphSeries.js
 var GraphSeriesModel = (
   /** @class */
   function(_super) {
@@ -59511,7 +60930,7 @@ var GraphSeriesModel = (
 );
 var GraphSeries_default = GraphSeriesModel;
 
-// node_modules/echarts/lib/chart/graph/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/install.js
 var actionInfo = {
   type: "graphRoam",
   event: "graphRoam",
@@ -59553,7 +60972,7 @@ function install14(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/gauge/PointerPath.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/PointerPath.js
 var PointerShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -59599,7 +61018,7 @@ var PointerPath = (
 );
 var PointerPath_default = PointerPath;
 
-// node_modules/echarts/lib/chart/gauge/GaugeView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/GaugeView.js
 function parsePosition(seriesModel, api) {
   var center3 = seriesModel.get("center");
   var width = api.getWidth();
@@ -60098,7 +61517,7 @@ var GaugeView = (
 );
 var GaugeView_default = GaugeView;
 
-// node_modules/echarts/lib/chart/gauge/GaugeSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/GaugeSeries.js
 var GaugeSeriesModel = (
   /** @class */
   function(_super) {
@@ -60242,13 +61661,13 @@ var GaugeSeriesModel = (
 );
 var GaugeSeries_default = GaugeSeriesModel;
 
-// node_modules/echarts/lib/chart/gauge/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/install.js
 function install15(registers) {
   registers.registerChartView(GaugeView_default);
   registers.registerSeriesModel(GaugeSeries_default);
 }
 
-// node_modules/echarts/lib/chart/funnel/FunnelView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/FunnelView.js
 var opacityAccessPath = ["itemStyle", "opacity"];
 var FunnelPiece = (
   /** @class */
@@ -60403,7 +61822,7 @@ var FunnelView = (
 );
 var FunnelView_default = FunnelView;
 
-// node_modules/echarts/lib/chart/funnel/FunnelSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/FunnelSeries.js
 var FunnelSeriesModel = (
   /** @class */
   function(_super) {
@@ -60495,7 +61914,7 @@ var FunnelSeriesModel = (
 );
 var FunnelSeries_default = FunnelSeriesModel;
 
-// node_modules/echarts/lib/chart/funnel/funnelLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/funnelLayout.js
 function getViewRect4(seriesModel, api) {
   return getLayoutRect(seriesModel.getBoxLayoutParams(), {
     width: api.getWidth(),
@@ -60783,7 +62202,7 @@ function funnelLayout(ecModel, api) {
   });
 }
 
-// node_modules/echarts/lib/chart/funnel/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/install.js
 function install16(registers) {
   registers.registerChartView(FunnelView_default);
   registers.registerSeriesModel(FunnelSeries_default);
@@ -60791,7 +62210,7 @@ function install16(registers) {
   registers.registerProcessor(dataFilter("funnel"));
 }
 
-// node_modules/echarts/lib/chart/parallel/ParallelView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/ParallelView.js
 var DEFAULT_SMOOTH = 0.3;
 var ParallelView = (
   /** @class */
@@ -60941,7 +62360,7 @@ function isEmptyValue(val, axisType) {
 }
 var ParallelView_default = ParallelView;
 
-// node_modules/echarts/lib/chart/parallel/ParallelSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/ParallelSeries.js
 var ParallelSeriesModel = (
   /** @class */
   function(_super) {
@@ -61015,7 +62434,7 @@ function convertDimNameToNumber(dimName) {
 }
 var ParallelSeries_default = ParallelSeriesModel;
 
-// node_modules/echarts/lib/chart/parallel/parallelVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/parallelVisual.js
 var opacityAccessPath2 = ["lineStyle", "opacity"];
 var parallelVisual = {
   seriesType: "parallel",
@@ -61043,7 +62462,7 @@ var parallelVisual = {
 };
 var parallelVisual_default = parallelVisual;
 
-// node_modules/echarts/lib/coord/parallel/parallelPreprocessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/parallelPreprocessor.js
 function parallelPreprocessor(option) {
   createParallelIfNeeded(option);
   mergeAxisOptionFromParallel(option);
@@ -61076,7 +62495,7 @@ function mergeAxisOptionFromParallel(option) {
   });
 }
 
-// node_modules/echarts/lib/component/parallel/ParallelView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/parallel/ParallelView.js
 var CLICK_THRESHOLD = 5;
 var ParallelView2 = (
   /** @class */
@@ -61162,7 +62581,7 @@ function checkTrigger(view, triggerOn) {
 }
 var ParallelView_default2 = ParallelView2;
 
-// node_modules/echarts/lib/coord/parallel/ParallelModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/ParallelModel.js
 var ParallelModel = (
   /** @class */
   function(_super) {
@@ -61237,7 +62656,7 @@ var ParallelModel = (
 );
 var ParallelModel_default = ParallelModel;
 
-// node_modules/echarts/lib/coord/parallel/ParallelAxis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/ParallelAxis.js
 var ParallelAxis = (
   /** @class */
   function(_super) {
@@ -61256,7 +62675,7 @@ var ParallelAxis = (
 );
 var ParallelAxis_default = ParallelAxis;
 
-// node_modules/echarts/lib/component/helper/sliderMove.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/sliderMove.js
 function sliderMove(delta, handleEnds, extent3, handleIndex, minSpan, maxSpan) {
   delta = delta || 0;
   var extentSpan = extent3[1] - extent3[0];
@@ -61302,7 +62721,7 @@ function restrict(value, extend3) {
   return Math.min(extend3[1] != null ? extend3[1] : Infinity, Math.max(extend3[0] != null ? extend3[0] : -Infinity, value));
 }
 
-// node_modules/echarts/lib/coord/parallel/Parallel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/Parallel.js
 var each6 = each;
 var mathMin9 = Math.min;
 var mathMax9 = Math.max;
@@ -61447,13 +62866,13 @@ var Parallel = (
         };
         var position2 = [positionTable[layout5].x + rect.x, positionTable[layout5].y + rect.y];
         var rotation = rotationTable[layout5];
-        var transform2 = create2();
-        rotate(transform2, transform2, rotation);
-        translate(transform2, transform2, position2);
+        var transform3 = create2();
+        rotate(transform3, transform3, rotation);
+        translate(transform3, transform3, position2);
         this._axesLayout[dim] = {
           position: position2,
           rotation,
-          transform: transform2,
+          transform: transform3,
           axisNameAvailableWidth: posInfo.axisNameAvailableWidth,
           axisLabelShow: posInfo.axisLabelShow,
           nameTruncateMaxWidth: posInfo.nameTruncateMaxWidth,
@@ -61602,7 +63021,7 @@ function layoutAxisWithExpand(axisIndex, layoutInfo) {
 }
 var Parallel_default = Parallel;
 
-// node_modules/echarts/lib/coord/parallel/parallelCreator.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/parallelCreator.js
 function createParallelCoordSys(ecModel, api) {
   var coordSysList = [];
   ecModel.eachComponent("parallel", function(parallelModel, idx) {
@@ -61626,7 +63045,7 @@ var parallelCoordSysCreator = {
 };
 var parallelCreator_default = parallelCoordSysCreator;
 
-// node_modules/echarts/lib/coord/parallel/AxisModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/AxisModel.js
 var ParallelAxisModel = (
   /** @class */
   function(_super) {
@@ -61684,7 +63103,7 @@ var ParallelAxisModel = (
 mixin(ParallelAxisModel, AxisModelCommonMixin);
 var AxisModel_default = ParallelAxisModel;
 
-// node_modules/echarts/lib/component/helper/BrushController.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/BrushController.js
 var BRUSH_PANEL_GLOBAL = true;
 var mathMin10 = Math.min;
 var mathMax10 = Math.max;
@@ -61892,9 +63311,9 @@ function getPanelByPoint(controller, e2, localCursorPoint) {
     return BRUSH_PANEL_GLOBAL;
   }
   var panel;
-  var transform2 = controller._transform;
+  var transform3 = controller._transform;
   each(panels, function(pn) {
-    pn.isTargetByCursor(e2, localCursorPoint, transform2) && (panel = pn);
+    pn.isTargetByCursor(e2, localCursorPoint, transform3) && (panel = pn);
   });
   return panel;
 }
@@ -62330,7 +63749,7 @@ function getLineRenderer(xyIndex) {
 }
 var BrushController_default = BrushController;
 
-// node_modules/echarts/lib/component/helper/brushHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/brushHelper.js
 function makeRectPanelClipPath(rect) {
   rect = normalizeRect(rect);
   return function(localPoints) {
@@ -62356,7 +63775,7 @@ function normalizeRect(rect) {
   return BoundingRect_default.create(rect);
 }
 
-// node_modules/echarts/lib/component/axis/ParallelAxisView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/ParallelAxisView.js
 var elementList = ["axisLine", "axisTickLabel", "axisName"];
 var ParallelAxisView = (
   /** @class */
@@ -62470,7 +63889,7 @@ function getCoordSysModel(axisModel, ecModel) {
 }
 var ParallelAxisView_default = ParallelAxisView;
 
-// node_modules/echarts/lib/component/axis/parallelAxisAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/parallelAxisAction.js
 var actionInfo2 = {
   type: "axisAreaSelect",
   event: "axisAreaSelected"
@@ -62495,7 +63914,7 @@ function installParallelActions(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/parallel/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/parallel/install.js
 var defaultAxisOption = {
   type: "value",
   areaSelectStyle: {
@@ -62519,7 +63938,7 @@ function install17(registers) {
   installParallelActions(registers);
 }
 
-// node_modules/echarts/lib/chart/parallel/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/install.js
 function install18(registers) {
   use(install17);
   registers.registerChartView(ParallelView_default);
@@ -62527,7 +63946,7 @@ function install18(registers) {
   registers.registerVisual(registers.PRIORITY.VISUAL.BRUSH, parallelVisual_default);
 }
 
-// node_modules/echarts/lib/chart/sankey/SankeyView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/SankeyView.js
 var SankeyPathShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -62809,7 +64228,7 @@ function createGridClipShape2(rect, seriesModel, cb) {
 }
 var SankeyView_default = SankeyView;
 
-// node_modules/echarts/lib/chart/sankey/SankeySeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/SankeySeries.js
 var SankeySeriesModel = (
   /** @class */
   function(_super) {
@@ -62963,7 +64382,7 @@ var SankeySeriesModel = (
 );
 var SankeySeries_default = SankeySeriesModel;
 
-// node_modules/echarts/lib/chart/sankey/sankeyLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/sankeyLayout.js
 function sankeyLayout(ecModel, api) {
   ecModel.eachSeriesByType("sankey", function(seriesModel) {
     var nodeWidth = seriesModel.get("nodeWidth");
@@ -63345,7 +64764,7 @@ function computeEdgeDepths(nodes, orient) {
   });
 }
 
-// node_modules/echarts/lib/chart/sankey/sankeyVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/sankeyVisual.js
 function sankeyVisual(ecModel) {
   ecModel.eachSeriesByType("sankey", function(seriesModel) {
     var graph = seriesModel.getGraph();
@@ -63394,7 +64813,7 @@ function sankeyVisual(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/sankey/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/install.js
 function install19(registers) {
   registers.registerChartView(SankeyView_default);
   registers.registerSeriesModel(SankeySeries_default);
@@ -63416,7 +64835,7 @@ function install19(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/helper/whiskerBoxCommon.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/whiskerBoxCommon.js
 var WhiskerBoxCommonMixin = (
   /** @class */
   function() {
@@ -63499,7 +64918,7 @@ var WhiskerBoxCommonMixin = (
   }()
 );
 
-// node_modules/echarts/lib/chart/boxplot/BoxplotSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/BoxplotSeries.js
 var BoxplotSeriesModel = (
   /** @class */
   function(_super) {
@@ -63557,7 +64976,7 @@ var BoxplotSeriesModel = (
 mixin(BoxplotSeriesModel, WhiskerBoxCommonMixin, true);
 var BoxplotSeries_default = BoxplotSeriesModel;
 
-// node_modules/echarts/lib/chart/boxplot/BoxplotView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/BoxplotView.js
 var BoxplotView = (
   /** @class */
   function(_super) {
@@ -63688,7 +65107,7 @@ function transInit(points4, dim, itemLayout) {
 }
 var BoxplotView_default = BoxplotView;
 
-// node_modules/echarts/lib/chart/boxplot/boxplotLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/boxplotLayout.js
 var each7 = each;
 function boxplotLayout(ecModel) {
   var groupResult = groupSeriesByAxis(ecModel);
@@ -63817,7 +65236,7 @@ function layoutSingleSeries(seriesModel, offset2, boxWidth) {
   }
 }
 
-// node_modules/echarts/lib/chart/boxplot/prepareBoxplotData.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/prepareBoxplotData.js
 function prepareBoxplotData(rawData, opt) {
   opt = opt || {};
   var boxData = [];
@@ -63853,7 +65272,7 @@ function prepareBoxplotData(rawData, opt) {
   };
 }
 
-// node_modules/echarts/lib/chart/boxplot/boxplotTransform.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/boxplotTransform.js
 var boxplotTransform = {
   type: "echarts:boxplot",
   transform: function transform(params) {
@@ -63875,7 +65294,7 @@ var boxplotTransform = {
   }
 };
 
-// node_modules/echarts/lib/chart/boxplot/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/install.js
 function install20(registers) {
   registers.registerSeriesModel(BoxplotSeries_default);
   registers.registerChartView(BoxplotView_default);
@@ -63883,7 +65302,7 @@ function install20(registers) {
   registers.registerTransform(boxplotTransform);
 }
 
-// node_modules/echarts/lib/chart/candlestick/candlestickVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/candlestickVisual.js
 var positiveBorderColorQuery = ["itemStyle", "borderColor"];
 var negativeBorderColorQuery = ["itemStyle", "borderColor0"];
 var dojiBorderColorQuery = ["itemStyle", "borderColorDoji"];
@@ -63923,7 +65342,7 @@ var candlestickVisual = {
 };
 var candlestickVisual_default = candlestickVisual;
 
-// node_modules/echarts/lib/chart/candlestick/CandlestickView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/CandlestickView.js
 var SKIP_PROPS = ["color", "borderColor"];
 var CandlestickView = (
   /** @class */
@@ -64218,7 +65637,7 @@ function setLargeStyle(sign, el, seriesModel, data2) {
 }
 var CandlestickView_default = CandlestickView;
 
-// node_modules/echarts/lib/chart/candlestick/CandlestickSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/CandlestickSeries.js
 var CandlestickSeriesModel = (
   /** @class */
   function(_super) {
@@ -64291,7 +65710,7 @@ var CandlestickSeriesModel = (
 mixin(CandlestickSeriesModel, WhiskerBoxCommonMixin, true);
 var CandlestickSeries_default = CandlestickSeriesModel;
 
-// node_modules/echarts/lib/chart/candlestick/preprocessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/preprocessor.js
 function candlestickPreprocessor(option) {
   if (!option || !isArray2(option.series)) {
     return;
@@ -64303,7 +65722,7 @@ function candlestickPreprocessor(option) {
   });
 }
 
-// node_modules/echarts/lib/chart/candlestick/candlestickLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/candlestickLayout.js
 var candlestickLayout = {
   seriesType: "candlestick",
   plan: createRenderPlanner(),
@@ -64445,7 +65864,7 @@ function calculateCandleWidth(seriesModel, data2) {
 }
 var candlestickLayout_default = candlestickLayout;
 
-// node_modules/echarts/lib/chart/candlestick/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/install.js
 function install21(registers) {
   registers.registerChartView(CandlestickView_default);
   registers.registerSeriesModel(CandlestickSeries_default);
@@ -64454,7 +65873,7 @@ function install21(registers) {
   registers.registerLayout(candlestickLayout_default);
 }
 
-// node_modules/echarts/lib/chart/helper/EffectSymbol.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/EffectSymbol.js
 function updateRipplePath(rippleGroup, effectCfg) {
   var color = effectCfg.rippleEffectColor || effectCfg.color;
   rippleGroup.eachChild(function(ripplePath) {
@@ -64601,7 +66020,7 @@ var EffectSymbol = (
 );
 var EffectSymbol_default = EffectSymbol;
 
-// node_modules/echarts/lib/chart/effectScatter/EffectScatterView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/effectScatter/EffectScatterView.js
 var EffectScatterView = (
   /** @class */
   function(_super) {
@@ -64656,7 +66075,7 @@ var EffectScatterView = (
 );
 var EffectScatterView_default = EffectScatterView;
 
-// node_modules/echarts/lib/chart/effectScatter/EffectScatterSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/effectScatter/EffectScatterSeries.js
 var EffectScatterSeriesModel = (
   /** @class */
   function(_super) {
@@ -64720,14 +66139,14 @@ var EffectScatterSeriesModel = (
 );
 var EffectScatterSeries_default = EffectScatterSeriesModel;
 
-// node_modules/echarts/lib/chart/effectScatter/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/effectScatter/install.js
 function install22(registers) {
   registers.registerChartView(EffectScatterView_default);
   registers.registerSeriesModel(EffectScatterSeries_default);
   registers.registerLayout(pointsLayout("effectScatter"));
 }
 
-// node_modules/echarts/lib/chart/helper/EffectLine.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/EffectLine.js
 var EffectLine = (
   /** @class */
   function(_super) {
@@ -64877,7 +66296,7 @@ var EffectLine = (
 );
 var EffectLine_default = EffectLine;
 
-// node_modules/echarts/lib/chart/helper/Polyline.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/Polyline.js
 var Polyline2 = (
   /** @class */
   function(_super) {
@@ -64942,7 +66361,7 @@ var Polyline2 = (
 );
 var Polyline_default2 = Polyline2;
 
-// node_modules/echarts/lib/chart/helper/EffectPolyline.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/EffectPolyline.js
 var EffectPolyline = (
   /** @class */
   function(_super) {
@@ -65026,7 +66445,7 @@ var EffectPolyline = (
 );
 var EffectPolyline_default = EffectPolyline;
 
-// node_modules/echarts/lib/chart/helper/LargeLineDraw.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LargeLineDraw.js
 var LargeLinesPathShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -65269,7 +66688,7 @@ var LargeLineDraw = (
 );
 var LargeLineDraw_default = LargeLineDraw;
 
-// node_modules/echarts/lib/chart/lines/linesLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/linesLayout.js
 var linesLayout = {
   seriesType: "lines",
   plan: createRenderPlanner(),
@@ -65338,7 +66757,7 @@ var linesLayout = {
 };
 var linesLayout_default = linesLayout;
 
-// node_modules/echarts/lib/chart/lines/LinesView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/LinesView.js
 var LinesView = (
   /** @class */
   function(_super) {
@@ -65464,7 +66883,7 @@ var LinesView = (
 );
 var LinesView_default = LinesView;
 
-// node_modules/echarts/lib/chart/lines/LinesSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/LinesSeries.js
 var Uint32Arr = typeof Uint32Array === "undefined" ? Array : Uint32Array;
 var Float64Arr = typeof Float64Array === "undefined" ? Array : Float64Array;
 function compatEc2(seriesOpt) {
@@ -65717,7 +67136,7 @@ var LinesSeriesModel = (
 );
 var LinesSeries_default = LinesSeriesModel;
 
-// node_modules/echarts/lib/chart/lines/linesVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/linesVisual.js
 function normalize4(a) {
   if (!(a instanceof Array)) {
     a = [a, a];
@@ -65750,7 +67169,7 @@ var linesVisual = {
 };
 var linesVisual_default = linesVisual;
 
-// node_modules/echarts/lib/chart/lines/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/install.js
 function install23(registers) {
   registers.registerChartView(LinesView_default);
   registers.registerSeriesModel(LinesSeries_default);
@@ -65758,7 +67177,7 @@ function install23(registers) {
   registers.registerVisual(linesVisual_default);
 }
 
-// node_modules/echarts/lib/chart/heatmap/HeatmapLayer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/HeatmapLayer.js
 var GRADIENT_LEVELS = 256;
 var HeatmapLayer = (
   /** @class */
@@ -65857,7 +67276,7 @@ var HeatmapLayer = (
 );
 var HeatmapLayer_default = HeatmapLayer;
 
-// node_modules/echarts/lib/chart/heatmap/HeatmapView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/HeatmapView.js
 function getIsInPiecewiseRange(dataExtent, pieceList, selected) {
   var dataSpan = dataExtent[1] - dataExtent[0];
   pieceList = map(pieceList, function(piece) {
@@ -66101,7 +67520,7 @@ var HeatmapView = (
 );
 var HeatmapView_default = HeatmapView;
 
-// node_modules/echarts/lib/chart/heatmap/HeatmapSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/HeatmapSeries.js
 var HeatmapSeriesModel = (
   /** @class */
   function(_super) {
@@ -66148,13 +67567,13 @@ var HeatmapSeriesModel = (
 );
 var HeatmapSeries_default = HeatmapSeriesModel;
 
-// node_modules/echarts/lib/chart/heatmap/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/install.js
 function install24(registers) {
   registers.registerChartView(HeatmapView_default);
   registers.registerSeriesModel(HeatmapSeries_default);
 }
 
-// node_modules/echarts/lib/chart/bar/PictorialBarView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/PictorialBarView.js
 var BAR_BORDER_WIDTH_QUERY = ["itemStyle", "borderWidth"];
 var LAYOUT_ATTRS = [{
   xy: "x",
@@ -66695,7 +68114,7 @@ function toIntTimes(times) {
 }
 var PictorialBarView_default = PictorialBarView;
 
-// node_modules/echarts/lib/chart/bar/PictorialBarSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/PictorialBarSeries.js
 var PictorialBarSeriesModel = (
   /** @class */
   function(_super) {
@@ -66748,7 +68167,7 @@ var PictorialBarSeriesModel = (
 );
 var PictorialBarSeries_default = PictorialBarSeriesModel;
 
-// node_modules/echarts/lib/chart/bar/installPictorialBar.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/installPictorialBar.js
 function install25(registers) {
   registers.registerChartView(PictorialBarView_default);
   registers.registerSeriesModel(PictorialBarSeries_default);
@@ -66756,7 +68175,7 @@ function install25(registers) {
   registers.registerLayout(registers.PRIORITY.VISUAL.PROGRESSIVE_LAYOUT, createProgressiveLayout("pictorialBar"));
 }
 
-// node_modules/echarts/lib/chart/themeRiver/ThemeRiverView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/ThemeRiverView.js
 var ThemeRiverView = (
   /** @class */
   function(_super) {
@@ -66891,7 +68310,7 @@ function createGridClipShape3(rect, seriesModel, cb) {
 }
 var ThemeRiverView_default = ThemeRiverView;
 
-// node_modules/echarts/lib/chart/themeRiver/ThemeRiverSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/ThemeRiverSeries.js
 var DATA_NAME_INDEX = 2;
 var ThemeRiverSeriesModel = (
   /** @class */
@@ -67068,7 +68487,7 @@ var ThemeRiverSeriesModel = (
 );
 var ThemeRiverSeries_default = ThemeRiverSeriesModel;
 
-// node_modules/echarts/lib/chart/themeRiver/themeRiverLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/themeRiverLayout.js
 function themeRiverLayout(ecModel, api) {
   ecModel.eachSeriesByType("themeRiver", function(seriesModel) {
     var data2 = seriesModel.getData();
@@ -67165,7 +68584,7 @@ function computeBaseline(data2) {
   };
 }
 
-// node_modules/echarts/lib/chart/themeRiver/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/install.js
 function install26(registers) {
   registers.registerChartView(ThemeRiverView_default);
   registers.registerSeriesModel(ThemeRiverSeries_default);
@@ -67173,7 +68592,7 @@ function install26(registers) {
   registers.registerProcessor(dataFilter("themeRiver"));
 }
 
-// node_modules/echarts/lib/chart/sunburst/SunburstPiece.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/SunburstPiece.js
 var DEFAULT_SECTOR_Z = 2;
 var DEFAULT_TEXT_Z = 4;
 var SunburstPiece = (
@@ -67341,7 +68760,7 @@ var SunburstPiece = (
 );
 var SunburstPiece_default = SunburstPiece;
 
-// node_modules/echarts/lib/chart/sunburst/sunburstAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/sunburstAction.js
 var ROOT_TO_NODE_ACTION = "sunburstRootToNode";
 var HIGHLIGHT_ACTION = "sunburstHighlight";
 var UNHIGHLIGHT_ACTION = "sunburstUnhighlight";
@@ -67403,7 +68822,7 @@ function installSunburstAction(registers) {
   });
 }
 
-// node_modules/echarts/lib/chart/sunburst/SunburstView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/SunburstView.js
 var SunburstView = (
   /** @class */
   function(_super) {
@@ -67542,7 +68961,7 @@ var SunburstView = (
 );
 var SunburstView_default = SunburstView;
 
-// node_modules/echarts/lib/chart/sunburst/SunburstSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/SunburstSeries.js
 var SunburstSeriesModel = (
   /** @class */
   function(_super) {
@@ -67691,7 +69110,7 @@ function completeTreeValue2(dataNode) {
 }
 var SunburstSeries_default = SunburstSeriesModel;
 
-// node_modules/echarts/lib/chart/sunburst/sunburstLayout.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/sunburstLayout.js
 var RADIAN3 = Math.PI / 180;
 function sunburstLayout(seriesType2, ecModel, api) {
   ecModel.eachSeriesByType(seriesType2, function(seriesModel) {
@@ -67835,7 +69254,7 @@ function sort3(children, sortOrder) {
   }
 }
 
-// node_modules/echarts/lib/chart/sunburst/sunburstVisual.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/sunburstVisual.js
 function sunburstVisual(ecModel) {
   var paletteScope = {};
   function pickColor(node, seriesModel, treeHeight) {
@@ -67864,7 +69283,7 @@ function sunburstVisual(ecModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/sunburst/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/install.js
 function install27(registers) {
   registers.registerChartView(SunburstView_default);
   registers.registerSeriesModel(SunburstSeries_default);
@@ -67874,7 +69293,7 @@ function install27(registers) {
   installSunburstAction(registers);
 }
 
-// node_modules/echarts/lib/chart/custom/CustomSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/custom/CustomSeries.js
 var STYLE_VISUAL_TYPE = {
   color: "fill",
   borderColor: "stroke"
@@ -67934,7 +69353,7 @@ var CustomSeriesModel = (
 );
 var CustomSeries_default = CustomSeriesModel;
 
-// node_modules/echarts/lib/coord/cartesian/prepareCustom.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/prepareCustom.js
 function dataToCoordSize(dataSize, dataItem) {
   dataItem = dataItem || [0, 0];
   return map(["x", "y"], function(dim, dimIdx) {
@@ -67964,7 +69383,7 @@ function cartesianPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/echarts/lib/coord/geo/prepareCustom.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/prepareCustom.js
 function dataToCoordSize2(dataSize, dataItem) {
   dataItem = dataItem || [0, 0];
   return map([0, 1], function(dimIdx) {
@@ -67998,7 +69417,7 @@ function geoPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/echarts/lib/coord/single/prepareCustom.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/prepareCustom.js
 function dataToCoordSize3(dataSize, dataItem) {
   var axis = this.getAxis();
   var val = dataItem instanceof Array ? dataItem[0] : dataItem;
@@ -68024,7 +69443,7 @@ function singlePrepareCustom(coordSys) {
   };
 }
 
-// node_modules/echarts/lib/coord/polar/prepareCustom.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/prepareCustom.js
 function dataToCoordSize4(dataSize, dataItem) {
   dataItem = dataItem || [0, 0];
   return map(["Radius", "Angle"], function(dim, dimIdx) {
@@ -68065,7 +69484,7 @@ function polarPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/echarts/lib/coord/calendar/prepareCustom.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/calendar/prepareCustom.js
 function calendarPrepareCustom(coordSys) {
   var rect = coordSys.getRect();
   var rangeInfo = coordSys.getRangeInfo();
@@ -68093,7 +69512,7 @@ function calendarPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/echarts/lib/util/styleCompat.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/styleCompat.js
 var deprecatedLogs = {};
 function isEC4CompatibleStyle(style, elType, hasOwnTextContentOption, hasOwnTextConfig) {
   return style && (style.legacy || style.legacy !== false && !hasOwnTextContentOption && !hasOwnTextConfig && elType !== "tspan" && (elType === "text" || hasOwn2(style, "text")));
@@ -68238,7 +69657,7 @@ function warnDeprecated(deprecated, insteadApproach) {
   }
 }
 
-// node_modules/echarts/lib/animation/customGraphicTransition.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/customGraphicTransition.js
 var LEGACY_TRANSFORM_PROPS_MAP = {
   position: ["x", "y"],
   scale: ["scaleX", "scaleY"],
@@ -68612,7 +70031,7 @@ if (true) {
   };
 }
 
-// node_modules/echarts/lib/animation/customGraphicKeyframeAnimation.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/customGraphicKeyframeAnimation.js
 var getStateToRestore = makeInner();
 var KEYFRAME_EXCLUDE_KEYS = ["percent", "easing", "shape", "style", "extra"];
 function stopPreviousKeyframeAnimationAndRestore(el) {
@@ -68696,7 +70115,7 @@ function applyKeyframeAnimation(el, animationOpts, animatableModel) {
   });
 }
 
-// node_modules/echarts/lib/chart/custom/CustomView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/custom/CustomView.js
 var EMPHASIS = "emphasis";
 var NORMAL = "normal";
 var BLUR = "blur";
@@ -69363,13 +70782,13 @@ function hasOwnPathData(shape) {
   return shape && (hasOwn2(shape, "pathData") || hasOwn2(shape, "d"));
 }
 
-// node_modules/echarts/lib/chart/custom/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/custom/install.js
 function install28(registers) {
   registers.registerChartView(CustomView_default);
   registers.registerSeriesModel(CustomSeries_default);
 }
 
-// node_modules/echarts/lib/component/axisPointer/BaseAxisPointer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/BaseAxisPointer.js
 var inner11 = makeInner();
 var clone4 = clone;
 var bind2 = bind;
@@ -69645,7 +71064,7 @@ function updateMandatoryProps(group, axisPointerModel, silent) {
 }
 var BaseAxisPointer_default = BaseAxisPointer;
 
-// node_modules/echarts/lib/component/axisPointer/viewHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/viewHelper.js
 function buildElStyle(axisPointerModel) {
   var axisPointerType = axisPointerModel.get("type");
   var styleModel = axisPointerModel.getModel(axisPointerType + "Style");
@@ -69740,10 +71159,10 @@ function getValueLabel(value, axis, ecModel, seriesDataIndices, opt) {
   return text;
 }
 function getTransformedPosition(axis, value, layoutInfo) {
-  var transform2 = create2();
-  rotate(transform2, transform2, layoutInfo.rotation);
-  translate(transform2, transform2, layoutInfo.position);
-  return applyTransform2([axis.dataToCoord(value), (layoutInfo.labelOffset || 0) + (layoutInfo.labelDirection || 1) * (layoutInfo.labelMargin || 0)], transform2);
+  var transform3 = create2();
+  rotate(transform3, transform3, layoutInfo.rotation);
+  translate(transform3, transform3, layoutInfo.position);
+  return applyTransform2([axis.dataToCoord(value), (layoutInfo.labelOffset || 0) + (layoutInfo.labelDirection || 1) * (layoutInfo.labelMargin || 0)], transform3);
 }
 function buildCartesianSingleLabelElOption(value, elOption, layoutInfo, axisModel, axisPointerModel, api) {
   var textLayout = AxisBuilder_default.innerTextLayout(layoutInfo.rotation, 0, layoutInfo.labelDirection);
@@ -69784,7 +71203,7 @@ function makeSectorShape(cx, cy, r0, r, startAngle, endAngle) {
   };
 }
 
-// node_modules/echarts/lib/component/axisPointer/CartesianAxisPointer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/CartesianAxisPointer.js
 var CartesianAxisPointer = (
   /** @class */
   function(_super) {
@@ -69828,13 +71247,13 @@ var CartesianAxisPointer = (
         rotation: layoutInfo.rotation + (layoutInfo.labelDirection < 0 ? Math.PI : 0)
       };
     };
-    CartesianAxisPointer2.prototype.updateHandleTransform = function(transform2, delta, axisModel, axisPointerModel) {
+    CartesianAxisPointer2.prototype.updateHandleTransform = function(transform3, delta, axisModel, axisPointerModel) {
       var axis = axisModel.axis;
       var grid = axis.grid;
       var axisExtent = axis.getGlobalExtent(true);
       var otherExtent = getCartesian(grid, axis).getOtherAxis(axis).getGlobalExtent();
       var dimIndex = axis.dim === "x" ? 0 : 1;
-      var currPosition = [transform2.x, transform2.y];
+      var currPosition = [transform3.x, transform3.y];
       currPosition[dimIndex] += delta[dimIndex];
       currPosition[dimIndex] = Math.min(axisExtent[1], currPosition[dimIndex]);
       currPosition[dimIndex] = Math.max(axisExtent[0], currPosition[dimIndex]);
@@ -69849,7 +71268,7 @@ var CartesianAxisPointer = (
       return {
         x: currPosition[0],
         y: currPosition[1],
-        rotation: transform2.rotation,
+        rotation: transform3.rotation,
         cursorPoint,
         tooltipOption: tooltipOptions[dimIndex]
       };
@@ -69885,7 +71304,7 @@ function getAxisDimIndex(axis) {
 }
 var CartesianAxisPointer_default = CartesianAxisPointer;
 
-// node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js
 var AxisPointerModel = (
   /** @class */
   function(_super) {
@@ -69957,7 +71376,7 @@ var AxisPointerModel = (
 );
 var AxisPointerModel_default = AxisPointerModel;
 
-// node_modules/echarts/lib/component/axisPointer/globalListener.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/globalListener.js
 var inner12 = makeInner();
 var each8 = each;
 function register(key, api, handler) {
@@ -70038,7 +71457,7 @@ function unregister(key, api) {
   }
 }
 
-// node_modules/echarts/lib/component/axisPointer/AxisPointerView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/AxisPointerView.js
 var AxisPointerView = (
   /** @class */
   function(_super) {
@@ -70074,7 +71493,7 @@ var AxisPointerView = (
 );
 var AxisPointerView_default = AxisPointerView;
 
-// node_modules/echarts/lib/component/axisPointer/findPointFromSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/findPointFromSeries.js
 function findPointFromSeries(finder, ecModel) {
   var point = [];
   var seriesIndex = finder.seriesIndex;
@@ -70123,7 +71542,7 @@ function findPointFromSeries(finder, ecModel) {
   };
 }
 
-// node_modules/echarts/lib/component/axisPointer/axisTrigger.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/axisTrigger.js
 var inner13 = makeInner();
 function axisTrigger(payload, ecModel, api) {
   var currTrigger = payload.currTrigger;
@@ -70410,7 +71829,7 @@ function illegalPoint(point) {
   return !point || point[0] == null || isNaN(point[0]) || point[1] == null || isNaN(point[1]);
 }
 
-// node_modules/echarts/lib/component/axisPointer/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/install.js
 function install29(registers) {
   AxisView_default.registerAxisPointerClass("CartesianAxisPointer", CartesianAxisPointer_default);
   registers.registerComponentModel(AxisPointerModel_default);
@@ -70434,13 +71853,13 @@ function install29(registers) {
   }, axisTrigger);
 }
 
-// node_modules/echarts/lib/component/grid/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/grid/install.js
 function install30(registers) {
   use(install6);
   use(install29);
 }
 
-// node_modules/echarts/lib/component/axisPointer/PolarAxisPointer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/PolarAxisPointer.js
 var PolarAxisPointer = (
   /** @class */
   function(_super) {
@@ -70482,10 +71901,10 @@ function getLabelPosition(value, axisModel, axisPointerModel, polar, labelMargin
   var align;
   var verticalAlign;
   if (axis.dim === "radius") {
-    var transform2 = create2();
-    rotate(transform2, transform2, axisAngle);
-    translate(transform2, transform2, [polar.cx, polar.cy]);
-    position2 = applyTransform2([coord, -labelMargin], transform2);
+    var transform3 = create2();
+    rotate(transform3, transform3, axisAngle);
+    translate(transform3, transform3, [polar.cx, polar.cy]);
+    position2 = applyTransform2([coord, -labelMargin], transform3);
     var labelRotation = axisModel.getModel("axisLabel").get("rotate") || 0;
     var labelLayout2 = AxisBuilder_default.innerTextLayout(axisAngle, labelRotation * Math.PI / 180, -1);
     align = labelLayout2.textAlign;
@@ -70540,7 +71959,7 @@ var pointerShapeBuilder2 = {
 };
 var PolarAxisPointer_default = PolarAxisPointer;
 
-// node_modules/echarts/lib/coord/polar/PolarModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/PolarModel.js
 var PolarModel = (
   /** @class */
   function(_super) {
@@ -70573,7 +71992,7 @@ var PolarModel = (
 );
 var PolarModel_default = PolarModel;
 
-// node_modules/echarts/lib/coord/polar/AxisModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/AxisModel.js
 var PolarAxisModel = (
   /** @class */
   function(_super) {
@@ -70616,7 +72035,7 @@ var RadiusAxisModel = (
   }(PolarAxisModel)
 );
 
-// node_modules/echarts/lib/coord/polar/RadiusAxis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/RadiusAxis.js
 var RadiusAxis = (
   /** @class */
   function(_super) {
@@ -70634,7 +72053,7 @@ RadiusAxis.prototype.dataToRadius = Axis_default.prototype.dataToCoord;
 RadiusAxis.prototype.radiusToData = Axis_default.prototype.coordToData;
 var RadiusAxis_default = RadiusAxis;
 
-// node_modules/echarts/lib/coord/polar/AngleAxis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/AngleAxis.js
 var inner14 = makeInner();
 var AngleAxis = (
   /** @class */
@@ -70681,7 +72100,7 @@ AngleAxis.prototype.dataToAngle = Axis_default.prototype.dataToCoord;
 AngleAxis.prototype.angleToData = Axis_default.prototype.coordToData;
 var AngleAxis_default = AngleAxis;
 
-// node_modules/echarts/lib/coord/polar/Polar.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/Polar.js
 var polarDimensions = ["radius", "angle"];
 var Polar = (
   /** @class */
@@ -70815,7 +72234,7 @@ function getCoordSys3(finder) {
 }
 var Polar_default = Polar;
 
-// node_modules/echarts/lib/coord/polar/polarCreator.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/polarCreator.js
 function resizePolar(polar, polarModel, api) {
   var center3 = polarModel.get("center");
   var width = api.getWidth();
@@ -70911,7 +72330,7 @@ var polarCreator = {
 };
 var polarCreator_default = polarCreator;
 
-// node_modules/echarts/lib/component/axis/AngleAxisView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/AngleAxisView.js
 var elementList2 = ["axisLine", "axisLabel", "axisTick", "minorTick", "splitLine", "minorSplitLine", "splitArea"];
 function getAxisLineShape(polar, rExtent, angle) {
   rExtent[1] > rExtent[0] && (rExtent = rExtent.slice().reverse());
@@ -71180,7 +72599,7 @@ var angelAxisElementsBuilders = {
 };
 var AngleAxisView_default = AngleAxisView;
 
-// node_modules/echarts/lib/component/axis/RadiusAxisView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/RadiusAxisView.js
 var axisBuilderAttrs3 = ["axisLine", "axisTickLabel", "axisName"];
 var selfBuilderAttrs2 = ["splitLine", "splitArea", "minorSplitLine"];
 var RadiusAxisView = (
@@ -71336,7 +72755,7 @@ function layoutAxis(polar, radiusAxisModel, axisAngle) {
 }
 var RadiusAxisView_default = RadiusAxisView;
 
-// node_modules/echarts/lib/layout/barPolar.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/layout/barPolar.js
 function getSeriesStackId2(seriesModel) {
   return seriesModel.get("stack") || "__ec_stack_" + seriesModel.seriesIndex;
 }
@@ -71529,7 +72948,7 @@ function calRadialBar(barSeries) {
 }
 var barPolar_default = barLayoutPolar;
 
-// node_modules/echarts/lib/component/polar/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/polar/install.js
 var angleAxisExtraOption = {
   startAngle: 90,
   clockwise: true,
@@ -71567,7 +72986,7 @@ function install31(registers) {
   registers.registerLayout(curry(barPolar_default, "bar"));
 }
 
-// node_modules/echarts/lib/coord/single/singleAxisHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/singleAxisHelper.js
 function layout3(axisModel, opt) {
   opt = opt || {};
   var single = axisModel.coordinateSystem;
@@ -71613,7 +73032,7 @@ function layout3(axisModel, opt) {
   return layout5;
 }
 
-// node_modules/echarts/lib/component/axis/SingleAxisView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/SingleAxisView.js
 var axisBuilderAttrs4 = ["axisLine", "axisTickLabel", "axisName"];
 var selfBuilderAttrs3 = ["splitArea", "splitLine"];
 var SingleAxisView = (
@@ -71714,7 +73133,7 @@ var axisElementBuilders3 = {
 };
 var SingleAxisView_default = SingleAxisView;
 
-// node_modules/echarts/lib/coord/single/AxisModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/AxisModel.js
 var SingleAxisModel = (
   /** @class */
   function(_super) {
@@ -71775,7 +73194,7 @@ var SingleAxisModel = (
 mixin(SingleAxisModel, AxisModelCommonMixin.prototype);
 var AxisModel_default2 = SingleAxisModel;
 
-// node_modules/echarts/lib/coord/single/SingleAxis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/SingleAxis.js
 var SingleAxis = (
   /** @class */
   function(_super) {
@@ -71798,7 +73217,7 @@ var SingleAxis = (
 );
 var SingleAxis_default = SingleAxis;
 
-// node_modules/echarts/lib/coord/single/Single.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/Single.js
 var singleDimensions = ["single"];
 var Single = (
   /** @class */
@@ -71935,7 +73354,7 @@ function getCoordSys4(finder) {
 }
 var Single_default = Single;
 
-// node_modules/echarts/lib/coord/single/singleCreator.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/singleCreator.js
 function create3(ecModel, api) {
   var singles = [];
   ecModel.eachComponent("singleAxis", function(axisModel, idx) {
@@ -71959,7 +73378,7 @@ var singleCreator = {
 };
 var singleCreator_default = singleCreator;
 
-// node_modules/echarts/lib/component/axisPointer/SingleAxisPointer.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/SingleAxisPointer.js
 var XY = ["x", "y"];
 var WH = ["width", "height"];
 var SingleAxisPointer = (
@@ -72005,12 +73424,12 @@ var SingleAxisPointer = (
         rotation: layoutInfo.rotation + (layoutInfo.labelDirection < 0 ? Math.PI : 0)
       };
     };
-    SingleAxisPointer2.prototype.updateHandleTransform = function(transform2, delta, axisModel, axisPointerModel) {
+    SingleAxisPointer2.prototype.updateHandleTransform = function(transform3, delta, axisModel, axisPointerModel) {
       var axis = axisModel.axis;
       var coordSys = axis.coordinateSystem;
       var dimIndex = getPointDimIndex(axis);
       var axisExtent = getGlobalExtent(coordSys, dimIndex);
-      var currPosition = [transform2.x, transform2.y];
+      var currPosition = [transform3.x, transform3.y];
       currPosition[dimIndex] += delta[dimIndex];
       currPosition[dimIndex] = Math.min(axisExtent[1], currPosition[dimIndex]);
       currPosition[dimIndex] = Math.max(axisExtent[0], currPosition[dimIndex]);
@@ -72021,7 +73440,7 @@ var SingleAxisPointer = (
       return {
         x: currPosition[0],
         y: currPosition[1],
-        rotation: transform2.rotation,
+        rotation: transform3.rotation,
         cursorPoint,
         tooltipOption: {
           verticalAlign: "middle"
@@ -72058,7 +73477,7 @@ function getGlobalExtent(coordSys, dimIndex) {
 }
 var SingleAxisPointer_default = SingleAxisPointer;
 
-// node_modules/echarts/lib/component/singleAxis/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/singleAxis/install.js
 var SingleView = (
   /** @class */
   function(_super) {
@@ -72082,7 +73501,7 @@ function install32(registers) {
   registers.registerCoordinateSystem("single", singleCreator_default);
 }
 
-// node_modules/echarts/lib/coord/calendar/CalendarModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/calendar/CalendarModel.js
 var CalendarModel = (
   /** @class */
   function(_super) {
@@ -72188,7 +73607,7 @@ function mergeAndNormalizeLayoutParams(target, raw) {
 }
 var CalendarModel_default = CalendarModel;
 
-// node_modules/echarts/lib/component/calendar/CalendarView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/calendar/CalendarView.js
 var CalendarView = (
   /** @class */
   function(_super) {
@@ -72516,7 +73935,7 @@ var CalendarView = (
 );
 var CalendarView_default = CalendarView;
 
-// node_modules/echarts/lib/coord/calendar/Calendar.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/calendar/Calendar.js
 var PROXIMATE_ONE_DAY = 864e5;
 var Calendar = (
   /** @class */
@@ -72777,14 +74196,14 @@ function getCoordSys5(finder) {
 }
 var Calendar_default = Calendar;
 
-// node_modules/echarts/lib/component/calendar/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/calendar/install.js
 function install33(registers) {
   registers.registerComponentModel(CalendarModel_default);
   registers.registerComponentView(CalendarView_default);
   registers.registerCoordinateSystem("calendar", Calendar_default);
 }
 
-// node_modules/echarts/lib/component/graphic/GraphicModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/graphic/GraphicModel.js
 function setKeyInfoToNewElOption(resultItem, newElOption) {
   var existElOption = resultItem.existing;
   newElOption.id = resultItem.keyInfo.id;
@@ -72945,7 +74364,7 @@ var GraphicComponentModel = (
   }(Component_default)
 );
 
-// node_modules/echarts/lib/component/graphic/GraphicView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/graphic/GraphicView.js
 var nonShapeGraphicElements = {
   // Reserved but not supported in graphic component.
   path: null,
@@ -73243,7 +74662,7 @@ function setEventData(el, graphicModel, elOption) {
   }
 }
 
-// node_modules/echarts/lib/component/graphic/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/graphic/install.js
 function install34(registers) {
   registers.registerComponentModel(GraphicComponentModel);
   registers.registerComponentView(GraphicComponentView);
@@ -73265,7 +74684,7 @@ function install34(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/dataZoom/helper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/helper.js
 var DATA_ZOOM_AXIS_DIMENSIONS = ["x", "y", "radius", "angle", "single"];
 var SERIES_COORDS = ["cartesian2d", "polar", "singleAxis"];
 function isCoordSupported(seriesModel) {
@@ -73353,7 +74772,7 @@ function collectReferCoordSysModelInfo(dataZoomModel) {
   return coordSysInfoWrap;
 }
 
-// node_modules/echarts/lib/component/dataZoom/DataZoomModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/DataZoomModel.js
 var DataZoomAxisInfo = (
   /** @class */
   function() {
@@ -73647,7 +75066,7 @@ function retrieveRawOption(option) {
 }
 var DataZoomModel_default = DataZoomModel;
 
-// node_modules/echarts/lib/component/dataZoom/SelectZoomModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SelectZoomModel.js
 var SelectDataZoomModel = (
   /** @class */
   function(_super) {
@@ -73663,7 +75082,7 @@ var SelectDataZoomModel = (
 );
 var SelectZoomModel_default = SelectDataZoomModel;
 
-// node_modules/echarts/lib/component/dataZoom/DataZoomView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/DataZoomView.js
 var DataZoomView = (
   /** @class */
   function(_super) {
@@ -73684,7 +75103,7 @@ var DataZoomView = (
 );
 var DataZoomView_default = DataZoomView;
 
-// node_modules/echarts/lib/component/dataZoom/SelectZoomView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SelectZoomView.js
 var SelectDataZoomView = (
   /** @class */
   function(_super) {
@@ -73700,7 +75119,7 @@ var SelectDataZoomView = (
 );
 var SelectZoomView_default = SelectDataZoomView;
 
-// node_modules/echarts/lib/component/dataZoom/AxisProxy.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/AxisProxy.js
 var each9 = each;
 var asc2 = asc;
 var AxisProxy = (
@@ -73902,7 +75321,7 @@ function calculateDataExtent(axisProxy, axisDim, seriesModels) {
 }
 var AxisProxy_default = AxisProxy;
 
-// node_modules/echarts/lib/component/dataZoom/dataZoomProcessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/dataZoomProcessor.js
 var dataZoomProcessor = {
   // `dataZoomProcessor` will only be performed in needed series. Consider if
   // there is a line series and a pie series, it is better not to update the
@@ -73963,7 +75382,7 @@ var dataZoomProcessor = {
 };
 var dataZoomProcessor_default = dataZoomProcessor;
 
-// node_modules/echarts/lib/component/dataZoom/dataZoomAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/dataZoomAction.js
 function installDataZoomAction(registers) {
   registers.registerAction("dataZoom", function(payload, ecModel) {
     var effectedModels = findEffectedDataZooms(ecModel, payload);
@@ -73978,7 +75397,7 @@ function installDataZoomAction(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/dataZoom/installCommon.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installCommon.js
 var installed = false;
 function installCommon(registers) {
   if (installed) {
@@ -73992,14 +75411,14 @@ function installCommon(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/dataZoom/installDataZoomSelect.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installDataZoomSelect.js
 function install35(registers) {
   registers.registerComponentModel(SelectZoomModel_default);
   registers.registerComponentView(SelectZoomView_default);
   installCommon(registers);
 }
 
-// node_modules/echarts/lib/component/toolbox/featureManager.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/featureManager.js
 var ToolboxFeature = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -74016,7 +75435,7 @@ function getFeature(name) {
   return features[name];
 }
 
-// node_modules/echarts/lib/component/toolbox/ToolboxModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/ToolboxModel.js
 var ToolboxModel = (
   /** @class */
   function(_super) {
@@ -74082,7 +75501,7 @@ var ToolboxModel = (
 );
 var ToolboxModel_default = ToolboxModel;
 
-// node_modules/echarts/lib/component/helper/listComponent.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/listComponent.js
 function layout4(group, componentModel, api) {
   var boxLayoutParams = componentModel.getBoxLayoutParams();
   var padding = componentModel.get("padding");
@@ -74113,7 +75532,7 @@ function makeBackground(rect, componentModel) {
   return rect;
 }
 
-// node_modules/echarts/lib/component/toolbox/ToolboxView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/ToolboxView.js
 var ToolboxView = (
   /** @class */
   function(_super) {
@@ -74329,7 +75748,7 @@ function isUserFeatureName(featureName) {
 }
 var ToolboxView_default = ToolboxView;
 
-// node_modules/echarts/lib/component/toolbox/feature/SaveAsImage.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/SaveAsImage.js
 var SaveAsImage = (
   /** @class */
   function(_super) {
@@ -74420,7 +75839,7 @@ var SaveAsImage = (
 );
 var SaveAsImage_default = SaveAsImage;
 
-// node_modules/echarts/lib/component/toolbox/feature/MagicType.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/MagicType.js
 var INNER_STACK_KEYWORD = "__ec_magicType_stack__";
 var radioTypes = [["line", "bar"], ["stack"]];
 var MagicType = (
@@ -74576,7 +75995,7 @@ registerAction({
 });
 var MagicType_default = MagicType;
 
-// node_modules/echarts/lib/component/toolbox/feature/DataView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/DataView.js
 var BLOCK_SPLITER = new Array(60).join("-");
 var ITEM_SPLITER = "	";
 function groupSeries(ecModel) {
@@ -74937,7 +76356,7 @@ registerAction({
 });
 var DataView_default = DataView;
 
-// node_modules/echarts/lib/component/dataZoom/history.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/history.js
 var each10 = each;
 var inner16 = makeInner();
 function push(ecModel, newSnapshot) {
@@ -74998,7 +76417,7 @@ function getStoreSnapshots(ecModel) {
   return store.snapshots;
 }
 
-// node_modules/echarts/lib/component/toolbox/feature/Restore.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/Restore.js
 var RestoreOption = (
   /** @class */
   function(_super) {
@@ -75034,7 +76453,7 @@ registerAction({
 });
 var Restore_default = RestoreOption;
 
-// node_modules/echarts/lib/component/helper/BrushTargetManager.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/BrushTargetManager.js
 var INCLUDE_FINDER_MAIN_TYPES = ["grid", "xAxis", "yAxis", "geo", "graph", "polar", "radiusAxis", "angleAxis", "bmap"];
 var BrushTargetManager = (
   /** @class */
@@ -75298,7 +76717,7 @@ function getSize2(xyMinMax) {
 }
 var BrushTargetManager_default = BrushTargetManager;
 
-// node_modules/echarts/lib/component/toolbox/feature/DataZoom.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/DataZoom.js
 var each11 = each;
 var DATA_ZOOM_ID_BASE = makeInternalComponentId("toolbox-dataZoom_");
 var DataZoomFeature = (
@@ -75494,7 +76913,7 @@ registerInternalOptionCreator("dataZoom", function(ecModel) {
 });
 var DataZoom_default = DataZoomFeature;
 
-// node_modules/echarts/lib/component/toolbox/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/install.js
 function install36(registers) {
   registers.registerComponentModel(ToolboxModel_default);
   registers.registerComponentView(ToolboxView_default);
@@ -75506,7 +76925,7 @@ function install36(registers) {
   use(install35);
 }
 
-// node_modules/echarts/lib/component/tooltip/TooltipModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipModel.js
 var TooltipModel = (
   /** @class */
   function(_super) {
@@ -75590,7 +77009,7 @@ var TooltipModel = (
 );
 var TooltipModel_default = TooltipModel;
 
-// node_modules/echarts/lib/component/tooltip/helper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/helper.js
 function shouldTooltipConfine(tooltipModel) {
   var confineOption = tooltipModel.get("confine");
   return confineOption != null ? !!confineOption : tooltipModel.get("renderMode") === "richText";
@@ -75622,7 +77041,7 @@ function getComputedStyle(el, style) {
   return stl ? style ? stl[style] : stl : null;
 }
 
-// node_modules/echarts/lib/component/tooltip/TooltipHTMLContent.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipHTMLContent.js
 var CSS_TRANSITION_VENDOR = toCSSVendorPrefix(TRANSITION_VENDOR, "transition");
 var CSS_TRANSFORM_VENDOR = toCSSVendorPrefix(TRANSFORM_VENDOR, "transform");
 var gCssText = "position:absolute;display:block;border-style:solid;white-space:nowrap;z-index:9999999;" + (env_default.transform3dSupported ? "will-change:transform;" : "");
@@ -75867,8 +77286,8 @@ var TooltipHTMLContent = (
       if (styleCoord[0] != null && styleCoord[1] != null) {
         var style_1 = this.el.style;
         var transforms = assembleTransform(styleCoord[0], styleCoord[1]);
-        each(transforms, function(transform2) {
-          style_1[transform2[0]] = transform2[1];
+        each(transforms, function(transform3) {
+          style_1[transform3[0]] = transform3[1];
         });
       }
     };
@@ -75914,7 +77333,7 @@ var TooltipHTMLContent = (
 );
 var TooltipHTMLContent_default = TooltipHTMLContent;
 
-// node_modules/echarts/lib/component/tooltip/TooltipRichContent.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipRichContent.js
 var TooltipRichContent = (
   /** @class */
   function() {
@@ -76063,7 +77482,7 @@ function makeStyleCoord2(out2, zr, zrX, zrY) {
 }
 var TooltipRichContent_default = TooltipRichContent;
 
-// node_modules/echarts/lib/component/tooltip/TooltipView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipView.js
 var proxyRect = new Rect_default({
   shape: {
     x: -1,
@@ -76731,7 +78150,7 @@ function findComponentReference(payload, ecModel, api) {
 }
 var TooltipView_default = TooltipView;
 
-// node_modules/echarts/lib/component/tooltip/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/install.js
 function install37(registers) {
   use(install29);
   registers.registerComponentModel(TooltipModel_default);
@@ -76748,7 +78167,7 @@ function install37(registers) {
   }, noop);
 }
 
-// node_modules/echarts/lib/component/brush/preprocessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/preprocessor.js
 var DEFAULT_TOOLBOX_BTNS = ["rect", "polygon", "keep", "clear"];
 function brushPreprocessor(option, isNew) {
   var brushComponents = normalizeToArray(option ? option.brush : []);
@@ -76792,7 +78211,7 @@ function removeDuplicate(arr) {
   });
 }
 
-// node_modules/echarts/lib/visual/visualSolution.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/visualSolution.js
 var each12 = each;
 function hasKeys(obj) {
   if (obj) {
@@ -76919,7 +78338,7 @@ function incrementalApplyVisual(stateList, visualMappings, getValueState, dim) {
   };
 }
 
-// node_modules/echarts/lib/component/brush/selector.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/selector.js
 function makeBrushCommonSelectorForSeries(area) {
   var brushType = area.brushType;
   var selectors = {
@@ -76988,7 +78407,7 @@ function inLineRange(p, range) {
   return range[0] <= p && p <= range[1];
 }
 
-// node_modules/echarts/lib/component/brush/visualEncoding.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/visualEncoding.js
 var STATE_LIST = ["inBrush", "outOfBrush"];
 var DISPATCH_METHOD = "__ecBrushSelect";
 var DISPATCH_FLAG = "__ecInBrushSelectEvent";
@@ -77162,7 +78581,7 @@ function getBoundingRectFromMinMax(minMax) {
   return new BoundingRect_default(minMax[0][0], minMax[1][0], minMax[0][1] - minMax[0][0], minMax[1][1] - minMax[1][0]);
 }
 
-// node_modules/echarts/lib/component/brush/BrushView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/BrushView.js
 var BrushView = (
   /** @class */
   function(_super) {
@@ -77220,7 +78639,7 @@ var BrushView = (
 );
 var BrushView_default = BrushView;
 
-// node_modules/echarts/lib/component/brush/BrushModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/BrushModel.js
 var DEFAULT_OUT_OF_BRUSH_COLOR = "#ddd";
 var BrushModel = (
   /** @class */
@@ -77294,7 +78713,7 @@ function generateBrushOption(option, brushOption) {
 }
 var BrushModel_default = BrushModel;
 
-// node_modules/echarts/lib/component/toolbox/feature/Brush.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/Brush.js
 var ICON_TYPES = ["rect", "polygon", "lineX", "lineY", "keep", "clear"];
 var BrushFeature = (
   /** @class */
@@ -77386,7 +78805,7 @@ var BrushFeature = (
 );
 var Brush_default = BrushFeature;
 
-// node_modules/echarts/lib/component/brush/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/install.js
 function install38(registers) {
   registers.registerComponentView(BrushView_default);
   registers.registerComponentModel(BrushModel_default);
@@ -77417,7 +78836,7 @@ function install38(registers) {
   registerFeature("brush", Brush_default);
 }
 
-// node_modules/echarts/lib/component/title/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/title/install.js
 var TitleModel = (
   /** @class */
   function(_super) {
@@ -77589,7 +79008,7 @@ function install39(registers) {
   registers.registerComponentView(TitleView);
 }
 
-// node_modules/echarts/lib/component/timeline/TimelineModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/TimelineModel.js
 var TimelineModel = (
   /** @class */
   function(_super) {
@@ -77706,7 +79125,7 @@ var TimelineModel = (
 );
 var TimelineModel_default = TimelineModel;
 
-// node_modules/echarts/lib/component/timeline/SliderTimelineModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/SliderTimelineModel.js
 var SliderTimelineModel = (
   /** @class */
   function(_super) {
@@ -77819,7 +79238,7 @@ var SliderTimelineModel = (
 mixin(SliderTimelineModel, DataFormatMixin.prototype);
 var SliderTimelineModel_default = SliderTimelineModel;
 
-// node_modules/echarts/lib/component/timeline/TimelineView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/TimelineView.js
 var TimelineView = (
   /** @class */
   function(_super) {
@@ -77835,7 +79254,7 @@ var TimelineView = (
 );
 var TimelineView_default = TimelineView;
 
-// node_modules/echarts/lib/component/timeline/TimelineAxis.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/TimelineAxis.js
 var TimelineAxis = (
   /** @class */
   function(_super) {
@@ -77856,7 +79275,7 @@ var TimelineAxis = (
 );
 var TimelineAxis_default = TimelineAxis;
 
-// node_modules/echarts/lib/component/timeline/SliderTimelineView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/SliderTimelineView.js
 var PI10 = Math.PI;
 var labelDataIndexStore = makeInner();
 var SliderTimelineView = (
@@ -78409,7 +79828,7 @@ function pointerMoveTo(pointer, progressLine, dataIndex, axis, timelineModel, no
 }
 var SliderTimelineView_default = SliderTimelineView;
 
-// node_modules/echarts/lib/component/timeline/timelineAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/timelineAction.js
 function installTimelineAction(registers) {
   registers.registerAction({
     type: "timelineChange",
@@ -78447,7 +79866,7 @@ function installTimelineAction(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/timeline/preprocessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/preprocessor.js
 function timelinePreprocessor(option) {
   var timelineOpt = option && option.timeline;
   if (!isArray2(timelineOpt)) {
@@ -78514,7 +79933,7 @@ function has(obj, attr) {
   return obj.hasOwnProperty(attr);
 }
 
-// node_modules/echarts/lib/component/timeline/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/install.js
 function install40(registers) {
   registers.registerComponentModel(SliderTimelineModel_default);
   registers.registerComponentView(SliderTimelineView_default);
@@ -78525,7 +79944,7 @@ function install40(registers) {
   registers.registerPreprocessor(timelinePreprocessor);
 }
 
-// node_modules/echarts/lib/component/marker/checkMarkerInSeries.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/checkMarkerInSeries.js
 function checkMarkerInSeries(seriesOpts, markerType) {
   if (!seriesOpts) {
     return false;
@@ -78539,7 +79958,7 @@ function checkMarkerInSeries(seriesOpts, markerType) {
   return false;
 }
 
-// node_modules/echarts/lib/component/marker/MarkerModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkerModel.js
 function fillLabel(opt) {
   defaultEmphasis(opt, "label", ["show"]);
 }
@@ -78652,7 +80071,7 @@ var MarkerModel = (
 mixin(MarkerModel, DataFormatMixin.prototype);
 var MarkerModel_default = MarkerModel;
 
-// node_modules/echarts/lib/component/marker/MarkPointModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkPointModel.js
 var MarkPointModel = (
   /** @class */
   function(_super) {
@@ -78694,7 +80113,7 @@ var MarkPointModel = (
 );
 var MarkPointModel_default = MarkPointModel;
 
-// node_modules/echarts/lib/component/marker/markerHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/markerHelper.js
 function hasXOrY(item) {
   return !(isNaN(parseFloat(item.x)) && isNaN(parseFloat(item.y)));
 }
@@ -78810,7 +80229,7 @@ function numCalculate(data2, valueDataDim, type) {
   }
 }
 
-// node_modules/echarts/lib/component/marker/MarkerView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkerView.js
 var inner18 = makeInner();
 var MarkerView = (
   /** @class */
@@ -78861,7 +80280,7 @@ var MarkerView = (
 );
 var MarkerView_default = MarkerView;
 
-// node_modules/echarts/lib/component/marker/MarkPointView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkPointView.js
 function updateMarkerLayout(mpData, seriesModel, api) {
   var coordSys = seriesModel.coordinateSystem;
   mpData.each(function(idx) {
@@ -78993,7 +80412,7 @@ function createData(coordSys, seriesModel, mpModel) {
 }
 var MarkPointView_default = MarkPointView;
 
-// node_modules/echarts/lib/component/marker/installMarkPoint.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/installMarkPoint.js
 function install41(registers) {
   registers.registerComponentModel(MarkPointModel_default);
   registers.registerComponentView(MarkPointView_default);
@@ -79004,7 +80423,7 @@ function install41(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/marker/MarkLineModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkLineModel.js
 var MarkLineModel = (
   /** @class */
   function(_super) {
@@ -79052,7 +80471,7 @@ var MarkLineModel = (
 );
 var MarkLineModel_default = MarkLineModel;
 
-// node_modules/echarts/lib/component/marker/MarkLineView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkLineView.js
 var inner19 = makeInner();
 var markLineTransform = function(seriesModel, coordSys, mlModel, item) {
   var data2 = seriesModel.getData();
@@ -79317,7 +80736,7 @@ function createList(coordSys, seriesModel, mlModel) {
 }
 var MarkLineView_default = MarkLineView;
 
-// node_modules/echarts/lib/component/marker/installMarkLine.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/installMarkLine.js
 function install42(registers) {
   registers.registerComponentModel(MarkLineModel_default);
   registers.registerComponentView(MarkLineView_default);
@@ -79328,7 +80747,7 @@ function install42(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/marker/MarkAreaModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkAreaModel.js
 var MarkAreaModel = (
   /** @class */
   function(_super) {
@@ -79373,7 +80792,7 @@ var MarkAreaModel = (
 );
 var MarkAreaModel_default = MarkAreaModel;
 
-// node_modules/echarts/lib/component/marker/MarkAreaView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkAreaView.js
 var inner20 = makeInner();
 var markAreaTransform = function(seriesModel, coordSys, maModel, item) {
   var item0 = item[0];
@@ -79649,7 +81068,7 @@ function createList2(coordSys, seriesModel, maModel) {
 }
 var MarkAreaView_default = MarkAreaView;
 
-// node_modules/echarts/lib/component/marker/installMarkArea.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/installMarkArea.js
 function install43(registers) {
   registers.registerComponentModel(MarkAreaModel_default);
   registers.registerComponentView(MarkAreaView_default);
@@ -79660,7 +81079,7 @@ function install43(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/legend/LegendModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/LegendModel.js
 var getDefaultSelectorOptions = function(ecModel, type) {
   if (type === "all") {
     return {
@@ -79916,7 +81335,7 @@ var LegendModel = (
 );
 var LegendModel_default = LegendModel;
 
-// node_modules/echarts/lib/component/legend/LegendView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/LegendView.js
 var curry2 = curry;
 var each13 = each;
 var Group3 = Group_default;
@@ -80324,7 +81743,7 @@ function dispatchDownplayAction(seriesName, dataName, api, excludeSeriesId) {
 }
 var LegendView_default = LegendView;
 
-// node_modules/echarts/lib/component/legend/legendFilter.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/legendFilter.js
 function legendFilter(ecModel) {
   var legendModels = ecModel.findComponents({
     mainType: "legend"
@@ -80341,7 +81760,7 @@ function legendFilter(ecModel) {
   }
 }
 
-// node_modules/echarts/lib/component/legend/legendAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/legendAction.js
 function legendSelectActionHandler(methodName, payload, ecModel) {
   var isAllSelect = methodName === "allSelect" || methodName === "inverseSelect";
   var selectedMap = {};
@@ -80398,7 +81817,7 @@ function installLegendAction(registers) {
   registers.registerAction("legendUnSelect", "legendunselected", curry(legendSelectActionHandler, "unSelect"));
 }
 
-// node_modules/echarts/lib/component/legend/installLegendPlain.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/installLegendPlain.js
 function install44(registers) {
   registers.registerComponentModel(LegendModel_default);
   registers.registerComponentView(LegendView_default);
@@ -80409,7 +81828,7 @@ function install44(registers) {
   installLegendAction(registers);
 }
 
-// node_modules/echarts/lib/component/legend/ScrollableLegendModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/ScrollableLegendModel.js
 var ScrollableLegendModel = (
   /** @class */
   function(_super) {
@@ -80464,7 +81883,7 @@ function mergeAndNormalizeLayoutParams2(legendModel, target, raw) {
 }
 var ScrollableLegendModel_default = ScrollableLegendModel;
 
-// node_modules/echarts/lib/component/legend/ScrollableLegendView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/ScrollableLegendView.js
 var Group4 = Group_default;
 var WH2 = ["width", "height"];
 var XY2 = ["x", "y"];
@@ -80768,7 +82187,7 @@ var ScrollableLegendView = (
 );
 var ScrollableLegendView_default = ScrollableLegendView;
 
-// node_modules/echarts/lib/component/legend/scrollableLegendAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/scrollableLegendAction.js
 function installScrollableLegendAction(registers) {
   registers.registerAction("legendScroll", "legendscroll", function(payload, ecModel) {
     var scrollDataIndex = payload.scrollDataIndex;
@@ -80782,7 +82201,7 @@ function installScrollableLegendAction(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/legend/installLegendScroll.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/installLegendScroll.js
 function install45(registers) {
   use(install44);
   registers.registerComponentModel(ScrollableLegendModel_default);
@@ -80790,13 +82209,13 @@ function install45(registers) {
   installScrollableLegendAction(registers);
 }
 
-// node_modules/echarts/lib/component/legend/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/install.js
 function install46(registers) {
   use(install44);
   use(install45);
 }
 
-// node_modules/echarts/lib/component/dataZoom/InsideZoomModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/InsideZoomModel.js
 var InsideZoomModel = (
   /** @class */
   function(_super) {
@@ -80820,7 +82239,7 @@ var InsideZoomModel = (
 );
 var InsideZoomModel_default = InsideZoomModel;
 
-// node_modules/echarts/lib/component/dataZoom/roams.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/roams.js
 var inner21 = makeInner();
 function setViewInfoToCoordSysRecord(api, dataZoomModel, getRange) {
   inner21(api).coordSysRecordMap.each(function(coordSysRecord) {
@@ -80976,7 +82395,7 @@ function installDataZoomRoamProcessor(registers) {
   });
 }
 
-// node_modules/echarts/lib/component/dataZoom/InsideZoomView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/InsideZoomView.js
 var InsideZoomView = (
   /** @class */
   function(_super) {
@@ -81117,7 +82536,7 @@ var getDirectionInfo = {
 };
 var InsideZoomView_default = InsideZoomView;
 
-// node_modules/echarts/lib/component/dataZoom/installDataZoomInside.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installDataZoomInside.js
 function install47(registers) {
   installCommon(registers);
   registers.registerComponentModel(InsideZoomModel_default);
@@ -81125,7 +82544,7 @@ function install47(registers) {
   installDataZoomRoamProcessor(registers);
 }
 
-// node_modules/echarts/lib/component/dataZoom/SliderZoomModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SliderZoomModel.js
 var SliderZoomModel = (
   /** @class */
   function(_super) {
@@ -81213,7 +82632,7 @@ var SliderZoomModel = (
 );
 var SliderZoomModel_default = SliderZoomModel;
 
-// node_modules/echarts/lib/component/dataZoom/SliderZoomView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SliderZoomView.js
 var Rect3 = Rect_default;
 var DEFAULT_LOCATION_EDGE_GAP = 7;
 var DEFAULT_FRAME_BORDER_WIDTH = 1;
@@ -81912,20 +83331,20 @@ function getCursor(orient) {
 }
 var SliderZoomView_default = SliderZoomView;
 
-// node_modules/echarts/lib/component/dataZoom/installDataZoomSlider.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installDataZoomSlider.js
 function install48(registers) {
   registers.registerComponentModel(SliderZoomModel_default);
   registers.registerComponentView(SliderZoomView_default);
   installCommon(registers);
 }
 
-// node_modules/echarts/lib/component/dataZoom/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/install.js
 function install49(registers) {
   use(install47);
   use(install48);
 }
 
-// node_modules/echarts/lib/visual/visualDefault.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/visualDefault.js
 var visualDefault = {
   /**
    * @public
@@ -81971,7 +83390,7 @@ var defaultOption2 = {
 };
 var visualDefault_default = visualDefault;
 
-// node_modules/echarts/lib/component/visualMap/VisualMapModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/VisualMapModel.js
 var mapVisual2 = VisualMapping_default.mapVisual;
 var eachVisual = VisualMapping_default.eachVisual;
 var isArray3 = isArray2;
@@ -82230,7 +83649,7 @@ var VisualMapModel = (
 );
 var VisualMapModel_default = VisualMapModel;
 
-// node_modules/echarts/lib/component/visualMap/ContinuousModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/ContinuousModel.js
 var DEFAULT_BAR_BOUND = [20, 140];
 var ContinuousModel = (
   /** @class */
@@ -82401,7 +83820,7 @@ function getColorStopValues(visualMapModel, valueState, dataExtent) {
 }
 var ContinuousModel_default = ContinuousModel;
 
-// node_modules/echarts/lib/component/visualMap/VisualMapView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/VisualMapView.js
 var VisualMapView = (
   /** @class */
   function(_super) {
@@ -82494,7 +83913,7 @@ var VisualMapView = (
 );
 var VisualMapView_default = VisualMapView;
 
-// node_modules/echarts/lib/component/visualMap/helper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/helper.js
 var paramsSet = [["left", "right", "width"], ["top", "bottom", "height"]];
 function getItemAlign(visualMapModel, api, itemSize) {
   var modelOption = visualMapModel.option;
@@ -82529,7 +83948,7 @@ function makeHighDownBatch(batch, visualMapModel) {
   return batch;
 }
 
-// node_modules/echarts/lib/component/visualMap/ContinuousView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/ContinuousView.js
 var linearMap3 = linearMap;
 var each15 = each;
 var mathMin11 = Math.min;
@@ -83060,8 +84479,8 @@ var ContinuousView = (
       zr.off("mouseout", this._hideIndicator);
     };
     ContinuousView2.prototype._applyTransform = function(vertex, element, inverse, global2) {
-      var transform2 = getTransform(element, global2 ? null : this.group);
-      return isArray2(vertex) ? applyTransform2(vertex, transform2, inverse) : transformDirection(vertex, transform2, inverse);
+      var transform3 = getTransform(element, global2 ? null : this.group);
+      return isArray2(vertex) ? applyTransform2(vertex, transform3, inverse) : transformDirection(vertex, transform3, inverse);
     };
     ContinuousView2.prototype._dispatchHighDown = function(type, batch) {
       batch && batch.length && this.api.dispatchAction({
@@ -83108,7 +84527,7 @@ function getCursor2(orient) {
 }
 var ContinuousView_default = ContinuousView;
 
-// node_modules/echarts/lib/component/visualMap/visualMapAction.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/visualMapAction.js
 var visualMapActionInfo = {
   type: "selectDataRange",
   event: "dataRangeSelected",
@@ -83124,7 +84543,7 @@ var visualMapActionHander = function(payload, ecModel) {
   });
 };
 
-// node_modules/echarts/lib/component/visualMap/visualEncoding.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/visualEncoding.js
 var visualMapEncodingHandlers = [
   {
     createOnAllSeries: true,
@@ -83184,7 +84603,7 @@ function getColorVisual(seriesModel, visualMapModel, value, valueState) {
   }
 }
 
-// node_modules/echarts/lib/component/visualMap/preprocessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/preprocessor.js
 var each16 = each;
 function visualMapPreprocessor(option) {
   var visualMap = option && option.visualMap;
@@ -83218,7 +84637,7 @@ function has2(obj, name) {
   return obj && obj.hasOwnProperty && obj.hasOwnProperty(name);
 }
 
-// node_modules/echarts/lib/component/visualMap/installCommon.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/installCommon.js
 var installed2 = false;
 function installCommon2(registers) {
   if (installed2) {
@@ -83235,14 +84654,14 @@ function installCommon2(registers) {
   registers.registerPreprocessor(visualMapPreprocessor);
 }
 
-// node_modules/echarts/lib/component/visualMap/installVisualMapContinuous.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/installVisualMapContinuous.js
 function install50(registers) {
   registers.registerComponentModel(ContinuousModel_default);
   registers.registerComponentView(ContinuousView_default);
   installCommon2(registers);
 }
 
-// node_modules/echarts/lib/component/visualMap/PiecewiseModel.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/PiecewiseModel.js
 var PiecewiseModel = (
   /** @class */
   function(_super) {
@@ -83568,7 +84987,7 @@ function normalizeReverse(thisOption, pieceList) {
 }
 var PiecewiseModel_default = PiecewiseModel;
 
-// node_modules/echarts/lib/component/visualMap/PiecewiseView.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/PiecewiseView.js
 var PiecewiseVisualMapView = (
   /** @class */
   function(_super) {
@@ -83733,20 +85152,20 @@ var PiecewiseVisualMapView = (
 );
 var PiecewiseView_default = PiecewiseVisualMapView;
 
-// node_modules/echarts/lib/component/visualMap/installVisualMapPiecewise.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/installVisualMapPiecewise.js
 function install51(registers) {
   registers.registerComponentModel(PiecewiseModel_default);
   registers.registerComponentView(PiecewiseView_default);
   installCommon2(registers);
 }
 
-// node_modules/echarts/lib/component/visualMap/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/install.js
 function install52(registers) {
   use(install50);
   use(install51);
 }
 
-// node_modules/echarts/lib/visual/aria.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/aria.js
 var DEFAULT_OPTION = {
   label: {
     enabled: true
@@ -83930,7 +85349,7 @@ function ariaVisual(ecModel, api) {
   }
 }
 
-// node_modules/echarts/lib/component/aria/preprocessor.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/aria/preprocessor.js
 function ariaPreprocessor(option) {
   if (!option || !option.aria) {
     return;
@@ -83947,13 +85366,13 @@ function ariaPreprocessor(option) {
   });
 }
 
-// node_modules/echarts/lib/component/aria/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/aria/install.js
 function install53(registers) {
   registers.registerPreprocessor(ariaPreprocessor);
   registers.registerVisual(registers.PRIORITY.VISUAL.ARIA, ariaVisual);
 }
 
-// node_modules/echarts/lib/util/conditionalExpression.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/conditionalExpression.js
 var RELATIONAL_EXPRESSION_OP_ALIAS_MAP = {
   value: "eq",
   // PENDING: not good for literal semantic?
@@ -84185,7 +85604,7 @@ function parseConditionalExpression(exprOption, getters) {
   return new ConditionalExpressionParsed(exprOption, getters);
 }
 
-// node_modules/echarts/lib/component/transform/filterTransform.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/transform/filterTransform.js
 var filterTransform = {
   type: "echarts:filter",
   // PENDING: enhance to filter by index rather than create new data
@@ -84233,7 +85652,7 @@ var filterTransform = {
   }
 };
 
-// node_modules/echarts/lib/component/transform/sortTransform.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/transform/sortTransform.js
 var sampleLog = "";
 if (true) {
   sampleLog = ["Valid config is like:", '{ dimension: "age", order: "asc" }', 'or [{ dimension: "age", order: "asc"], { dimension: "date", order: "desc" }]'].join(" ");
@@ -84336,13 +85755,13 @@ var sortTransform = {
   }
 };
 
-// node_modules/echarts/lib/component/transform/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/transform/install.js
 function install54(registers) {
   registers.registerTransform(filterTransform);
   registers.registerTransform(sortTransform);
 }
 
-// node_modules/echarts/lib/component/dataset/install.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataset/install.js
 var DatasetModel = (
   /** @class */
   function(_super) {
@@ -84392,7 +85811,7 @@ function install55(registers) {
   registers.registerComponentView(DatasetView);
 }
 
-// node_modules/zrender/lib/tool/convertPath.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/convertPath.js
 var CMD5 = PathProxy_default.CMD;
 function aroundEqual(a, b) {
   return Math.abs(a - b) < 1e-5;
@@ -84586,7 +86005,7 @@ function pathToPolygons(path, scale4) {
   return polygons;
 }
 
-// node_modules/zrender/lib/tool/dividePath.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/dividePath.js
 function getDividingGrids(dimSize, rowDim, count2) {
   var rowSize = dimSize[rowDim];
   var columnSize = dimSize[1 - rowDim];
@@ -84892,7 +86311,7 @@ function split(path, count2) {
   return out2;
 }
 
-// node_modules/zrender/lib/tool/morphPath.js
+// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/morphPath.js
 function alignSubpath(subpath1, subpath2) {
   var len1 = subpath1.length;
   var len2 = subpath2.length;
@@ -85471,7 +86890,7 @@ function separateMorph(fromPath, toPathList, animationOpts) {
   };
 }
 
-// node_modules/echarts/lib/animation/morphTransitionHelper.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/morphTransitionHelper.js
 function isMultiple(elements) {
   return isArray2(elements[0]);
 }
@@ -85616,7 +87035,7 @@ function getPathList(elements) {
   return pathList;
 }
 
-// node_modules/echarts/lib/animation/universalTransition.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/universalTransition.js
 var DATA_COUNT_THRESHOLD = 1e4;
 var TRANSITION_NONE = 0;
 var TRANSITION_P2C = 1;
@@ -86119,7 +87538,7 @@ function installUniversalTransition(registers) {
   });
 }
 
-// node_modules/echarts/index.js
+// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/index.js
 use([install2]);
 use([install]);
 use([install3, install4, install5, install7, install9, install11, install12, install13, install14, install15, install16, install18, install19, install20, install21, install22, install23, install24, install25, install26, install27, install28]);
@@ -86153,28 +87572,79 @@ use(installUniversalTransition);
 use(installLabelLayout);
 
 // src/chartRenderer.ts
+var ecStat = __toESM(require_echarts_stat());
+
+// src/utils/advancedParser.ts
+var import_lodash2 = __toESM(require_lodash());
+var parseCodeAdvanced = ({ functions, variables }, code) => {
+  const { keys: keys2, values } = (0, import_lodash2.uniqBy)([
+    ...Object.entries(functions),
+    ...Object.entries({
+      data: variables.data,
+      columns: variables.columns
+    })
+  ], 0).reduce(({ keys: keys3, values: values2 }, [key, value]) => ({
+    keys: [...keys3, key],
+    values: [...values2, value]
+  }), { keys: [], values: [] });
+  const fn = new Function(...keys2, code);
+  return fn(...values);
+};
+
+// src/chartRenderer.ts
+console.log(ecStat.transform);
+registerTransform(ecStat.transform.clustering);
+registerTransform(ecStat.transform.regression);
+registerTransform(ecStat.transform.histogram);
 var ChartRenderer = class {
   constructor(app) {
     this.app = app;
+  }
+  get viewDefinition() {
+    return {
+      argument: "javascriptTemplate",
+      name: "chart",
+      singleLine: false
+    };
   }
   get rendererKey() {
     return "chart";
   }
   validateConfig(config) {
-    return { config };
+    return { config: config.trim() };
   }
   render(config, el) {
     let isRendered = false;
     let chart = null;
     return {
-      render: ({ columns, data: data2 }) => {
+      render: ({ columns, data: data2, flags }) => {
         var _a2;
+        const isAdvancedMode = !!(flags == null ? void 0 : flags.isAdvancedMode);
+        if (config.config[0] !== "{" && !isAdvancedMode) {
+          throw new Error("To process JavaScript, set ADVANCED MODE flag");
+        }
         const { functions, variables } = prepareDataVariables({ columns, data: data2 });
-        const parsedConfig = parseCode(config.config, functions, variables);
-        const dataset = [{ id: "data", source: data2 }, ...(_a2 = parsedConfig.dataset) != null ? _a2 : []];
-        parsedConfig.dataset = dataset;
+        let parsedConfig = {};
+        if (isAdvancedMode) {
+          try {
+            parsedConfig = parseCodeAdvanced({ functions, variables }, config.config);
+          } catch (e2) {
+            console.error(e2);
+            throw e2;
+          }
+        } else {
+          parsedConfig = parseCode(config.config, functions, variables);
+        }
+        if (!parsedConfig || typeof parsedConfig !== "object") {
+          throw new Error("Issue with parsing config");
+        }
+        const configRecord = parsedConfig;
+        if (!configRecord.dataset) {
+          const dataset = [{ id: "data", source: data2 }, ...(_a2 = configRecord.dataset) != null ? _a2 : []];
+          configRecord.dataset = dataset;
+        }
         if (isRendered) {
-          chart == null ? void 0 : chart.setOption(parsedConfig);
+          chart == null ? void 0 : chart.setOption(configRecord);
           return;
         }
         el.empty();
@@ -86185,7 +87655,7 @@ var ChartRenderer = class {
           const width = box2.width;
           const height = box2.height;
           chart = init2(chartDiv, null, { height, width });
-          chart.setOption(parsedConfig);
+          chart.setOption(configRecord);
           isRendered = true;
         });
       },
@@ -86196,7 +87666,7 @@ var ChartRenderer = class {
   }
 };
 
-// node_modules/@vanakat/plugin-api/index.js
+// node_modules/.pnpm/@vanakat+plugin-api@0.2.1_@codemirror+state@6.5.2_@codemirror+view@6.36.4_eslint@9.22.0/node_modules/@vanakat/plugin-api/index.js
 var import_obsidian = require("obsidian");
 function pluginApi(name) {
   if ("PluginApi" in window && name in window["PluginApi"]) {
@@ -86217,6 +87687,9 @@ var SQLSealCharts = class extends import_obsidian2.Plugin {
     const api = pluginApi("sqlseal");
     const registar = api.registerForPlugin(this);
     registar.registerView("sqlseal-charts", new ChartRenderer(this.app));
+    if (api.apiVersion >= 2) {
+      registar.registerFlag({ key: "isAdvancedMode", name: "ADVANCED MODE" });
+    }
   }
 };
 /*! Bundled license information:
@@ -86247,22 +87720,6 @@ tslib/tslib.es6.js:
   PERFORMANCE OF THIS SOFTWARE.
   ***************************************************************************** *)
 
-tslib/tslib.es6.js:
-  (*! *****************************************************************************
-  Copyright (c) Microsoft Corporation.
-  
-  Permission to use, copy, modify, and/or distribute this software for any
-  purpose with or without fee is hereby granted.
-  
-  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-  AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-  INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-  PERFORMANCE OF THIS SOFTWARE.
-  ***************************************************************************** *)
-
 zrender/lib/zrender.js:
   (*!
   * ZRender, a high performance 2d drawing library.
@@ -86274,3 +87731,5 @@ zrender/lib/zrender.js:
   * https://github.com/ecomfe/zrender/blob/master/LICENSE.txt
   *)
 */
+
+/* nosourcemap */
