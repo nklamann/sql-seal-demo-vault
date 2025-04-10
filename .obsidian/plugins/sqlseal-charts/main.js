@@ -70,9 +70,9 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js
+// node_modules/lodash/lodash.js
 var require_lodash = __commonJS({
-  "node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"(exports, module2) {
+  "node_modules/lodash/lodash.js"(exports, module2) {
     (function() {
       var undefined2;
       var VERSION = "4.17.21";
@@ -5550,9 +5550,9 @@ var require_lodash = __commonJS({
   }
 });
 
-// node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/dist/ecStat.js
+// node_modules/echarts-stat/dist/ecStat.js
 var require_ecStat = __commonJS({
-  "node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/dist/ecStat.js"(exports, module2) {
+  "node_modules/echarts-stat/dist/ecStat.js"(exports, module2) {
     (function webpackUniversalModuleDefinition(root, factory) {
       if (typeof exports === "object" && typeof module2 === "object")
         module2.exports = factory();
@@ -6966,9 +6966,9 @@ var require_ecStat = __commonJS({
   }
 });
 
-// node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/index.js
+// node_modules/echarts-stat/index.js
 var require_echarts_stat = __commonJS({
-  "node_modules/.pnpm/echarts-stat@1.2.0/node_modules/echarts-stat/index.js"(exports, module2) {
+  "node_modules/echarts-stat/index.js"(exports, module2) {
     module2.exports = require_ecStat();
   }
 });
@@ -6981,7 +6981,7 @@ __export(main_exports, {
 module.exports = __toCommonJS(main_exports);
 var import_obsidian2 = require("obsidian");
 
-// node_modules/.pnpm/acorn@8.14.1/node_modules/acorn/dist/acorn.mjs
+// node_modules/acorn/dist/acorn.mjs
 var astralIdentifierCodes = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 7, 9, 32, 4, 318, 1, 80, 3, 71, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 3, 0, 158, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 68, 8, 2, 0, 3, 0, 2, 3, 2, 4, 2, 0, 15, 1, 83, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 7, 19, 58, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 343, 9, 54, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 10, 1, 2, 0, 49, 6, 4, 4, 14, 10, 5350, 0, 7, 14, 11465, 27, 2343, 9, 87, 9, 39, 4, 60, 6, 26, 9, 535, 9, 470, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4178, 9, 519, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 101, 0, 161, 6, 10, 9, 357, 0, 62, 13, 499, 13, 245, 1, 2, 9, 726, 6, 110, 6, 6, 9, 4759, 9, 787719, 239];
 var astralIdentifierStartCodes = [0, 11, 2, 25, 2, 18, 2, 1, 2, 14, 3, 13, 35, 122, 70, 52, 268, 28, 4, 48, 48, 31, 14, 29, 6, 37, 11, 29, 3, 35, 5, 7, 2, 4, 43, 157, 19, 35, 5, 35, 5, 39, 9, 51, 13, 10, 2, 14, 2, 6, 2, 1, 2, 10, 2, 14, 2, 6, 2, 1, 4, 51, 13, 310, 10, 21, 11, 7, 25, 5, 2, 41, 2, 8, 70, 5, 3, 0, 2, 43, 2, 1, 4, 0, 3, 22, 11, 22, 10, 30, 66, 18, 2, 1, 11, 21, 11, 25, 71, 55, 7, 1, 65, 0, 16, 3, 2, 2, 2, 28, 43, 28, 4, 28, 36, 7, 2, 27, 28, 53, 11, 21, 11, 18, 14, 17, 111, 72, 56, 50, 14, 50, 14, 35, 39, 27, 10, 22, 251, 41, 7, 1, 17, 2, 60, 28, 11, 0, 9, 21, 43, 17, 47, 20, 28, 22, 13, 52, 58, 1, 3, 0, 14, 44, 33, 24, 27, 35, 30, 0, 3, 0, 9, 34, 4, 0, 13, 47, 15, 3, 22, 0, 2, 0, 36, 17, 2, 24, 20, 1, 64, 6, 2, 0, 2, 3, 2, 14, 2, 9, 8, 46, 39, 7, 3, 1, 3, 21, 2, 6, 2, 1, 2, 4, 4, 0, 19, 0, 13, 4, 31, 9, 2, 0, 3, 0, 2, 37, 2, 0, 26, 0, 2, 0, 45, 52, 19, 3, 21, 2, 31, 47, 21, 1, 2, 0, 185, 46, 42, 3, 37, 47, 21, 0, 60, 42, 14, 0, 72, 26, 38, 6, 186, 43, 117, 63, 32, 7, 3, 0, 3, 7, 2, 1, 2, 23, 16, 0, 2, 0, 95, 7, 3, 38, 17, 0, 2, 0, 29, 0, 11, 39, 8, 0, 22, 0, 12, 45, 20, 0, 19, 72, 200, 32, 32, 8, 2, 36, 18, 0, 50, 29, 113, 6, 2, 1, 2, 37, 22, 0, 26, 5, 2, 1, 2, 31, 15, 0, 328, 18, 16, 0, 2, 12, 2, 33, 125, 0, 80, 921, 103, 110, 18, 195, 2637, 96, 16, 1071, 18, 5, 26, 3994, 6, 582, 6842, 29, 1763, 568, 8, 30, 18, 78, 18, 29, 19, 47, 17, 3, 32, 20, 6, 18, 433, 44, 212, 63, 129, 74, 6, 0, 67, 12, 65, 1, 2, 0, 29, 6135, 9, 1237, 42, 9, 8936, 3, 2, 6, 2, 1, 2, 290, 16, 0, 30, 2, 3, 0, 15, 3, 9, 395, 2309, 106, 6, 12, 4, 8, 8, 9, 5991, 84, 2, 70, 2, 1, 3, 0, 3, 1, 3, 3, 2, 11, 2, 0, 2, 6, 2, 64, 2, 3, 3, 7, 2, 6, 2, 27, 2, 3, 2, 4, 2, 0, 4, 6, 2, 339, 3, 24, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 30, 2, 24, 2, 7, 1845, 30, 7, 5, 262, 61, 147, 44, 11, 6, 17, 0, 322, 29, 19, 43, 485, 27, 229, 29, 3, 0, 496, 6, 2, 3, 2, 1, 2, 14, 2, 196, 60, 67, 8, 0, 1205, 3, 2, 26, 2, 1, 2, 0, 3, 0, 2, 9, 2, 3, 2, 0, 2, 0, 7, 0, 5, 0, 2, 0, 2, 0, 2, 2, 2, 1, 2, 0, 3, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 1, 2, 0, 3, 3, 2, 6, 2, 3, 2, 3, 2, 0, 2, 9, 2, 16, 6, 2, 2, 4, 2, 16, 4421, 42719, 33, 4153, 7, 221, 3, 5761, 15, 7472, 16, 621, 2467, 541, 1507, 4938, 6, 4191];
 var nonASCIIidentifierChars = "\u200C\u200D\xB7\u0300-\u036F\u0387\u0483-\u0487\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u0669\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u06F0-\u06F9\u0711\u0730-\u074A\u07A6-\u07B0\u07C0-\u07C9\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u0897-\u089F\u08CA-\u08E1\u08E3-\u0903\u093A-\u093C\u093E-\u094F\u0951-\u0957\u0962\u0963\u0966-\u096F\u0981-\u0983\u09BC\u09BE-\u09C4\u09C7\u09C8\u09CB-\u09CD\u09D7\u09E2\u09E3\u09E6-\u09EF\u09FE\u0A01-\u0A03\u0A3C\u0A3E-\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A66-\u0A71\u0A75\u0A81-\u0A83\u0ABC\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACD\u0AE2\u0AE3\u0AE6-\u0AEF\u0AFA-\u0AFF\u0B01-\u0B03\u0B3C\u0B3E-\u0B44\u0B47\u0B48\u0B4B-\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B66-\u0B6F\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCD\u0BD7\u0BE6-\u0BEF\u0C00-\u0C04\u0C3C\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C66-\u0C6F\u0C81-\u0C83\u0CBC\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0CE6-\u0CEF\u0CF3\u0D00-\u0D03\u0D3B\u0D3C\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4D\u0D57\u0D62\u0D63\u0D66-\u0D6F\u0D81-\u0D83\u0DCA\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DE6-\u0DEF\u0DF2\u0DF3\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0E50-\u0E59\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECE\u0ED0-\u0ED9\u0F18\u0F19\u0F20-\u0F29\u0F35\u0F37\u0F39\u0F3E\u0F3F\u0F71-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102B-\u103E\u1040-\u1049\u1056-\u1059\u105E-\u1060\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1082-\u108D\u108F-\u109D\u135D-\u135F\u1369-\u1371\u1712-\u1715\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4-\u17D3\u17DD\u17E0-\u17E9\u180B-\u180D\u180F-\u1819\u18A9\u1920-\u192B\u1930-\u193B\u1946-\u194F\u19D0-\u19DA\u1A17-\u1A1B\u1A55-\u1A5E\u1A60-\u1A7C\u1A7F-\u1A89\u1A90-\u1A99\u1AB0-\u1ABD\u1ABF-\u1ACE\u1B00-\u1B04\u1B34-\u1B44\u1B50-\u1B59\u1B6B-\u1B73\u1B80-\u1B82\u1BA1-\u1BAD\u1BB0-\u1BB9\u1BE6-\u1BF3\u1C24-\u1C37\u1C40-\u1C49\u1C50-\u1C59\u1CD0-\u1CD2\u1CD4-\u1CE8\u1CED\u1CF4\u1CF7-\u1CF9\u1DC0-\u1DFF\u200C\u200D\u203F\u2040\u2054\u20D0-\u20DC\u20E1\u20E5-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\u30FB\uA620-\uA629\uA66F\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA823-\uA827\uA82C\uA880\uA881\uA8B4-\uA8C5\uA8D0-\uA8D9\uA8E0-\uA8F1\uA8FF-\uA909\uA926-\uA92D\uA947-\uA953\uA980-\uA983\uA9B3-\uA9C0\uA9D0-\uA9D9\uA9E5\uA9F0-\uA9F9\uAA29-\uAA36\uAA43\uAA4C\uAA4D\uAA50-\uAA59\uAA7B-\uAA7D\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEB-\uAAEF\uAAF5\uAAF6\uABE3-\uABEA\uABEC\uABED\uABF0-\uABF9\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFE33\uFE34\uFE4D-\uFE4F\uFF10-\uFF19\uFF3F\uFF65";
@@ -12711,7 +12711,7 @@ function prepareDataVariables({ data: data2, columns }) {
   };
 }
 
-// node_modules/.pnpm/tslib@2.3.0/node_modules/tslib/tslib.es6.js
+// node_modules/echarts/node_modules/tslib/tslib.es6.js
 var extendStatics = function(d, b) {
   extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
     d2.__proto__ = b2;
@@ -12730,7 +12730,7 @@ function __extends(d, b) {
   d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/env.js
+// node_modules/zrender/lib/core/env.js
 var Browser = /* @__PURE__ */ function() {
   function Browser2() {
     this.firefox = false;
@@ -12801,7 +12801,7 @@ function detect(ua, env2) {
 }
 var env_default = env;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/platform.js
+// node_modules/zrender/lib/core/platform.js
 var DEFAULT_FONT_SIZE = 12;
 var DEFAULT_FONT_FAMILY = "sans-serif";
 var DEFAULT_FONT = DEFAULT_FONT_SIZE + "px " + DEFAULT_FONT_FAMILY;
@@ -12865,7 +12865,7 @@ var platformApi = {
   }
 };
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/util.js
+// node_modules/zrender/lib/core/util.js
 var BUILTIN_OBJECT = reduce([
   "Function",
   "RegExp",
@@ -13373,7 +13373,26 @@ function noop() {
 }
 var RADIAN_TO_DEGREE = 180 / Math.PI;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/vector.js
+// node_modules/zrender/node_modules/tslib/tslib.es6.js
+var extendStatics2 = function(d, b) {
+  extendStatics2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+    d2.__proto__ = b2;
+  } || function(d2, b2) {
+    for (var p in b2) if (Object.prototype.hasOwnProperty.call(b2, p)) d2[p] = b2[p];
+  };
+  return extendStatics2(d, b);
+};
+function __extends2(d, b) {
+  if (typeof b !== "function" && b !== null)
+    throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+  extendStatics2(d, b);
+  function __() {
+    this.constructor = d;
+  }
+  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+// node_modules/zrender/lib/core/vector.js
 function create(x, y) {
   if (x == null) {
     x = 0;
@@ -13464,7 +13483,7 @@ function max2(out2, v12, v22) {
   return out2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/mixin/Draggable.js
+// node_modules/zrender/lib/mixin/Draggable.js
 var Param = /* @__PURE__ */ function() {
   function Param2(target, e2) {
     this.target = target;
@@ -13532,7 +13551,7 @@ var Draggable = function() {
 }();
 var Draggable_default = Draggable;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/Eventful.js
+// node_modules/zrender/lib/core/Eventful.js
 var Eventful = function() {
   function Eventful2(eventProcessors) {
     if (eventProcessors) {
@@ -13685,7 +13704,7 @@ var Eventful = function() {
 }();
 var Eventful_default = Eventful;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/fourPointsTransform.js
+// node_modules/zrender/lib/core/fourPointsTransform.js
 var LN2 = Math.log(2);
 function determinant(rows, rank, rowStart, rowMask, colMask, detCache) {
   var cacheKey = rowMask + "-" + colMask;
@@ -13743,7 +13762,7 @@ function buildTransformer(src, dest) {
   };
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/dom.js
+// node_modules/zrender/lib/core/dom.js
 var EVENT_SAVED_PROP = "___zrEVENTSAVED";
 var _calcOut = [];
 function transformLocalCoord(out2, elFrom, elTarget, inX, inY) {
@@ -13829,7 +13848,7 @@ function encodeHTML(source) {
   });
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/event.js
+// node_modules/zrender/lib/core/event.js
 var MOUSE_EVENT_REG = /^(?:mouse|pointer|contextmenu|drag|drop)|click/;
 var _calcOut2 = [];
 var firefoxNotSupportOffsetXY = env_default.browser.firefox && +env_default.browser.version.split(".")[0] < 39;
@@ -13920,7 +13939,7 @@ function isMiddleOrRightButtonOnMouseUpDown(e2) {
   return e2.which === 2 || e2.which === 3;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/GestureMgr.js
+// node_modules/zrender/lib/core/GestureMgr.js
 var GestureMgr = function() {
   function GestureMgr2() {
     this._track = [];
@@ -13999,7 +14018,7 @@ var recognizers = {
   }
 };
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/matrix.js
+// node_modules/zrender/lib/core/matrix.js
 function create2() {
   return [1, 0, 0, 1, 0, 0];
 }
@@ -14102,7 +14121,7 @@ function clone3(a) {
   return b;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/Point.js
+// node_modules/zrender/lib/core/Point.js
 var Point = function() {
   function Point2(x, y) {
     this.x = x || 0;
@@ -14233,7 +14252,7 @@ var Point = function() {
 }();
 var Point_default = Point;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/BoundingRect.js
+// node_modules/zrender/lib/core/BoundingRect.js
 var mathMin = Math.min;
 var mathMax = Math.max;
 var lt = new Point_default();
@@ -14434,7 +14453,7 @@ var BoundingRect = function() {
 }();
 var BoundingRect_default = BoundingRect;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/Handler.js
+// node_modules/zrender/lib/Handler.js
 var SILENT = "silent";
 function makeEventPacket(eveType, targetInfo, event) {
   return {
@@ -14459,7 +14478,7 @@ function stopEvent() {
   stop(this.event);
 }
 var EmptyProxy = function(_super) {
-  __extends(EmptyProxy2, _super);
+  __extends2(EmptyProxy2, _super);
   function EmptyProxy2() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.handler = null;
@@ -14490,7 +14509,7 @@ var handlerNames = [
 ];
 var tmpRect = new BoundingRect_default(0, 0, 0, 0);
 var Handler = function(_super) {
-  __extends(Handler2, _super);
+  __extends2(Handler2, _super);
   function Handler2(storage2, painter, proxy, painterRoot, pointerSize) {
     var _this = _super.call(this) || this;
     _this._hovered = new HoveredResult(0, 0);
@@ -14721,7 +14740,7 @@ function isOutsideBoundary(handlerInstance, x, y) {
 }
 var Handler_default = Handler;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/timsort.js
+// node_modules/zrender/lib/core/timsort.js
 var DEFAULT_MIN_MERGE = 32;
 var DEFAULT_MIN_GALLOPING = 7;
 function minRunLength(n) {
@@ -15230,12 +15249,12 @@ function sort(array, compare2, lo, hi) {
   ts.forceMergeRuns();
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/constants.js
+// node_modules/zrender/lib/graphic/constants.js
 var REDRAW_BIT = 1;
 var STYLE_CHANGED_BIT = 2;
 var SHAPE_CHANGED_BIT = 4;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/Storage.js
+// node_modules/zrender/lib/Storage.js
 var invalidZErrorLogged = false;
 function logInvalidZError() {
   if (invalidZErrorLogged) {
@@ -15388,14 +15407,14 @@ var Storage = function() {
 }();
 var Storage_default = Storage;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/requestAnimationFrame.js
+// node_modules/zrender/lib/animation/requestAnimationFrame.js
 var requestAnimationFrame2;
 requestAnimationFrame2 = env_default.hasGlobalWindow && (window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || window.msRequestAnimationFrame && window.msRequestAnimationFrame.bind(window) || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame) || function(func) {
   return setTimeout(func, 16);
 };
 var requestAnimationFrame_default = requestAnimationFrame2;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/easing.js
+// node_modules/zrender/lib/animation/easing.js
 var easingFuncs = {
   linear: function(k) {
     return k;
@@ -15582,7 +15601,7 @@ var easingFuncs = {
 };
 var easing_default = easingFuncs;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/curve.js
+// node_modules/zrender/lib/core/curve.js
 var mathPow = Math.pow;
 var mathSqrt = Math.sqrt;
 var EPSILON = 1e-8;
@@ -15911,7 +15930,7 @@ function quadraticLength(x0, y0, x1, y1, x2, y2, iteration) {
   return d;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/cubicEasing.js
+// node_modules/zrender/lib/animation/cubicEasing.js
 var regexp = /cubic-bezier\(([0-9,\.e ]+)\)/;
 function createCubicEasingFunc(cubicEasingStr) {
   var cubic = cubicEasingStr && regexp.exec(cubicEasingStr);
@@ -15931,7 +15950,7 @@ function createCubicEasingFunc(cubicEasingStr) {
   }
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/Clip.js
+// node_modules/zrender/lib/animation/Clip.js
 var Clip = function() {
   function Clip2(opts) {
     this._inited = false;
@@ -15991,7 +16010,7 @@ var Clip = function() {
 }();
 var Clip_default = Clip;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/LRU.js
+// node_modules/zrender/lib/core/LRU.js
 var Entry = /* @__PURE__ */ function() {
   function Entry2(val) {
     this.value = val;
@@ -16097,7 +16116,7 @@ var LRU = function() {
 }();
 var LRU_default = LRU;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/color.js
+// node_modules/zrender/lib/tool/color.js
 var kCSSColorTable = {
   "transparent": [0, 0, 0, 0],
   "aliceblue": [240, 248, 255, 1],
@@ -16568,7 +16587,7 @@ function liftColor(color) {
   return color;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/helper.js
+// node_modules/zrender/lib/svg/helper.js
 var mathRound = Math.round;
 function normalizeColor(color) {
   var opacity;
@@ -16696,7 +16715,7 @@ var encodeBase64 = function() {
   };
 }();
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/Animator.js
+// node_modules/zrender/lib/animation/Animator.js
 var arraySlice = Array.prototype.slice;
 function interpolateNumber(p0, p1, percent) {
   return (p1 - p0) * percent + p0;
@@ -17390,12 +17409,12 @@ var Animator = function() {
 }();
 var Animator_default = Animator;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/animation/Animation.js
+// node_modules/zrender/lib/animation/Animation.js
 function getTime() {
   return (/* @__PURE__ */ new Date()).getTime();
 }
 var Animation = function(_super) {
-  __extends(Animation2, _super);
+  __extends2(Animation2, _super);
   function Animation2(opts) {
     var _this = _super.call(this) || this;
     _this._running = false;
@@ -17531,7 +17550,7 @@ var Animation = function(_super) {
 }(Eventful_default);
 var Animation_default = Animation;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/dom/HandlerProxy.js
+// node_modules/zrender/lib/dom/HandlerProxy.js
 var TOUCH_CLICK_DELAY = 300;
 var globalEventSupported = env_default.domSupported;
 var localNativeListenerNames = function() {
@@ -17792,7 +17811,7 @@ var DOMHandlerScope = /* @__PURE__ */ function() {
   return DOMHandlerScope2;
 }();
 var HandlerDomProxy = function(_super) {
-  __extends(HandlerDomProxy2, _super);
+  __extends2(HandlerDomProxy2, _super);
   function HandlerDomProxy2(dom, painterRoot) {
     var _this = _super.call(this) || this;
     _this.__pointerCapturing = false;
@@ -17826,7 +17845,7 @@ var HandlerDomProxy = function(_super) {
 }(Eventful_default);
 var HandlerProxy_default = HandlerDomProxy;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/config.js
+// node_modules/zrender/lib/config.js
 var dpr = 1;
 if (env_default.hasGlobalWindow) {
   dpr = Math.max(window.devicePixelRatio || window.screen && window.screen.deviceXDPI / window.screen.logicalXDPI || 1, 1);
@@ -17837,7 +17856,7 @@ var DARK_LABEL_COLOR = "#333";
 var LIGHT_LABEL_COLOR = "#ccc";
 var LIGHTER_LABEL_COLOR = "#eee";
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/Transformable.js
+// node_modules/zrender/lib/core/Transformable.js
 var mIdentity = identity;
 var EPSILON3 = 5e-5;
 function isNotAroundZero2(val) {
@@ -18069,7 +18088,7 @@ function copyTransform(target, source) {
 }
 var Transformable_default = Transformable;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/text.js
+// node_modules/zrender/lib/contain/text.js
 var textWidthCache = {};
 function getWidth(text, font) {
   font = font || DEFAULT_FONT;
@@ -18231,7 +18250,7 @@ function calculateTextPosition(out2, opts, rect) {
   return out2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/Element.js
+// node_modules/zrender/lib/Element.js
 var PRESERVED_NORMAL_STATE = "__zr_normal__";
 var PRIMARY_STATES_KEYS = TRANSFORMABLE_PROPS.concat(["ignore"]);
 var DEFAULT_ANIMATABLE_MAP = reduce(TRANSFORMABLE_PROPS, function(obj, key) {
@@ -19225,9 +19244,9 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
 }
 var Element_default = Element;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Group.js
+// node_modules/zrender/lib/graphic/Group.js
 var Group = function(_super) {
-  __extends(Group5, _super);
+  __extends2(Group5, _super);
   function Group5(opts) {
     var _this = _super.call(this) || this;
     _this.isGroup = true;
@@ -19400,7 +19419,7 @@ var Group = function(_super) {
 Group.prototype.type = "group";
 var Group_default = Group;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/zrender.js
+// node_modules/zrender/lib/zrender.js
 var painterCtors = {};
 var instances = {};
 function delInstance(id) {
@@ -19687,7 +19706,7 @@ function registerSSRDataGetter(getter) {
   ssrDataGetter = getter;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/number.js
+// node_modules/echarts/lib/util/number.js
 var RADIAN_EPSILON = 1e-4;
 var ROUND_SUPPORTED_PRECISION_MAX = 20;
 function _trim(str) {
@@ -19977,7 +19996,7 @@ function getLeastCommonMultiple(a, b) {
   return a * b / getGreatestCommonDividor(a, b);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/log.js
+// node_modules/echarts/lib/util/log.js
 var ECHARTS_PREFIX = "[ECharts] ";
 var storedLogs = {};
 var hasConsole = typeof console !== "undefined" && console.warn && console.log;
@@ -20049,7 +20068,7 @@ function throwError(msg) {
   throw new Error(msg);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/model.js
+// node_modules/echarts/lib/util/model.js
 function interpolateNumber2(p0, p1, percent) {
   return (p1 - p0) * percent + p0;
 }
@@ -20494,7 +20513,7 @@ function interpolateRawValues(data2, precision, sourceValue, targetValue, percen
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/clazz.js
+// node_modules/echarts/lib/util/clazz.js
 var TYPE_DELIMITER = ".";
 var IS_CONTAINER = "___EC__COMPONENT__CONTAINER___";
 var IS_EXTENDED_CLASS = "___EC__EXTENDED_CLASS___";
@@ -20650,7 +20669,7 @@ function enableClassManagement(target) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/makeStyleMapper.js
+// node_modules/echarts/lib/model/mixin/makeStyleMapper.js
 function makeStyleMapper(properties, ignoreParent) {
   for (var i = 0; i < properties.length; i++) {
     if (!properties[i][1]) {
@@ -20674,7 +20693,7 @@ function makeStyleMapper(properties, ignoreParent) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/areaStyle.js
+// node_modules/echarts/lib/model/mixin/areaStyle.js
 var AREA_STYLE_KEY_MAP = [
   ["fill", "color"],
   ["shadowBlur"],
@@ -20698,7 +20717,7 @@ var AreaStyleMixin = (
   }()
 );
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/image.js
+// node_modules/zrender/lib/graphic/helper/image.js
 var globalImageCache = new LRU_default(50);
 function findExistImage(newImageOrSrc) {
   if (typeof newImageOrSrc === "string") {
@@ -20748,7 +20767,7 @@ function isImageReady(image) {
   return image && image.width && image.height;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/parseText.js
+// node_modules/zrender/lib/graphic/helper/parseText.js
 var STYLE_REG = /\{([a-zA-Z0-9_]+)\|([^}]*)\}/g;
 function truncateText2(out2, text, containerWidth, font, ellipsis, options) {
   if (!containerWidth) {
@@ -21210,7 +21229,7 @@ function wrapText(text, font, lineWidth, isBreakAll, lastAccumWidth) {
   };
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Displayable.js
+// node_modules/zrender/lib/graphic/Displayable.js
 var STYLE_MAGIC_KEY = "__zr_style_" + Math.round(Math.random() * 10);
 var DEFAULT_COMMON_STYLE = {
   shadowBlur: 0,
@@ -21233,7 +21252,7 @@ DEFAULT_COMMON_STYLE[STYLE_MAGIC_KEY] = true;
 var PRIMARY_STATES_KEYS2 = ["z", "z2", "invisible"];
 var PRIMARY_STATES_KEYS_IN_HOVER_LAYER = ["invisible"];
 var Displayable = function(_super) {
-  __extends(Displayable2, _super);
+  __extends2(Displayable2, _super);
   function Displayable2(props) {
     return _super.call(this, props) || this;
   }
@@ -21517,7 +21536,7 @@ function isDisplayableCulled(el, width, height) {
 }
 var Displayable_default = Displayable;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/bbox.js
+// node_modules/zrender/lib/core/bbox.js
 var mathMin2 = Math.min;
 var mathMax2 = Math.max;
 var mathSin = Math.sin;
@@ -21640,7 +21659,7 @@ function fromArc(x, y, rx, ry, startAngle, endAngle, anticlockwise, min4, max4) 
   }
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/PathProxy.js
+// node_modules/zrender/lib/core/PathProxy.js
 var CMD = {
   M: 1,
   L: 2,
@@ -22327,7 +22346,7 @@ var PathProxy = function() {
 }();
 var PathProxy_default = PathProxy;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/line.js
+// node_modules/zrender/lib/contain/line.js
 function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
   if (lineWidth === 0) {
     return false;
@@ -22349,7 +22368,7 @@ function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
   return _s <= _l / 2 * _l / 2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/cubic.js
+// node_modules/zrender/lib/contain/cubic.js
 function containStroke2(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
   if (lineWidth === 0) {
     return false;
@@ -22362,7 +22381,7 @@ function containStroke2(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
   return d <= _l / 2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/quadratic.js
+// node_modules/zrender/lib/contain/quadratic.js
 function containStroke3(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
   if (lineWidth === 0) {
     return false;
@@ -22375,7 +22394,7 @@ function containStroke3(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
   return d <= _l / 2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/util.js
+// node_modules/zrender/lib/contain/util.js
 var PI23 = Math.PI * 2;
 function normalizeRadian(angle) {
   angle %= PI23;
@@ -22385,7 +22404,7 @@ function normalizeRadian(angle) {
   return angle;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/arc.js
+// node_modules/zrender/lib/contain/arc.js
 var PI24 = Math.PI * 2;
 function containStroke4(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidth, x, y) {
   if (lineWidth === 0) {
@@ -22419,7 +22438,7 @@ function containStroke4(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidt
   return angle >= startAngle && angle <= endAngle || angle + PI24 >= startAngle && angle + PI24 <= endAngle;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/windingLine.js
+// node_modules/zrender/lib/contain/windingLine.js
 function windingLine(x0, y0, x1, y1, x, y) {
   if (y > y0 && y > y1 || y < y0 && y < y1) {
     return 0;
@@ -22436,7 +22455,7 @@ function windingLine(x0, y0, x1, y1, x, y) {
   return x_ === x ? Infinity : x_ > x ? dir3 : 0;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/path.js
+// node_modules/zrender/lib/contain/path.js
 var CMD2 = PathProxy_default.CMD;
 var PI25 = Math.PI * 2;
 var EPSILON4 = 1e-4;
@@ -22716,7 +22735,7 @@ function containStroke5(pathProxy, lineWidth, x, y) {
   return containPath(pathProxy, lineWidth, true, x, y);
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Path.js
+// node_modules/zrender/lib/graphic/Path.js
 var DEFAULT_PATH_STYLE = defaults({
   fill: "#000",
   stroke: null,
@@ -22751,7 +22770,7 @@ var pathCopyParams = TRANSFORMABLE_PROPS.concat([
   "parent"
 ]);
 var Path = function(_super) {
-  __extends(Path2, _super);
+  __extends2(Path2, _super);
   function Path2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23064,7 +23083,7 @@ var Path = function(_super) {
   };
   Path2.extend = function(defaultProps) {
     var Sub = function(_super2) {
-      __extends(Sub2, _super2);
+      __extends2(Sub2, _super2);
       function Sub2(opts) {
         var _this = _super2.call(this, opts) || this;
         defaultProps.init && defaultProps.init.call(_this, opts);
@@ -23098,7 +23117,7 @@ var Path = function(_super) {
 }(Displayable_default);
 var Path_default = Path;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/TSpan.js
+// node_modules/zrender/lib/graphic/TSpan.js
 var DEFAULT_TSPAN_STYLE = defaults({
   strokeFirst: true,
   font: DEFAULT_FONT,
@@ -23109,7 +23128,7 @@ var DEFAULT_TSPAN_STYLE = defaults({
   miterLimit: 2
 }, DEFAULT_PATH_STYLE);
 var TSpan = function(_super) {
-  __extends(TSpan2, _super);
+  __extends2(TSpan2, _super);
   function TSpan2() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -23157,7 +23176,7 @@ var TSpan = function(_super) {
 TSpan.prototype.type = "tspan";
 var TSpan_default = TSpan;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Image.js
+// node_modules/zrender/lib/graphic/Image.js
 var DEFAULT_IMAGE_STYLE = defaults({
   x: 0,
   y: 0
@@ -23178,7 +23197,7 @@ function isImageLike(source) {
   return !!(source && typeof source !== "string" && source.width && source.height);
 }
 var ZRImage = function(_super) {
-  __extends(ZRImage2, _super);
+  __extends2(ZRImage2, _super);
   function ZRImage2() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -23224,7 +23243,7 @@ var ZRImage = function(_super) {
 ZRImage.prototype.type = "image";
 var Image_default = ZRImage;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/roundRect.js
+// node_modules/zrender/lib/graphic/helper/roundRect.js
 function buildPath(ctx, shape) {
   var x = shape.x;
   var y = shape.y;
@@ -23296,7 +23315,7 @@ function buildPath(ctx, shape) {
   r1 !== 0 && ctx.arc(x + r1, y + r1, r1, Math.PI, Math.PI * 1.5);
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
+// node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
 var round2 = Math.round;
 function subPixelOptimizeLine(outputShape, inputShape, style) {
   if (!inputShape) {
@@ -23352,7 +23371,7 @@ function subPixelOptimize(position2, lineWidth, positiveOrNegative) {
   return (doubledPosition + round2(lineWidth)) % 2 === 0 ? doubledPosition / 2 : (doubledPosition + (positiveOrNegative ? 1 : -1)) / 2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Rect.js
+// node_modules/zrender/lib/graphic/shape/Rect.js
 var RectShape = /* @__PURE__ */ function() {
   function RectShape2() {
     this.x = 0;
@@ -23364,7 +23383,7 @@ var RectShape = /* @__PURE__ */ function() {
 }();
 var subPixelOptimizeOutputShape = {};
 var Rect = function(_super) {
-  __extends(Rect4, _super);
+  __extends2(Rect4, _super);
   function Rect4(opts) {
     return _super.call(this, opts) || this;
   }
@@ -23404,7 +23423,7 @@ var Rect = function(_super) {
 Rect.prototype.type = "rect";
 var Rect_default = Rect;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Text.js
+// node_modules/zrender/lib/graphic/Text.js
 var DEFAULT_RICH_TEXT_COLOR = {
   fill: "#000"
 };
@@ -23432,7 +23451,7 @@ var DEFAULT_TEXT_ANIMATION_PROPS = {
   }, DEFAULT_COMMON_ANIMATION_PROPS.style)
 };
 var ZRText = function(_super) {
-  __extends(ZRText2, _super);
+  __extends2(ZRText2, _super);
   function ZRText2(opts) {
     var _this = _super.call(this) || this;
     _this.type = "text";
@@ -23896,7 +23915,7 @@ function needDrawBackground(style) {
 }
 var Text_default = ZRText;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/innerStore.js
+// node_modules/echarts/lib/util/innerStore.js
 var getECData = makeInner();
 var setCommonECData = function(seriesIndex, dataType, dataIdx, el) {
   if (el) {
@@ -23917,7 +23936,7 @@ var setCommonECData = function(seriesIndex, dataType, dataIdx, el) {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/states.js
+// node_modules/echarts/lib/util/states.js
 var _highlightNextDigit = 1;
 var _highlightKeyMap = {};
 var getSavedStates = makeInner();
@@ -24444,7 +24463,7 @@ function savePathStates(el) {
   store.selectStroke = selectState.style && selectState.style.stroke || null;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/graphic.js
+// node_modules/echarts/lib/util/graphic.js
 var graphic_exports = {};
 __export(graphic_exports, {
   Arc: () => Arc_default,
@@ -24497,7 +24516,7 @@ __export(graphic_exports, {
   updateProps: () => updateProps
 });
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/transformPath.js
+// node_modules/zrender/lib/tool/transformPath.js
 var CMD3 = PathProxy_default.CMD;
 var points = [[], [], []];
 var mathSqrt2 = Math.sqrt;
@@ -24578,7 +24597,7 @@ function transformPath(path, m2) {
   path.increaseVersion();
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/path.js
+// node_modules/zrender/lib/tool/path.js
 var mathSqrt3 = Math.sqrt;
 var mathSin3 = Math.sin;
 var mathCos3 = Math.cos;
@@ -24838,7 +24857,7 @@ function createPathProxyFromString(data2) {
   return path;
 }
 var SVGPath = function(_super) {
-  __extends(SVGPath2, _super);
+  __extends2(SVGPath2, _super);
   function SVGPath2() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -24876,7 +24895,7 @@ function createFromString(str, opts) {
 function extendFromString(str, defaultOpts) {
   var innerOpts = createPathOptions(str, defaultOpts);
   var Sub = function(_super) {
-    __extends(Sub2, _super);
+    __extends2(Sub2, _super);
     function Sub2(opts) {
       var _this = _super.call(this, opts) || this;
       _this.applyTransform = innerOpts.applyTransform;
@@ -24931,7 +24950,7 @@ function clonePath(sourcePath, opts) {
   return path;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Circle.js
+// node_modules/zrender/lib/graphic/shape/Circle.js
 var CircleShape = /* @__PURE__ */ function() {
   function CircleShape2() {
     this.cx = 0;
@@ -24941,7 +24960,7 @@ var CircleShape = /* @__PURE__ */ function() {
   return CircleShape2;
 }();
 var Circle = function(_super) {
-  __extends(Circle2, _super);
+  __extends2(Circle2, _super);
   function Circle2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -24957,7 +24976,7 @@ var Circle = function(_super) {
 Circle.prototype.type = "circle";
 var Circle_default = Circle;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Ellipse.js
+// node_modules/zrender/lib/graphic/shape/Ellipse.js
 var EllipseShape = /* @__PURE__ */ function() {
   function EllipseShape2() {
     this.cx = 0;
@@ -24968,7 +24987,7 @@ var EllipseShape = /* @__PURE__ */ function() {
   return EllipseShape2;
 }();
 var Ellipse = function(_super) {
-  __extends(Ellipse2, _super);
+  __extends2(Ellipse2, _super);
   function Ellipse2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -24995,7 +25014,7 @@ var Ellipse = function(_super) {
 Ellipse.prototype.type = "ellipse";
 var Ellipse_default = Ellipse;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/roundSector.js
+// node_modules/zrender/lib/graphic/helper/roundSector.js
 var PI4 = Math.PI;
 var PI26 = PI4 * 2;
 var mathSin4 = Math.sin;
@@ -25211,7 +25230,7 @@ function buildPath2(ctx, shape) {
   ctx.closePath();
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Sector.js
+// node_modules/zrender/lib/graphic/shape/Sector.js
 var SectorShape = /* @__PURE__ */ function() {
   function SectorShape2() {
     this.cx = 0;
@@ -25226,7 +25245,7 @@ var SectorShape = /* @__PURE__ */ function() {
   return SectorShape2;
 }();
 var Sector = function(_super) {
-  __extends(Sector2, _super);
+  __extends2(Sector2, _super);
   function Sector2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25244,7 +25263,7 @@ var Sector = function(_super) {
 Sector.prototype.type = "sector";
 var Sector_default = Sector;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Ring.js
+// node_modules/zrender/lib/graphic/shape/Ring.js
 var RingShape = /* @__PURE__ */ function() {
   function RingShape2() {
     this.cx = 0;
@@ -25255,7 +25274,7 @@ var RingShape = /* @__PURE__ */ function() {
   return RingShape2;
 }();
 var Ring = function(_super) {
-  __extends(Ring2, _super);
+  __extends2(Ring2, _super);
   function Ring2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25276,7 +25295,7 @@ var Ring = function(_super) {
 Ring.prototype.type = "ring";
 var Ring_default = Ring;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/smoothBezier.js
+// node_modules/zrender/lib/graphic/helper/smoothBezier.js
 function smoothBezier(points4, smooth, isLoop, constraint) {
   var cps = [];
   var v = [];
@@ -25338,7 +25357,7 @@ function smoothBezier(points4, smooth, isLoop, constraint) {
   return cps;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/helper/poly.js
+// node_modules/zrender/lib/graphic/helper/poly.js
 function buildPath3(ctx, shape, closePath) {
   var smooth = shape.smooth;
   var points4 = shape.points;
@@ -25363,7 +25382,7 @@ function buildPath3(ctx, shape, closePath) {
   }
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Polygon.js
+// node_modules/zrender/lib/graphic/shape/Polygon.js
 var PolygonShape = /* @__PURE__ */ function() {
   function PolygonShape2() {
     this.points = null;
@@ -25373,7 +25392,7 @@ var PolygonShape = /* @__PURE__ */ function() {
   return PolygonShape2;
 }();
 var Polygon = function(_super) {
-  __extends(Polygon2, _super);
+  __extends2(Polygon2, _super);
   function Polygon2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25388,7 +25407,7 @@ var Polygon = function(_super) {
 Polygon.prototype.type = "polygon";
 var Polygon_default = Polygon;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Polyline.js
+// node_modules/zrender/lib/graphic/shape/Polyline.js
 var PolylineShape = /* @__PURE__ */ function() {
   function PolylineShape2() {
     this.points = null;
@@ -25399,7 +25418,7 @@ var PolylineShape = /* @__PURE__ */ function() {
   return PolylineShape2;
 }();
 var Polyline = function(_super) {
-  __extends(Polyline3, _super);
+  __extends2(Polyline3, _super);
   function Polyline3(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25420,7 +25439,7 @@ var Polyline = function(_super) {
 Polyline.prototype.type = "polyline";
 var Polyline_default = Polyline;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Line.js
+// node_modules/zrender/lib/graphic/shape/Line.js
 var subPixelOptimizeOutputShape2 = {};
 var LineShape = /* @__PURE__ */ function() {
   function LineShape2() {
@@ -25433,7 +25452,7 @@ var LineShape = /* @__PURE__ */ function() {
   return LineShape2;
 }();
 var Line = function(_super) {
-  __extends(Line3, _super);
+  __extends2(Line3, _super);
   function Line3(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25486,7 +25505,7 @@ var Line = function(_super) {
 Line.prototype.type = "line";
 var Line_default = Line;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/BezierCurve.js
+// node_modules/zrender/lib/graphic/shape/BezierCurve.js
 var out = [];
 var BezierCurveShape = /* @__PURE__ */ function() {
   function BezierCurveShape2() {
@@ -25516,7 +25535,7 @@ function someVectorAt(shape, t, isTangent) {
   }
 }
 var BezierCurve = function(_super) {
-  __extends(BezierCurve2, _super);
+  __extends2(BezierCurve2, _super);
   function BezierCurve2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25579,7 +25598,7 @@ var BezierCurve = function(_super) {
 BezierCurve.prototype.type = "bezier-curve";
 var BezierCurve_default = BezierCurve;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/shape/Arc.js
+// node_modules/zrender/lib/graphic/shape/Arc.js
 var ArcShape = /* @__PURE__ */ function() {
   function ArcShape2() {
     this.cx = 0;
@@ -25592,7 +25611,7 @@ var ArcShape = /* @__PURE__ */ function() {
   return ArcShape2;
 }();
 var Arc = function(_super) {
-  __extends(Arc2, _super);
+  __extends2(Arc2, _super);
   function Arc2(opts) {
     return _super.call(this, opts) || this;
   }
@@ -25622,9 +25641,9 @@ var Arc = function(_super) {
 Arc.prototype.type = "arc";
 var Arc_default = Arc;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/CompoundPath.js
+// node_modules/zrender/lib/graphic/CompoundPath.js
 var CompoundPath = function(_super) {
-  __extends(CompoundPath2, _super);
+  __extends2(CompoundPath2, _super);
   function CompoundPath2() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.type = "compound";
@@ -25671,7 +25690,7 @@ var CompoundPath = function(_super) {
 }(Path_default);
 var CompoundPath_default = CompoundPath;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/Gradient.js
+// node_modules/zrender/lib/graphic/Gradient.js
 var Gradient = function() {
   function Gradient2(colorStops) {
     this.colorStops = colorStops || [];
@@ -25686,9 +25705,9 @@ var Gradient = function() {
 }();
 var Gradient_default = Gradient;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/LinearGradient.js
+// node_modules/zrender/lib/graphic/LinearGradient.js
 var LinearGradient = function(_super) {
-  __extends(LinearGradient2, _super);
+  __extends2(LinearGradient2, _super);
   function LinearGradient2(x, y, x2, y2, colorStops, globalCoord) {
     var _this = _super.call(this, colorStops) || this;
     _this.x = x == null ? 0 : x;
@@ -25703,9 +25722,9 @@ var LinearGradient = function(_super) {
 }(Gradient_default);
 var LinearGradient_default = LinearGradient;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/RadialGradient.js
+// node_modules/zrender/lib/graphic/RadialGradient.js
 var RadialGradient = function(_super) {
-  __extends(RadialGradient2, _super);
+  __extends2(RadialGradient2, _super);
   function RadialGradient2(x, y, r, colorStops, globalCoord) {
     var _this = _super.call(this, colorStops) || this;
     _this.x = x == null ? 0.5 : x;
@@ -25719,7 +25738,7 @@ var RadialGradient = function(_super) {
 }(Gradient_default);
 var RadialGradient_default = RadialGradient;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/OrientedBoundingRect.js
+// node_modules/zrender/lib/core/OrientedBoundingRect.js
 var extent = [0, 0];
 var extent2 = [0, 0];
 var minTv2 = new Point_default();
@@ -25837,10 +25856,10 @@ var OrientedBoundingRect = function() {
 }();
 var OrientedBoundingRect_default = OrientedBoundingRect;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/graphic/IncrementalDisplayable.js
+// node_modules/zrender/lib/graphic/IncrementalDisplayable.js
 var m = [];
 var IncrementalDisplayable = function(_super) {
-  __extends(IncrementalDisplayable2, _super);
+  __extends2(IncrementalDisplayable2, _super);
   function IncrementalDisplayable2() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.notClear = true;
@@ -25947,7 +25966,7 @@ var IncrementalDisplayable = function(_super) {
 }(Displayable_default);
 var IncrementalDisplayable_default = IncrementalDisplayable;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/basicTransition.js
+// node_modules/echarts/lib/animation/basicTransition.js
 var transitionStore = makeInner();
 function getAnimationConfig(animationType, animatableModel, dataIndex, extraOpts, extraDelayParams) {
   var animationPayload;
@@ -26088,7 +26107,7 @@ function getOldStyle(el) {
   return transitionStore(el).oldStyle;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/graphic.js
+// node_modules/echarts/lib/util/graphic.js
 var mathMax5 = Math.max;
 var mathMin5 = Math.min;
 var _customShapeMap = {};
@@ -26388,7 +26407,7 @@ registerShape("line", Line_default);
 registerShape("bezierCurve", BezierCurve_default);
 registerShape("arc", Arc_default);
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/labelStyle.js
+// node_modules/echarts/lib/label/labelStyle.js
 var EMPTY_OBJ = {};
 function setLabelText(label, labelTexts) {
   for (var i = 0; i < SPECIAL_STATES.length; i++) {
@@ -26750,7 +26769,7 @@ function animateLabelValue(textEl, dataIndex, data2, animatableModel, labelFetch
   }, animatableModel, dataIndex, null, during);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/textStyle.js
+// node_modules/echarts/lib/model/mixin/textStyle.js
 var PATH_COLOR = ["textStyle", "color"];
 var textStyleParams = ["fontStyle", "fontWeight", "fontSize", "fontFamily", "padding", "lineHeight", "rich", "width", "height", "overflow"];
 var tmpText = new Text_default();
@@ -26788,7 +26807,7 @@ var TextStyleMixin = (
 );
 var textStyle_default = TextStyleMixin;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/lineStyle.js
+// node_modules/echarts/lib/model/mixin/lineStyle.js
 var LINE_STYLE_KEY_MAP = [
   ["lineWidth", "width"],
   ["stroke", "color"],
@@ -26818,7 +26837,7 @@ var LineStyleMixin = (
   }()
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/itemStyle.js
+// node_modules/echarts/lib/model/mixin/itemStyle.js
 var ITEM_STYLE_KEY_MAP = [
   ["fill", "color"],
   ["stroke", "borderColor"],
@@ -26849,7 +26868,7 @@ var ItemStyleMixin = (
   }()
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Model.js
+// node_modules/echarts/lib/model/Model.js
 var Model = (
   /** @class */
   function() {
@@ -26948,7 +26967,7 @@ mixin(Model, AreaStyleMixin);
 mixin(Model, textStyle_default);
 var Model_default = Model;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/component.js
+// node_modules/echarts/lib/util/component.js
 var base = Math.round(Math.random() * 10);
 function getUID(type) {
   return [type || "", base++].join("_");
@@ -27057,7 +27076,7 @@ function inheritDefaultOption(superOption, subOption) {
   return merge(merge({}, superOption, true), subOption, true);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/i18n/langEN.js
+// node_modules/echarts/lib/i18n/langEN.js
 var langEN_default = {
   time: {
     month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -27170,7 +27189,7 @@ var langEN_default = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/i18n/langZH.js
+// node_modules/echarts/lib/i18n/langZH.js
 var langZH_default = {
   time: {
     month: ["\u4E00\u6708", "\u4E8C\u6708", "\u4E09\u6708", "\u56DB\u6708", "\u4E94\u6708", "\u516D\u6708", "\u4E03\u6708", "\u516B\u6708", "\u4E5D\u6708", "\u5341\u6708", "\u5341\u4E00\u6708", "\u5341\u4E8C\u6708"],
@@ -27283,7 +27302,7 @@ var langZH_default = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/locale.js
+// node_modules/echarts/lib/core/locale.js
 var LOCALE_ZH = "ZH";
 var LOCALE_EN = "EN";
 var DEFAULT_LOCALE = LOCALE_EN;
@@ -27322,7 +27341,7 @@ function getDefaultLocaleModel() {
 registerLocale(LOCALE_EN, langEN_default);
 registerLocale(LOCALE_ZH, langZH_default);
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/time.js
+// node_modules/echarts/lib/util/time.js
 var ONE_SECOND = 1e3;
 var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
@@ -27541,7 +27560,7 @@ function millisecondsSetterName(isUTC) {
   return isUTC ? "setUTCMilliseconds" : "setMilliseconds";
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/format.js
+// node_modules/echarts/lib/util/format.js
 function addCommas(x) {
   if (!isNumeric(x)) {
     return isString(x) ? x : "-";
@@ -27661,7 +27680,7 @@ function windowOpen(link, target) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/layout.js
+// node_modules/echarts/lib/util/layout.js
 var each2 = each;
 var LOCATION_PARAMS = ["left", "right", "top", "bottom", "width", "height"];
 var HV_NAMES = [["width", "left", "right"], ["height", "top", "bottom"]];
@@ -27916,7 +27935,7 @@ function copyLayoutParams(target, source) {
   return target;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Component.js
+// node_modules/echarts/lib/model/Component.js
 var inner = makeInner();
 var ComponentModel = (
   /** @class */
@@ -28027,7 +28046,7 @@ function getDependencies(componentType) {
 }
 var Component_default = ComponentModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/globalDefault.js
+// node_modules/echarts/lib/model/globalDefault.js
 var platform = "";
 if (typeof navigator !== "undefined") {
   platform = navigator.platform || "";
@@ -28115,7 +28134,7 @@ var globalDefault_default = {
   useUTC: false
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/types.js
+// node_modules/echarts/lib/util/types.js
 var VISUAL_DIMENSIONS = createHashMap(["tooltip", "label", "itemName", "itemId", "itemGroupId", "itemChildGroupId", "seriesName"]);
 var SOURCE_FORMAT_ORIGINAL = "original";
 var SOURCE_FORMAT_ARRAY_ROWS = "arrayRows";
@@ -28126,7 +28145,7 @@ var SOURCE_FORMAT_UNKNOWN = "unknown";
 var SERIES_LAYOUT_BY_COLUMN = "column";
 var SERIES_LAYOUT_BY_ROW = "row";
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/sourceHelper.js
+// node_modules/echarts/lib/data/helper/sourceHelper.js
 var BE_ORDINAL = {
   Must: 1,
   Might: 2,
@@ -28358,7 +28377,7 @@ function doGuessOrdinal(data2, sourceFormat, seriesLayoutBy, dimensionsDefine, s
   return BE_ORDINAL.Not;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/internalComponentCreator.js
+// node_modules/echarts/lib/model/internalComponentCreator.js
 var internalOptionCreatorMap = createHashMap();
 function registerInternalOptionCreator(mainType, creator) {
   assert(internalOptionCreatorMap.get(mainType) == null && creator);
@@ -28381,7 +28400,7 @@ function concatInternalOptions(ecModel, mainType, newCmptOptionList) {
   return newCmptOptionList.concat(internalOptions);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/palette.js
+// node_modules/echarts/lib/model/mixin/palette.js
 var innerColor = makeInner();
 var innerDecal = makeInner();
 var PaletteMixin = (
@@ -28438,7 +28457,7 @@ function clearPalette(that, inner23) {
   inner23(that).paletteNameMap = {};
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Global.js
+// node_modules/echarts/lib/model/Global.js
 var reCreateSeriesIndices;
 var assertSeriesInitialized;
 var initBase;
@@ -28998,7 +29017,7 @@ function normalizeSetOptionInput(opts) {
 mixin(GlobalModel, PaletteMixin);
 var Global_default = GlobalModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/ExtensionAPI.js
+// node_modules/echarts/lib/core/ExtensionAPI.js
 var availableMethods = [
   "getDom",
   "getZr",
@@ -29032,7 +29051,7 @@ var ExtensionAPI = (
 );
 var ExtensionAPI_default = ExtensionAPI;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/CoordinateSystem.js
+// node_modules/echarts/lib/core/CoordinateSystem.js
 var coordinateSystemCreators = {};
 var CoordinateSystemManager = (
   /** @class */
@@ -29067,7 +29086,7 @@ var CoordinateSystemManager = (
 );
 var CoordinateSystem_default = CoordinateSystemManager;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/OptionManager.js
+// node_modules/echarts/lib/model/OptionManager.js
 var QUERY_REG = /^(min|max)?(.+)$/;
 var OptionManager = (
   /** @class */
@@ -29253,7 +29272,7 @@ function indicesEquals(indices1, indices2) {
 }
 var OptionManager_default = OptionManager;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/preprocessor/helper/compatStyle.js
+// node_modules/echarts/lib/preprocessor/helper/compatStyle.js
 var each3 = each;
 var isObject2 = isObject;
 var POSSIBLE_STYLES = ["areaStyle", "lineStyle", "nodeStyle", "linkStyle", "chordStyle", "label", "labelLine"];
@@ -29517,7 +29536,7 @@ function globalCompatStyle(option, isTheme) {
   compatTextStyle(toObj(option.tooltip).axisPointer, "label");
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/preprocessor/backwardCompat.js
+// node_modules/echarts/lib/preprocessor/backwardCompat.js
 function get(opt, path) {
   var pathArr = path.split(",");
   var obj = opt;
@@ -29724,7 +29743,7 @@ function globalBackwardCompat(option, isTheme) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/dataStack.js
+// node_modules/echarts/lib/processor/dataStack.js
 function dataStack(ecModel) {
   var stackInfoMap = createHashMap();
   ecModel.eachSeries(function(seriesModel) {
@@ -29794,7 +29813,7 @@ function calculateStack(stackInfoList) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/Source.js
+// node_modules/echarts/lib/data/Source.js
 var SourceImpl = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -29999,7 +30018,7 @@ function shouldRetrieveDataByName(source) {
   return sourceFormat === SOURCE_FORMAT_OBJECT_ROWS || sourceFormat === SOURCE_FORMAT_KEYED_COLUMNS;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dataProvider.js
+// node_modules/echarts/lib/data/helper/dataProvider.js
 var _a;
 var _b;
 var _c;
@@ -30248,7 +30267,7 @@ function retrieveRawValue(data2, dataIndex, dim) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/mixin/dataFormat.js
+// node_modules/echarts/lib/model/mixin/dataFormat.js
 var DIMENSION_LABEL_REG = /\{@(.+?)\}/g;
 var DataFormatMixin = (
   /** @class */
@@ -30360,7 +30379,7 @@ function normalizeTooltipFormatResult(result) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/task.js
+// node_modules/echarts/lib/core/task.js
 function createTask(define2) {
   return new Task(define2);
 }
@@ -30540,7 +30559,7 @@ var iterator = /* @__PURE__ */ function() {
   }
 }();
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dataValueHelper.js
+// node_modules/echarts/lib/data/helper/dataValueHelper.js
 function parseDataValue(value, opt) {
   var dimType = opt && opt.type;
   if (dimType === "ordinal") {
@@ -30662,7 +30681,7 @@ function createFilterComparator(op, rval) {
   return op === "eq" || op === "ne" ? new FilterEqualityComparator(op === "eq", rval) : hasOwn2(ORDER_COMPARISON_OP_MAP, op) ? new FilterOrderComparator(op, rval) : null;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/transform.js
+// node_modules/echarts/lib/data/helper/transform.js
 var ExternalSource = (
   /** @class */
   function() {
@@ -30947,7 +30966,7 @@ function isSupportedSourceFormat(sourceFormat) {
   return sourceFormat === SOURCE_FORMAT_ARRAY_ROWS || sourceFormat === SOURCE_FORMAT_OBJECT_ROWS;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/DataStore.js
+// node_modules/echarts/lib/data/DataStore.js
 var UNDEFINED = "undefined";
 var CtorUint32Array = typeof Uint32Array === UNDEFINED ? Array : Uint32Array;
 var CtorUint16Array = typeof Uint16Array === UNDEFINED ? Array : Uint16Array;
@@ -31771,7 +31790,7 @@ var DataStore = (
 );
 var DataStore_default = DataStore;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/sourceManager.js
+// node_modules/echarts/lib/data/helper/sourceManager.js
 var SourceManager = (
   /** @class */
   function() {
@@ -31999,7 +32018,7 @@ function doThrow(errMsg) {
   throw new Error(errMsg);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/tooltipMarkup.js
+// node_modules/echarts/lib/component/tooltip/tooltipMarkup.js
 var TOOLTIP_LINE_HEIGHT_CSS = "line-height:1";
 function getTooltipLineHeight(textStyle) {
   var lineHeight = textStyle.lineHeight;
@@ -32244,7 +32263,7 @@ var TooltipMarkupStyleCreator = (
   }()
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/seriesFormatTooltip.js
+// node_modules/echarts/lib/component/tooltip/seriesFormatTooltip.js
 function defaultSeriesFormatTooltip(opt) {
   var series = opt.series;
   var dataIndex = opt.dataIndex;
@@ -32334,7 +32353,7 @@ function formatTooltipArrayValue(value, series, dataIndex, tooltipDims, colorStr
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/Series.js
+// node_modules/echarts/lib/model/Series.js
 var inner2 = makeInner();
 function getSelectionKey(data2, dataIndex) {
   return data2.getName(dataIndex) || data2.getId(dataIndex);
@@ -32699,7 +32718,7 @@ function getCurrentTask(seriesModel) {
 }
 var Series_default = SeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/view/Component.js
+// node_modules/echarts/lib/view/Component.js
 var ComponentView = (
   /** @class */
   function() {
@@ -32734,7 +32753,7 @@ enableClassExtend(ComponentView);
 enableClassManagement(ComponentView);
 var Component_default2 = ComponentView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createRenderPlanner.js
+// node_modules/echarts/lib/chart/helper/createRenderPlanner.js
 function createRenderPlanner() {
   var inner23 = makeInner();
   return function(seriesModel) {
@@ -32748,7 +32767,7 @@ function createRenderPlanner() {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/view/Chart.js
+// node_modules/echarts/lib/view/Chart.js
 var inner3 = makeInner();
 var renderPlanner = createRenderPlanner();
 var ChartView = (
@@ -32875,7 +32894,7 @@ var progressMethodMap = {
 };
 var Chart_default = ChartView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/throttle.js
+// node_modules/echarts/lib/util/throttle.js
 var ORIGIN_METHOD = "\0__throttleOriginMethod";
 var RATE = "\0__throttleRate";
 var THROTTLE_TYPE = "\0__throttleType";
@@ -32956,7 +32975,7 @@ function clear(obj, fnAttr) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/style.js
+// node_modules/echarts/lib/visual/style.js
 var inner4 = makeInner();
 var defaultStyleMappers = {
   itemStyle: makeStyleMapper(ITEM_STYLE_KEY_MAP, true),
@@ -33106,7 +33125,7 @@ var dataColorPaletteTask = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/loading/default.js
+// node_modules/echarts/lib/loading/default.js
 var PI5 = Math.PI;
 function defaultLoading(api, opts) {
   opts = opts || {};
@@ -33208,7 +33227,7 @@ function defaultLoading(api, opts) {
   return group;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/Scheduler.js
+// node_modules/echarts/lib/core/Scheduler.js
 var Scheduler = (
   /** @class */
   function() {
@@ -33559,14 +33578,14 @@ function mockMethods(target, Clz) {
 }
 var Scheduler_default = Scheduler;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/theme/light.js
+// node_modules/echarts/lib/theme/light.js
 var colorAll = ["#37A2DA", "#32C5E9", "#67E0E3", "#9FE6B8", "#FFDB5C", "#ff9f7f", "#fb7293", "#E062AE", "#E690D1", "#e7bcf3", "#9d96f5", "#8378EA", "#96BFFF"];
 var light_default = {
   color: colorAll,
   colorLayer: [["#37A2DA", "#ffd85c", "#fd7b5f"], ["#37A2DA", "#67E0E3", "#FFDB5C", "#ff9f7f", "#E062AE", "#9d96f5"], ["#37A2DA", "#32C5E9", "#9FE6B8", "#FFDB5C", "#ff9f7f", "#fb7293", "#e7bcf3", "#8378EA", "#96BFFF"], colorAll]
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/theme/dark.js
+// node_modules/echarts/lib/theme/dark.js
 var contrastColor = "#B9B8CE";
 var backgroundColor = "#100C2A";
 var axisCommon = function() {
@@ -33750,7 +33769,7 @@ var theme = {
 theme.categoryAxis.splitLine.show = false;
 var dark_default = theme;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/ECEventProcessor.js
+// node_modules/echarts/lib/util/ECEventProcessor.js
 var ECEventProcessor = (
   /** @class */
   function() {
@@ -33826,7 +33845,7 @@ var ECEventProcessor = (
   }()
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/symbol.js
+// node_modules/echarts/lib/visual/symbol.js
 var SYMBOL_PROPS_WITH_CB = ["symbol", "symbolSize", "symbolRotate", "symbolOffset"];
 var SYMBOL_PROPS = SYMBOL_PROPS_WITH_CB.concat(["symbolKeepAspect"]);
 var seriesSymbolTask = {
@@ -33904,7 +33923,7 @@ var dataSymbolTask = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/helper.js
+// node_modules/echarts/lib/visual/helper.js
 function getItemVisualFromData(data2, dataIndex, key) {
   switch (key) {
     case "color":
@@ -33961,7 +33980,7 @@ function setItemVisualFromData(data2, dataIndex, key, value) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/legacy/dataSelectAction.js
+// node_modules/echarts/lib/legacy/dataSelectAction.js
 function createLegacyDataSelectAction(seriesType2, ecRegisterAction) {
   function getSeriesIndices(ecModel, payload) {
     var seriesIndices = [];
@@ -34031,7 +34050,7 @@ function handleLegacySelectEvents(messageCenter, ecIns, api) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/event.js
+// node_modules/echarts/lib/util/event.js
 function findEventDispatcher(target, det, returnFirstMatch) {
   var found;
   while (target) {
@@ -34046,7 +34065,7 @@ function findEventDispatcher(target, det, returnFirstMatch) {
   return found;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/core/WeakMap.js
+// node_modules/zrender/lib/core/WeakMap.js
 var wmUniqueIndex = Math.round(Math.random() * 9);
 var supportDefineProperty = typeof Object.defineProperty === "function";
 var WeakMap = function() {
@@ -34089,7 +34108,7 @@ var WeakMap = function() {
 }();
 var WeakMap_default = WeakMap;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/symbol.js
+// node_modules/echarts/lib/util/symbol.js
 var Triangle = Path_default.extend({
   type: "triangle",
   shape: {
@@ -34342,7 +34361,7 @@ function normalizeSymbolOffset(symbolOffset, symbolSize) {
   return [parsePercent2(symbolOffset[0], symbolSize[0]) || 0, parsePercent2(retrieve2(symbolOffset[1], symbolOffset[0]), symbolSize[1]) || 0];
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/helper.js
+// node_modules/zrender/lib/canvas/helper.js
 function isSafeNum(num) {
   return isFinite(num);
 }
@@ -34419,7 +34438,7 @@ function getSize(root, whIdx, opts) {
   return (root[cwh] || parseInt10(stl[wh]) || parseInt10(root.style[wh])) - (parseInt10(stl[plt]) || 0) - (parseInt10(stl[prb]) || 0) | 0;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/dashStyle.js
+// node_modules/zrender/lib/canvas/dashStyle.js
 function normalizeLineDash(lineType, lineWidth) {
   if (!lineType || lineType === "solid" || !(lineWidth > 0)) {
     return null;
@@ -34442,7 +34461,7 @@ function getLineDash(el) {
   return [lineDash, lineDashOffset];
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/graphic.js
+// node_modules/zrender/lib/canvas/graphic.js
 var pathProxyForDraw = new PathProxy_default(true);
 function styleHasStroke(style) {
   var stroke = style.stroke;
@@ -34949,7 +34968,7 @@ function brushIncremental(ctx, el, scope) {
   ctx.restore();
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/decal.js
+// node_modules/echarts/lib/util/decal.js
 var decalMap = new WeakMap_default();
 var decalCache = new LRU_default(100);
 var decalKeys = ["symbol", "symbolSize", "symbolKeepAspect", "color", "backgroundColor", "dashArrayX", "dashArrayY", "maxTileWidth", "maxTileHeight"];
@@ -35232,7 +35251,7 @@ function getLineBlockLengthY(dash) {
   return blockLength;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/decal.js
+// node_modules/echarts/lib/visual/decal.js
 function decalVisual(ecModel, api) {
   ecModel.eachRawSeries(function(seriesModel) {
     if (ecModel.isSeriesFiltered(seriesModel)) {
@@ -35256,11 +35275,11 @@ function decalVisual(ecModel, api) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/lifecycle.js
+// node_modules/echarts/lib/core/lifecycle.js
 var lifecycle = new Eventful_default();
 var lifecycle_default = lifecycle;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/impl.js
+// node_modules/echarts/lib/core/impl.js
 var implsStore = {};
 function registerImpl(name, impl) {
   if (true) {
@@ -35279,7 +35298,7 @@ function getImpl(name) {
   return implsStore[name];
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/core/echarts.js
+// node_modules/echarts/lib/core/echarts.js
 var TEST_FRAME_REMAIN_TIME = 1;
 var PRIORITY_PROCESSOR_SERIES_FILTER = 800;
 var PRIORITY_PROCESSOR_DATASTACK = 900;
@@ -37033,7 +37052,7 @@ registerAction({
 registerTheme("light", light_default);
 registerTheme("dark", dark_default);
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/extension.js
+// node_modules/echarts/lib/extension.js
 var extensions = [];
 var extensionRegisters = {
   registerPreprocessor,
@@ -37093,7 +37112,7 @@ function use(ext) {
   ext.install(extensionRegisters);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/DataDiffer.js
+// node_modules/echarts/lib/data/DataDiffer.js
 function dataIndexMapValueLength(valNumOrArrLengthMoreThan2) {
   return valNumOrArrLengthMoreThan2 == null ? 0 : valNumOrArrLengthMoreThan2.length || 1;
 }
@@ -37246,7 +37265,7 @@ var DataDiffer = (
 );
 var DataDiffer_default = DataDiffer;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dimensionHelper.js
+// node_modules/echarts/lib/data/helper/dimensionHelper.js
 var DimensionUserOuput = (
   /** @class */
   function() {
@@ -37345,7 +37364,7 @@ function mayLabelDimType(dimType) {
   return !(dimType === "ordinal" || dimType === "time");
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/SeriesDimensionDefine.js
+// node_modules/echarts/lib/data/SeriesDimensionDefine.js
 var SeriesDimensionDefine = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -37360,7 +37379,7 @@ var SeriesDimensionDefine = (
 );
 var SeriesDimensionDefine_default = SeriesDimensionDefine;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/SeriesDataSchema.js
+// node_modules/echarts/lib/data/helper/SeriesDataSchema.js
 var inner5 = makeInner();
 var dimTypeShort = {
   float: "f",
@@ -37496,7 +37515,7 @@ function shouldOmitUnusedDimensions(dimCount) {
   return dimCount > 30;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/SeriesData.js
+// node_modules/echarts/lib/data/SeriesData.js
 var isObject3 = isObject;
 var map2 = map;
 var CtorInt32Array2 = typeof Int32Array === "undefined" ? Array : Int32Array;
@@ -38160,7 +38179,7 @@ var SeriesData = (
 );
 var SeriesData_default = SeriesData;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/createDimensions.js
+// node_modules/echarts/lib/data/helper/createDimensions.js
 function prepareSeriesDataSchema(source, opt) {
   if (!isSourceInstance(source)) {
     source = createSourceFromSeriesDataOption(source);
@@ -38362,7 +38381,7 @@ function genCoordDimName(name, map3, fromZero) {
   return name;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/model/referHelper.js
+// node_modules/echarts/lib/model/referHelper.js
 var CoordSysInfo = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -38470,7 +38489,7 @@ function isCategory(axisModel) {
   return axisModel.get("type") === "category";
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/dataStackHelper.js
+// node_modules/echarts/lib/data/helper/dataStackHelper.js
 function enableDataStack(seriesModel, dimensionsInput, opt) {
   opt = opt || {};
   var byIndex = opt.byIndex;
@@ -38572,7 +38591,7 @@ function getStackedDimension(data2, targetDim) {
   return isDimensionStacked(data2, targetDim) ? data2.getCalculationInfo("stackResultDimension") : targetDim;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createSeriesData.js
+// node_modules/echarts/lib/chart/helper/createSeriesData.js
 function getCoordSysDimDefs(seriesModel, coordSysInfo) {
   var coordSysName = seriesModel.get("coordinateSystem");
   var registeredCoordSys = CoordinateSystem_default.get(coordSysName);
@@ -38678,7 +38697,7 @@ function firstDataNotNull(arr) {
 }
 var createSeriesData_default = createSeriesData;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Scale.js
+// node_modules/echarts/lib/scale/Scale.js
 var Scale = (
   /** @class */
   function() {
@@ -38724,7 +38743,7 @@ var Scale = (
 enableClassManagement(Scale);
 var Scale_default = Scale;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/OrdinalMeta.js
+// node_modules/echarts/lib/data/OrdinalMeta.js
 var uidBase = 0;
 var OrdinalMeta = (
   /** @class */
@@ -38789,7 +38808,7 @@ function getName(obj) {
 }
 var OrdinalMeta_default = OrdinalMeta;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/helper.js
+// node_modules/echarts/lib/scale/helper.js
 function isValueNice(val) {
   var exp10 = Math.pow(10, quantityExponent(Math.abs(val)));
   var f = Math.abs(val / exp10);
@@ -38855,7 +38874,7 @@ function scale3(val, extent3) {
   return val * (extent3[1] - extent3[0]) + extent3[0];
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Ordinal.js
+// node_modules/echarts/lib/scale/Ordinal.js
 var OrdinalScale = (
   /** @class */
   function(_super) {
@@ -38975,7 +38994,7 @@ var OrdinalScale = (
 Scale_default.registerClass(OrdinalScale);
 var Ordinal_default = OrdinalScale;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Interval.js
+// node_modules/echarts/lib/scale/Interval.js
 var roundNumber = round;
 var IntervalScale = (
   /** @class */
@@ -39161,7 +39180,7 @@ var IntervalScale = (
 Scale_default.registerClass(IntervalScale);
 var Interval_default = IntervalScale;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/vendor.js
+// node_modules/echarts/lib/util/vendor.js
 var supportFloat32Array = typeof Float32Array !== "undefined";
 var Float32ArrayCtor = !supportFloat32Array ? Array : Float32Array;
 function createFloat32Array(arg) {
@@ -39171,7 +39190,7 @@ function createFloat32Array(arg) {
   return new Float32ArrayCtor(arg);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/layout/barGrid.js
+// node_modules/echarts/lib/layout/barGrid.js
 var STACK_PREFIX = "__ec_stack_";
 function getSeriesStackId(seriesModel) {
   return seriesModel.get("stack") || STACK_PREFIX + seriesModel.seriesIndex;
@@ -39556,7 +39575,7 @@ function getValueAxisStart(baseAxis, valueAxis2) {
   return valueAxis2.toGlobalCoord(valueAxis2.dataToCoord(valueAxis2.type === "log" ? startValue > 0 ? startValue : 1 : startValue));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Time.js
+// node_modules/echarts/lib/scale/Time.js
 var bisect = function(a, x, lo, hi) {
   while (lo < hi) {
     var mid = lo + hi >>> 1;
@@ -39927,7 +39946,7 @@ function getIntervalTicks(bottomUnitName, approxInterval, isUTC, extent3) {
 Scale_default.registerClass(TimeScale);
 var Time_default = TimeScale;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/scale/Log.js
+// node_modules/echarts/lib/scale/Log.js
 var scaleProto = Scale_default.prototype;
 var intervalScaleProto = Interval_default.prototype;
 var roundingErrorFix = round;
@@ -40041,7 +40060,7 @@ function fixRoundingError(val, originalVal) {
 Scale_default.registerClass(LogScale);
 var Log_default = LogScale;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/scaleRawExtentInfo.js
+// node_modules/echarts/lib/coord/scaleRawExtentInfo.js
 var ScaleRawExtentInfo = (
   /** @class */
   function() {
@@ -40179,7 +40198,7 @@ function parseAxisModelMinMax(scale4, minMax) {
   return minMax == null ? null : eqNaN(minMax) ? NaN : scale4.parse(minMax);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisHelper.js
+// node_modules/echarts/lib/coord/axisHelper.js
 function getScaleExtent(scale4, model) {
   var scaleType = scale4.type;
   var rawExtentResult = ensureScaleRawExtentInfo(scale4, model, scale4.getExtent()).calculate();
@@ -40391,7 +40410,7 @@ function unionAxisExtentFromData(dataExtent, data2, axisDim) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisModelCommonMixin.js
+// node_modules/echarts/lib/coord/axisModelCommonMixin.js
 var AxisModelCommonMixin = (
   /** @class */
   function() {
@@ -40408,7 +40427,7 @@ var AxisModelCommonMixin = (
   }()
 );
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/contain/polygon.js
+// node_modules/zrender/lib/contain/polygon.js
 var EPSILON5 = 1e-8;
 function isAroundEqual2(a, b) {
   return Math.abs(a - b) < EPSILON5;
@@ -40431,7 +40450,7 @@ function contain3(points4, x, y) {
   return w !== 0;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/Region.js
+// node_modules/echarts/lib/coord/geo/Region.js
 var TMP_TRANSFORM = [];
 function transformPoints(points4, transform3) {
   for (var p = 0; p < points4.length; p++) {
@@ -40655,7 +40674,7 @@ var GeoSVGRegion = (
   }(Region)
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/parseGeoJson.js
+// node_modules/echarts/lib/coord/geo/parseGeoJson.js
 function decode(json) {
   if (!json.UTF8Encoding) {
     return json;
@@ -40746,7 +40765,7 @@ function parseGeoJSON(geoJson, nameProperty) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisTickLabelBuilder.js
+// node_modules/echarts/lib/coord/axisTickLabelBuilder.js
 var inner6 = makeInner();
 function tickValuesToNumbers(axis, values) {
   var nums = map(values, function(val) {
@@ -41005,7 +41024,7 @@ function makeLabelsByCustomizedCategoryInterval(axis, categoryInterval, onlyTick
   return result;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/Axis.js
+// node_modules/echarts/lib/coord/Axis.js
 var NORMALIZED_EXTENT = [0, 1];
 var Axis = (
   /** @class */
@@ -41178,7 +41197,7 @@ function fixOnBandTicksCoords(axis, ticksCoords, alignWithLabel, clamp2) {
 }
 var Axis_default = Axis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/labelGuideHelper.js
+// node_modules/echarts/lib/label/labelGuideHelper.js
 var PI27 = Math.PI * 2;
 var CMD4 = PathProxy_default.CMD;
 var DEFAULT_SEARCH_SPACE = ["top", "right", "bottom", "left"];
@@ -41606,7 +41625,7 @@ function getLabelLineStatesModels(itemModel, labelLineName) {
   return statesModels;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/labelLayoutHelper.js
+// node_modules/echarts/lib/label/labelLayoutHelper.js
 function prepareLayoutList(input) {
   var list = [];
   for (var i = 0; i < input.length; i++) {
@@ -41826,7 +41845,7 @@ function hideOverlap(labelList) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/LabelManager.js
+// node_modules/echarts/lib/label/LabelManager.js
 function cloneArr(points4) {
   if (points4) {
     var newPoints = [];
@@ -42181,7 +42200,7 @@ var LabelManager = (
 );
 var LabelManager_default = LabelManager;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/installLabelLayout.js
+// node_modules/echarts/lib/label/installLabelLayout.js
 var getLabelManager = makeInner();
 function installLabelLayout(registers) {
   registers.registerUpdateLifecycle("series:beforeupdate", function(ecModel, api, params) {
@@ -42202,7 +42221,7 @@ function installLabelLayout(registers) {
   });
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/SVGPathRebuilder.js
+// node_modules/zrender/lib/svg/SVGPathRebuilder.js
 var mathSin5 = Math.sin;
 var mathCos5 = Math.cos;
 var PI6 = Math.PI;
@@ -42302,7 +42321,7 @@ var SVGPathRebuilder = function() {
 }();
 var SVGPathRebuilder_default = SVGPathRebuilder;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/mapStyleToAttrs.js
+// node_modules/zrender/lib/svg/mapStyleToAttrs.js
 var NONE = "none";
 var mathRound2 = Math.round;
 function pathHasFill(style) {
@@ -42373,7 +42392,7 @@ function mapStyleToAttrs(updateAttr2, style, el, forceUpdate) {
   }
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/core.js
+// node_modules/zrender/lib/svg/core.js
 var SVGNS = "http://www.w3.org/2000/svg";
 var XLINKNS = "http://www.w3.org/1999/xlink";
 var XMLNS = "http://www.w3.org/2000/xmlns/";
@@ -42477,13 +42496,13 @@ function createSVGVNode(width, height, children, useViewBox) {
   }, children);
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/cssClassId.js
+// node_modules/zrender/lib/svg/cssClassId.js
 var cssClassIdx = 0;
 function getClassId() {
   return cssClassIdx++;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/cssAnimation.js
+// node_modules/zrender/lib/svg/cssAnimation.js
 var EASING_MAP = {
   cubicIn: "0.32,0,0.67,0",
   cubicOut: "0.33,1,0.68,1",
@@ -42748,7 +42767,7 @@ function createCSSAnimation(el, attrs, scope, onlyShape) {
   }
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/cssEmphasis.js
+// node_modules/zrender/lib/svg/cssEmphasis.js
 function createCSSEmphasis(el, attrs, scope) {
   if (!el.ignore) {
     if (el.isSilent()) {
@@ -42799,7 +42818,7 @@ function setClassAttribute(style, attrs, scope, withHover) {
   attrs["class"] = attrs["class"] ? attrs["class"] + " " + className : className;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/graphic.js
+// node_modules/zrender/lib/svg/graphic.js
 var round5 = Math.round;
 function isImageLike2(val) {
   return val && isString(val.src);
@@ -43235,7 +43254,7 @@ function setClipPath(clipPath, attrs, scope) {
   attrs["clip-path"] = getIdURL(clipPathId);
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/domapi.js
+// node_modules/zrender/lib/svg/domapi.js
 function createTextNode(text) {
   return document.createTextNode(text);
 }
@@ -43258,7 +43277,7 @@ function setTextContent(node, text) {
   node.textContent = text;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/patch.js
+// node_modules/zrender/lib/svg/patch.js
 var colonChar = 58;
 var xChar = 120;
 var emptyNode = createVNode("", "");
@@ -43484,7 +43503,7 @@ function patch(oldVnode, vnode) {
   return vnode;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/svg/Painter.js
+// node_modules/zrender/lib/svg/Painter.js
 var svgId = 0;
 var SVGPainter = function() {
   function SVGPainter2(root, storage2, opts) {
@@ -43727,12 +43746,12 @@ function createBackgroundVNode(width, height, backgroundColor2, scope) {
 }
 var Painter_default = SVGPainter;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/renderer/installSVGRenderer.js
+// node_modules/echarts/lib/renderer/installSVGRenderer.js
 function install(registers) {
   registers.registerPainter("svg", Painter_default);
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/Layer.js
+// node_modules/zrender/lib/canvas/Layer.js
 function createDom(id, painter, dpr2) {
   var newDom = platformApi.createCanvas();
   var width = painter.getWidth();
@@ -43751,7 +43770,7 @@ function createDom(id, painter, dpr2) {
   return newDom;
 }
 var Layer = function(_super) {
-  __extends(Layer2, _super);
+  __extends2(Layer2, _super);
   function Layer2(id, painter, dpr2) {
     var _this = _super.call(this) || this;
     _this.motionBlur = false;
@@ -44010,7 +44029,7 @@ var Layer = function(_super) {
 }(Eventful_default);
 var Layer_default = Layer;
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/canvas/Painter.js
+// node_modules/zrender/lib/canvas/Painter.js
 var HOVER_LAYER_ZLEVEL = 1e5;
 var CANVAS_ZLEVEL = 314159;
 var EL_AFTER_INCREMENTAL_INC = 0.01;
@@ -44618,12 +44637,12 @@ var CanvasPainter = function() {
 }();
 var Painter_default2 = CanvasPainter;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/renderer/installCanvasRenderer.js
+// node_modules/echarts/lib/renderer/installCanvasRenderer.js
 function install2(registers) {
   registers.registerPainter("canvas", Painter_default2);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/LineSeries.js
+// node_modules/echarts/lib/chart/line/LineSeries.js
 var LineSeriesModel = (
   /** @class */
   function(_super) {
@@ -44731,7 +44750,7 @@ var LineSeriesModel = (
 );
 var LineSeries_default = LineSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/labelHelper.js
+// node_modules/echarts/lib/chart/helper/labelHelper.js
 function getDefaultLabel(data2, dataIndex) {
   var labelDims = data2.mapDimensionsAll("defaultedLabel");
   var len2 = labelDims.length;
@@ -44761,7 +44780,7 @@ function getDefaultInterpolatedLabel(data2, interpolatedValue) {
   return vals.join(" ");
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/Symbol.js
+// node_modules/echarts/lib/chart/helper/Symbol.js
 var Symbol2 = (
   /** @class */
   function(_super) {
@@ -44999,7 +45018,7 @@ function driftSymbol(dx, dy) {
 }
 var Symbol_default = Symbol2;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/SymbolDraw.js
+// node_modules/echarts/lib/chart/helper/SymbolDraw.js
 function symbolNeedsDraw(data2, point, idx, opt) {
   return point && !isNaN(point[0]) && !isNaN(point[1]) && !(opt.isIgnore && opt.isIgnore(idx)) && !(opt.clipShape && !opt.clipShape.contain(point[0], point[1])) && data2.getItemVisual(idx, "symbol") !== "none";
 }
@@ -45154,7 +45173,7 @@ var SymbolDraw = (
 );
 var SymbolDraw_default = SymbolDraw;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/helper.js
+// node_modules/echarts/lib/chart/line/helper.js
 function prepareDataCoordInfo(coordSys, data2, valueOrigin) {
   var baseAxis = coordSys.getBaseAxis();
   var valueAxis2 = coordSys.getOtherAxis(baseAxis);
@@ -45230,7 +45249,7 @@ function getStackedOnPoint(dataCoordInfo, coordSys, data2, idx) {
   return coordSys.dataToPoint(stackedData);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/lineAnimationDiff.js
+// node_modules/echarts/lib/chart/line/lineAnimationDiff.js
 function diffData(oldData, newData) {
   var diffResult = [];
   newData.diff(oldData).add(function(idx) {
@@ -45339,7 +45358,7 @@ function lineAnimationDiff(oldData, newData, oldStackedOnPoints, newStackedOnPoi
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/poly.js
+// node_modules/echarts/lib/chart/line/poly.js
 var mathMin6 = Math.min;
 var mathMax6 = Math.max;
 function isPointNull(x, y) {
@@ -45636,7 +45655,7 @@ var ECPolygon = (
   }(Path_default)
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createClipPathFromCoordSys.js
+// node_modules/echarts/lib/chart/helper/createClipPathFromCoordSys.js
 function createGridClipPath(cartesian, hasAnimation, seriesModel, done, during) {
   var rect = cartesian.getArea();
   var x = rect.x;
@@ -45732,12 +45751,12 @@ function createClipPath(coordSys, hasAnimation, seriesModel, done, during) {
   return null;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/CoordinateSystem.js
+// node_modules/echarts/lib/coord/CoordinateSystem.js
 function isCoordinateSystemType(coordSys, type) {
   return coordSys.type === type;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/LineView.js
+// node_modules/echarts/lib/chart/line/LineView.js
 function isPointsSame(points1, points22) {
   if (points1.length !== points22.length) {
     return;
@@ -46692,7 +46711,7 @@ var LineView = (
 );
 var LineView_default = LineView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/layout/points.js
+// node_modules/echarts/lib/layout/points.js
 function pointsLayout(seriesType2, forceStoreInTypedArray) {
   return {
     seriesType: seriesType2,
@@ -46749,7 +46768,7 @@ function pointsLayout(seriesType2, forceStoreInTypedArray) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/dataSample.js
+// node_modules/echarts/lib/processor/dataSample.js
 var samplers = {
   average: function(frame) {
     var sum2 = 0;
@@ -46830,7 +46849,7 @@ function dataSample(seriesType2) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/line/install.js
+// node_modules/echarts/lib/chart/line/install.js
 function install3(registers) {
   registers.registerChartView(LineView_default);
   registers.registerSeriesModel(LineSeries_default);
@@ -46849,7 +46868,7 @@ function install3(registers) {
   registers.registerProcessor(registers.PRIORITY.PROCESSOR.STATISTIC, dataSample("line"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/BaseBarSeries.js
+// node_modules/echarts/lib/chart/bar/BaseBarSeries.js
 var BaseBarSeriesModel = (
   /** @class */
   function(_super) {
@@ -46949,7 +46968,7 @@ var BaseBarSeriesModel = (
 Series_default.registerClass(BaseBarSeriesModel);
 var BaseBarSeries_default = BaseBarSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/BarSeries.js
+// node_modules/echarts/lib/chart/bar/BarSeries.js
 var BarSeriesModel = (
   /** @class */
   function(_super) {
@@ -47011,7 +47030,7 @@ var BarSeriesModel = (
 );
 var BarSeries_default = BarSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/shape/sausage.js
+// node_modules/echarts/lib/util/shape/sausage.js
 var SausageShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -47075,7 +47094,7 @@ var SausagePath = (
 );
 var sausage_default = SausagePath;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/label/sectorLabel.js
+// node_modules/echarts/lib/label/sectorLabel.js
 function createSectorCalculateTextPosition(positionMapping, opts) {
   opts = opts || {};
   var isRoundCap = opts.isRoundCap;
@@ -47223,7 +47242,7 @@ function adjustAngleDistanceY(angle, distance2, isEnd) {
   return distance2 * Math.cos(angle) * (isEnd ? 1 : -1);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/sectorHelper.js
+// node_modules/echarts/lib/chart/helper/sectorHelper.js
 function getSectorCornerRadius(model, shape, zeroIfNull) {
   var cornerRadius = model.get("borderRadius");
   if (cornerRadius == null) {
@@ -47242,7 +47261,7 @@ function getSectorCornerRadius(model, shape, zeroIfNull) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/BarView.js
+// node_modules/echarts/lib/chart/bar/BarView.js
 var mathMax7 = Math.max;
 var mathMin7 = Math.min;
 function getClipArea(coord, data2) {
@@ -48018,7 +48037,7 @@ function createBackgroundEl(coord, isHorizontalOrRadial, layout5) {
 }
 var BarView_default = BarView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/install.js
+// node_modules/echarts/lib/chart/bar/install.js
 function install4(registers) {
   registers.registerChartView(BarView_default);
   registers.registerSeriesModel(BarSeries_default);
@@ -48042,7 +48061,7 @@ function install4(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/pieLayout.js
+// node_modules/echarts/lib/chart/pie/pieLayout.js
 var PI29 = Math.PI * 2;
 var RADIAN = Math.PI / 180;
 function getViewRect(seriesModel, api) {
@@ -48219,7 +48238,7 @@ function pieLayout(seriesType2, ecModel, api) {
 }
 var getSeriesLayoutData = makeInner();
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/dataFilter.js
+// node_modules/echarts/lib/processor/dataFilter.js
 function dataFilter(seriesType2) {
   return {
     seriesType: seriesType2,
@@ -48244,7 +48263,7 @@ function dataFilter(seriesType2) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/labelLayout.js
+// node_modules/echarts/lib/chart/pie/labelLayout.js
 var RADIAN2 = Math.PI / 180;
 function adjustSingleSide(list, cx, cy, r, dir3, viewWidth, viewHeight, viewLeft, viewTop, farthestX) {
   if (list.length < 2) {
@@ -48628,7 +48647,7 @@ function pieLabelLayout(seriesModel) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/PieView.js
+// node_modules/echarts/lib/chart/pie/PieView.js
 var PiePiece = (
   /** @class */
   function(_super) {
@@ -48844,7 +48863,7 @@ var PieView = (
 );
 var PieView_default = PieView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createSeriesDataSimply.js
+// node_modules/echarts/lib/chart/helper/createSeriesDataSimply.js
 function createSeriesDataSimply(seriesModel, opt, nameList) {
   opt = isArray2(opt) && {
     coordDimensions: opt
@@ -48858,7 +48877,7 @@ function createSeriesDataSimply(seriesModel, opt, nameList) {
   return list;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/LegendVisualProvider.js
+// node_modules/echarts/lib/visual/LegendVisualProvider.js
 var LegendVisualProvider = (
   /** @class */
   function() {
@@ -48887,7 +48906,7 @@ var LegendVisualProvider = (
 );
 var LegendVisualProvider_default = LegendVisualProvider;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/PieSeries.js
+// node_modules/echarts/lib/chart/pie/PieSeries.js
 var innerData = makeInner();
 var PieSeriesModel = (
   /** @class */
@@ -49038,7 +49057,7 @@ var PieSeriesModel = (
 );
 var PieSeries_default = PieSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/processor/negativeDataFilter.js
+// node_modules/echarts/lib/processor/negativeDataFilter.js
 function negativeDataFilter(seriesType2) {
   return {
     seriesType: seriesType2,
@@ -49056,7 +49075,7 @@ function negativeDataFilter(seriesType2) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/pie/install.js
+// node_modules/echarts/lib/chart/pie/install.js
 function install5(registers) {
   registers.registerChartView(PieView_default);
   registers.registerSeriesModel(PieSeries_default);
@@ -49066,7 +49085,7 @@ function install5(registers) {
   registers.registerProcessor(negativeDataFilter("pie"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/scatter/ScatterSeries.js
+// node_modules/echarts/lib/chart/scatter/ScatterSeries.js
 var ScatterSeriesModel = (
   /** @class */
   function(_super) {
@@ -49140,7 +49159,7 @@ var ScatterSeriesModel = (
 );
 var ScatterSeries_default = ScatterSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LargeSymbolDraw.js
+// node_modules/echarts/lib/chart/helper/LargeSymbolDraw.js
 var BOOST_SIZE_THRESHOLD = 4;
 var LargeSymbolPathShape = (
   /** @class */
@@ -49388,7 +49407,7 @@ var LargeSymbolDraw = (
 );
 var LargeSymbolDraw_default = LargeSymbolDraw;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/scatter/ScatterView.js
+// node_modules/echarts/lib/chart/scatter/ScatterView.js
 var ScatterView = (
   /** @class */
   function(_super) {
@@ -49476,7 +49495,7 @@ var ScatterView = (
 );
 var ScatterView_default = ScatterView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/GridModel.js
+// node_modules/echarts/lib/coord/cartesian/GridModel.js
 var GridModel = (
   /** @class */
   function(_super) {
@@ -49508,7 +49527,7 @@ var GridModel = (
 );
 var GridModel_default = GridModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/AxisModel.js
+// node_modules/echarts/lib/coord/cartesian/AxisModel.js
 var CartesianAxisModel = (
   /** @class */
   function(_super) {
@@ -49525,7 +49544,7 @@ var CartesianAxisModel = (
 );
 mixin(CartesianAxisModel, AxisModelCommonMixin);
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisDefault.js
+// node_modules/echarts/lib/coord/axisDefault.js
 var defaultOption = {
   show: true,
   // zlevel: 0,
@@ -49687,7 +49706,7 @@ var axisDefault_default = {
   log: logAxis
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisCommonTypes.js
+// node_modules/echarts/lib/coord/axisCommonTypes.js
 var AXIS_TYPES = {
   value: 1,
   category: 1,
@@ -49695,7 +49714,7 @@ var AXIS_TYPES = {
   log: 1
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisModelCreator.js
+// node_modules/echarts/lib/coord/axisModelCreator.js
 function axisModelCreator(registers, axisName, BaseAxisModelClass, extraDefaultOption) {
   each(AXIS_TYPES, function(v, axisType) {
     var defaultOption3 = merge(merge({}, axisDefault_default[axisType], true), extraDefaultOption, true);
@@ -49750,7 +49769,7 @@ function getAxisType(option) {
   return option.type || (option.data ? "category" : "value");
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Cartesian.js
+// node_modules/echarts/lib/coord/cartesian/Cartesian.js
 var Cartesian = (
   /** @class */
   function() {
@@ -49784,7 +49803,7 @@ var Cartesian = (
 );
 var Cartesian_default = Cartesian;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Cartesian2D.js
+// node_modules/echarts/lib/coord/cartesian/Cartesian2D.js
 var cartesian2DDimensions = ["x", "y"];
 function canCalculateAffineTransform(scale4) {
   return scale4.type === "interval" || scale4.type === "time";
@@ -49894,7 +49913,7 @@ var Cartesian2D = (
 );
 var Cartesian2D_default = Cartesian2D;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Axis2D.js
+// node_modules/echarts/lib/coord/cartesian/Axis2D.js
 var Axis2D = (
   /** @class */
   function(_super) {
@@ -49932,7 +49951,7 @@ var Axis2D = (
 );
 var Axis2D_default = Axis2D;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js
+// node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js
 function layout2(gridModel, axisModel, opt) {
   opt = opt || {};
   var grid = gridModel.coordinateSystem;
@@ -49999,7 +50018,7 @@ function findAxisModels(seriesModel) {
   return axisModelMap;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/axisAlignTicks.js
+// node_modules/echarts/lib/coord/axisAlignTicks.js
 var mathLog2 = Math.log;
 function alignScaleTicks(scale4, axisModel, alignToScale) {
   var intervalScaleProto2 = Interval_default.prototype;
@@ -50079,7 +50098,7 @@ function alignScaleTicks(scale4, axisModel, alignToScale) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/Grid.js
+// node_modules/echarts/lib/coord/cartesian/Grid.js
 var Grid = (
   /** @class */
   function() {
@@ -50455,7 +50474,7 @@ function updateAxisTransform(axis, coordBase) {
 }
 var Grid_default = Grid;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/AxisBuilder.js
+// node_modules/echarts/lib/component/axis/AxisBuilder.js
 var PI7 = Math.PI;
 var AxisBuilder = (
   /** @class */
@@ -50948,7 +50967,7 @@ function buildAxisLabel(group, transformGroup, axisModel, opt) {
 }
 var AxisBuilder_default = AxisBuilder;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/modelHelper.js
+// node_modules/echarts/lib/component/axisPointer/modelHelper.js
 function collect(ecModel, api) {
   var result = {
     /**
@@ -51147,7 +51166,7 @@ function makeKey(model) {
   return model.type + "||" + model.id;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/AxisView.js
+// node_modules/echarts/lib/component/axis/AxisView.js
 var axisPointerClazz = {};
 var AxisView = (
   /** @class */
@@ -51205,7 +51224,7 @@ var AxisView = (
 );
 var AxisView_default = AxisView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/axisSplitHelper.js
+// node_modules/echarts/lib/component/axis/axisSplitHelper.js
 var inner7 = makeInner();
 function rectCoordAxisBuildSplitArea(axisView, axisGroup, axisModel, gridModel) {
   var axis = axisModel.axis;
@@ -51282,7 +51301,7 @@ function rectCoordAxisHandleRemove(axisView) {
   inner7(axisView).splitAreaColors = null;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/CartesianAxisView.js
+// node_modules/echarts/lib/component/axis/CartesianAxisView.js
 var axisBuilderAttrs = ["axisLine", "axisTickLabel", "axisName"];
 var selfBuilderAttrs = ["splitArea", "splitLine", "minorSplitLine"];
 var CartesianAxisView = (
@@ -51468,7 +51487,7 @@ var CartesianYAxisView = (
   }(CartesianAxisView)
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/grid/installSimple.js
+// node_modules/echarts/lib/component/grid/installSimple.js
 var GridView = (
   /** @class */
   function(_super) {
@@ -51515,7 +51534,7 @@ function install6(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/scatter/install.js
+// node_modules/echarts/lib/chart/scatter/install.js
 function install7(registers) {
   use(install6);
   registers.registerSeriesModel(ScatterSeries_default);
@@ -51523,7 +51542,7 @@ function install7(registers) {
   registers.registerLayout(pointsLayout("scatter"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/radarLayout.js
+// node_modules/echarts/lib/chart/radar/radarLayout.js
 function radarLayout(ecModel) {
   ecModel.eachSeriesByType("radar", function(seriesModel) {
     var data2 = seriesModel.getData();
@@ -51556,7 +51575,7 @@ function getValueMissingPoint(coordSys) {
   return [coordSys.cx, coordSys.cy];
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/backwardCompat.js
+// node_modules/echarts/lib/chart/radar/backwardCompat.js
 function radarBackwardCompat(option) {
   var polarOptArr = option.polar;
   if (polarOptArr) {
@@ -51587,7 +51606,7 @@ function radarBackwardCompat(option) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/RadarView.js
+// node_modules/echarts/lib/chart/radar/RadarView.js
 var RadarView = (
   /** @class */
   function(_super) {
@@ -51762,7 +51781,7 @@ var RadarView = (
 );
 var RadarView_default = RadarView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/RadarSeries.js
+// node_modules/echarts/lib/chart/radar/RadarSeries.js
 var RadarSeriesModel = (
   /** @class */
   function(_super) {
@@ -51848,7 +51867,7 @@ var RadarSeriesModel = (
 );
 var RadarSeries_default = RadarSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/radar/RadarModel.js
+// node_modules/echarts/lib/coord/radar/RadarModel.js
 var valueAxisDefault = axisDefault_default.value;
 function defaultsShow(opt, show) {
   return defaults({
@@ -51958,7 +51977,7 @@ var RadarModel = (
 );
 var RadarModel_default = RadarModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/radar/RadarView.js
+// node_modules/echarts/lib/component/radar/RadarView.js
 var axisBuilderAttrs2 = ["axisLine", "axisTickLabel", "axisName"];
 var RadarView2 = (
   /** @class */
@@ -52114,7 +52133,7 @@ var RadarView2 = (
 );
 var RadarView_default2 = RadarView2;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/radar/IndicatorAxis.js
+// node_modules/echarts/lib/coord/radar/IndicatorAxis.js
 var IndicatorAxis = (
   /** @class */
   function(_super) {
@@ -52131,7 +52150,7 @@ var IndicatorAxis = (
 );
 var IndicatorAxis_default = IndicatorAxis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/radar/Radar.js
+// node_modules/echarts/lib/coord/radar/Radar.js
 var Radar = (
   /** @class */
   function() {
@@ -52264,7 +52283,7 @@ var Radar = (
 );
 var Radar_default = Radar;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/radar/install.js
+// node_modules/echarts/lib/component/radar/install.js
 function install8(registers) {
   registers.registerCoordinateSystem("radar", Radar_default);
   registers.registerComponentModel(RadarModel_default);
@@ -52281,7 +52300,7 @@ function install8(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/radar/install.js
+// node_modules/echarts/lib/chart/radar/install.js
 function install9(registers) {
   use(install8);
   registers.registerChartView(RadarView_default);
@@ -52291,7 +52310,7 @@ function install9(registers) {
   registers.registerPreprocessor(radarBackwardCompat);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/interactionMutex.js
+// node_modules/echarts/lib/component/helper/interactionMutex.js
 var ATTR = "\0_ec_interaction_mutex";
 function take(zr, resourceKey, userKey) {
   var store = getStore(zr);
@@ -52316,7 +52335,7 @@ registerAction({
   update: "update"
 }, noop);
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/RoamController.js
+// node_modules/echarts/lib/component/helper/RoamController.js
 var RoamController = (
   /** @class */
   function(_super) {
@@ -52481,7 +52500,7 @@ function isAvailableBehavior(behaviorToCheck, e2, settings) {
 }
 var RoamController_default = RoamController;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/roamHelper.js
+// node_modules/echarts/lib/component/helper/roamHelper.js
 function updateViewOnPan(controllerHost, dx, dy) {
   var target = controllerHost.target;
   target.x += dx;
@@ -52507,7 +52526,7 @@ function updateViewOnZoom(controllerHost, zoomDelta, zoomX, zoomY) {
   target.dirty();
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/cursorHelper.js
+// node_modules/echarts/lib/component/helper/cursorHelper.js
 var IRRELEVANT_EXCLUDES = {
   "axisPointer": 1,
   "tooltip": 1,
@@ -52519,7 +52538,7 @@ function onIrrelevantElement(e2, api, targetCoordSysModel) {
   return model && model !== targetCoordSysModel && !IRRELEVANT_EXCLUDES.hasOwnProperty(model.mainType) && coordSys && coordSys.model !== targetCoordSysModel;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/parseXML.js
+// node_modules/zrender/lib/tool/parseXML.js
 function parseXML(svg) {
   if (isString(svg)) {
     var parser = new DOMParser();
@@ -52535,7 +52554,7 @@ function parseXML(svg) {
   return svgNode;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/parseSVG.js
+// node_modules/zrender/lib/tool/parseSVG.js
 var nodeParsers;
 var INHERITABLE_STYLE_ATTRIBUTES_MAP = {
   "fill": "fill",
@@ -53152,7 +53171,7 @@ function parseSVG(xml, opt) {
   return parser.parse(xml, opt);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/GeoSVGResource.js
+// node_modules/echarts/lib/coord/geo/GeoSVGResource.js
 var REGION_AVAILABLE_SVG_TAG_MAP = createHashMap([
   "rect",
   "circle",
@@ -53317,7 +53336,7 @@ function createRegions(named) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/fix/nanhai.js
+// node_modules/echarts/lib/coord/geo/fix/nanhai.js
 var geoCoord = [126, 25];
 var nanhaiName = "\u5357\u6D77\u8BF8\u5C9B";
 var points2 = [[[0, 3.5], [7, 11.2], [15, 11.9], [30, 7], [42, 0.7], [52, 0.7], [56, 7.7], [59, 0.7], [64, 0.7], [64, 0], [5, 0], [0, 3.5]], [[13, 16.1], [19, 14.7], [16, 21.7], [11, 23.1], [13, 16.1]], [[12, 32.2], [14, 38.5], [15, 38.5], [13, 32.2], [12, 32.2]], [[16, 47.6], [12, 53.2], [13, 53.2], [18, 47.6], [16, 47.6]], [[6, 64.4], [8, 70], [9, 70], [8, 64.4], [6, 64.4]], [[23, 82.6], [29, 79.8], [30, 79.8], [25, 82.6], [23, 82.6]], [[37, 70.7], [43, 62.3], [44, 62.3], [39, 70.7], [37, 70.7]], [[48, 51.1], [51, 45.5], [53, 45.5], [50, 51.1], [48, 51.1]], [[51, 35], [51, 28.7], [53, 28.7], [53, 35], [51, 35]], [[52, 22.4], [55, 17.5], [56, 17.5], [53, 22.4], [52, 22.4]], [[58, 12.6], [62, 7], [63, 7], [60, 12.6], [58, 12.6]], [[0, 3.5], [0, 93.1], [64, 93.1], [64, 0], [63, 0], [63, 92.4], [1, 92.4], [1, 3.5], [0, 3.5]]];
@@ -53347,7 +53366,7 @@ function fixNanhai(mapType, regions) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/fix/textCoord.js
+// node_modules/echarts/lib/coord/geo/fix/textCoord.js
 var coordsOffsetMap = {
   "\u5357\u6D77\u8BF8\u5C9B": [32, 80],
   // 全国
@@ -53369,7 +53388,7 @@ function fixTextCoords(mapType, region) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/fix/diaoyuIsland.js
+// node_modules/echarts/lib/coord/geo/fix/diaoyuIsland.js
 var points3 = [[[123.45165252685547, 25.73527164402261], [123.49731445312499, 25.73527164402261], [123.49731445312499, 25.750734064600884], [123.45165252685547, 25.750734064600884], [123.45165252685547, 25.73527164402261]]];
 function fixDiaoyuIsland(mapType, region) {
   if (mapType === "china" && region.name === "\u53F0\u6E7E") {
@@ -53380,7 +53399,7 @@ function fixDiaoyuIsland(mapType, region) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/GeoJSONResource.js
+// node_modules/echarts/lib/coord/geo/GeoJSONResource.js
 var DEFAULT_NAME_PROPERTY = "name";
 var GeoJSONResource = (
   /** @class */
@@ -53465,7 +53484,7 @@ function parseInput(source) {
   return !isString(source) ? source : typeof JSON !== "undefined" && JSON.parse ? JSON.parse(source) : new Function("return (" + source + ");")();
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/geoSourceManager.js
+// node_modules/echarts/lib/coord/geo/geoSourceManager.js
 var storage = createHashMap();
 var geoSourceManager_default = {
   /**
@@ -53536,7 +53555,7 @@ var geoSourceManager_default = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/MapDraw.js
+// node_modules/echarts/lib/component/helper/MapDraw.js
 var OPTION_STYLE_ENABLED_TAGS = ["rect", "circle", "line", "ellipse", "polygon", "polyline", "path"];
 var OPTION_STYLE_ENABLED_TAG_MAP = createHashMap(OPTION_STYLE_ENABLED_TAGS);
 var STATE_TRIGGER_TAG_MAP = createHashMap(OPTION_STYLE_ENABLED_TAGS.concat(["g"]));
@@ -54037,7 +54056,7 @@ function projectPolys(rings, createStream, isLine) {
 }
 var MapDraw_default = MapDraw;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/MapView.js
+// node_modules/echarts/lib/chart/map/MapView.js
 var MapView = (
   /** @class */
   function(_super) {
@@ -54150,7 +54169,7 @@ var MapView = (
 );
 var MapView_default = MapView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/MapSeries.js
+// node_modules/echarts/lib/chart/map/MapSeries.js
 var MapSeries = (
   /** @class */
   function(_super) {
@@ -54334,7 +54353,7 @@ var MapSeries = (
 );
 var MapSeries_default = MapSeries;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/mapDataStatistic.js
+// node_modules/echarts/lib/chart/map/mapDataStatistic.js
 function dataStatistics(datas, statisticType) {
   var dataNameMap = {};
   each(datas, function(data2) {
@@ -54393,7 +54412,7 @@ function mapDataStatistic(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/mapSymbolLayout.js
+// node_modules/echarts/lib/chart/map/mapSymbolLayout.js
 function mapSymbolLayout(ecModel) {
   var processedMapType = {};
   ecModel.eachSeriesByType("map", function(mapSeries) {
@@ -54433,7 +54452,7 @@ function mapSymbolLayout(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/View.js
+// node_modules/echarts/lib/coord/View.js
 var v2ApplyTransform = applyTransform;
 var View = (
   /** @class */
@@ -54591,7 +54610,7 @@ function getCoordSys(finder) {
 }
 var View_default = View;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/Geo.js
+// node_modules/echarts/lib/coord/geo/Geo.js
 var GEO_DEFAULT_PARAMS = {
   "geoJSON": {
     aspectScale: 0.75,
@@ -54732,7 +54751,7 @@ function getCoordSys2(finder) {
 }
 var Geo_default = Geo;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/geoCreator.js
+// node_modules/echarts/lib/coord/geo/geoCreator.js
 function resizeGeo(geoModel, api) {
   var boundingCoords = geoModel.get("boundingCoords");
   if (boundingCoords != null) {
@@ -54907,7 +54926,7 @@ var GeoCreator = (
 var geoCreator = new GeoCreator();
 var geoCreator_default = geoCreator;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/GeoModel.js
+// node_modules/echarts/lib/coord/geo/GeoModel.js
 var GeoModel = (
   /** @class */
   function(_super) {
@@ -55062,7 +55081,7 @@ var GeoModel = (
 );
 var GeoModel_default = GeoModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/action/roamHelper.js
+// node_modules/echarts/lib/action/roamHelper.js
 function getCenterCoord(view, point) {
   return view.pointToProjected ? view.pointToProjected(point) : view.pointToData(point);
 }
@@ -55098,7 +55117,7 @@ function updateCenterAndZoom(view, payload, zoomLimit, api) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/geo/GeoView.js
+// node_modules/echarts/lib/component/geo/GeoView.js
 var GeoView = (
   /** @class */
   function(_super) {
@@ -55164,7 +55183,7 @@ var GeoView = (
 );
 var GeoView_default = GeoView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/geo/install.js
+// node_modules/echarts/lib/component/geo/install.js
 function registerMap2(mapName, geoJson, specialAreas) {
   geoSourceManager_default.registerMap(mapName, geoJson, specialAreas);
 }
@@ -55246,7 +55265,7 @@ function install10(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/map/install.js
+// node_modules/echarts/lib/chart/map/install.js
 function install11(registers) {
   use(install10);
   registers.registerChartView(MapView_default);
@@ -55256,7 +55275,7 @@ function install11(registers) {
   createLegacyDataSelectAction("map", registers.registerAction);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/layoutHelper.js
+// node_modules/echarts/lib/chart/tree/layoutHelper.js
 function init3(inRoot) {
   var root = inRoot;
   root.hierNode = {
@@ -55407,7 +55426,7 @@ function defaultSeparation(node1, node2) {
   return node1.parentNode === node2.parentNode ? 1 : 2;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/TreeView.js
+// node_modules/echarts/lib/chart/tree/TreeView.js
 var TreeEdgeShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -55952,7 +55971,7 @@ function getEdgeShape(layoutOpt, orient, curvature, sourceLayout, targetLayout) 
 }
 var TreeView_default = TreeView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/helper/linkSeriesData.js
+// node_modules/echarts/lib/data/helper/linkSeriesData.js
 var inner8 = makeInner();
 function linkSeriesData(opt) {
   var mainData = opt.mainData;
@@ -56035,7 +56054,7 @@ function linkSingle(data2, dataType, mainData, opt) {
 }
 var linkSeriesData_default = linkSeriesData;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/Tree.js
+// node_modules/echarts/lib/data/Tree.js
 var TreeNode = (
   /** @class */
   function() {
@@ -56274,7 +56293,7 @@ function addChild(child, node) {
 }
 var Tree_default = Tree;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/treeHelper.js
+// node_modules/echarts/lib/chart/helper/treeHelper.js
 function retrieveTargetInfo(payload, validPayloadTypes, seriesModel) {
   if (payload && indexOf(validPayloadTypes, payload.type) >= 0) {
     var root = seriesModel.getData().tree.root;
@@ -56322,7 +56341,7 @@ function wrapTreePathInfo(node, seriesModel) {
   return treePathInfo;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/TreeSeries.js
+// node_modules/echarts/lib/chart/tree/TreeSeries.js
 var TreeSeriesModel = (
   /** @class */
   function(_super) {
@@ -56452,7 +56471,7 @@ var TreeSeriesModel = (
 );
 var TreeSeries_default = TreeSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/traversalHelper.js
+// node_modules/echarts/lib/chart/tree/traversalHelper.js
 function eachAfter(root, callback, separation2) {
   var nodes = [root];
   var next = [];
@@ -56488,7 +56507,7 @@ function eachBefore(root, callback) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/treeLayout.js
+// node_modules/echarts/lib/chart/tree/treeLayout.js
 function treeLayout(ecModel, api) {
   ecModel.eachSeriesByType("tree", function(seriesModel) {
     commonLayout(seriesModel, api);
@@ -56583,7 +56602,7 @@ function commonLayout(seriesModel, api) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/treeVisual.js
+// node_modules/echarts/lib/chart/tree/treeVisual.js
 function treeVisual(ecModel) {
   ecModel.eachSeriesByType("tree", function(seriesModel) {
     var data2 = seriesModel.getData();
@@ -56597,7 +56616,7 @@ function treeVisual(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/treeAction.js
+// node_modules/echarts/lib/chart/tree/treeAction.js
 function installTreeAction(registers) {
   registers.registerAction({
     type: "treeExpandAndCollapse",
@@ -56637,7 +56656,7 @@ function installTreeAction(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/tree/install.js
+// node_modules/echarts/lib/chart/tree/install.js
 function install12(registers) {
   registers.registerChartView(TreeView_default);
   registers.registerSeriesModel(TreeSeries_default);
@@ -56646,7 +56665,7 @@ function install12(registers) {
   installTreeAction(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/treemapAction.js
+// node_modules/echarts/lib/chart/treemap/treemapAction.js
 var actionTypes = ["treemapZoomToNode", "treemapRender", "treemapMove"];
 function installTreemapAction(registers) {
   for (var i = 0; i < actionTypes.length; i++) {
@@ -56678,7 +56697,7 @@ function installTreemapAction(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/enableAriaDecalForTree.js
+// node_modules/echarts/lib/chart/helper/enableAriaDecalForTree.js
 function enableAriaDecalForTree(seriesModel) {
   var data2 = seriesModel.getData();
   var tree = data2.tree;
@@ -56693,7 +56712,7 @@ function enableAriaDecalForTree(seriesModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/TreemapSeries.js
+// node_modules/echarts/lib/chart/treemap/TreemapSeries.js
 var TreemapSeriesModel = (
   /** @class */
   function(_super) {
@@ -56946,7 +56965,7 @@ function setDefault(levels, ecModel) {
 }
 var TreemapSeries_default = TreemapSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/Breadcrumb.js
+// node_modules/echarts/lib/chart/treemap/Breadcrumb.js
 var TEXT_PADDING = 8;
 var ITEM_GAP = 8;
 var ARRAY_LENGTH = 5;
@@ -57077,7 +57096,7 @@ function packEventData(el, seriesModel, itemNode) {
 }
 var Breadcrumb_default = Breadcrumb;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/animation.js
+// node_modules/echarts/lib/util/animation.js
 var AnimationWrap = (
   /** @class */
   function() {
@@ -57134,7 +57153,7 @@ function createWrap() {
   return new AnimationWrap();
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/TreemapView.js
+// node_modules/echarts/lib/chart/treemap/TreemapView.js
 var Group2 = Group_default;
 var Rect2 = Rect_default;
 var DRAG_THRESHOLD = 3;
@@ -57847,7 +57866,7 @@ function calculateZ2(depth, z2InLevel) {
 }
 var TreemapView_default = TreemapView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/VisualMapping.js
+// node_modules/echarts/lib/visual/VisualMapping.js
 var each4 = each;
 var isObject4 = isObject;
 var CATEGORY_DEFAULT_VISUAL_INDEX = -1;
@@ -58210,7 +58229,7 @@ function littleThan(close, a, b) {
 }
 var VisualMapping_default = VisualMapping;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/treemapVisual.js
+// node_modules/echarts/lib/chart/treemap/treemapVisual.js
 var ITEM_STYLE_NORMAL = "itemStyle";
 var inner10 = makeInner();
 var treemapVisual_default = {
@@ -58343,7 +58362,7 @@ function mapVisual(nodeModel, visuals, child, index, mapping, seriesModel) {
   return childVisuals;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/treemapLayout.js
+// node_modules/echarts/lib/chart/treemap/treemapLayout.js
 var mathMax8 = Math.max;
 var mathMin8 = Math.min;
 var retrieveValue = retrieve;
@@ -58698,7 +58717,7 @@ function getUpperLabelHeight(model) {
   return model.get(PATH_UPPER_LABEL_SHOW) ? model.get(PATH_UPPER_LABEL_HEIGHT) : 0;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/treemap/install.js
+// node_modules/echarts/lib/chart/treemap/install.js
 function install13(registers) {
   registers.registerSeriesModel(TreemapSeries_default);
   registers.registerChartView(TreemapView_default);
@@ -58707,7 +58726,7 @@ function install13(registers) {
   installTreemapAction(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/categoryFilter.js
+// node_modules/echarts/lib/chart/graph/categoryFilter.js
 function categoryFilter(ecModel) {
   var legendModels = ecModel.findComponents({
     mainType: "legend"
@@ -58738,7 +58757,7 @@ function categoryFilter(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/categoryVisual.js
+// node_modules/echarts/lib/chart/graph/categoryVisual.js
 function categoryVisual(ecModel) {
   var paletteScope = {};
   ecModel.eachSeriesByType("graph", function(seriesModel) {
@@ -58783,7 +58802,7 @@ function categoryVisual(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/edgeVisual.js
+// node_modules/echarts/lib/chart/graph/edgeVisual.js
 function normalize3(a) {
   if (!(a instanceof Array)) {
     a = [a, a];
@@ -58829,7 +58848,7 @@ function graphEdgeVisual(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/multipleGraphEdgeHelper.js
+// node_modules/echarts/lib/chart/helper/multipleGraphEdgeHelper.js
 var KEY_DELIMITER = "-->";
 var getAutoCurvenessParams = function(seriesModel) {
   return seriesModel.get("autoCurveness") || null;
@@ -58945,7 +58964,7 @@ function getCurvenessForEdge(edge, seriesModel, index, needReverse) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/simpleLayoutHelper.js
+// node_modules/echarts/lib/chart/graph/simpleLayoutHelper.js
 function simpleLayout(seriesModel) {
   var coordSys = seriesModel.coordinateSystem;
   if (coordSys && coordSys.type !== "view") {
@@ -58971,7 +58990,7 @@ function simpleLayoutEdge(graph, seriesModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/simpleLayout.js
+// node_modules/echarts/lib/chart/graph/simpleLayout.js
 function graphSimpleLayout(ecModel, api) {
   ecModel.eachSeriesByType("graph", function(seriesModel) {
     var layout5 = seriesModel.get("layout");
@@ -59005,7 +59024,7 @@ function graphSimpleLayout(ecModel, api) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/graphHelper.js
+// node_modules/echarts/lib/chart/graph/graphHelper.js
 function getNodeGlobalScale(seriesModel) {
   var coordSys = seriesModel.coordinateSystem;
   if (coordSys.type !== "view") {
@@ -59025,7 +59044,7 @@ function getSymbolSize(node) {
   return +symbolSize;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/circularLayoutHelper.js
+// node_modules/echarts/lib/chart/graph/circularLayoutHelper.js
 var PI8 = Math.PI;
 var _symbolRadiansHalf = [];
 function circularLayout(seriesModel, basedOn, draggingNode, pointer) {
@@ -59143,7 +59162,7 @@ function rotateNodeLabel(node, circularRotateLabel, cx, cy) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/circularLayout.js
+// node_modules/echarts/lib/chart/graph/circularLayout.js
 function graphCircularLayout(ecModel) {
   ecModel.eachSeriesByType("graph", function(seriesModel) {
     if (seriesModel.get("layout") === "circular") {
@@ -59152,7 +59171,7 @@ function graphCircularLayout(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/forceHelper.js
+// node_modules/echarts/lib/chart/graph/forceHelper.js
 var scaleAndAdd2 = scaleAndAdd;
 function forceLayout(inNodes, inEdges, opts) {
   var nodes = inNodes;
@@ -59262,7 +59281,7 @@ function forceLayout(inNodes, inEdges, opts) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/forceLayout.js
+// node_modules/echarts/lib/chart/graph/forceLayout.js
 function graphForceLayout(ecModel) {
   ecModel.eachSeriesByType("graph", function(graphSeries) {
     var coordSys = graphSeries.coordinateSystem;
@@ -59368,7 +59387,7 @@ function graphForceLayout(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/createView.js
+// node_modules/echarts/lib/chart/graph/createView.js
 function getViewRect3(seriesModel, api, aspect) {
   var option = extend2(seriesModel.getBoxLayoutParams(), {
     aspect
@@ -59421,7 +59440,7 @@ function createViewCoordSys(ecModel, api) {
   return viewList;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LinePath.js
+// node_modules/echarts/lib/chart/helper/LinePath.js
 var straightLineProto = Line_default.prototype;
 var bezierCurveProto = BezierCurve_default.prototype;
 var StraightLineShape = (
@@ -59492,7 +59511,7 @@ var ECLinePath = (
 );
 var LinePath_default = ECLinePath;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/Line.js
+// node_modules/echarts/lib/chart/helper/Line.js
 var SYMBOL_CATEGORIES = ["fromSymbol", "toSymbol"];
 function makeSymbolTypeKey(symbolCategory) {
   return "_" + symbolCategory + "Type";
@@ -59842,7 +59861,7 @@ var Line2 = (
 );
 var Line_default2 = Line2;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LineDraw.js
+// node_modules/echarts/lib/chart/helper/LineDraw.js
 var LineDraw = (
   /** @class */
   function() {
@@ -59964,7 +59983,7 @@ function lineNeedsDraw(pts) {
 }
 var LineDraw_default = LineDraw;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/adjustEdge.js
+// node_modules/echarts/lib/chart/graph/adjustEdge.js
 var v1 = [];
 var v2 = [];
 var v3 = [];
@@ -60080,7 +60099,7 @@ function adjustEdge(graph, scale4) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/GraphView.js
+// node_modules/echarts/lib/chart/graph/GraphView.js
 function isViewCoordSys(coordSys) {
   return coordSys.type === "view";
 }
@@ -60287,7 +60306,7 @@ var GraphView = (
 );
 var GraphView_default = GraphView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/data/Graph.js
+// node_modules/echarts/lib/data/Graph.js
 function generateNodeKey(id) {
   return "_EC_" + id;
 }
@@ -60651,7 +60670,7 @@ mixin(GraphNode, createGraphDataProxyMixin("hostGraph", "data"));
 mixin(GraphEdge, createGraphDataProxyMixin("hostGraph", "edgeData"));
 var Graph_default = Graph;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/createGraphFromNodeEdge.js
+// node_modules/echarts/lib/chart/helper/createGraphFromNodeEdge.js
 function createGraphFromNodeEdge(nodes, edges, seriesModel, directed, beforeLink) {
   var graph = new Graph_default(directed);
   for (var i = 0; i < nodes.length; i++) {
@@ -60712,7 +60731,7 @@ function createGraphFromNodeEdge(nodes, edges, seriesModel, directed, beforeLink
   return graph;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/GraphSeries.js
+// node_modules/echarts/lib/chart/graph/GraphSeries.js
 var GraphSeriesModel = (
   /** @class */
   function(_super) {
@@ -60930,7 +60949,7 @@ var GraphSeriesModel = (
 );
 var GraphSeries_default = GraphSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/graph/install.js
+// node_modules/echarts/lib/chart/graph/install.js
 var actionInfo = {
   type: "graphRoam",
   event: "graphRoam",
@@ -60972,7 +60991,7 @@ function install14(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/PointerPath.js
+// node_modules/echarts/lib/chart/gauge/PointerPath.js
 var PointerShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -61018,7 +61037,7 @@ var PointerPath = (
 );
 var PointerPath_default = PointerPath;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/GaugeView.js
+// node_modules/echarts/lib/chart/gauge/GaugeView.js
 function parsePosition(seriesModel, api) {
   var center3 = seriesModel.get("center");
   var width = api.getWidth();
@@ -61517,7 +61536,7 @@ var GaugeView = (
 );
 var GaugeView_default = GaugeView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/GaugeSeries.js
+// node_modules/echarts/lib/chart/gauge/GaugeSeries.js
 var GaugeSeriesModel = (
   /** @class */
   function(_super) {
@@ -61661,13 +61680,13 @@ var GaugeSeriesModel = (
 );
 var GaugeSeries_default = GaugeSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/gauge/install.js
+// node_modules/echarts/lib/chart/gauge/install.js
 function install15(registers) {
   registers.registerChartView(GaugeView_default);
   registers.registerSeriesModel(GaugeSeries_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/FunnelView.js
+// node_modules/echarts/lib/chart/funnel/FunnelView.js
 var opacityAccessPath = ["itemStyle", "opacity"];
 var FunnelPiece = (
   /** @class */
@@ -61822,7 +61841,7 @@ var FunnelView = (
 );
 var FunnelView_default = FunnelView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/FunnelSeries.js
+// node_modules/echarts/lib/chart/funnel/FunnelSeries.js
 var FunnelSeriesModel = (
   /** @class */
   function(_super) {
@@ -61914,7 +61933,7 @@ var FunnelSeriesModel = (
 );
 var FunnelSeries_default = FunnelSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/funnelLayout.js
+// node_modules/echarts/lib/chart/funnel/funnelLayout.js
 function getViewRect4(seriesModel, api) {
   return getLayoutRect(seriesModel.getBoxLayoutParams(), {
     width: api.getWidth(),
@@ -62202,7 +62221,7 @@ function funnelLayout(ecModel, api) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/funnel/install.js
+// node_modules/echarts/lib/chart/funnel/install.js
 function install16(registers) {
   registers.registerChartView(FunnelView_default);
   registers.registerSeriesModel(FunnelSeries_default);
@@ -62210,7 +62229,7 @@ function install16(registers) {
   registers.registerProcessor(dataFilter("funnel"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/ParallelView.js
+// node_modules/echarts/lib/chart/parallel/ParallelView.js
 var DEFAULT_SMOOTH = 0.3;
 var ParallelView = (
   /** @class */
@@ -62360,7 +62379,7 @@ function isEmptyValue(val, axisType) {
 }
 var ParallelView_default = ParallelView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/ParallelSeries.js
+// node_modules/echarts/lib/chart/parallel/ParallelSeries.js
 var ParallelSeriesModel = (
   /** @class */
   function(_super) {
@@ -62434,7 +62453,7 @@ function convertDimNameToNumber(dimName) {
 }
 var ParallelSeries_default = ParallelSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/parallelVisual.js
+// node_modules/echarts/lib/chart/parallel/parallelVisual.js
 var opacityAccessPath2 = ["lineStyle", "opacity"];
 var parallelVisual = {
   seriesType: "parallel",
@@ -62462,7 +62481,7 @@ var parallelVisual = {
 };
 var parallelVisual_default = parallelVisual;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/parallelPreprocessor.js
+// node_modules/echarts/lib/coord/parallel/parallelPreprocessor.js
 function parallelPreprocessor(option) {
   createParallelIfNeeded(option);
   mergeAxisOptionFromParallel(option);
@@ -62495,7 +62514,7 @@ function mergeAxisOptionFromParallel(option) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/parallel/ParallelView.js
+// node_modules/echarts/lib/component/parallel/ParallelView.js
 var CLICK_THRESHOLD = 5;
 var ParallelView2 = (
   /** @class */
@@ -62581,7 +62600,7 @@ function checkTrigger(view, triggerOn) {
 }
 var ParallelView_default2 = ParallelView2;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/ParallelModel.js
+// node_modules/echarts/lib/coord/parallel/ParallelModel.js
 var ParallelModel = (
   /** @class */
   function(_super) {
@@ -62656,7 +62675,7 @@ var ParallelModel = (
 );
 var ParallelModel_default = ParallelModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/ParallelAxis.js
+// node_modules/echarts/lib/coord/parallel/ParallelAxis.js
 var ParallelAxis = (
   /** @class */
   function(_super) {
@@ -62675,7 +62694,7 @@ var ParallelAxis = (
 );
 var ParallelAxis_default = ParallelAxis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/sliderMove.js
+// node_modules/echarts/lib/component/helper/sliderMove.js
 function sliderMove(delta, handleEnds, extent3, handleIndex, minSpan, maxSpan) {
   delta = delta || 0;
   var extentSpan = extent3[1] - extent3[0];
@@ -62721,7 +62740,7 @@ function restrict(value, extend3) {
   return Math.min(extend3[1] != null ? extend3[1] : Infinity, Math.max(extend3[0] != null ? extend3[0] : -Infinity, value));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/Parallel.js
+// node_modules/echarts/lib/coord/parallel/Parallel.js
 var each6 = each;
 var mathMin9 = Math.min;
 var mathMax9 = Math.max;
@@ -63021,7 +63040,7 @@ function layoutAxisWithExpand(axisIndex, layoutInfo) {
 }
 var Parallel_default = Parallel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/parallelCreator.js
+// node_modules/echarts/lib/coord/parallel/parallelCreator.js
 function createParallelCoordSys(ecModel, api) {
   var coordSysList = [];
   ecModel.eachComponent("parallel", function(parallelModel, idx) {
@@ -63045,7 +63064,7 @@ var parallelCoordSysCreator = {
 };
 var parallelCreator_default = parallelCoordSysCreator;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/parallel/AxisModel.js
+// node_modules/echarts/lib/coord/parallel/AxisModel.js
 var ParallelAxisModel = (
   /** @class */
   function(_super) {
@@ -63103,7 +63122,7 @@ var ParallelAxisModel = (
 mixin(ParallelAxisModel, AxisModelCommonMixin);
 var AxisModel_default = ParallelAxisModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/BrushController.js
+// node_modules/echarts/lib/component/helper/BrushController.js
 var BRUSH_PANEL_GLOBAL = true;
 var mathMin10 = Math.min;
 var mathMax10 = Math.max;
@@ -63749,7 +63768,7 @@ function getLineRenderer(xyIndex) {
 }
 var BrushController_default = BrushController;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/brushHelper.js
+// node_modules/echarts/lib/component/helper/brushHelper.js
 function makeRectPanelClipPath(rect) {
   rect = normalizeRect(rect);
   return function(localPoints) {
@@ -63775,7 +63794,7 @@ function normalizeRect(rect) {
   return BoundingRect_default.create(rect);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/ParallelAxisView.js
+// node_modules/echarts/lib/component/axis/ParallelAxisView.js
 var elementList = ["axisLine", "axisTickLabel", "axisName"];
 var ParallelAxisView = (
   /** @class */
@@ -63889,7 +63908,7 @@ function getCoordSysModel(axisModel, ecModel) {
 }
 var ParallelAxisView_default = ParallelAxisView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/parallelAxisAction.js
+// node_modules/echarts/lib/component/axis/parallelAxisAction.js
 var actionInfo2 = {
   type: "axisAreaSelect",
   event: "axisAreaSelected"
@@ -63914,7 +63933,7 @@ function installParallelActions(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/parallel/install.js
+// node_modules/echarts/lib/component/parallel/install.js
 var defaultAxisOption = {
   type: "value",
   areaSelectStyle: {
@@ -63938,7 +63957,7 @@ function install17(registers) {
   installParallelActions(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/parallel/install.js
+// node_modules/echarts/lib/chart/parallel/install.js
 function install18(registers) {
   use(install17);
   registers.registerChartView(ParallelView_default);
@@ -63946,7 +63965,7 @@ function install18(registers) {
   registers.registerVisual(registers.PRIORITY.VISUAL.BRUSH, parallelVisual_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/SankeyView.js
+// node_modules/echarts/lib/chart/sankey/SankeyView.js
 var SankeyPathShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -64228,7 +64247,7 @@ function createGridClipShape2(rect, seriesModel, cb) {
 }
 var SankeyView_default = SankeyView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/SankeySeries.js
+// node_modules/echarts/lib/chart/sankey/SankeySeries.js
 var SankeySeriesModel = (
   /** @class */
   function(_super) {
@@ -64382,7 +64401,7 @@ var SankeySeriesModel = (
 );
 var SankeySeries_default = SankeySeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/sankeyLayout.js
+// node_modules/echarts/lib/chart/sankey/sankeyLayout.js
 function sankeyLayout(ecModel, api) {
   ecModel.eachSeriesByType("sankey", function(seriesModel) {
     var nodeWidth = seriesModel.get("nodeWidth");
@@ -64764,7 +64783,7 @@ function computeEdgeDepths(nodes, orient) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/sankeyVisual.js
+// node_modules/echarts/lib/chart/sankey/sankeyVisual.js
 function sankeyVisual(ecModel) {
   ecModel.eachSeriesByType("sankey", function(seriesModel) {
     var graph = seriesModel.getGraph();
@@ -64813,7 +64832,7 @@ function sankeyVisual(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sankey/install.js
+// node_modules/echarts/lib/chart/sankey/install.js
 function install19(registers) {
   registers.registerChartView(SankeyView_default);
   registers.registerSeriesModel(SankeySeries_default);
@@ -64835,7 +64854,7 @@ function install19(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/whiskerBoxCommon.js
+// node_modules/echarts/lib/chart/helper/whiskerBoxCommon.js
 var WhiskerBoxCommonMixin = (
   /** @class */
   function() {
@@ -64918,7 +64937,7 @@ var WhiskerBoxCommonMixin = (
   }()
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/BoxplotSeries.js
+// node_modules/echarts/lib/chart/boxplot/BoxplotSeries.js
 var BoxplotSeriesModel = (
   /** @class */
   function(_super) {
@@ -64976,7 +64995,7 @@ var BoxplotSeriesModel = (
 mixin(BoxplotSeriesModel, WhiskerBoxCommonMixin, true);
 var BoxplotSeries_default = BoxplotSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/BoxplotView.js
+// node_modules/echarts/lib/chart/boxplot/BoxplotView.js
 var BoxplotView = (
   /** @class */
   function(_super) {
@@ -65107,7 +65126,7 @@ function transInit(points4, dim, itemLayout) {
 }
 var BoxplotView_default = BoxplotView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/boxplotLayout.js
+// node_modules/echarts/lib/chart/boxplot/boxplotLayout.js
 var each7 = each;
 function boxplotLayout(ecModel) {
   var groupResult = groupSeriesByAxis(ecModel);
@@ -65236,7 +65255,7 @@ function layoutSingleSeries(seriesModel, offset2, boxWidth) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/prepareBoxplotData.js
+// node_modules/echarts/lib/chart/boxplot/prepareBoxplotData.js
 function prepareBoxplotData(rawData, opt) {
   opt = opt || {};
   var boxData = [];
@@ -65272,7 +65291,7 @@ function prepareBoxplotData(rawData, opt) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/boxplotTransform.js
+// node_modules/echarts/lib/chart/boxplot/boxplotTransform.js
 var boxplotTransform = {
   type: "echarts:boxplot",
   transform: function transform(params) {
@@ -65294,7 +65313,7 @@ var boxplotTransform = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/boxplot/install.js
+// node_modules/echarts/lib/chart/boxplot/install.js
 function install20(registers) {
   registers.registerSeriesModel(BoxplotSeries_default);
   registers.registerChartView(BoxplotView_default);
@@ -65302,7 +65321,7 @@ function install20(registers) {
   registers.registerTransform(boxplotTransform);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/candlestickVisual.js
+// node_modules/echarts/lib/chart/candlestick/candlestickVisual.js
 var positiveBorderColorQuery = ["itemStyle", "borderColor"];
 var negativeBorderColorQuery = ["itemStyle", "borderColor0"];
 var dojiBorderColorQuery = ["itemStyle", "borderColorDoji"];
@@ -65342,7 +65361,7 @@ var candlestickVisual = {
 };
 var candlestickVisual_default = candlestickVisual;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/CandlestickView.js
+// node_modules/echarts/lib/chart/candlestick/CandlestickView.js
 var SKIP_PROPS = ["color", "borderColor"];
 var CandlestickView = (
   /** @class */
@@ -65637,7 +65656,7 @@ function setLargeStyle(sign, el, seriesModel, data2) {
 }
 var CandlestickView_default = CandlestickView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/CandlestickSeries.js
+// node_modules/echarts/lib/chart/candlestick/CandlestickSeries.js
 var CandlestickSeriesModel = (
   /** @class */
   function(_super) {
@@ -65710,7 +65729,7 @@ var CandlestickSeriesModel = (
 mixin(CandlestickSeriesModel, WhiskerBoxCommonMixin, true);
 var CandlestickSeries_default = CandlestickSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/preprocessor.js
+// node_modules/echarts/lib/chart/candlestick/preprocessor.js
 function candlestickPreprocessor(option) {
   if (!option || !isArray2(option.series)) {
     return;
@@ -65722,7 +65741,7 @@ function candlestickPreprocessor(option) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/candlestickLayout.js
+// node_modules/echarts/lib/chart/candlestick/candlestickLayout.js
 var candlestickLayout = {
   seriesType: "candlestick",
   plan: createRenderPlanner(),
@@ -65864,7 +65883,7 @@ function calculateCandleWidth(seriesModel, data2) {
 }
 var candlestickLayout_default = candlestickLayout;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/candlestick/install.js
+// node_modules/echarts/lib/chart/candlestick/install.js
 function install21(registers) {
   registers.registerChartView(CandlestickView_default);
   registers.registerSeriesModel(CandlestickSeries_default);
@@ -65873,7 +65892,7 @@ function install21(registers) {
   registers.registerLayout(candlestickLayout_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/EffectSymbol.js
+// node_modules/echarts/lib/chart/helper/EffectSymbol.js
 function updateRipplePath(rippleGroup, effectCfg) {
   var color = effectCfg.rippleEffectColor || effectCfg.color;
   rippleGroup.eachChild(function(ripplePath) {
@@ -66020,7 +66039,7 @@ var EffectSymbol = (
 );
 var EffectSymbol_default = EffectSymbol;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/effectScatter/EffectScatterView.js
+// node_modules/echarts/lib/chart/effectScatter/EffectScatterView.js
 var EffectScatterView = (
   /** @class */
   function(_super) {
@@ -66075,7 +66094,7 @@ var EffectScatterView = (
 );
 var EffectScatterView_default = EffectScatterView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/effectScatter/EffectScatterSeries.js
+// node_modules/echarts/lib/chart/effectScatter/EffectScatterSeries.js
 var EffectScatterSeriesModel = (
   /** @class */
   function(_super) {
@@ -66139,14 +66158,14 @@ var EffectScatterSeriesModel = (
 );
 var EffectScatterSeries_default = EffectScatterSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/effectScatter/install.js
+// node_modules/echarts/lib/chart/effectScatter/install.js
 function install22(registers) {
   registers.registerChartView(EffectScatterView_default);
   registers.registerSeriesModel(EffectScatterSeries_default);
   registers.registerLayout(pointsLayout("effectScatter"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/EffectLine.js
+// node_modules/echarts/lib/chart/helper/EffectLine.js
 var EffectLine = (
   /** @class */
   function(_super) {
@@ -66296,7 +66315,7 @@ var EffectLine = (
 );
 var EffectLine_default = EffectLine;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/Polyline.js
+// node_modules/echarts/lib/chart/helper/Polyline.js
 var Polyline2 = (
   /** @class */
   function(_super) {
@@ -66361,7 +66380,7 @@ var Polyline2 = (
 );
 var Polyline_default2 = Polyline2;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/EffectPolyline.js
+// node_modules/echarts/lib/chart/helper/EffectPolyline.js
 var EffectPolyline = (
   /** @class */
   function(_super) {
@@ -66445,7 +66464,7 @@ var EffectPolyline = (
 );
 var EffectPolyline_default = EffectPolyline;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/helper/LargeLineDraw.js
+// node_modules/echarts/lib/chart/helper/LargeLineDraw.js
 var LargeLinesPathShape = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -66688,7 +66707,7 @@ var LargeLineDraw = (
 );
 var LargeLineDraw_default = LargeLineDraw;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/linesLayout.js
+// node_modules/echarts/lib/chart/lines/linesLayout.js
 var linesLayout = {
   seriesType: "lines",
   plan: createRenderPlanner(),
@@ -66757,7 +66776,7 @@ var linesLayout = {
 };
 var linesLayout_default = linesLayout;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/LinesView.js
+// node_modules/echarts/lib/chart/lines/LinesView.js
 var LinesView = (
   /** @class */
   function(_super) {
@@ -66883,7 +66902,7 @@ var LinesView = (
 );
 var LinesView_default = LinesView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/LinesSeries.js
+// node_modules/echarts/lib/chart/lines/LinesSeries.js
 var Uint32Arr = typeof Uint32Array === "undefined" ? Array : Uint32Array;
 var Float64Arr = typeof Float64Array === "undefined" ? Array : Float64Array;
 function compatEc2(seriesOpt) {
@@ -67136,7 +67155,7 @@ var LinesSeriesModel = (
 );
 var LinesSeries_default = LinesSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/linesVisual.js
+// node_modules/echarts/lib/chart/lines/linesVisual.js
 function normalize4(a) {
   if (!(a instanceof Array)) {
     a = [a, a];
@@ -67169,7 +67188,7 @@ var linesVisual = {
 };
 var linesVisual_default = linesVisual;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/lines/install.js
+// node_modules/echarts/lib/chart/lines/install.js
 function install23(registers) {
   registers.registerChartView(LinesView_default);
   registers.registerSeriesModel(LinesSeries_default);
@@ -67177,7 +67196,7 @@ function install23(registers) {
   registers.registerVisual(linesVisual_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/HeatmapLayer.js
+// node_modules/echarts/lib/chart/heatmap/HeatmapLayer.js
 var GRADIENT_LEVELS = 256;
 var HeatmapLayer = (
   /** @class */
@@ -67276,7 +67295,7 @@ var HeatmapLayer = (
 );
 var HeatmapLayer_default = HeatmapLayer;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/HeatmapView.js
+// node_modules/echarts/lib/chart/heatmap/HeatmapView.js
 function getIsInPiecewiseRange(dataExtent, pieceList, selected) {
   var dataSpan = dataExtent[1] - dataExtent[0];
   pieceList = map(pieceList, function(piece) {
@@ -67520,7 +67539,7 @@ var HeatmapView = (
 );
 var HeatmapView_default = HeatmapView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/HeatmapSeries.js
+// node_modules/echarts/lib/chart/heatmap/HeatmapSeries.js
 var HeatmapSeriesModel = (
   /** @class */
   function(_super) {
@@ -67567,13 +67586,13 @@ var HeatmapSeriesModel = (
 );
 var HeatmapSeries_default = HeatmapSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/heatmap/install.js
+// node_modules/echarts/lib/chart/heatmap/install.js
 function install24(registers) {
   registers.registerChartView(HeatmapView_default);
   registers.registerSeriesModel(HeatmapSeries_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/PictorialBarView.js
+// node_modules/echarts/lib/chart/bar/PictorialBarView.js
 var BAR_BORDER_WIDTH_QUERY = ["itemStyle", "borderWidth"];
 var LAYOUT_ATTRS = [{
   xy: "x",
@@ -68114,7 +68133,7 @@ function toIntTimes(times) {
 }
 var PictorialBarView_default = PictorialBarView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/PictorialBarSeries.js
+// node_modules/echarts/lib/chart/bar/PictorialBarSeries.js
 var PictorialBarSeriesModel = (
   /** @class */
   function(_super) {
@@ -68167,7 +68186,7 @@ var PictorialBarSeriesModel = (
 );
 var PictorialBarSeries_default = PictorialBarSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/bar/installPictorialBar.js
+// node_modules/echarts/lib/chart/bar/installPictorialBar.js
 function install25(registers) {
   registers.registerChartView(PictorialBarView_default);
   registers.registerSeriesModel(PictorialBarSeries_default);
@@ -68175,7 +68194,7 @@ function install25(registers) {
   registers.registerLayout(registers.PRIORITY.VISUAL.PROGRESSIVE_LAYOUT, createProgressiveLayout("pictorialBar"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/ThemeRiverView.js
+// node_modules/echarts/lib/chart/themeRiver/ThemeRiverView.js
 var ThemeRiverView = (
   /** @class */
   function(_super) {
@@ -68310,7 +68329,7 @@ function createGridClipShape3(rect, seriesModel, cb) {
 }
 var ThemeRiverView_default = ThemeRiverView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/ThemeRiverSeries.js
+// node_modules/echarts/lib/chart/themeRiver/ThemeRiverSeries.js
 var DATA_NAME_INDEX = 2;
 var ThemeRiverSeriesModel = (
   /** @class */
@@ -68487,7 +68506,7 @@ var ThemeRiverSeriesModel = (
 );
 var ThemeRiverSeries_default = ThemeRiverSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/themeRiverLayout.js
+// node_modules/echarts/lib/chart/themeRiver/themeRiverLayout.js
 function themeRiverLayout(ecModel, api) {
   ecModel.eachSeriesByType("themeRiver", function(seriesModel) {
     var data2 = seriesModel.getData();
@@ -68584,7 +68603,7 @@ function computeBaseline(data2) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/themeRiver/install.js
+// node_modules/echarts/lib/chart/themeRiver/install.js
 function install26(registers) {
   registers.registerChartView(ThemeRiverView_default);
   registers.registerSeriesModel(ThemeRiverSeries_default);
@@ -68592,7 +68611,7 @@ function install26(registers) {
   registers.registerProcessor(dataFilter("themeRiver"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/SunburstPiece.js
+// node_modules/echarts/lib/chart/sunburst/SunburstPiece.js
 var DEFAULT_SECTOR_Z = 2;
 var DEFAULT_TEXT_Z = 4;
 var SunburstPiece = (
@@ -68760,7 +68779,7 @@ var SunburstPiece = (
 );
 var SunburstPiece_default = SunburstPiece;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/sunburstAction.js
+// node_modules/echarts/lib/chart/sunburst/sunburstAction.js
 var ROOT_TO_NODE_ACTION = "sunburstRootToNode";
 var HIGHLIGHT_ACTION = "sunburstHighlight";
 var UNHIGHLIGHT_ACTION = "sunburstUnhighlight";
@@ -68822,7 +68841,7 @@ function installSunburstAction(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/SunburstView.js
+// node_modules/echarts/lib/chart/sunburst/SunburstView.js
 var SunburstView = (
   /** @class */
   function(_super) {
@@ -68961,7 +68980,7 @@ var SunburstView = (
 );
 var SunburstView_default = SunburstView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/SunburstSeries.js
+// node_modules/echarts/lib/chart/sunburst/SunburstSeries.js
 var SunburstSeriesModel = (
   /** @class */
   function(_super) {
@@ -69110,7 +69129,7 @@ function completeTreeValue2(dataNode) {
 }
 var SunburstSeries_default = SunburstSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/sunburstLayout.js
+// node_modules/echarts/lib/chart/sunburst/sunburstLayout.js
 var RADIAN3 = Math.PI / 180;
 function sunburstLayout(seriesType2, ecModel, api) {
   ecModel.eachSeriesByType(seriesType2, function(seriesModel) {
@@ -69254,7 +69273,7 @@ function sort3(children, sortOrder) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/sunburstVisual.js
+// node_modules/echarts/lib/chart/sunburst/sunburstVisual.js
 function sunburstVisual(ecModel) {
   var paletteScope = {};
   function pickColor(node, seriesModel, treeHeight) {
@@ -69283,7 +69302,7 @@ function sunburstVisual(ecModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/sunburst/install.js
+// node_modules/echarts/lib/chart/sunburst/install.js
 function install27(registers) {
   registers.registerChartView(SunburstView_default);
   registers.registerSeriesModel(SunburstSeries_default);
@@ -69293,7 +69312,7 @@ function install27(registers) {
   installSunburstAction(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/custom/CustomSeries.js
+// node_modules/echarts/lib/chart/custom/CustomSeries.js
 var STYLE_VISUAL_TYPE = {
   color: "fill",
   borderColor: "stroke"
@@ -69353,7 +69372,7 @@ var CustomSeriesModel = (
 );
 var CustomSeries_default = CustomSeriesModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/cartesian/prepareCustom.js
+// node_modules/echarts/lib/coord/cartesian/prepareCustom.js
 function dataToCoordSize(dataSize, dataItem) {
   dataItem = dataItem || [0, 0];
   return map(["x", "y"], function(dim, dimIdx) {
@@ -69383,7 +69402,7 @@ function cartesianPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/geo/prepareCustom.js
+// node_modules/echarts/lib/coord/geo/prepareCustom.js
 function dataToCoordSize2(dataSize, dataItem) {
   dataItem = dataItem || [0, 0];
   return map([0, 1], function(dimIdx) {
@@ -69417,7 +69436,7 @@ function geoPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/prepareCustom.js
+// node_modules/echarts/lib/coord/single/prepareCustom.js
 function dataToCoordSize3(dataSize, dataItem) {
   var axis = this.getAxis();
   var val = dataItem instanceof Array ? dataItem[0] : dataItem;
@@ -69443,7 +69462,7 @@ function singlePrepareCustom(coordSys) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/prepareCustom.js
+// node_modules/echarts/lib/coord/polar/prepareCustom.js
 function dataToCoordSize4(dataSize, dataItem) {
   dataItem = dataItem || [0, 0];
   return map(["Radius", "Angle"], function(dim, dimIdx) {
@@ -69484,7 +69503,7 @@ function polarPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/calendar/prepareCustom.js
+// node_modules/echarts/lib/coord/calendar/prepareCustom.js
 function calendarPrepareCustom(coordSys) {
   var rect = coordSys.getRect();
   var rangeInfo = coordSys.getRangeInfo();
@@ -69512,7 +69531,7 @@ function calendarPrepareCustom(coordSys) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/styleCompat.js
+// node_modules/echarts/lib/util/styleCompat.js
 var deprecatedLogs = {};
 function isEC4CompatibleStyle(style, elType, hasOwnTextContentOption, hasOwnTextConfig) {
   return style && (style.legacy || style.legacy !== false && !hasOwnTextContentOption && !hasOwnTextConfig && elType !== "tspan" && (elType === "text" || hasOwn2(style, "text")));
@@ -69657,7 +69676,7 @@ function warnDeprecated(deprecated, insteadApproach) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/customGraphicTransition.js
+// node_modules/echarts/lib/animation/customGraphicTransition.js
 var LEGACY_TRANSFORM_PROPS_MAP = {
   position: ["x", "y"],
   scale: ["scaleX", "scaleY"],
@@ -70031,7 +70050,7 @@ if (true) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/customGraphicKeyframeAnimation.js
+// node_modules/echarts/lib/animation/customGraphicKeyframeAnimation.js
 var getStateToRestore = makeInner();
 var KEYFRAME_EXCLUDE_KEYS = ["percent", "easing", "shape", "style", "extra"];
 function stopPreviousKeyframeAnimationAndRestore(el) {
@@ -70115,7 +70134,7 @@ function applyKeyframeAnimation(el, animationOpts, animatableModel) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/custom/CustomView.js
+// node_modules/echarts/lib/chart/custom/CustomView.js
 var EMPHASIS = "emphasis";
 var NORMAL = "normal";
 var BLUR = "blur";
@@ -70782,13 +70801,13 @@ function hasOwnPathData(shape) {
   return shape && (hasOwn2(shape, "pathData") || hasOwn2(shape, "d"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/chart/custom/install.js
+// node_modules/echarts/lib/chart/custom/install.js
 function install28(registers) {
   registers.registerChartView(CustomView_default);
   registers.registerSeriesModel(CustomSeries_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/BaseAxisPointer.js
+// node_modules/echarts/lib/component/axisPointer/BaseAxisPointer.js
 var inner11 = makeInner();
 var clone4 = clone;
 var bind2 = bind;
@@ -71064,7 +71083,7 @@ function updateMandatoryProps(group, axisPointerModel, silent) {
 }
 var BaseAxisPointer_default = BaseAxisPointer;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/viewHelper.js
+// node_modules/echarts/lib/component/axisPointer/viewHelper.js
 function buildElStyle(axisPointerModel) {
   var axisPointerType = axisPointerModel.get("type");
   var styleModel = axisPointerModel.getModel(axisPointerType + "Style");
@@ -71203,7 +71222,7 @@ function makeSectorShape(cx, cy, r0, r, startAngle, endAngle) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/CartesianAxisPointer.js
+// node_modules/echarts/lib/component/axisPointer/CartesianAxisPointer.js
 var CartesianAxisPointer = (
   /** @class */
   function(_super) {
@@ -71304,7 +71323,7 @@ function getAxisDimIndex(axis) {
 }
 var CartesianAxisPointer_default = CartesianAxisPointer;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js
+// node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js
 var AxisPointerModel = (
   /** @class */
   function(_super) {
@@ -71376,7 +71395,7 @@ var AxisPointerModel = (
 );
 var AxisPointerModel_default = AxisPointerModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/globalListener.js
+// node_modules/echarts/lib/component/axisPointer/globalListener.js
 var inner12 = makeInner();
 var each8 = each;
 function register(key, api, handler) {
@@ -71457,7 +71476,7 @@ function unregister(key, api) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/AxisPointerView.js
+// node_modules/echarts/lib/component/axisPointer/AxisPointerView.js
 var AxisPointerView = (
   /** @class */
   function(_super) {
@@ -71493,7 +71512,7 @@ var AxisPointerView = (
 );
 var AxisPointerView_default = AxisPointerView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/findPointFromSeries.js
+// node_modules/echarts/lib/component/axisPointer/findPointFromSeries.js
 function findPointFromSeries(finder, ecModel) {
   var point = [];
   var seriesIndex = finder.seriesIndex;
@@ -71542,7 +71561,7 @@ function findPointFromSeries(finder, ecModel) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/axisTrigger.js
+// node_modules/echarts/lib/component/axisPointer/axisTrigger.js
 var inner13 = makeInner();
 function axisTrigger(payload, ecModel, api) {
   var currTrigger = payload.currTrigger;
@@ -71829,7 +71848,7 @@ function illegalPoint(point) {
   return !point || point[0] == null || isNaN(point[0]) || point[1] == null || isNaN(point[1]);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/install.js
+// node_modules/echarts/lib/component/axisPointer/install.js
 function install29(registers) {
   AxisView_default.registerAxisPointerClass("CartesianAxisPointer", CartesianAxisPointer_default);
   registers.registerComponentModel(AxisPointerModel_default);
@@ -71853,13 +71872,13 @@ function install29(registers) {
   }, axisTrigger);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/grid/install.js
+// node_modules/echarts/lib/component/grid/install.js
 function install30(registers) {
   use(install6);
   use(install29);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/PolarAxisPointer.js
+// node_modules/echarts/lib/component/axisPointer/PolarAxisPointer.js
 var PolarAxisPointer = (
   /** @class */
   function(_super) {
@@ -71959,7 +71978,7 @@ var pointerShapeBuilder2 = {
 };
 var PolarAxisPointer_default = PolarAxisPointer;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/PolarModel.js
+// node_modules/echarts/lib/coord/polar/PolarModel.js
 var PolarModel = (
   /** @class */
   function(_super) {
@@ -71992,7 +72011,7 @@ var PolarModel = (
 );
 var PolarModel_default = PolarModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/AxisModel.js
+// node_modules/echarts/lib/coord/polar/AxisModel.js
 var PolarAxisModel = (
   /** @class */
   function(_super) {
@@ -72035,7 +72054,7 @@ var RadiusAxisModel = (
   }(PolarAxisModel)
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/RadiusAxis.js
+// node_modules/echarts/lib/coord/polar/RadiusAxis.js
 var RadiusAxis = (
   /** @class */
   function(_super) {
@@ -72053,7 +72072,7 @@ RadiusAxis.prototype.dataToRadius = Axis_default.prototype.dataToCoord;
 RadiusAxis.prototype.radiusToData = Axis_default.prototype.coordToData;
 var RadiusAxis_default = RadiusAxis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/AngleAxis.js
+// node_modules/echarts/lib/coord/polar/AngleAxis.js
 var inner14 = makeInner();
 var AngleAxis = (
   /** @class */
@@ -72100,7 +72119,7 @@ AngleAxis.prototype.dataToAngle = Axis_default.prototype.dataToCoord;
 AngleAxis.prototype.angleToData = Axis_default.prototype.coordToData;
 var AngleAxis_default = AngleAxis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/Polar.js
+// node_modules/echarts/lib/coord/polar/Polar.js
 var polarDimensions = ["radius", "angle"];
 var Polar = (
   /** @class */
@@ -72234,7 +72253,7 @@ function getCoordSys3(finder) {
 }
 var Polar_default = Polar;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/polar/polarCreator.js
+// node_modules/echarts/lib/coord/polar/polarCreator.js
 function resizePolar(polar, polarModel, api) {
   var center3 = polarModel.get("center");
   var width = api.getWidth();
@@ -72330,7 +72349,7 @@ var polarCreator = {
 };
 var polarCreator_default = polarCreator;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/AngleAxisView.js
+// node_modules/echarts/lib/component/axis/AngleAxisView.js
 var elementList2 = ["axisLine", "axisLabel", "axisTick", "minorTick", "splitLine", "minorSplitLine", "splitArea"];
 function getAxisLineShape(polar, rExtent, angle) {
   rExtent[1] > rExtent[0] && (rExtent = rExtent.slice().reverse());
@@ -72599,7 +72618,7 @@ var angelAxisElementsBuilders = {
 };
 var AngleAxisView_default = AngleAxisView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/RadiusAxisView.js
+// node_modules/echarts/lib/component/axis/RadiusAxisView.js
 var axisBuilderAttrs3 = ["axisLine", "axisTickLabel", "axisName"];
 var selfBuilderAttrs2 = ["splitLine", "splitArea", "minorSplitLine"];
 var RadiusAxisView = (
@@ -72755,7 +72774,7 @@ function layoutAxis(polar, radiusAxisModel, axisAngle) {
 }
 var RadiusAxisView_default = RadiusAxisView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/layout/barPolar.js
+// node_modules/echarts/lib/layout/barPolar.js
 function getSeriesStackId2(seriesModel) {
   return seriesModel.get("stack") || "__ec_stack_" + seriesModel.seriesIndex;
 }
@@ -72948,7 +72967,7 @@ function calRadialBar(barSeries) {
 }
 var barPolar_default = barLayoutPolar;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/polar/install.js
+// node_modules/echarts/lib/component/polar/install.js
 var angleAxisExtraOption = {
   startAngle: 90,
   clockwise: true,
@@ -72986,7 +73005,7 @@ function install31(registers) {
   registers.registerLayout(curry(barPolar_default, "bar"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/singleAxisHelper.js
+// node_modules/echarts/lib/coord/single/singleAxisHelper.js
 function layout3(axisModel, opt) {
   opt = opt || {};
   var single = axisModel.coordinateSystem;
@@ -73032,7 +73051,7 @@ function layout3(axisModel, opt) {
   return layout5;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axis/SingleAxisView.js
+// node_modules/echarts/lib/component/axis/SingleAxisView.js
 var axisBuilderAttrs4 = ["axisLine", "axisTickLabel", "axisName"];
 var selfBuilderAttrs3 = ["splitArea", "splitLine"];
 var SingleAxisView = (
@@ -73133,7 +73152,7 @@ var axisElementBuilders3 = {
 };
 var SingleAxisView_default = SingleAxisView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/AxisModel.js
+// node_modules/echarts/lib/coord/single/AxisModel.js
 var SingleAxisModel = (
   /** @class */
   function(_super) {
@@ -73194,7 +73213,7 @@ var SingleAxisModel = (
 mixin(SingleAxisModel, AxisModelCommonMixin.prototype);
 var AxisModel_default2 = SingleAxisModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/SingleAxis.js
+// node_modules/echarts/lib/coord/single/SingleAxis.js
 var SingleAxis = (
   /** @class */
   function(_super) {
@@ -73217,7 +73236,7 @@ var SingleAxis = (
 );
 var SingleAxis_default = SingleAxis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/Single.js
+// node_modules/echarts/lib/coord/single/Single.js
 var singleDimensions = ["single"];
 var Single = (
   /** @class */
@@ -73354,7 +73373,7 @@ function getCoordSys4(finder) {
 }
 var Single_default = Single;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/single/singleCreator.js
+// node_modules/echarts/lib/coord/single/singleCreator.js
 function create3(ecModel, api) {
   var singles = [];
   ecModel.eachComponent("singleAxis", function(axisModel, idx) {
@@ -73378,7 +73397,7 @@ var singleCreator = {
 };
 var singleCreator_default = singleCreator;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/axisPointer/SingleAxisPointer.js
+// node_modules/echarts/lib/component/axisPointer/SingleAxisPointer.js
 var XY = ["x", "y"];
 var WH = ["width", "height"];
 var SingleAxisPointer = (
@@ -73477,7 +73496,7 @@ function getGlobalExtent(coordSys, dimIndex) {
 }
 var SingleAxisPointer_default = SingleAxisPointer;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/singleAxis/install.js
+// node_modules/echarts/lib/component/singleAxis/install.js
 var SingleView = (
   /** @class */
   function(_super) {
@@ -73501,7 +73520,7 @@ function install32(registers) {
   registers.registerCoordinateSystem("single", singleCreator_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/calendar/CalendarModel.js
+// node_modules/echarts/lib/coord/calendar/CalendarModel.js
 var CalendarModel = (
   /** @class */
   function(_super) {
@@ -73607,7 +73626,7 @@ function mergeAndNormalizeLayoutParams(target, raw) {
 }
 var CalendarModel_default = CalendarModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/calendar/CalendarView.js
+// node_modules/echarts/lib/component/calendar/CalendarView.js
 var CalendarView = (
   /** @class */
   function(_super) {
@@ -73935,7 +73954,7 @@ var CalendarView = (
 );
 var CalendarView_default = CalendarView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/coord/calendar/Calendar.js
+// node_modules/echarts/lib/coord/calendar/Calendar.js
 var PROXIMATE_ONE_DAY = 864e5;
 var Calendar = (
   /** @class */
@@ -74196,14 +74215,14 @@ function getCoordSys5(finder) {
 }
 var Calendar_default = Calendar;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/calendar/install.js
+// node_modules/echarts/lib/component/calendar/install.js
 function install33(registers) {
   registers.registerComponentModel(CalendarModel_default);
   registers.registerComponentView(CalendarView_default);
   registers.registerCoordinateSystem("calendar", Calendar_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/graphic/GraphicModel.js
+// node_modules/echarts/lib/component/graphic/GraphicModel.js
 function setKeyInfoToNewElOption(resultItem, newElOption) {
   var existElOption = resultItem.existing;
   newElOption.id = resultItem.keyInfo.id;
@@ -74364,7 +74383,7 @@ var GraphicComponentModel = (
   }(Component_default)
 );
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/graphic/GraphicView.js
+// node_modules/echarts/lib/component/graphic/GraphicView.js
 var nonShapeGraphicElements = {
   // Reserved but not supported in graphic component.
   path: null,
@@ -74662,7 +74681,7 @@ function setEventData(el, graphicModel, elOption) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/graphic/install.js
+// node_modules/echarts/lib/component/graphic/install.js
 function install34(registers) {
   registers.registerComponentModel(GraphicComponentModel);
   registers.registerComponentView(GraphicComponentView);
@@ -74684,7 +74703,7 @@ function install34(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/helper.js
+// node_modules/echarts/lib/component/dataZoom/helper.js
 var DATA_ZOOM_AXIS_DIMENSIONS = ["x", "y", "radius", "angle", "single"];
 var SERIES_COORDS = ["cartesian2d", "polar", "singleAxis"];
 function isCoordSupported(seriesModel) {
@@ -74772,7 +74791,7 @@ function collectReferCoordSysModelInfo(dataZoomModel) {
   return coordSysInfoWrap;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/DataZoomModel.js
+// node_modules/echarts/lib/component/dataZoom/DataZoomModel.js
 var DataZoomAxisInfo = (
   /** @class */
   function() {
@@ -75066,7 +75085,7 @@ function retrieveRawOption(option) {
 }
 var DataZoomModel_default = DataZoomModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SelectZoomModel.js
+// node_modules/echarts/lib/component/dataZoom/SelectZoomModel.js
 var SelectDataZoomModel = (
   /** @class */
   function(_super) {
@@ -75082,7 +75101,7 @@ var SelectDataZoomModel = (
 );
 var SelectZoomModel_default = SelectDataZoomModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/DataZoomView.js
+// node_modules/echarts/lib/component/dataZoom/DataZoomView.js
 var DataZoomView = (
   /** @class */
   function(_super) {
@@ -75103,7 +75122,7 @@ var DataZoomView = (
 );
 var DataZoomView_default = DataZoomView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SelectZoomView.js
+// node_modules/echarts/lib/component/dataZoom/SelectZoomView.js
 var SelectDataZoomView = (
   /** @class */
   function(_super) {
@@ -75119,7 +75138,7 @@ var SelectDataZoomView = (
 );
 var SelectZoomView_default = SelectDataZoomView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/AxisProxy.js
+// node_modules/echarts/lib/component/dataZoom/AxisProxy.js
 var each9 = each;
 var asc2 = asc;
 var AxisProxy = (
@@ -75321,7 +75340,7 @@ function calculateDataExtent(axisProxy, axisDim, seriesModels) {
 }
 var AxisProxy_default = AxisProxy;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/dataZoomProcessor.js
+// node_modules/echarts/lib/component/dataZoom/dataZoomProcessor.js
 var dataZoomProcessor = {
   // `dataZoomProcessor` will only be performed in needed series. Consider if
   // there is a line series and a pie series, it is better not to update the
@@ -75382,7 +75401,7 @@ var dataZoomProcessor = {
 };
 var dataZoomProcessor_default = dataZoomProcessor;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/dataZoomAction.js
+// node_modules/echarts/lib/component/dataZoom/dataZoomAction.js
 function installDataZoomAction(registers) {
   registers.registerAction("dataZoom", function(payload, ecModel) {
     var effectedModels = findEffectedDataZooms(ecModel, payload);
@@ -75397,7 +75416,7 @@ function installDataZoomAction(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installCommon.js
+// node_modules/echarts/lib/component/dataZoom/installCommon.js
 var installed = false;
 function installCommon(registers) {
   if (installed) {
@@ -75411,14 +75430,14 @@ function installCommon(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installDataZoomSelect.js
+// node_modules/echarts/lib/component/dataZoom/installDataZoomSelect.js
 function install35(registers) {
   registers.registerComponentModel(SelectZoomModel_default);
   registers.registerComponentView(SelectZoomView_default);
   installCommon(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/featureManager.js
+// node_modules/echarts/lib/component/toolbox/featureManager.js
 var ToolboxFeature = (
   /** @class */
   /* @__PURE__ */ function() {
@@ -75435,7 +75454,7 @@ function getFeature(name) {
   return features[name];
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/ToolboxModel.js
+// node_modules/echarts/lib/component/toolbox/ToolboxModel.js
 var ToolboxModel = (
   /** @class */
   function(_super) {
@@ -75501,7 +75520,7 @@ var ToolboxModel = (
 );
 var ToolboxModel_default = ToolboxModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/listComponent.js
+// node_modules/echarts/lib/component/helper/listComponent.js
 function layout4(group, componentModel, api) {
   var boxLayoutParams = componentModel.getBoxLayoutParams();
   var padding = componentModel.get("padding");
@@ -75532,7 +75551,7 @@ function makeBackground(rect, componentModel) {
   return rect;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/ToolboxView.js
+// node_modules/echarts/lib/component/toolbox/ToolboxView.js
 var ToolboxView = (
   /** @class */
   function(_super) {
@@ -75748,7 +75767,7 @@ function isUserFeatureName(featureName) {
 }
 var ToolboxView_default = ToolboxView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/SaveAsImage.js
+// node_modules/echarts/lib/component/toolbox/feature/SaveAsImage.js
 var SaveAsImage = (
   /** @class */
   function(_super) {
@@ -75839,7 +75858,7 @@ var SaveAsImage = (
 );
 var SaveAsImage_default = SaveAsImage;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/MagicType.js
+// node_modules/echarts/lib/component/toolbox/feature/MagicType.js
 var INNER_STACK_KEYWORD = "__ec_magicType_stack__";
 var radioTypes = [["line", "bar"], ["stack"]];
 var MagicType = (
@@ -75995,7 +76014,7 @@ registerAction({
 });
 var MagicType_default = MagicType;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/DataView.js
+// node_modules/echarts/lib/component/toolbox/feature/DataView.js
 var BLOCK_SPLITER = new Array(60).join("-");
 var ITEM_SPLITER = "	";
 function groupSeries(ecModel) {
@@ -76356,7 +76375,7 @@ registerAction({
 });
 var DataView_default = DataView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/history.js
+// node_modules/echarts/lib/component/dataZoom/history.js
 var each10 = each;
 var inner16 = makeInner();
 function push(ecModel, newSnapshot) {
@@ -76417,7 +76436,7 @@ function getStoreSnapshots(ecModel) {
   return store.snapshots;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/Restore.js
+// node_modules/echarts/lib/component/toolbox/feature/Restore.js
 var RestoreOption = (
   /** @class */
   function(_super) {
@@ -76453,7 +76472,7 @@ registerAction({
 });
 var Restore_default = RestoreOption;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/helper/BrushTargetManager.js
+// node_modules/echarts/lib/component/helper/BrushTargetManager.js
 var INCLUDE_FINDER_MAIN_TYPES = ["grid", "xAxis", "yAxis", "geo", "graph", "polar", "radiusAxis", "angleAxis", "bmap"];
 var BrushTargetManager = (
   /** @class */
@@ -76717,7 +76736,7 @@ function getSize2(xyMinMax) {
 }
 var BrushTargetManager_default = BrushTargetManager;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/DataZoom.js
+// node_modules/echarts/lib/component/toolbox/feature/DataZoom.js
 var each11 = each;
 var DATA_ZOOM_ID_BASE = makeInternalComponentId("toolbox-dataZoom_");
 var DataZoomFeature = (
@@ -76913,7 +76932,7 @@ registerInternalOptionCreator("dataZoom", function(ecModel) {
 });
 var DataZoom_default = DataZoomFeature;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/install.js
+// node_modules/echarts/lib/component/toolbox/install.js
 function install36(registers) {
   registers.registerComponentModel(ToolboxModel_default);
   registers.registerComponentView(ToolboxView_default);
@@ -76925,7 +76944,7 @@ function install36(registers) {
   use(install35);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipModel.js
+// node_modules/echarts/lib/component/tooltip/TooltipModel.js
 var TooltipModel = (
   /** @class */
   function(_super) {
@@ -77009,7 +77028,7 @@ var TooltipModel = (
 );
 var TooltipModel_default = TooltipModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/helper.js
+// node_modules/echarts/lib/component/tooltip/helper.js
 function shouldTooltipConfine(tooltipModel) {
   var confineOption = tooltipModel.get("confine");
   return confineOption != null ? !!confineOption : tooltipModel.get("renderMode") === "richText";
@@ -77041,7 +77060,7 @@ function getComputedStyle(el, style) {
   return stl ? style ? stl[style] : stl : null;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipHTMLContent.js
+// node_modules/echarts/lib/component/tooltip/TooltipHTMLContent.js
 var CSS_TRANSITION_VENDOR = toCSSVendorPrefix(TRANSITION_VENDOR, "transition");
 var CSS_TRANSFORM_VENDOR = toCSSVendorPrefix(TRANSFORM_VENDOR, "transform");
 var gCssText = "position:absolute;display:block;border-style:solid;white-space:nowrap;z-index:9999999;" + (env_default.transform3dSupported ? "will-change:transform;" : "");
@@ -77333,7 +77352,7 @@ var TooltipHTMLContent = (
 );
 var TooltipHTMLContent_default = TooltipHTMLContent;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipRichContent.js
+// node_modules/echarts/lib/component/tooltip/TooltipRichContent.js
 var TooltipRichContent = (
   /** @class */
   function() {
@@ -77482,7 +77501,7 @@ function makeStyleCoord2(out2, zr, zrX, zrY) {
 }
 var TooltipRichContent_default = TooltipRichContent;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/TooltipView.js
+// node_modules/echarts/lib/component/tooltip/TooltipView.js
 var proxyRect = new Rect_default({
   shape: {
     x: -1,
@@ -78150,7 +78169,7 @@ function findComponentReference(payload, ecModel, api) {
 }
 var TooltipView_default = TooltipView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/tooltip/install.js
+// node_modules/echarts/lib/component/tooltip/install.js
 function install37(registers) {
   use(install29);
   registers.registerComponentModel(TooltipModel_default);
@@ -78167,7 +78186,7 @@ function install37(registers) {
   }, noop);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/preprocessor.js
+// node_modules/echarts/lib/component/brush/preprocessor.js
 var DEFAULT_TOOLBOX_BTNS = ["rect", "polygon", "keep", "clear"];
 function brushPreprocessor(option, isNew) {
   var brushComponents = normalizeToArray(option ? option.brush : []);
@@ -78211,7 +78230,7 @@ function removeDuplicate(arr) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/visualSolution.js
+// node_modules/echarts/lib/visual/visualSolution.js
 var each12 = each;
 function hasKeys(obj) {
   if (obj) {
@@ -78338,7 +78357,7 @@ function incrementalApplyVisual(stateList, visualMappings, getValueState, dim) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/selector.js
+// node_modules/echarts/lib/component/brush/selector.js
 function makeBrushCommonSelectorForSeries(area) {
   var brushType = area.brushType;
   var selectors = {
@@ -78407,7 +78426,7 @@ function inLineRange(p, range) {
   return range[0] <= p && p <= range[1];
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/visualEncoding.js
+// node_modules/echarts/lib/component/brush/visualEncoding.js
 var STATE_LIST = ["inBrush", "outOfBrush"];
 var DISPATCH_METHOD = "__ecBrushSelect";
 var DISPATCH_FLAG = "__ecInBrushSelectEvent";
@@ -78581,7 +78600,7 @@ function getBoundingRectFromMinMax(minMax) {
   return new BoundingRect_default(minMax[0][0], minMax[1][0], minMax[0][1] - minMax[0][0], minMax[1][1] - minMax[1][0]);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/BrushView.js
+// node_modules/echarts/lib/component/brush/BrushView.js
 var BrushView = (
   /** @class */
   function(_super) {
@@ -78639,7 +78658,7 @@ var BrushView = (
 );
 var BrushView_default = BrushView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/BrushModel.js
+// node_modules/echarts/lib/component/brush/BrushModel.js
 var DEFAULT_OUT_OF_BRUSH_COLOR = "#ddd";
 var BrushModel = (
   /** @class */
@@ -78713,7 +78732,7 @@ function generateBrushOption(option, brushOption) {
 }
 var BrushModel_default = BrushModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/toolbox/feature/Brush.js
+// node_modules/echarts/lib/component/toolbox/feature/Brush.js
 var ICON_TYPES = ["rect", "polygon", "lineX", "lineY", "keep", "clear"];
 var BrushFeature = (
   /** @class */
@@ -78805,7 +78824,7 @@ var BrushFeature = (
 );
 var Brush_default = BrushFeature;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/brush/install.js
+// node_modules/echarts/lib/component/brush/install.js
 function install38(registers) {
   registers.registerComponentView(BrushView_default);
   registers.registerComponentModel(BrushModel_default);
@@ -78836,7 +78855,7 @@ function install38(registers) {
   registerFeature("brush", Brush_default);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/title/install.js
+// node_modules/echarts/lib/component/title/install.js
 var TitleModel = (
   /** @class */
   function(_super) {
@@ -79008,7 +79027,7 @@ function install39(registers) {
   registers.registerComponentView(TitleView);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/TimelineModel.js
+// node_modules/echarts/lib/component/timeline/TimelineModel.js
 var TimelineModel = (
   /** @class */
   function(_super) {
@@ -79125,7 +79144,7 @@ var TimelineModel = (
 );
 var TimelineModel_default = TimelineModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/SliderTimelineModel.js
+// node_modules/echarts/lib/component/timeline/SliderTimelineModel.js
 var SliderTimelineModel = (
   /** @class */
   function(_super) {
@@ -79238,7 +79257,7 @@ var SliderTimelineModel = (
 mixin(SliderTimelineModel, DataFormatMixin.prototype);
 var SliderTimelineModel_default = SliderTimelineModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/TimelineView.js
+// node_modules/echarts/lib/component/timeline/TimelineView.js
 var TimelineView = (
   /** @class */
   function(_super) {
@@ -79254,7 +79273,7 @@ var TimelineView = (
 );
 var TimelineView_default = TimelineView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/TimelineAxis.js
+// node_modules/echarts/lib/component/timeline/TimelineAxis.js
 var TimelineAxis = (
   /** @class */
   function(_super) {
@@ -79275,7 +79294,7 @@ var TimelineAxis = (
 );
 var TimelineAxis_default = TimelineAxis;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/SliderTimelineView.js
+// node_modules/echarts/lib/component/timeline/SliderTimelineView.js
 var PI10 = Math.PI;
 var labelDataIndexStore = makeInner();
 var SliderTimelineView = (
@@ -79828,7 +79847,7 @@ function pointerMoveTo(pointer, progressLine, dataIndex, axis, timelineModel, no
 }
 var SliderTimelineView_default = SliderTimelineView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/timelineAction.js
+// node_modules/echarts/lib/component/timeline/timelineAction.js
 function installTimelineAction(registers) {
   registers.registerAction({
     type: "timelineChange",
@@ -79866,7 +79885,7 @@ function installTimelineAction(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/preprocessor.js
+// node_modules/echarts/lib/component/timeline/preprocessor.js
 function timelinePreprocessor(option) {
   var timelineOpt = option && option.timeline;
   if (!isArray2(timelineOpt)) {
@@ -79933,7 +79952,7 @@ function has(obj, attr) {
   return obj.hasOwnProperty(attr);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/timeline/install.js
+// node_modules/echarts/lib/component/timeline/install.js
 function install40(registers) {
   registers.registerComponentModel(SliderTimelineModel_default);
   registers.registerComponentView(SliderTimelineView_default);
@@ -79944,7 +79963,7 @@ function install40(registers) {
   registers.registerPreprocessor(timelinePreprocessor);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/checkMarkerInSeries.js
+// node_modules/echarts/lib/component/marker/checkMarkerInSeries.js
 function checkMarkerInSeries(seriesOpts, markerType) {
   if (!seriesOpts) {
     return false;
@@ -79958,7 +79977,7 @@ function checkMarkerInSeries(seriesOpts, markerType) {
   return false;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkerModel.js
+// node_modules/echarts/lib/component/marker/MarkerModel.js
 function fillLabel(opt) {
   defaultEmphasis(opt, "label", ["show"]);
 }
@@ -80071,7 +80090,7 @@ var MarkerModel = (
 mixin(MarkerModel, DataFormatMixin.prototype);
 var MarkerModel_default = MarkerModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkPointModel.js
+// node_modules/echarts/lib/component/marker/MarkPointModel.js
 var MarkPointModel = (
   /** @class */
   function(_super) {
@@ -80113,7 +80132,7 @@ var MarkPointModel = (
 );
 var MarkPointModel_default = MarkPointModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/markerHelper.js
+// node_modules/echarts/lib/component/marker/markerHelper.js
 function hasXOrY(item) {
   return !(isNaN(parseFloat(item.x)) && isNaN(parseFloat(item.y)));
 }
@@ -80229,7 +80248,7 @@ function numCalculate(data2, valueDataDim, type) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkerView.js
+// node_modules/echarts/lib/component/marker/MarkerView.js
 var inner18 = makeInner();
 var MarkerView = (
   /** @class */
@@ -80280,7 +80299,7 @@ var MarkerView = (
 );
 var MarkerView_default = MarkerView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkPointView.js
+// node_modules/echarts/lib/component/marker/MarkPointView.js
 function updateMarkerLayout(mpData, seriesModel, api) {
   var coordSys = seriesModel.coordinateSystem;
   mpData.each(function(idx) {
@@ -80412,7 +80431,7 @@ function createData(coordSys, seriesModel, mpModel) {
 }
 var MarkPointView_default = MarkPointView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/installMarkPoint.js
+// node_modules/echarts/lib/component/marker/installMarkPoint.js
 function install41(registers) {
   registers.registerComponentModel(MarkPointModel_default);
   registers.registerComponentView(MarkPointView_default);
@@ -80423,7 +80442,7 @@ function install41(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkLineModel.js
+// node_modules/echarts/lib/component/marker/MarkLineModel.js
 var MarkLineModel = (
   /** @class */
   function(_super) {
@@ -80471,7 +80490,7 @@ var MarkLineModel = (
 );
 var MarkLineModel_default = MarkLineModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkLineView.js
+// node_modules/echarts/lib/component/marker/MarkLineView.js
 var inner19 = makeInner();
 var markLineTransform = function(seriesModel, coordSys, mlModel, item) {
   var data2 = seriesModel.getData();
@@ -80736,7 +80755,7 @@ function createList(coordSys, seriesModel, mlModel) {
 }
 var MarkLineView_default = MarkLineView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/installMarkLine.js
+// node_modules/echarts/lib/component/marker/installMarkLine.js
 function install42(registers) {
   registers.registerComponentModel(MarkLineModel_default);
   registers.registerComponentView(MarkLineView_default);
@@ -80747,7 +80766,7 @@ function install42(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkAreaModel.js
+// node_modules/echarts/lib/component/marker/MarkAreaModel.js
 var MarkAreaModel = (
   /** @class */
   function(_super) {
@@ -80792,7 +80811,7 @@ var MarkAreaModel = (
 );
 var MarkAreaModel_default = MarkAreaModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/MarkAreaView.js
+// node_modules/echarts/lib/component/marker/MarkAreaView.js
 var inner20 = makeInner();
 var markAreaTransform = function(seriesModel, coordSys, maModel, item) {
   var item0 = item[0];
@@ -81068,7 +81087,7 @@ function createList2(coordSys, seriesModel, maModel) {
 }
 var MarkAreaView_default = MarkAreaView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/marker/installMarkArea.js
+// node_modules/echarts/lib/component/marker/installMarkArea.js
 function install43(registers) {
   registers.registerComponentModel(MarkAreaModel_default);
   registers.registerComponentView(MarkAreaView_default);
@@ -81079,7 +81098,7 @@ function install43(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/LegendModel.js
+// node_modules/echarts/lib/component/legend/LegendModel.js
 var getDefaultSelectorOptions = function(ecModel, type) {
   if (type === "all") {
     return {
@@ -81335,7 +81354,7 @@ var LegendModel = (
 );
 var LegendModel_default = LegendModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/LegendView.js
+// node_modules/echarts/lib/component/legend/LegendView.js
 var curry2 = curry;
 var each13 = each;
 var Group3 = Group_default;
@@ -81743,7 +81762,7 @@ function dispatchDownplayAction(seriesName, dataName, api, excludeSeriesId) {
 }
 var LegendView_default = LegendView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/legendFilter.js
+// node_modules/echarts/lib/component/legend/legendFilter.js
 function legendFilter(ecModel) {
   var legendModels = ecModel.findComponents({
     mainType: "legend"
@@ -81760,7 +81779,7 @@ function legendFilter(ecModel) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/legendAction.js
+// node_modules/echarts/lib/component/legend/legendAction.js
 function legendSelectActionHandler(methodName, payload, ecModel) {
   var isAllSelect = methodName === "allSelect" || methodName === "inverseSelect";
   var selectedMap = {};
@@ -81817,7 +81836,7 @@ function installLegendAction(registers) {
   registers.registerAction("legendUnSelect", "legendunselected", curry(legendSelectActionHandler, "unSelect"));
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/installLegendPlain.js
+// node_modules/echarts/lib/component/legend/installLegendPlain.js
 function install44(registers) {
   registers.registerComponentModel(LegendModel_default);
   registers.registerComponentView(LegendView_default);
@@ -81828,7 +81847,7 @@ function install44(registers) {
   installLegendAction(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/ScrollableLegendModel.js
+// node_modules/echarts/lib/component/legend/ScrollableLegendModel.js
 var ScrollableLegendModel = (
   /** @class */
   function(_super) {
@@ -81883,7 +81902,7 @@ function mergeAndNormalizeLayoutParams2(legendModel, target, raw) {
 }
 var ScrollableLegendModel_default = ScrollableLegendModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/ScrollableLegendView.js
+// node_modules/echarts/lib/component/legend/ScrollableLegendView.js
 var Group4 = Group_default;
 var WH2 = ["width", "height"];
 var XY2 = ["x", "y"];
@@ -82187,7 +82206,7 @@ var ScrollableLegendView = (
 );
 var ScrollableLegendView_default = ScrollableLegendView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/scrollableLegendAction.js
+// node_modules/echarts/lib/component/legend/scrollableLegendAction.js
 function installScrollableLegendAction(registers) {
   registers.registerAction("legendScroll", "legendscroll", function(payload, ecModel) {
     var scrollDataIndex = payload.scrollDataIndex;
@@ -82201,7 +82220,7 @@ function installScrollableLegendAction(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/installLegendScroll.js
+// node_modules/echarts/lib/component/legend/installLegendScroll.js
 function install45(registers) {
   use(install44);
   registers.registerComponentModel(ScrollableLegendModel_default);
@@ -82209,13 +82228,13 @@ function install45(registers) {
   installScrollableLegendAction(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/legend/install.js
+// node_modules/echarts/lib/component/legend/install.js
 function install46(registers) {
   use(install44);
   use(install45);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/InsideZoomModel.js
+// node_modules/echarts/lib/component/dataZoom/InsideZoomModel.js
 var InsideZoomModel = (
   /** @class */
   function(_super) {
@@ -82239,7 +82258,7 @@ var InsideZoomModel = (
 );
 var InsideZoomModel_default = InsideZoomModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/roams.js
+// node_modules/echarts/lib/component/dataZoom/roams.js
 var inner21 = makeInner();
 function setViewInfoToCoordSysRecord(api, dataZoomModel, getRange) {
   inner21(api).coordSysRecordMap.each(function(coordSysRecord) {
@@ -82395,7 +82414,7 @@ function installDataZoomRoamProcessor(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/InsideZoomView.js
+// node_modules/echarts/lib/component/dataZoom/InsideZoomView.js
 var InsideZoomView = (
   /** @class */
   function(_super) {
@@ -82536,7 +82555,7 @@ var getDirectionInfo = {
 };
 var InsideZoomView_default = InsideZoomView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installDataZoomInside.js
+// node_modules/echarts/lib/component/dataZoom/installDataZoomInside.js
 function install47(registers) {
   installCommon(registers);
   registers.registerComponentModel(InsideZoomModel_default);
@@ -82544,7 +82563,7 @@ function install47(registers) {
   installDataZoomRoamProcessor(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SliderZoomModel.js
+// node_modules/echarts/lib/component/dataZoom/SliderZoomModel.js
 var SliderZoomModel = (
   /** @class */
   function(_super) {
@@ -82632,7 +82651,7 @@ var SliderZoomModel = (
 );
 var SliderZoomModel_default = SliderZoomModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/SliderZoomView.js
+// node_modules/echarts/lib/component/dataZoom/SliderZoomView.js
 var Rect3 = Rect_default;
 var DEFAULT_LOCATION_EDGE_GAP = 7;
 var DEFAULT_FRAME_BORDER_WIDTH = 1;
@@ -83331,20 +83350,20 @@ function getCursor(orient) {
 }
 var SliderZoomView_default = SliderZoomView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/installDataZoomSlider.js
+// node_modules/echarts/lib/component/dataZoom/installDataZoomSlider.js
 function install48(registers) {
   registers.registerComponentModel(SliderZoomModel_default);
   registers.registerComponentView(SliderZoomView_default);
   installCommon(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataZoom/install.js
+// node_modules/echarts/lib/component/dataZoom/install.js
 function install49(registers) {
   use(install47);
   use(install48);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/visualDefault.js
+// node_modules/echarts/lib/visual/visualDefault.js
 var visualDefault = {
   /**
    * @public
@@ -83390,7 +83409,7 @@ var defaultOption2 = {
 };
 var visualDefault_default = visualDefault;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/VisualMapModel.js
+// node_modules/echarts/lib/component/visualMap/VisualMapModel.js
 var mapVisual2 = VisualMapping_default.mapVisual;
 var eachVisual = VisualMapping_default.eachVisual;
 var isArray3 = isArray2;
@@ -83649,7 +83668,7 @@ var VisualMapModel = (
 );
 var VisualMapModel_default = VisualMapModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/ContinuousModel.js
+// node_modules/echarts/lib/component/visualMap/ContinuousModel.js
 var DEFAULT_BAR_BOUND = [20, 140];
 var ContinuousModel = (
   /** @class */
@@ -83820,7 +83839,7 @@ function getColorStopValues(visualMapModel, valueState, dataExtent) {
 }
 var ContinuousModel_default = ContinuousModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/VisualMapView.js
+// node_modules/echarts/lib/component/visualMap/VisualMapView.js
 var VisualMapView = (
   /** @class */
   function(_super) {
@@ -83913,7 +83932,7 @@ var VisualMapView = (
 );
 var VisualMapView_default = VisualMapView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/helper.js
+// node_modules/echarts/lib/component/visualMap/helper.js
 var paramsSet = [["left", "right", "width"], ["top", "bottom", "height"]];
 function getItemAlign(visualMapModel, api, itemSize) {
   var modelOption = visualMapModel.option;
@@ -83948,7 +83967,7 @@ function makeHighDownBatch(batch, visualMapModel) {
   return batch;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/ContinuousView.js
+// node_modules/echarts/lib/component/visualMap/ContinuousView.js
 var linearMap3 = linearMap;
 var each15 = each;
 var mathMin11 = Math.min;
@@ -84527,7 +84546,7 @@ function getCursor2(orient) {
 }
 var ContinuousView_default = ContinuousView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/visualMapAction.js
+// node_modules/echarts/lib/component/visualMap/visualMapAction.js
 var visualMapActionInfo = {
   type: "selectDataRange",
   event: "dataRangeSelected",
@@ -84543,7 +84562,7 @@ var visualMapActionHander = function(payload, ecModel) {
   });
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/visualEncoding.js
+// node_modules/echarts/lib/component/visualMap/visualEncoding.js
 var visualMapEncodingHandlers = [
   {
     createOnAllSeries: true,
@@ -84603,7 +84622,7 @@ function getColorVisual(seriesModel, visualMapModel, value, valueState) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/preprocessor.js
+// node_modules/echarts/lib/component/visualMap/preprocessor.js
 var each16 = each;
 function visualMapPreprocessor(option) {
   var visualMap = option && option.visualMap;
@@ -84637,7 +84656,7 @@ function has2(obj, name) {
   return obj && obj.hasOwnProperty && obj.hasOwnProperty(name);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/installCommon.js
+// node_modules/echarts/lib/component/visualMap/installCommon.js
 var installed2 = false;
 function installCommon2(registers) {
   if (installed2) {
@@ -84654,14 +84673,14 @@ function installCommon2(registers) {
   registers.registerPreprocessor(visualMapPreprocessor);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/installVisualMapContinuous.js
+// node_modules/echarts/lib/component/visualMap/installVisualMapContinuous.js
 function install50(registers) {
   registers.registerComponentModel(ContinuousModel_default);
   registers.registerComponentView(ContinuousView_default);
   installCommon2(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/PiecewiseModel.js
+// node_modules/echarts/lib/component/visualMap/PiecewiseModel.js
 var PiecewiseModel = (
   /** @class */
   function(_super) {
@@ -84987,7 +85006,7 @@ function normalizeReverse(thisOption, pieceList) {
 }
 var PiecewiseModel_default = PiecewiseModel;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/PiecewiseView.js
+// node_modules/echarts/lib/component/visualMap/PiecewiseView.js
 var PiecewiseVisualMapView = (
   /** @class */
   function(_super) {
@@ -85152,20 +85171,20 @@ var PiecewiseVisualMapView = (
 );
 var PiecewiseView_default = PiecewiseVisualMapView;
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/installVisualMapPiecewise.js
+// node_modules/echarts/lib/component/visualMap/installVisualMapPiecewise.js
 function install51(registers) {
   registers.registerComponentModel(PiecewiseModel_default);
   registers.registerComponentView(PiecewiseView_default);
   installCommon2(registers);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/visualMap/install.js
+// node_modules/echarts/lib/component/visualMap/install.js
 function install52(registers) {
   use(install50);
   use(install51);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/visual/aria.js
+// node_modules/echarts/lib/visual/aria.js
 var DEFAULT_OPTION = {
   label: {
     enabled: true
@@ -85349,7 +85368,7 @@ function ariaVisual(ecModel, api) {
   }
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/aria/preprocessor.js
+// node_modules/echarts/lib/component/aria/preprocessor.js
 function ariaPreprocessor(option) {
   if (!option || !option.aria) {
     return;
@@ -85366,13 +85385,13 @@ function ariaPreprocessor(option) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/aria/install.js
+// node_modules/echarts/lib/component/aria/install.js
 function install53(registers) {
   registers.registerPreprocessor(ariaPreprocessor);
   registers.registerVisual(registers.PRIORITY.VISUAL.ARIA, ariaVisual);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/util/conditionalExpression.js
+// node_modules/echarts/lib/util/conditionalExpression.js
 var RELATIONAL_EXPRESSION_OP_ALIAS_MAP = {
   value: "eq",
   // PENDING: not good for literal semantic?
@@ -85604,7 +85623,7 @@ function parseConditionalExpression(exprOption, getters) {
   return new ConditionalExpressionParsed(exprOption, getters);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/transform/filterTransform.js
+// node_modules/echarts/lib/component/transform/filterTransform.js
 var filterTransform = {
   type: "echarts:filter",
   // PENDING: enhance to filter by index rather than create new data
@@ -85652,7 +85671,7 @@ var filterTransform = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/transform/sortTransform.js
+// node_modules/echarts/lib/component/transform/sortTransform.js
 var sampleLog = "";
 if (true) {
   sampleLog = ["Valid config is like:", '{ dimension: "age", order: "asc" }', 'or [{ dimension: "age", order: "asc"], { dimension: "date", order: "desc" }]'].join(" ");
@@ -85755,13 +85774,13 @@ var sortTransform = {
   }
 };
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/transform/install.js
+// node_modules/echarts/lib/component/transform/install.js
 function install54(registers) {
   registers.registerTransform(filterTransform);
   registers.registerTransform(sortTransform);
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/component/dataset/install.js
+// node_modules/echarts/lib/component/dataset/install.js
 var DatasetModel = (
   /** @class */
   function(_super) {
@@ -85811,7 +85830,7 @@ function install55(registers) {
   registers.registerComponentView(DatasetView);
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/convertPath.js
+// node_modules/zrender/lib/tool/convertPath.js
 var CMD5 = PathProxy_default.CMD;
 function aroundEqual(a, b) {
   return Math.abs(a - b) < 1e-5;
@@ -86005,7 +86024,7 @@ function pathToPolygons(path, scale4) {
   return polygons;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/dividePath.js
+// node_modules/zrender/lib/tool/dividePath.js
 function getDividingGrids(dimSize, rowDim, count2) {
   var rowSize = dimSize[rowDim];
   var columnSize = dimSize[1 - rowDim];
@@ -86311,7 +86330,7 @@ function split(path, count2) {
   return out2;
 }
 
-// node_modules/.pnpm/zrender@5.6.1/node_modules/zrender/lib/tool/morphPath.js
+// node_modules/zrender/lib/tool/morphPath.js
 function alignSubpath(subpath1, subpath2) {
   var len1 = subpath1.length;
   var len2 = subpath2.length;
@@ -86890,7 +86909,7 @@ function separateMorph(fromPath, toPathList, animationOpts) {
   };
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/morphTransitionHelper.js
+// node_modules/echarts/lib/animation/morphTransitionHelper.js
 function isMultiple(elements) {
   return isArray2(elements[0]);
 }
@@ -87035,7 +87054,7 @@ function getPathList(elements) {
   return pathList;
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/lib/animation/universalTransition.js
+// node_modules/echarts/lib/animation/universalTransition.js
 var DATA_COUNT_THRESHOLD = 1e4;
 var TRANSITION_NONE = 0;
 var TRANSITION_P2C = 1;
@@ -87538,7 +87557,7 @@ function installUniversalTransition(registers) {
   });
 }
 
-// node_modules/.pnpm/echarts@5.6.0/node_modules/echarts/index.js
+// node_modules/echarts/index.js
 use([install2]);
 use([install]);
 use([install3, install4, install5, install7, install9, install11, install12, install13, install14, install15, install16, install18, install19, install20, install21, install22, install23, install24, install25, install26, install27, install28]);
@@ -87639,9 +87658,9 @@ var ChartRenderer = class {
           throw new Error("Issue with parsing config");
         }
         const configRecord = parsedConfig;
-        if (!configRecord.dataset) {
-          const dataset = [{ id: "data", source: data2 }, ...(_a2 = configRecord.dataset) != null ? _a2 : []];
-          configRecord.dataset = dataset;
+        const { dataset = [] } = configRecord;
+        if (((_a2 = dataset[0]) == null ? void 0 : _a2.id) !== "data") {
+          configRecord.dataset = [{ id: "data", source: data2 }, ...dataset];
         }
         if (isRendered) {
           chart == null ? void 0 : chart.setOption(configRecord);
@@ -87666,7 +87685,7 @@ var ChartRenderer = class {
   }
 };
 
-// node_modules/.pnpm/@vanakat+plugin-api@0.2.1_@codemirror+state@6.5.2_@codemirror+view@6.36.4_eslint@9.22.0/node_modules/@vanakat/plugin-api/index.js
+// node_modules/@vanakat/plugin-api/index.js
 var import_obsidian = require("obsidian");
 function pluginApi(name) {
   if ("PluginApi" in window && name in window["PluginApi"]) {
@@ -87703,6 +87722,22 @@ lodash/lodash.js:
    * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
    * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
    *)
+
+tslib/tslib.es6.js:
+  (*! *****************************************************************************
+  Copyright (c) Microsoft Corporation.
+  
+  Permission to use, copy, modify, and/or distribute this software for any
+  purpose with or without fee is hereby granted.
+  
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+  AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+  INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+  PERFORMANCE OF THIS SOFTWARE.
+  ***************************************************************************** *)
 
 tslib/tslib.es6.js:
   (*! *****************************************************************************

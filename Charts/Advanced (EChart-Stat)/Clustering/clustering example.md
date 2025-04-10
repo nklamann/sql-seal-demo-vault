@@ -28,7 +28,8 @@ for (var i = 0; i < CLUSTER_COUNT; i++) {
 return {
   dataset: [
   {
-      source: datasetArray
+      source: datasetArray,
+      id: 'data'
     },
     {
       transform: {

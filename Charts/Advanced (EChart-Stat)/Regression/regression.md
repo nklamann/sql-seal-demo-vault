@@ -8,6 +8,7 @@ const dataArray = data.map(d => ([d.x, d.y]))
 return {
   dataset: [
     {
+	  id: 'data',
       source: dataArray
     },
     {
